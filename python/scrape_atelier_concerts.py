@@ -53,7 +53,7 @@ RETRY_DELAY = 5  # secondes entre chaque retry
 CSV_COLUMNS = [
     "id", "artist", "date_live", "doors_time", "location",
     "address", "genres", "status", "new", "url", "buy_link", "image",
-    "date_created",
+    "price", "date_created",
 ]
 
 logger = logging.getLogger("atelier_scraper")
@@ -168,17 +168,56 @@ def _parse_practical_info(html: str) -> dict:
 # Récupération des détails par page de concert
 # ---------------------------------------------------------------------------
 
-def _fetch_show_details(url: str) -> dict:
+def _fetch_ticketmatic_price(buy_link: str | None) -> str:
+    """Récupère le prix minimum depuis le widget Ticketmatic via le buy_link."""
+    if not buy_link:
+        return "Price Unavailable"
+    try:
+        url = re.sub(r"/flow/[^?#]+", "/flow/web", buy_link)
+        url = url.split("#")[0]
+        if "?" in url:
+            url += "&l=en"
+        else:
+            url += "?l=en"
+        html = _request(url, retries=2)
+        m = re.search(r'constant\("TM",\s*(\{.+?\})\s*\);', html, re.DOTALL)
+        if not m:
+            return "Price Unavailable"
+        tm = json.loads(m.group(1))
+        events = tm.get("configs", {}).get("addtickets", {}).get("events", [])
+        prices = []
+        for ev in events:
+            for cont in ev.get("prices", {}).get("contingents", []):
+                for pt in cont.get("pricetypes", []):
+                    p = pt.get("price")
+                    if p is None or p <= 0:
+                        continue
+                    # Ignorer les tarifs conditionnels (ex : Kulturpass)
+                    has_conditions = any(
+                        sc.get("conditions") for sc in pt.get("saleschannels", [])
+                    )
+                    if not has_conditions:
+                        prices.append(p)
+        if not prices:
+            return "Price Unavailable"
+        return f"{min(prices):.2f} EUR"
+    except Exception as exc:
+        logger.debug("Prix non récupéré pour %s : %s", buy_link, exc)
+        return "Price Unavailable"
+
+
+def _fetch_show_details(url: str, buy_link: str | None = None) -> dict:
     """Scrape une page de concert individuelle (1 retry pour les détails)."""
     try:
         html = _request(url, retries=2)
         info = _parse_practical_info(html)
         if info["address"] is None and info["doors_time"] is None:
             logger.warning("Structure inattendue (practical-info absent) : %s", url)
+        info["price"] = _fetch_ticketmatic_price(buy_link)
         return info
     except Exception as exc:
         logger.warning("Impossible de scraper %s : %s", url, exc)
-        return {"address": None, "doors_time": None}
+        return {"address": None, "doors_time": None, "price": "Price Unavailable"}
 
 
 # ---------------------------------------------------------------------------
@@ -272,12 +311,15 @@ def fetch_concerts(
     logger.info("Scraping de %d pages pour adresse et horaires…", len(shows))
 
     show_details: dict[str, dict] = {}
-    urls = {s["permalink"]: s["permalink"] for s in shows if s.get("permalink")}
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {
-            executor.submit(_fetch_show_details, url): url
-            for url in urls.values()
+            executor.submit(
+                _fetch_show_details,
+                s["permalink"],
+                s.get("buy_link") or s.get("custom_event_link"),
+            ): s["permalink"]
+            for s in shows if s.get("permalink")
         }
         done_count = 0
         fail_count = 0
@@ -319,6 +361,7 @@ def fetch_concerts(
             "url": permalink,
             "buy_link": show.get("buy_link") or show.get("custom_event_link"),
             "image": show.get("image"),
+            "price": details.get("price", "Price Unavailable"),
             "date_created": run_timestamp,
         }
         concerts.append(concert)

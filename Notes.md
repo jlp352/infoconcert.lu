@@ -24,7 +24,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [ ] Mettre un extrait musical
 		- [x] Filtre par genres et status
 		- [x] Mettre Rockhal par tous comme salle de concert
-		- [ ] Bug Rockhal pour certain buy link n'apparait pas
+		- [x] Bug Rockhal pour certain buy link n'apparait pas
 		
 		
 
