@@ -343,7 +343,7 @@ def fetch_concerts(
             "artist": show.get("title"),
             "date_live": date_live,
             "doors_time": details.get("doors_time"),
-            "location": show.get("location"),
+            "location": "Rockhal" if "rockhal" in (show.get("location") or "").lower() else show.get("location"),
             "address": ROCKHAL_ADDRESS,
             "genres": [unescape(g.get("name") or "Unknown") if (g.get("name") or "").strip() != "-" else "Unknown" for g in show.get("genres", [])] or ["Unknown"],
             "status": show.get("status_string"),

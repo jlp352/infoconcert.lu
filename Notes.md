@@ -20,21 +20,21 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 ## Reste à faire
 
 #### Scrapper
-		Recuperer Prix
-		Mettre un extrait musical
-		Filtre par genres et status
-		Mettre Rockhal par tous comme salle de concert
-		Bug Rockhal pour certain buy link n'apparait pas
+		- [ ] Recuperer Prix
+		- [ ] Mettre un extrait musical
+		- [x] Filtre par genres et status
+		- [ ] Mettre Rockhal par tous comme salle de concert
+		- [ ] Bug Rockhal pour certain buy link n'apparait pas
 		
 		
 
 #### Web
-		Site Multi Langue (Fr, En, Ge) selection langue en function du navigateur
-		Revoir Barre Menu. Mettre Logo
-		Rajouter les mois
-		Filtre pour afficher selon criteres
-			type de musique
-			type de salle
+		- [ ] Site Multi Langue (Fr, En, Ge) selection langue en function du navigateur
+		- [ ] Revoir Barre Menu. Mettre Logo
+		- [ ] Rajouter les mois
+		- Filtre pour afficher selon criteres
+			- [ ] type de musique
+			- [ ] type de salle
 		Filtre pour afficher les nouveaux concerts depuis last visite
 		Revoir design de la tuile concert
 			en cliquant sur la tuile allez sur la page concert
@@ -48,31 +48,54 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		Supprimer artiste
 		Page contacts	
 				
-			
-
+	
 #### General
 		- [x] Trouver un nom au projet: Infoconcert.lu
 		- [x] Trouver un nom de domaine: libre pour lu
-		- [ ] créer logo
+		- [x] créer logo
 		- [x] Mettre GitHub pour la sauvegarde
 
-
+#### Serveur en local
+		Installer sur un serveur local (Python + Web)
+		Mettre le crom pour les mise à jour
+		Ouvrir les ports pour qu'il soit accessible depuis 
 ## Python
 		Scrapper
 			Den Atelier: scrape_atelier_concerts.py	Den Atelier
 			Rockhall: scrape_rockhal_concerts.py	Rockhall
 			
 			Usage:	
-				python scrape_atelier_concerts.py                  # JSON (défaut)
-			    python scrape_atelier_concerts.py -f csv           # CSV
-			    python scrape_atelier_concerts.py -f csv --available-only
+				# JSON (défaut)	
+```
+python scrape_atelier_concerts.py   
+```
+	           	# CSV			
+```
+python scrape_atelier_concerts.py -f csv 
+```
+				# Exclusion Genre - Ex: exclusion genre Party et Film			
+```
+python scrape_atelier_concerts.py -g "Party; Film"
+```
+				# Exclusion Status - Ex: exclusion sattus canceled				
+```
+python scrape_atelier_concerts.py -s "cancelled"
+```
+				# Exclusion plusieurs criteres				
+```
+python scrape_atelier_concerts.py -f csv -g "Party; Film" -s "cancelled"   
+```
+
 
 		Merge
 			Merge csv ou json dans un seule fichier
 			Les doublons sont retirées si même artist et date_live
 
-			Usage:
-				python merge.py -f json   → fusionne JSON/  → OUT/concerts.json
-			    python merge.py -f csv    → fusionne CSV/   → OUT/concerts.csv	
+			Usage:				
+```
+python merge.py -f json   → fusionne JSON/  → OUT/concerts.json
+python merge.py -f csv    → fusionne CSV/   → OUT/concerts.csv	
+```
+
 
 

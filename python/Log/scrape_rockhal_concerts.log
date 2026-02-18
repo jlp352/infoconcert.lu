@@ -27,3 +27,25 @@
 2026-02-18 14:36:59,999 [INFO] 0 nouveau(x) concert(s) détecté(s)
 2026-02-18 14:37:00,002 [INFO] ✅ 119 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_rockhal_concerts.csv
 2026-02-18 14:37:00,002 [INFO] Fin du scraper
+2026-02-18 14:46:33,583 [INFO] ============================================================
+2026-02-18 14:46:33,583 [INFO] Démarrage du scraper (format=csv, exclude_genres=Party; Film, exclude_statuses=cancelled)
+2026-02-18 14:46:33,583 [INFO] Récupération de la liste des concerts…
+2026-02-18 14:46:46,282 [INFO] 120 concerts trouvés via l'API
+2026-02-18 14:46:46,282 [INFO] Scraping de 120 pages pour horaires…
+2026-02-18 14:46:51,217 [INFO] Scraping terminé : 120/120 pages OK
+2026-02-18 14:46:51,225 [INFO] Filtre genres exclus {'film', 'party'} : 120 → 120 concerts
+2026-02-18 14:46:51,226 [INFO] Filtre statuts exclus {'cancelled'} : 120 → 119 concerts
+2026-02-18 14:46:51,227 [INFO] 0 nouveau(x) concert(s) détecté(s)
+2026-02-18 14:46:51,230 [INFO] ✅ 119 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_rockhal_concerts.csv
+2026-02-18 14:46:51,230 [INFO] Fin du scraper
+2026-02-18 14:48:15,033 [INFO] ============================================================
+2026-02-18 14:48:15,033 [INFO] Démarrage du scraper (format=csv, exclude_genres=Kids/Young Audience, exclude_statuses=cancelled)
+2026-02-18 14:48:15,033 [INFO] Récupération de la liste des concerts…
+2026-02-18 14:48:27,359 [INFO] 120 concerts trouvés via l'API
+2026-02-18 14:48:27,359 [INFO] Scraping de 120 pages pour horaires…
+2026-02-18 14:48:31,888 [INFO] Scraping terminé : 120/120 pages OK
+2026-02-18 14:48:31,894 [INFO] Filtre genres exclus {'kids/young audience'} : 120 → 116 concerts
+2026-02-18 14:48:31,894 [INFO] Filtre statuts exclus {'cancelled'} : 116 → 115 concerts
+2026-02-18 14:48:31,896 [INFO] 0 nouveau(x) concert(s) détecté(s)
+2026-02-18 14:48:31,899 [INFO] ✅ 115 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_rockhal_concerts.csv
+2026-02-18 14:48:31,899 [INFO] Fin du scraper
