@@ -13,9 +13,10 @@ Un champ "new" indique "New" si le concert n'existait pas lors du
 scan précédent (comparaison par id).
 
 Usage:
-    python scrape_rockhal_concerts.py                  # JSON (défaut)
-    python scrape_rockhal_concerts.py -f csv           # CSV
-    python scrape_rockhal_concerts.py -f csv --available-only
+    python scrape_rockhal_concerts.py                           # JSON (défaut)
+    python scrape_rockhal_concerts.py -f csv                    # CSV
+    python scrape_rockhal_concerts.py -f csv -g "Party; Child"  # Exclure des genres
+    python scrape_rockhal_concerts.py -f csv -s "Canceled; Sold Out" # Exclure des statuts
 """
 
 import argparse
@@ -30,6 +31,7 @@ import tempfile
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.request import urlopen, Request
@@ -269,7 +271,17 @@ def _validate_api_response(data: dict) -> list[dict]:
 # Fonction principale de collecte
 # ---------------------------------------------------------------------------
 
-def fetch_concerts(available_only: bool = False) -> dict:
+def _parse_exclusion_list(raw: str | None) -> set[str]:
+    """Convertit une chaîne 'Party; Child' en ensemble normalisé {'party', 'child'}."""
+    if not raw:
+        return set()
+    return {v.strip().lower() for v in raw.split(";") if v.strip()}
+
+
+def fetch_concerts(
+    exclude_genres: str | None = None,
+    exclude_statuses: str | None = None,
+) -> dict:
     """
     Récupère la liste complète des concerts avec toutes les métadonnées.
 
@@ -333,7 +345,7 @@ def fetch_concerts(available_only: bool = False) -> dict:
             "doors_time": details.get("doors_time"),
             "location": show.get("location"),
             "address": ROCKHAL_ADDRESS,
-            "genres": [g.get("name") for g in show.get("genres", [])],
+            "genres": [unescape(g.get("name") or "Unknown") if (g.get("name") or "").strip() != "-" else "Unknown" for g in show.get("genres", [])] or ["Unknown"],
             "status": show.get("status_string"),
             "url": permalink,
             "buy_link": show.get("custom_event_link"),
@@ -342,10 +354,29 @@ def fetch_concerts(available_only: bool = False) -> dict:
         }
         concerts.append(concert)
 
-    if available_only:
+    excluded_genres = _parse_exclusion_list(exclude_genres)
+    if excluded_genres:
         before = len(concerts)
-        concerts = [c for c in concerts if c["status"] not in ("sold-out", "cancelled")]
-        logger.info("Filtre available_only : %d → %d concerts", before, len(concerts))
+        concerts = [
+            c for c in concerts
+            if not any(g.lower() in excluded_genres for g in (c.get("genres") or []))
+        ]
+        logger.info(
+            "Filtre genres exclus %s : %d → %d concerts",
+            excluded_genres, before, len(concerts),
+        )
+
+    excluded_statuses = _parse_exclusion_list(exclude_statuses)
+    if excluded_statuses:
+        before = len(concerts)
+        concerts = [
+            c for c in concerts
+            if (c.get("status") or "").lower() not in excluded_statuses
+        ]
+        logger.info(
+            "Filtre statuts exclus %s : %d → %d concerts",
+            excluded_statuses, before, len(concerts),
+        )
 
     return {
         "scraped_at": run_timestamp,
@@ -439,19 +470,30 @@ def main():
         help="Format de sortie : json (défaut) ou csv",
     )
     parser.add_argument(
-        "--available-only",
-        action="store_true",
-        help="Exclure les concerts complets (sold-out) et annulés (cancelled)",
+        "-g", "--exclude-genres",
+        metavar="GENRES",
+        help='Genres à exclure, séparés par des points-virgules (ex: "Party; Child")',
+    )
+    parser.add_argument(
+        "-s", "--exclude-statuses",
+        metavar="STATUSES",
+        help='Statuts à exclure, séparés par des points-virgules (ex: "Canceled; Sold Out")',
     )
     args = parser.parse_args()
 
     # --- Logging ---
     _setup_logging()
     logger.info("=" * 60)
-    logger.info("Démarrage du scraper (format=%s, available_only=%s)", args.format, args.available_only)
+    logger.info(
+        "Démarrage du scraper (format=%s, exclude_genres=%s, exclude_statuses=%s)",
+        args.format, args.exclude_genres, args.exclude_statuses,
+    )
 
     try:
-        data = fetch_concerts(available_only=args.available_only)
+        data = fetch_concerts(
+            exclude_genres=args.exclude_genres,
+            exclude_statuses=args.exclude_statuses,
+        )
 
         # --- Déterminer le fichier de sortie ---
         if args.format == "csv":
