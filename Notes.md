@@ -51,10 +51,10 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 			
 
 #### General
-		Trouver un nom au projet
-		Trouver un nom de domaine
-		creer logo
-		Mettre GitHub pour la sauvegarde
+		- [x] Trouver un nom au projet: Infoconcert.lu
+		- [x] Trouver un nom de domaine: libre pour lu
+		- [ ] créer logo
+		- [x] Mettre GitHub pour la sauvegarde
 
 
 ## Python
