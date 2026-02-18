@@ -1,25 +1,8 @@
 {
-  "scraped_at": "2026-02-17T13:46:57.727463+00:00",
+  "scraped_at": "2026-02-18T17:22:00.468705+00:00",
   "source": "https://www.atelier.lu/wp-json/ate/shows",
-  "total": 97,
+  "total": 94,
   "concerts": [
-    {
-      "id": 37677,
-      "artist": "Airbourne",
-      "date_live": "2026-02-17",
-      "doors_time": "7:00 pm",
-      "location": "Rockhal Club",
-      "address": "5 avenue du Rock'n'Roll, 4361 Esch/Alzette",
-      "genres": [
-        "Hard Rock"
-      ],
-      "status": "Sold Out",
-      "url": "https://www.atelier.lu/shows/airbourne-5/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=636517896512&ref=#!/addtickets",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14118/image.685906e03aed1.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
-      "new": ""
-    },
     {
       "id": 40123,
       "artist": "Biffy Clyro",
@@ -34,7 +17,8 @@
       "url": "https://www.atelier.lu/shows/biffy-clyro-5/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=880091442300&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14218/image.6881ec9364aa4.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "56.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -46,13 +30,14 @@
       "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
       "genres": [
         "Pop",
-        "R&amp;B / Soul"
+        "R&B / Soul"
       ],
       "status": "Buy Now",
       "url": "https://www.atelier.lu/shows/jason-derulo-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=190428345210&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14178/image.6825d03fbb0ca.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "78.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -70,7 +55,8 @@
       "url": "https://www.atelier.lu/shows/coeur-de-pirate-4/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=110906565038&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14113/image.67c5956061e12.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "38.90 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -88,7 +74,8 @@
       "url": "https://www.atelier.lu/shows/mika-6/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=652476602464&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14208/image.686b8928ab672.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -106,24 +93,8 @@
       "url": "https://www.atelier.lu/shows/david-byrne/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=889367878755&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14212/image.68750d11b9f8b.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
-      "new": ""
-    },
-    {
-      "id": 41317,
-      "artist": "Moulinex - Atelier Afterwork",
-      "date_live": "2026-02-27",
-      "doors_time": "6:00 pm",
-      "location": "den Atelier",
-      "address": "54 rue de Hollerich, 1740 Luxembourg",
-      "genres": [
-        "Party"
-      ],
-      "status": "Buy Now",
-      "url": "https://www.atelier.lu/shows/moulinex/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=123595280633&ref=#!/addtickets",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14300/image.69665505b83ee.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "85.10 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -140,7 +111,8 @@
       "url": "https://www.atelier.lu/shows/sean-paul-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=110453400492&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14264/image.691c1746a043f.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "78.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -158,7 +130,8 @@
       "url": "https://www.atelier.lu/shows/the-divine-comedy-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=649584834511&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14172/image.6818712e8bcb1.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "26.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -175,7 +148,8 @@
       "url": "https://www.atelier.lu/shows/lalou-brt/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=418906587513&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14164/image.6811ff5c3bda6.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "35.60 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -193,7 +167,8 @@
       "url": "https://www.atelier.lu/shows/portugal-the-man-4/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=357503275315&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14236/image.68d1027bc6a15.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -210,7 +185,8 @@
       "url": "https://www.atelier.lu/shows/al-di-meola-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=164819523075&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14301/image.69665bfe26f2a.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -227,7 +203,8 @@
       "url": "https://www.atelier.lu/shows/al-di-meola-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=843162386604&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14302/image.69666d1a93a6c.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "45.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -244,7 +221,8 @@
       "url": "https://www.atelier.lu/shows/tairo/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=431551837957&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14254/image.68e7d22bf2b79.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "38.90 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -262,7 +240,8 @@
       "url": "https://www.atelier.lu/shows/ozark-henry-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=649311253188&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14234/image.68e8baec8ab30.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "43.30 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -279,7 +258,8 @@
       "url": "https://www.atelier.lu/shows/grandbrothers-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=300082567529&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14262/image.68fb92416f9b6.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "40.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -298,7 +278,8 @@
       "url": "https://www.atelier.lu/shows/grossstadtgefluster/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=165014369941&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14195/image.684ff4b7729c6.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "45.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -315,7 +296,8 @@
       "url": "https://www.atelier.lu/shows/maro/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=942733568341&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14247/image.68ed078dbfe2a.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "36.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -333,7 +315,8 @@
       "url": "https://www.atelier.lu/shows/tom-smith/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=407933224258&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14263/image.6909ca5326f18.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "48.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -351,7 +334,8 @@
       "url": "https://www.atelier.lu/shows/kraftklub-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=394493399429&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14185/image.6838274a201e1.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -369,7 +353,8 @@
       "url": "https://www.atelier.lu/shows/alice-merton/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=696769125769&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14191/image.68419c252c00f.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "35.60 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -387,7 +372,8 @@
       "url": "https://www.atelier.lu/shows/helge-schneider-4/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=161462381396&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14223/image.68ad670add926.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "51.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -404,7 +390,8 @@
       "url": "https://www.atelier.lu/shows/les-negresses-vertes/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=396299946726&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14134/image.68de6875b68bf.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "36.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -418,11 +405,12 @@
         "Indie",
         "Pop"
       ],
-      "status": "Sold Out",
+      "status": "Last tickets",
       "url": "https://www.atelier.lu/shows/ao/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=774084699086&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14269/image.690b08cd68034.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "14.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -440,7 +428,8 @@
       "url": "https://www.atelier.lu/shows/l-e-j/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=436558289503&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14248/image.68e374ac46c68.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "36.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -457,7 +446,8 @@
       "url": "https://www.atelier.lu/shows/hooverphonic-11/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=244149660140&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14177/image.68234b26b8141.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "47.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -474,7 +464,8 @@
       "url": "https://www.atelier.lu/shows/lair-obscur-expedition-33/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=142968227796&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14289/image.69258b4dcf6e1.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "37.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -492,7 +483,8 @@
       "url": "https://www.atelier.lu/shows/charles-dore/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=924630657773&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14249/image.68e4c4aeed2c3.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "29.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -509,7 +501,8 @@
       "url": "https://www.atelier.lu/shows/protoje/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=344191137379&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14210/image.686cdb0464456.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "37.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -526,7 +519,8 @@
       "url": "https://www.atelier.lu/shows/sprints-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=261601125416&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14220/image.689c4e2260a9d.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "31.20 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -544,7 +538,8 @@
       "url": "https://www.atelier.lu/shows/poppy/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=582993166360&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14252/image.68e79a29ea301.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "45.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -561,7 +556,8 @@
       "url": "https://www.atelier.lu/shows/mobb-deep/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=275468857860&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14205/image.685aac872f8bb.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "51.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -579,24 +575,8 @@
       "url": "https://www.atelier.lu/shows/franz-ferdinand-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=719150906915&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14193/image.684fd1e4cef09.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
-      "new": ""
-    },
-    {
-      "id": 40254,
-      "artist": "Dirty Dancing",
-      "date_live": "2026-04-10",
-      "doors_time": "7:00 pm",
-      "location": "Trifolion Echternach",
-      "address": "2 Porte Sainte Willibrord, 6468 Echternach",
-      "genres": [
-        "Film"
-      ],
-      "status": "Buy Now",
-      "url": "https://www.atelier.lu/shows/dirty-dancing-3/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=661394586214&ref=#!/addtickets",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14222/image.68a2f212b9b5a.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -613,7 +593,8 @@
       "url": "https://www.atelier.lu/shows/kiefer-sutherland/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=536578292638&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14308/image.6970f6500a742.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "48.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -630,7 +611,8 @@
       "url": "https://www.atelier.lu/shows/dekker/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=444118652327&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14242/image.68ecad0a45892.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "34.65 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -648,7 +630,8 @@
       "url": "https://www.atelier.lu/shows/benabar/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=166863442955&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14288/image.69246986d4e47.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "48.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -665,7 +648,8 @@
       "url": "https://www.atelier.lu/shows/alvaro-soler-4/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=150878131902&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14238/image.68c3f78fc1b88.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "53.35 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -683,7 +667,8 @@
       "url": "https://www.atelier.lu/shows/jools-holland-and-his-rhythm-blues-orchestra/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=881878515868&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14235/image.68b85f5db51bd.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "45.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -700,7 +685,8 @@
       "url": "https://www.atelier.lu/shows/joe-bonamassa-5/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=256669235755&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14233/image.68b6c5434c208.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "62.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -717,7 +703,8 @@
       "url": "https://www.atelier.lu/shows/michael-patrick-kelly-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=648745186931&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14291/image.6931bc8fe2257.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "58.85 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -727,12 +714,15 @@
       "doors_time": "7:00 pm",
       "location": "den Atelier",
       "address": "54 rue de Hollerich, 1740 Luxembourg",
-      "genres": [],
+      "genres": [
+        "Unknown"
+      ],
       "status": "Buy Now",
       "url": "https://www.atelier.lu/shows/kasalla-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=282788886516&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14188/image.683edac622fb3.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "45.13 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -749,7 +739,8 @@
       "url": "https://www.atelier.lu/shows/sarah-connor/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=852027619294&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14209/image.686ccbe42ff02.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "86.75 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -766,7 +757,8 @@
       "url": "https://www.atelier.lu/shows/sofia-isella/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=798777511708&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14246/image.68de75d7324a4.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "37.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -777,13 +769,14 @@
       "location": "den Atelier",
       "address": "54 rue de Hollerich, 1740 Luxembourg",
       "genres": [
-        "R&amp;B / Soul"
+        "R&B / Soul"
       ],
       "status": "Buy Now",
       "url": "https://www.atelier.lu/shows/jalen-ngonda/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=918758629409&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14312/image.6978e18d75239.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "41.10 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -800,7 +793,8 @@
       "url": "https://www.atelier.lu/shows/blue/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=306581473209&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14224/image.68b974e439dba.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "53.20 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -818,7 +812,8 @@
       "url": "https://www.atelier.lu/shows/dermot-kennedy-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=342772318189&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14282/image.691ee2403b38d.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "57.60 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -835,7 +830,8 @@
       "url": "https://www.atelier.lu/shows/rodrigo-y-gabriela-20th-anniversary-tour/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=194292849978&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14266/image.69316c841c3f8.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "44.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -852,7 +848,8 @@
       "url": "https://www.atelier.lu/shows/beth-hart-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=606327463667&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14028/image.66e1b4efeb0ad.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "58.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -870,7 +867,8 @@
       "url": "https://www.atelier.lu/shows/antony-szmierek/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=103985311213&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14271/image.690b808f61e54.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "29.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -887,7 +885,8 @@
       "url": "https://www.atelier.lu/shows/xzibit-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=381118636449&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14303/image.6967654643fe4.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "49.90 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -904,7 +903,8 @@
       "url": "https://www.atelier.lu/shows/megadeth-4/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=732948680221&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14285/image.6925d1f41a8ed.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "59.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -922,7 +922,8 @@
       "url": "https://www.atelier.lu/shows/ethel-cain/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=254900824797&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14241/image.68d652e679715.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "47.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -940,7 +941,8 @@
       "url": "https://www.atelier.lu/shows/big-thief/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=669470676290&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14221/image.68b6e5ef7d1c4.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "49.02 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -957,7 +959,8 @@
       "url": "https://www.atelier.lu/shows/anthrax-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=438625273970&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14286/image.69241c84de67a.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "55.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -976,7 +979,8 @@
       "url": "https://www.atelier.lu/shows/rise-against-6/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=517894426146&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14304/image.697795cba7ab1.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -993,7 +997,8 @@
       "url": "https://www.atelier.lu/shows/absolut-bartreng-5/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=559861366807&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14292/image.693fccd70c53b.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "34.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1010,7 +1015,8 @@
       "url": "https://www.atelier.lu/shows/chris-isaak-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=718725691029&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14267/image.69038a779049f.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "67.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1028,7 +1034,8 @@
       "url": "https://www.atelier.lu/shows/the-offspring-4/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=719887829431&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14275/image.690cf16d6def1.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "88.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1045,7 +1052,8 @@
       "url": "https://www.atelier.lu/shows/annenmaykantereit-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=509440211866&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14206/image.6861614612d22.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1062,7 +1070,8 @@
       "url": "https://www.atelier.lu/shows/dogstar-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=848753823698&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14274/image.690ced883cf4f.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "56.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1079,7 +1088,8 @@
       "url": "https://www.atelier.lu/shows/moby-6/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=688623820503&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14277/image.690ded17958d0.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "97.20 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1097,7 +1107,8 @@
       "url": "https://www.atelier.lu/shows/gorillaz-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=683509397956&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14276/image.690cf4d671089.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "88.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1114,7 +1125,8 @@
       "url": "https://www.atelier.lu/shows/robbie-williams-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=558870647932&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14284/image.691c0c8ae93f5.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "155.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1127,13 +1139,14 @@
       "genres": [
         "Funk",
         "Jazz",
-        "R&amp;B / Soul"
+        "R&B / Soul"
       ],
       "status": "Buy Now",
       "url": "https://www.atelier.lu/shows/jamiroquai-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=831293508468&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14232/image.68c01017d0677.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "91.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1150,7 +1163,8 @@
       "url": "https://www.atelier.lu/shows/lenny-kravitz/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=157183896345&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14281/image.6912d3e8846bb.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "100.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1168,7 +1182,8 @@
       "url": "https://www.atelier.lu/shows/zaz/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=317246302597&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14272/image.690c7a3c9b45a.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "75.20 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1186,7 +1201,8 @@
       "url": "https://www.atelier.lu/shows/beirut/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=343139417389&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14270/image.691c2a832b97b.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "65.30 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1204,7 +1220,8 @@
       "url": "https://www.atelier.lu/shows/clueso-6/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=565414740362&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14239/image.68c4015a79e5e.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "77.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1221,7 +1238,8 @@
       "url": "https://www.atelier.lu/shows/katy-perry-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=451976640897&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14278/image.6912ceb470de8.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "119.20 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1240,7 +1258,8 @@
       "url": "https://www.atelier.lu/shows/jovanotti-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=819944814248&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14294/image.6936b624ea723.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "80.70 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1257,7 +1276,8 @@
       "url": "https://www.atelier.lu/shows/paul-kalkbrenner-6/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=365419831961&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14314/image.697b78c470353.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "77.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1275,7 +1295,8 @@
       "url": "https://www.atelier.lu/shows/beatsteaks-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=415363392382&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14147/image.6808e32837136.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "48.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1292,7 +1313,8 @@
       "url": "https://www.atelier.lu/shows/lorde/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=552120471647&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14169/image.681c62f843911.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "57.60 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1309,7 +1331,8 @@
       "url": "https://www.atelier.lu/shows/1986zig/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=842615666252&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14258/image.68f1fada082ab.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "55.31 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1327,7 +1350,8 @@
       "url": "https://www.atelier.lu/shows/sportfreunde-stiller/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=839880383710&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14299/image.6942c2847d404.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "52.10 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1345,7 +1369,8 @@
       "url": "https://www.atelier.lu/shows/lake-street-dive/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=203518881501&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14251/image.691c12ac2b10b.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "41.10 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1363,7 +1388,8 @@
       "url": "https://www.atelier.lu/shows/samu-haber-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=591051114978&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14243/image.68ccff010c04a.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "66.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1380,7 +1406,8 @@
       "url": "https://www.atelier.lu/shows/loi/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=255365271490&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/13981/image.679b8ae7e6c36.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "35.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1397,7 +1424,8 @@
       "url": "https://www.atelier.lu/shows/sofia-belabbes/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=161162110754&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14287/image.69246375972f9.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "40.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1414,7 +1442,8 @@
       "url": "https://www.atelier.lu/shows/kneecap/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=301095220204&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14315/image.698dbb3606683.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "56.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1432,7 +1461,8 @@
       "url": "https://www.atelier.lu/shows/heavysaurus-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=184215632137&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14260/image.68f8718261c60.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "33.40 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1449,7 +1479,8 @@
       "url": "https://www.atelier.lu/shows/martin-kohlstedt-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=392756522663&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14265/image.692ff91ee3b76.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "41.10 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1466,7 +1497,8 @@
       "url": "https://www.atelier.lu/shows/tokio-hotel/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=201581611506&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14137/image.67d2f71f9a40f.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "70.20 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1484,7 +1516,8 @@
       "url": "https://www.atelier.lu/shows/joe-jackson-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=677415489308&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14268/image.690b6684c1c1b.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "53.20 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1501,7 +1534,8 @@
       "url": "https://www.atelier.lu/shows/zebrahead/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=400872373196&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14290/image.6925cf75ec38d.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "38.90 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1518,7 +1552,8 @@
       "url": "https://www.atelier.lu/shows/the-witcher/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=989332873672&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14279/image.691c0ff0bb54f.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "59.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1535,7 +1570,8 @@
       "url": "https://www.atelier.lu/shows/beast-in-black/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=524741888159&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14255/image.68ee69a60f87a.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "55.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1552,7 +1588,8 @@
       "url": "https://www.atelier.lu/shows/nes/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=201464627039&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14307/image.69690c01239ae.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "29.00 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1569,7 +1606,8 @@
       "url": "https://www.atelier.lu/shows/conni-das-musical/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=482167713306&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14280/image.69123ac4441b7.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "27.90 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1586,7 +1624,8 @@
       "url": "https://www.atelier.lu/shows/lichterkinder-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=191882324198&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14297/image.6942a444a2d1c.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "46.65 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1604,7 +1643,8 @@
       "url": "https://www.atelier.lu/shows/zimmer90-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=985963681876&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14309/image.6978b7488fd97.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1621,7 +1661,8 @@
       "url": "https://www.atelier.lu/shows/philipp-poisel-3/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=801343121279&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14296/image.6939954602fdd.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "71.55 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1639,7 +1680,8 @@
       "url": "https://www.atelier.lu/shows/das-lumpenpack-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=592202327457&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14237/image.68c0448314921.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "48.80 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1656,7 +1698,8 @@
       "url": "https://www.atelier.lu/shows/jesse-2/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=628722820338&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14295/image.6937e59930267.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "41.10 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1673,7 +1716,8 @@
       "url": "https://www.atelier.lu/shows/ana-godefroy/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=819409373806&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14313/image.6985b4ce0e5fb.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "45.50 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     },
     {
@@ -1690,7 +1734,8 @@
       "url": "https://www.atelier.lu/shows/cedric-salaun/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=139657657268&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14305/image.6968f29a8ce21.320.jpg",
-      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "price": "35.60 EUR",
+      "date_created": "2026-02-18T17:22:00.468705+00:00",
       "new": ""
     }
   ],
@@ -1754,11 +1799,6 @@
       "id": 19,
       "name": "Funk",
       "slug": "funk"
-    },
-    {
-      "id": 31,
-      "name": "Hard Rock",
-      "slug": "hard-rock"
     },
     {
       "id": 9,

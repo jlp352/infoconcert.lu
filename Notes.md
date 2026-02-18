@@ -20,7 +20,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 ## Reste à faire
 
 #### Scrapper
-		- [ ] Recuperer Prix
+		- [x] Recuperer Prix
 		- [ ] Mettre un extrait musical
 		- [x] Filtre par genres et status
 		- [x] Mettre Rockhal par tous comme salle de concert
@@ -62,8 +62,8 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		Ouvrir les ports pour qu'il soit accessible depuis 
 ## Python
 		Scrapper
-			Den Atelier: scrape_atelier_concerts.py	Den Atelier
-			Rockhall: scrape_rockhal_concerts.py	Rockhall
+			Den Atelier: scrape_atelier_concerts.py
+			Rockhall: scrape_rockhal_concerts.py
 			
 			Usage:	
 				# JSON (défaut)	
@@ -99,4 +99,34 @@ python merge.py -f csv    → fusionne CSV/   → OUT/concerts.csv
 ```
 
 
+## CRON
 
+	#Purge Log 
+	@reboot /usr/bin/python3 /home/user/infoconcert.lu/python/purgelog.py
+
+	#Execute All Scrapper + Merge every hour
+	0 * * * * /home/user/run_scripts.sh
+
+	- Ne pas oublier d'appliquer ces permissions
+		chmod +x /home/user/run_scripts.sh
+
+```
+#!/bin/bash
+# Lancer scripts Python pour Scrapper et Merge en séquence 
+
+# Chemin vers le dossier contenant les scripts
+SCRIPTS_PATH="/home/user/infoconcert.lu/python/"
+
+# Chemin vers Python
+PYTHON="/usr/bin/python3"
+
+# Exécuter les scripts dans l'ordre
+
+#Atelier
+$PYTHON "$SCRIPTS_PATH/scrape_atelier_concerts.py" -g "Party; Film" -s "cancelled"
+#Rockhal
+$PYTHON "$SCRIPTS_PATH/scrape_rockhal_concerts.py" -g "Kids/Young Audience" -s "cancelled"
+
+#Merge
+$PYTHON "$SCRIPTS_PATH/merge.py" -f json
+```

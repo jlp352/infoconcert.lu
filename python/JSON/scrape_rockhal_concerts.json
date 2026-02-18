@@ -1,31 +1,14 @@
 {
-  "scraped_at": "2026-02-17T13:38:16.438024+00:00",
+  "scraped_at": "2026-02-18T17:20:54.868129+00:00",
   "source": "https://rockhal.lu/wp-json/rockhal/shows",
-  "total": 121,
+  "total": 119,
   "concerts": [
-    {
-      "id": 87953,
-      "artist": "AIRBOURNE",
-      "date_live": "2026-02-17",
-      "doors_time": "19:00",
-      "location": "Rockhal Club",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Hard Rock"
-      ],
-      "status": "sold-out",
-      "url": "https://rockhal.lu/shows/airbourne/",
-      "buy_link": "https://www.atelier.lu/shows/airbourne-5/",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11688/image.6960cd8b00900.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
-      "new": ""
-    },
     {
       "id": 72141,
       "artist": "BIFFY CLYRO",
       "date_live": "2026-02-19",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
@@ -34,24 +17,8 @@
       "url": "https://rockhal.lu/shows/biffy-clyro-2026/",
       "buy_link": "https://www.atelier.lu/shows/biffy-clyro-5/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11555/image.6881fbd06af68.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
-      "new": ""
-    },
-    {
-      "id": 76248,
-      "artist": "YOA",
-      "date_live": "2026-02-20",
-      "doors_time": "20:00",
-      "location": "Rockhal Club",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "French Pop"
-      ],
-      "status": "cancelled",
-      "url": "https://rockhal.lu/shows/yoa/",
-      "buy_link": "",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11606/image.68cd1371565bd.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "56.50 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -59,16 +26,17 @@
       "artist": "AVATAR",
       "date_live": "2026-02-21",
       "doors_time": "18:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/avatar/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11480",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11480/image.6808a9a698946.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "33.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -76,16 +44,17 @@
       "artist": "DIRK MAASSEN",
       "date_live": "2026-02-22",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Classical"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/dirk-maassen/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11524",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11524/image.685275735bfd6.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "49.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -93,16 +62,17 @@
       "artist": "LA DISPUTE",
       "date_live": "2026-02-23",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/la-dispute/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11562",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11562/image.689c8acd2bec1.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "28.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -110,7 +80,7 @@
       "artist": "JASON DERULO",
       "date_live": "2026-02-24",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -119,7 +89,8 @@
       "url": "https://rockhal.lu/shows/jason-derulo-2026/",
       "buy_link": "https://www.atelier.lu/shows/jason-derulo-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11499/image.68274da54354b.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "78.50 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -127,7 +98,7 @@
       "artist": "MIKA",
       "date_live": "2026-02-25",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -136,7 +107,8 @@
       "url": "https://rockhal.lu/shows/mika-2026/",
       "buy_link": "https://www.atelier.lu/shows/mika-6/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11541/image.68667c9e5ee06.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "59.80 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -144,7 +116,7 @@
       "artist": "DAVID BYRNE",
       "date_live": "2026-02-26",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
@@ -153,7 +125,8 @@
       "url": "https://rockhal.lu/shows/david-byrne/",
       "buy_link": "https://www.atelier.lu/shows/david-byrne/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11546/image.686fc645e8ec1.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "85.10 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -161,16 +134,17 @@
       "artist": "AUPINARD",
       "date_live": "2026-02-26",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/aupinard-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11597",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11597/image.68cc198e97d4d.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "25.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -178,16 +152,17 @@
       "artist": "BETWEEN THE BURIED AND ME",
       "date_live": "2026-02-27",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/between-the-buried-and-me/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11559",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11559/image.6891c22fbdb27.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "31.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -195,7 +170,7 @@
       "artist": "SEAN PAUL",
       "date_live": "2026-02-27",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop",
@@ -205,7 +180,8 @@
       "url": "https://rockhal.lu/shows/sean-paul-2026/",
       "buy_link": "https://www.atelier.lu/shows/sean-paul-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11641/image.691c4788739de.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "78.50 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -221,9 +197,10 @@
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/play-with-colors/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11693",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11693/image.697243643e3ff.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "8.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -239,9 +216,10 @@
       ],
       "status": "sold-out",
       "url": "https://rockhal.lu/shows/play-with-colors-2/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11694",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11694/image.6972437559b6a.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "8.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -249,16 +227,17 @@
       "artist": "D'JAL",
       "date_live": "2026-02-28",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Comedy"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/djal-2025/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11328",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11328/image.67613ed807edf.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "35.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -266,16 +245,17 @@
       "artist": "TONY CARREIRA",
       "date_live": "2026-03-01",
       "doors_time": "15:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/tony-carreira-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11461",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11461/image.67ed4bf92cc45.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "45.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -283,16 +263,17 @@
       "artist": "OMNIUM GATHERUM + Fallujah + In Mourning",
       "date_live": "2026-03-01",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/omnium-gatherum/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11498",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11498/image.6825ff3d81bba.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "27.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -300,16 +281,17 @@
       "artist": "THE CLASSIC ROCK SHOW",
       "date_live": "2026-03-02",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/the-classic-rock-show-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11616",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11616/image.68deaf5a2be59.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "35.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -317,16 +299,17 @@
       "artist": "SUPERBUS",
       "date_live": "2026-03-05",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "French Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/superbus/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11618",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11618/image.68e61d098d3c9.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "34.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -334,16 +317,17 @@
       "artist": "THE WORLD OF HANS ZIMMER",
       "date_live": "2026-03-06",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Entertainment"
       ],
       "status": "waiting-list",
       "url": "https://rockhal.lu/shows/the-world-of-hans-zimmer/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11437",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11437/image.67e421b70a7d5.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "72.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -351,16 +335,17 @@
       "artist": "THE WORLD OF HANS ZIMMER",
       "date_live": "2026-03-07",
       "doors_time": "13:30",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Entertainment"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/the-world-of-hans-zimmer-matinee/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11689",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11689/image.6968ac88c6859.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "72.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -368,16 +353,17 @@
       "artist": "THE WORLD OF HANS ZIMMER",
       "date_live": "2026-03-07",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Entertainment"
       ],
       "status": "waiting-list",
       "url": "https://rockhal.lu/shows/the-world-of-hans-zimmer-2/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11442",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11442/image.67e421c242b6a.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "72.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -385,16 +371,17 @@
       "artist": "JOSH ISLAND",
       "date_live": "2026-03-07",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/josh-island/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11617",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11617/image.68e29e0f79401.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "20.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -402,16 +389,17 @@
       "artist": "HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul",
       "date_live": "2026-03-11",
       "doors_time": "17:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/heaven-shall-burn/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11543",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11543/image.687fa20c435f6.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "63.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -419,16 +407,17 @@
       "artist": "CARPENTER BRUT",
       "date_live": "2026-03-12",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Electro/Clubbing"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/carpenter-brut-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11533",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11533/image.685ab5a4891f7.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "33.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -439,13 +428,14 @@
       "location": "Ciné Utopia",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
-        "-"
+        "Unknown"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/luxembourg-music-video-night-2026/",
       "buy_link": "https://www.luxfilmfest.lu/agenda/luxembourg-music-video-night-3/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11636/image.6911fe6881f28.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -453,7 +443,7 @@
       "artist": "KRAFTKLUB",
       "date_live": "2026-03-13",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
@@ -462,7 +452,8 @@
       "url": "https://rockhal.lu/shows/kraftklub/",
       "buy_link": "https://www.atelier.lu/shows/kraftklub-3/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11505/image.68400ebdef115.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -470,16 +461,17 @@
       "artist": "LEVI.SCT",
       "date_live": "2026-03-15",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Classical"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/levi-sct/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11537",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11537/image.68678777a6f70.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "49.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -487,16 +479,17 @@
       "artist": "CAPITÃO FAUSTO",
       "date_live": "2026-03-17",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/capitao-fausto/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11685",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11685/image.6945883ae320f.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "25.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -504,16 +497,17 @@
       "artist": "DUB INC",
       "date_live": "2026-03-19",
       "doors_time": "20:00",
-      "location": "Rockhal Box",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/dub-inc-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11432",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11432/image.67e2c38b4c822.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "30.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -521,16 +515,17 @@
       "artist": "GOOD NEIGHBOURS",
       "date_live": "2026-03-19",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/the-good-neighbours/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11586",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11586/image.68baa0d87a761.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "29.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -538,16 +533,17 @@
       "artist": "DISIZ",
       "date_live": "2026-03-21",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "French Pop"
       ],
       "status": "waiting-list",
       "url": "https://rockhal.lu/shows/disiz/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11646",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11646/image.691eea6442f19.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "33.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -555,16 +551,17 @@
       "artist": "ANDY TIMMONS",
       "date_live": "2026-03-22",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/andy-timmons/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11477",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11477/image.682dea173db71.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "32.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -572,7 +569,7 @@
       "artist": "CLAIR OBSCUR : EXPEDITION 33",
       "date_live": "2026-03-25",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Entertainment"
@@ -581,7 +578,8 @@
       "url": "https://rockhal.lu/shows/clair-obscur-expedition-33/",
       "buy_link": "https://www.atelier.lu/shows/lair-obscur-expedition-33/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11660/image.692862e025f46.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "37.80 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -596,9 +594,10 @@
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/luk-luc-spada/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11670",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11670/image.6931afa641d81.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "7.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -614,9 +613,10 @@
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/maach-mat/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11695",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11695/image.69724313852e7.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "8.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -632,9 +632,10 @@
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/maach-mat-2/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11696",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11696/image.69724337571a4.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "8.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -642,16 +643,17 @@
       "artist": "DO YOU RAVE?",
       "date_live": "2026-03-28",
       "doors_time": "23:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Electro/Clubbing"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/do-you-rave-march/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11701",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11701/image.697b86993c0ca.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "25.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -659,16 +661,17 @@
       "artist": "PAT PATROUILLE LE SPECTACLE !",
       "date_live": "2026-03-29",
       "doors_time": "13:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Family"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/pat-patrouille-le-spectacle-6/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11482",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11482/image.686793b77316b.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "27.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -676,16 +679,17 @@
       "artist": "PAT PATROUILLE LE SPECTACLE !",
       "date_live": "2026-03-29",
       "doors_time": "16:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Family"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/pat-patrouille-le-spectacle-7/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11483",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11483/image.686793cf1f59b.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "27.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -693,16 +697,17 @@
       "artist": "KREATOR + Carcass + Exodus + Nails",
       "date_live": "2026-03-31",
       "doors_time": "17:00",
-      "location": "Rockhal Box",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/kreator-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11610",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11610/image.68d2e3cd636e8.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "63.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -710,16 +715,17 @@
       "artist": "JOSMAN",
       "date_live": "2026-04-03",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/josman-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11331",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11331/image.691b1fd9781c6.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "36.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -727,7 +733,7 @@
       "artist": "FRANZ FERDINAND",
       "date_live": "2026-04-10",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Alternative",
@@ -737,7 +743,8 @@
       "url": "https://rockhal.lu/shows/franz-ferdinand-2026/",
       "buy_link": "https://www.atelier.lu/shows/franz-ferdinand-3/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11526/image.685005dce2b57.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "56.50 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -745,16 +752,17 @@
       "artist": "ZAMDANE",
       "date_live": "2026-04-11",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/zamdane/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11673",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11673/image.6938010ba284b.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "30.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -762,16 +770,17 @@
       "artist": "LE LAC DES CYGNES",
       "date_live": "2026-04-12",
       "doors_time": "14:30",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Entertainment"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/le-lac-des-cygnes-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11421",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11421/image.67bdd85eb2c82.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "51.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -779,16 +788,17 @@
       "artist": "NEK",
       "date_live": "2026-04-14",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/nek-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11556",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11556/image.68822684be8bf.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "44.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -796,16 +806,17 @@
       "artist": "ISE",
       "date_live": "2026-04-15",
       "doors_time": "20:00",
-      "location": "Rockhal Floor",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/ise/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11149",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11149/image.667bdaa58a30c.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "19.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -813,16 +824,17 @@
       "artist": "MOOFEST",
       "date_live": "2026-04-18",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/moofest-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11652",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11652/image.69779503c2af6.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "20.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -830,16 +842,17 @@
       "artist": "HAEVN",
       "date_live": "2026-04-19",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/haevn-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11587",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11587/image.68d12b3bba732.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "36.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -847,16 +860,17 @@
       "artist": "CARISA DIAS + NAOMI AYÉ",
       "date_live": "2026-04-23",
       "doors_time": "20:00",
-      "location": "Rockhal Floor",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/carisa-dias-naomi-aye/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11668",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11668/image.6931af773f8e7.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "7.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -864,16 +878,17 @@
       "artist": "NEXT DEED",
       "date_live": "2026-04-25",
       "doors_time": "20:00",
-      "location": "Rockhal Floor",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/next-deed/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11674",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11674/image.693999ba1a182.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "10.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -881,7 +896,7 @@
       "artist": "JOE BONAMASSA",
       "date_live": "2026-04-27",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Blues/Jazz"
@@ -890,7 +905,8 @@
       "url": "https://rockhal.lu/shows/joe-bonamassa-2026/",
       "buy_link": "https://www.atelier.lu/shows/joe-bonamassa-5/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11614/image.68dc344c4bffd.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "62.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -898,7 +914,7 @@
       "artist": "MICHAEL PATRICK KELLY",
       "date_live": "2026-04-30",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -907,7 +923,8 @@
       "url": "https://rockhal.lu/shows/michael-patrick-kelly/",
       "buy_link": "https://www.atelier.lu/shows/michael-patrick-kelly-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11666/image.69300d9910361.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "58.85 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -915,16 +932,17 @@
       "artist": "MATTEO MANCUSO",
       "date_live": "2026-05-03",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/matteo-mancuso-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11629",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11629/image.69161263ed904.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "33.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -932,16 +950,17 @@
       "artist": "SCOTT BRADLEE'S POSTMODERN JUKEBOX",
       "date_live": "2026-05-05",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/scott-bradlees-postmodern-jukebox-2/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11634",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11634/image.6914664d41134.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "36.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -949,7 +968,7 @@
       "artist": "SARAH CONNOR",
       "date_live": "2026-05-07",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -958,7 +977,8 @@
       "url": "https://rockhal.lu/shows/sarah-connor/",
       "buy_link": "https://www.atelier.lu/shows/sarah-connor/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11542/image.686ce092e354a.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "86.75 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -966,16 +986,17 @@
       "artist": "TALI",
       "date_live": "2026-05-08",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/tali/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11728",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11728/image.69942fbb58d82.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "21.80 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -983,16 +1004,17 @@
       "artist": "METAL BATTLE",
       "date_live": "2026-05-09",
       "doors_time": "18:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "on-sale-soon",
       "url": "https://rockhal.lu/shows/metal-battle-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11705",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11705/image.6989b6a818f45.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1000,16 +1022,17 @@
       "artist": "PINK FLOYD'S THE WALL",
       "date_live": "2026-05-10",
       "doors_time": "15:15",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/pink-floyds-the-wall/",
-      "buy_link": null,
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11549",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11549/image.6877bcc6896a7.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "54.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1017,16 +1040,17 @@
       "artist": "PINK FLOYD'S DARK SIDE OF THE MOON",
       "date_live": "2026-05-10",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/pink-floyds-dark-side-of-the-moon/",
-      "buy_link": null,
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11550",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11550/image.6877bce963977.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "54.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1034,16 +1058,17 @@
       "artist": "CHRISTOPHER CROSS",
       "date_live": "2026-05-10",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/christopher-cross/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11611",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11611/image.68d6c3fea76b2.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "49.50 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1051,16 +1076,17 @@
       "artist": "MAYA + THALAMUSPROJECT",
       "date_live": "2026-05-13",
       "doors_time": "20:00",
-      "location": "Rockhal Floor",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/maya-thalamusproject/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11669",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11669/image.6931b3d5a0de5.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "7.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1068,16 +1094,17 @@
       "artist": "LIGABUE",
       "date_live": "2026-05-14",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "waiting-list",
       "url": "https://rockhal.lu/shows/ligabue-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11529",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11529/image.685bec7a895f1.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "55.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1085,16 +1112,17 @@
       "artist": "HOUDI",
       "date_live": "2026-05-16",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/houdi/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11687",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11687/image.695d2ac881bbf.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "36.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1102,7 +1130,7 @@
       "artist": "DERMOT KENNEDY",
       "date_live": "2026-05-20",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -1111,7 +1139,8 @@
       "url": "https://rockhal.lu/shows/dermot-kennedy/",
       "buy_link": "https://www.atelier.lu/shows/dermot-kennedy-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11651/image.691ee78eba5be.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "57.60 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1119,16 +1148,17 @@
       "artist": "HIMRA",
       "date_live": "2026-05-22",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/himra/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11681",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11681/image.6967a0581b3a2.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "33.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1136,16 +1166,17 @@
       "artist": "I HATE MODELS + GUESTS (DO YOU RAVE? XXL)",
       "date_live": "2026-05-23",
       "doors_time": "22:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Electro/Clubbing"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/do-you-rave-xxl-edition/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11650",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11650/image.691ef6806b248.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "50.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1153,16 +1184,17 @@
       "artist": "THE GATHERING",
       "date_live": "2026-05-25",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/the-gathering/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11598",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11598/image.68c930672a366.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "42.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1170,7 +1202,7 @@
       "artist": "BETH HART",
       "date_live": "2026-05-26",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Blues/Jazz",
@@ -1180,7 +1212,8 @@
       "url": "https://rockhal.lu/shows/beth-hart/",
       "buy_link": "https://www.atelier.lu/shows/beth-hart-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11276/image.66fd1d86dcc99.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "58.70 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1188,16 +1221,17 @@
       "artist": "PLINI + SUNGAZER",
       "date_live": "2026-05-27",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/plini-sungazer/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11607",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11607/image.68d2ec5a83df5.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "34.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1205,16 +1239,17 @@
       "artist": "PUGGY",
       "date_live": "2026-05-28",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/puggy/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11639",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11639/image.691c5c1c78576.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1222,16 +1257,17 @@
       "artist": "THE ARISTOCRATS",
       "date_live": "2026-05-29",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Blues/Jazz"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/the-aristocrats-rockhal/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11500",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11500/image.682eee79bd057.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1239,16 +1275,17 @@
       "artist": "LUXEMBOURG  DU RIRE",
       "date_live": "2026-05-30",
       "doors_time": "14:45",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Comedy"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/luxembourg-du-rire-4/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11676",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11676/image.69494cb53e3c9.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "55.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1256,16 +1293,17 @@
       "artist": "LUXEMBOURG  DU RIRE",
       "date_live": "2026-05-30",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Comedy"
       ],
       "status": "waiting-list",
       "url": "https://rockhal.lu/shows/luxembourg-du-rire-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11523",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11523/image.6937eca85f5d7.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "55.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1273,16 +1311,17 @@
       "artist": "MARI FROES",
       "date_live": "2026-05-31",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Latino"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/mari-froes/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11719",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11719/image.698af8840f18c.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1290,7 +1329,7 @@
       "artist": "ZUCCHERO",
       "date_live": "2026-06-03",
       "doors_time": "18:30",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
@@ -1299,7 +1338,8 @@
       "url": "https://rockhal.lu/shows/zucchero-2026/",
       "buy_link": "https://www.luxembourg-ticket.lu/de/8/eid,66513/zucchero-world-tour-2026.html",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11369/image.6953dbacae989.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1307,7 +1347,7 @@
       "artist": "DIE TOTEN HOSEN",
       "date_live": "2026-06-07",
       "doors_time": "18:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
@@ -1316,7 +1356,8 @@
       "url": "https://rockhal.lu/shows/die-toten-hosen-8/",
       "buy_link": "https://www.dth.de/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11497/image.6825c648a84dc.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1324,7 +1365,7 @@
       "artist": "DIE TOTEN HOSEN",
       "date_live": "2026-06-08",
       "doors_time": "18:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
@@ -1333,7 +1374,8 @@
       "url": "https://rockhal.lu/shows/die-toten-hosen-7/",
       "buy_link": "https://shop.dietotenhosen.de/index.php/n.213-Tickets/l.1904-08_06_2026-_-Esch-Alzette-_-Rockhal/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11493/image.6821c1465ed5e.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1341,16 +1383,17 @@
       "artist": "GHINZU",
       "date_live": "2026-06-09",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/ghinzu/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11706",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11706/image.6982028077a74.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "42.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1358,7 +1401,7 @@
       "artist": "MEGADETH",
       "date_live": "2026-06-11",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
@@ -1367,7 +1410,8 @@
       "url": "https://rockhal.lu/shows/megadeth/",
       "buy_link": "https://www.atelier.lu/shows/megadeth-4/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11665/image.692ebca1cc7e3.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "59.80 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1375,7 +1419,7 @@
       "artist": "ANNENMAYKANTEREIT",
       "date_live": "2026-07-02",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -1384,7 +1428,8 @@
       "url": "https://rockhal.lu/shows/annenmaykantereit/",
       "buy_link": "https://www.atelier.lu/shows/annenmaykantereit-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11536/image.6862453670a37.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "56.50 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1392,7 +1437,7 @@
       "artist": "A PERFECT CIRCLE",
       "date_live": "2026-07-04",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Alternative",
@@ -1400,9 +1445,10 @@
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/a-perfect-circle/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11622",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11622/image.68fb93e5ea7f8.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "59.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1410,7 +1456,7 @@
       "artist": "EMPIRE OF THE SUN",
       "date_live": "2026-07-05",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Alternative",
@@ -1418,9 +1464,10 @@
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/empire-of-the-sun/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11679",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11679/image.6973791da53b8.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "55.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1428,16 +1475,17 @@
       "artist": "ALICE COOPER",
       "date_live": "2026-07-08",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hard Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/alice-cooper-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11605",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11605/image.68c96cc31d001.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "76.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1445,16 +1493,17 @@
       "artist": "ZZ TOP",
       "date_live": "2026-07-10",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/zz-top/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11644",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11644/image.691dd64cf0a5b.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "75.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1462,16 +1511,17 @@
       "artist": "JAZEEK",
       "date_live": "2026-07-16",
       "doors_time": "18:30",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/jazeek/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11656",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11656/image.692475499c5fe.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "66.95 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1479,7 +1529,7 @@
       "artist": "ERIC JOHNSON",
       "date_live": "2026-07-17",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Blues/Jazz"
@@ -1488,7 +1538,8 @@
       "url": "https://rockhal.lu/shows/eric-johnson/",
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/flow/bundle?product=385809487132&l=en",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11703/image.6980c36e03d35.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1496,16 +1547,17 @@
       "artist": "ERIC JOHNSON",
       "date_live": "2026-07-19",
       "doors_time": "14:30",
-      "location": "Rockhal Floor",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Blues/Jazz"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/eric-johnson-2/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11702",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11702/image.6980c6951cafb.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1513,7 +1565,7 @@
       "artist": "LORDE",
       "date_live": "2026-09-01",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -1522,7 +1574,8 @@
       "url": "https://rockhal.lu/shows/lorde/",
       "buy_link": "https://www.atelier.lu/shows/lorde/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11492/image.6821ab14c3166.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "57.60 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1530,16 +1583,17 @@
       "artist": "QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION",
       "date_live": "2026-09-20",
       "doors_time": "18:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/queen-the-unique-rock-symphonic-celebration-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11465",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11465/image.68be968a0e36f.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "42.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1547,16 +1601,17 @@
       "artist": "FISCHER Z",
       "date_live": "2026-09-25",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "on-sale-soon",
       "url": "https://rockhal.lu/shows/fischer-z/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11730",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11730/image.69942e7adbab5.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "34.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1564,16 +1619,17 @@
       "artist": "LEGENDS OF ROCK TRIBUTE FESTIVAL",
       "date_live": "2026-09-26",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/legends-of-rock-tribute-festival-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11683",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11683/image.695b82c42ca81.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "35.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1581,16 +1637,17 @@
       "artist": "BEHEMOTH + DIMMU BORGIR + DARK FUNERAL",
       "date_live": "2026-10-11",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/behemoth-dimmu-borgir/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11659",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11659/image.692879d26ceaa.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "69.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1598,16 +1655,17 @@
       "artist": "AMON AMARTH + ORBIT CULTURE + SOILWORK",
       "date_live": "2026-10-14",
       "doors_time": "17:30",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/amon-amarth/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11645",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11645/image.69207ca8523e6.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "63.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1622,9 +1680,10 @@
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/philippe-katerine-symphonique/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11699",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11699/image.69710dd802843.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "27.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1632,7 +1691,7 @@
       "artist": "SAMU HABER",
       "date_live": "2026-10-15",
       "doors_time": "19:00",
-      "location": "Rockhal Box",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -1641,7 +1700,8 @@
       "url": "https://rockhal.lu/shows/samu-haber/",
       "buy_link": "https://www.atelier.lu/shows/samu-haber-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11608/image.68cd197694dfe.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "66.40 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1649,16 +1709,17 @@
       "artist": "LARA FABIAN",
       "date_live": "2026-10-18",
       "doors_time": "18:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "French Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/lara-fabian/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11675",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11675/image.6942e26b40765.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "60.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1666,16 +1727,17 @@
       "artist": "THE FRONTM3N",
       "date_live": "2026-10-23",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/the-frontm3n-rockhal-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11615",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11615/image.68dd095b16fad.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "40.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1683,16 +1745,17 @@
       "artist": "GUY2BEZBAR",
       "date_live": "2026-10-24",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/guy2bezbar/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11720",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11720/image.698b663b19f96.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "33.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1700,16 +1763,17 @@
       "artist": "LAURA PAUSINI",
       "date_live": "2026-10-27",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/laura-pausini-2026/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11591",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11591/image.68c17b9d6af0a.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "89.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1717,7 +1781,7 @@
       "artist": "KNEECAP",
       "date_live": "2026-11-06",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Hip-Hop/Rap"
@@ -1726,7 +1790,8 @@
       "url": "https://rockhal.lu/shows/kneecap/",
       "buy_link": "https://www.atelier.lu/shows/kneecap/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11726/image.698eee31088d2.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "31.20 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1734,16 +1799,17 @@
       "artist": "VANESSA PARADIS",
       "date_live": "2026-11-07",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "French Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/vanessa-paradis/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11623",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11623/image.68ee462638af7.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "45.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1751,16 +1817,17 @@
       "artist": "THE SISTERS OF MERCY",
       "date_live": "2026-11-08",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/the-sisters-of-mercy-26/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11704",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11704/image.698227bfe583c.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "42.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1768,7 +1835,7 @@
       "artist": "SKY FULL OF STARS",
       "date_live": "2026-11-13",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -1777,7 +1844,8 @@
       "url": "https://rockhal.lu/shows/sky-full-of-stars-2026/",
       "buy_link": "https://www.luxembourg-ticket.lu/de/8/eid,68636/sky-full-of-stars.html",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11686/image.694931f643a0b.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1785,16 +1853,17 @@
       "artist": "CALEMA",
       "date_live": "2026-11-14",
       "doors_time": "19:00",
-      "location": "Rockhal Box",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Global Music"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/calema/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11557",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11557/image.68888a09e0f7e.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "33.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1802,7 +1871,7 @@
       "artist": "TOKIO HOTEL",
       "date_live": "2026-11-18",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
@@ -1811,7 +1880,8 @@
       "url": "https://rockhal.lu/shows/tokio-hotel/",
       "buy_link": "https://www.atelier.lu/shows/tokio-hotel/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11445/image.67d98a02c40f7.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "70.20 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1819,7 +1889,7 @@
       "artist": "THE WITCHER",
       "date_live": "2026-11-20",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Entertainment"
@@ -1828,7 +1898,8 @@
       "url": "https://rockhal.lu/shows/the-witcher/",
       "buy_link": "https://www.atelier.lu/shows/the-witcher/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11640/image.691c3c4ce591a.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "59.80 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1836,16 +1907,17 @@
       "artist": "MENTISSA",
       "date_live": "2026-11-20",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "French Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/mentissa/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11502",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11502/image.6931785ed8929.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "35.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1853,7 +1925,7 @@
       "artist": "BEAST IN BLACK",
       "date_live": "2026-11-21",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
@@ -1862,7 +1934,8 @@
       "url": "https://rockhal.lu/shows/beast-in-black/",
       "buy_link": "https://www.atelier.lu/shows/beast-in-black/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11624/image.68ef72efbd03f.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "55.80 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1870,16 +1943,17 @@
       "artist": "MAMMOTH",
       "date_live": "2026-12-01",
       "doors_time": "19:30",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/mammoth/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11697",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11697/image.6977716aec8ff.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "34.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1887,16 +1961,17 @@
       "artist": "TYPH BARROW",
       "date_live": "2026-12-05",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/typh-barrow-4/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11677",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11677/image.69679de2153ad.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "35.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1904,16 +1979,17 @@
       "artist": "TRIBUTE TO THE BEATLES",
       "date_live": "2026-12-11",
       "doors_time": "20:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/tribute-to-the-beatles/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11664",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11664/image.692d66e93ae0d.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "28.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1921,16 +1997,17 @@
       "artist": "DORO",
       "date_live": "2026-12-16",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Metal"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/doro/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11638",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11638/image.69724429f0e43.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "46.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1938,16 +2015,17 @@
       "artist": "SUZANE",
       "date_live": "2027-01-15",
       "doors_time": "19:00",
-      "location": "Rockhal Box",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "French Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/suzane/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11691",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11691/image.696a746cf3021.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1955,16 +2033,17 @@
       "artist": "CASSE-NOISETTE",
       "date_live": "2027-02-07",
       "doors_time": "14:30",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Entertainment"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/casse-noisette-13/",
-      "buy_link": null,
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11684",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11684/image.694412530cc38.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "53.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1972,16 +2051,17 @@
       "artist": "ONE VISION OF QUEEN",
       "date_live": "2027-02-14",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Rock"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/one-vision-of-queen-2027/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11628",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11628/image.696a18fe89097.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "53.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -1989,16 +2069,17 @@
       "artist": "IBRAHIM MAALOUF",
       "date_live": "2027-03-30",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Blues/Jazz"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/ibrahim-maalouf/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11658",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11658/image.692d9bce86305.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "55.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -2006,16 +2087,17 @@
       "artist": "EROS RAMAZZOTTI",
       "date_live": "2027-04-01",
       "doors_time": "18:30",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/eros-ramazzotti-2027/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11724",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11724/image.698dd980d848f.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "92.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -2023,7 +2105,7 @@
       "artist": "ANA GODEFROY",
       "date_live": "2027-04-23",
       "doors_time": "19:00",
-      "location": "Rockhal Club",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Comedy"
@@ -2032,7 +2114,8 @@
       "url": "https://rockhal.lu/shows/ana-godefroy/",
       "buy_link": "https://www.atelier.lu/shows/ana-godefroy/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11721/image.6985ce1985e3f.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "45.50 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -2040,7 +2123,7 @@
       "artist": "RALF SCHMITZ",
       "date_live": "2027-12-02",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "Comedy"
@@ -2049,7 +2132,8 @@
       "url": "https://rockhal.lu/shows/ralf-schmitz-2027/",
       "buy_link": "https://tidd.ly/44WGTOy",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11672/image.6937e5ac86d93.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     },
     {
@@ -2057,16 +2141,17 @@
       "artist": "GRAND CORPS MALADE",
       "date_live": "2027-12-09",
       "doors_time": "19:00",
-      "location": "Rockhal Main Hall",
+      "location": "Rockhal",
       "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
       "genres": [
         "French Pop"
       ],
       "status": "buy-now",
       "url": "https://rockhal.lu/shows/grand-corps-malade-2027/",
-      "buy_link": "",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11671",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11671/image.6932a2673fe45.jpg",
-      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "price": "50.00 EUR",
+      "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": ""
     }
   ],

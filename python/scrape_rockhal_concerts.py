@@ -56,7 +56,7 @@ ROCKHAL_ADDRESS = "5, avenue du Rock, L-4361 Esch-sur-Alzette"
 CSV_COLUMNS = [
     "id", "artist", "date_live", "doors_time", "location",
     "address", "genres", "status", "new", "url", "buy_link", "image",
-    "date_created",
+    "price", "date_created",
 ]
 
 logger = logging.getLogger("rockhal_scraper")
@@ -182,17 +182,41 @@ class _PracticalInfoParser(HTMLParser):
 
 
 def _parse_practical_info(html: str) -> dict:
-    """Renvoie {doors_time} depuis le HTML d'une page de show Rockhal."""
+    """Renvoie {doors_time, buy_url} depuis le HTML d'une page de show Rockhal."""
     parser = _PracticalInfoParser()
     parser.feed(html)
     parser.close()
 
-    result = {"doors_time": None}
+    result = {"doors_time": None, "buy_url": None}
     for label, value in parser.items.items():
         label_clean = re.sub(r"\s+", " ", label).strip().rstrip(":")
         if label_clean.lower() == "doors":
             result["doors_time"] = value.strip()
             break
+
+    # Extraire l'URL du widget Ticketmatic Rockhal :
+    # Méthode 1 : lien avec class="buy_tickets" (concerts avec vente ouverte)
+    m = re.search(r'buy_tickets[^>]+href="([^"]+)"', html)
+    if m:
+        result["buy_url"] = unescape(m.group(1))
+    else:
+        # Méthode 2 : offers.url dans le JSON-LD (concerts en prévente ou à venir)
+        for script_content in re.findall(
+            r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+            html, re.DOTALL,
+        ):
+            try:
+                ld = json.loads(script_content)
+                offers = ld.get("offers", {})
+                if isinstance(offers, list):
+                    offers = offers[0] if offers else {}
+                offer_url = offers.get("url", "")
+                if "ticketmatic" in offer_url and "addtickets" in offer_url:
+                    result["buy_url"] = offer_url
+                    break
+            except (json.JSONDecodeError, ValueError, TypeError):
+                continue
+
     return result
 
 
@@ -200,17 +224,113 @@ def _parse_practical_info(html: str) -> dict:
 # Récupération des détails par page de concert
 # ---------------------------------------------------------------------------
 
-def _fetch_show_details(url: str) -> dict:
+def _fetch_rockhal_price(buy_url: str) -> str:
+    """Récupère le prix minimum depuis le widget Ticketmatic Rockhal."""
+    try:
+        html = _request(buy_url, retries=2)
+        m = re.search(r'constant\("TM",\s*(\{.+?\})\s*\);', html, re.DOTALL)
+        if not m:
+            return "Price Unavailable"
+        tm = json.loads(m.group(1))
+        events = tm.get("configs", {}).get("addtickets", {}).get("events", [])
+        prices = []
+        for ev in events:
+            for cont in ev.get("prices", {}).get("contingents", []):
+                for pt in cont.get("pricetypes", []):
+                    p = pt.get("price")
+                    if p is None or p <= 0:
+                        continue
+                    # Ignorer les tarifs conditionnels (ex : Kulturpass)
+                    cond_types = [
+                        c["type"]
+                        for sc in pt.get("saleschannels", [])
+                        for c in (sc.get("conditions") or [])
+                    ]
+                    if not any(t in ("orderticketlimit", "ticketlimit") for t in cond_types):
+                        prices.append(p)
+        if not prices:
+            return "Price Unavailable"
+        return f"{min(prices):.2f} EUR"
+    except Exception as exc:
+        logger.debug("Prix Rockhal non récupéré pour %s : %s", buy_url, exc)
+        return "Price Unavailable"
+
+
+def _fetch_atelier_price(atelier_url: str) -> str:
+    """
+    Récupère le prix depuis une page atelier.lu via le widget Ticketmatic.
+    Utilisé en fallback quand le JSON-LD Rockhal ne contient pas de prix.
+    """
+    try:
+        html = _request(atelier_url, retries=2)
+        # Trouver le lien buy principal via data-label="cta_buy_now"
+        m = re.search(r'data-label="cta_buy_now[^"]*"[^>]*href="([^"]+)"', html)
+        if not m:
+            m = re.search(r'href="([^"]+)"[^>]*data-label="cta_buy_now', html)
+        if not m:
+            return "Price Unavailable"
+        buy_link = m.group(1)
+        # Appeler le widget Ticketmatic Atelier (même logique que scrape_atelier_concerts.py)
+        url = re.sub(r"/flow/[^?#]+", "/flow/web", buy_link).split("#")[0]
+        url += "&l=en" if "?" in url else "?l=en"
+        html2 = _request(url, retries=2)
+        m2 = re.search(r'constant\("TM",\s*(\{.+?\})\s*\);', html2, re.DOTALL)
+        if not m2:
+            return "Price Unavailable"
+        tm = json.loads(m2.group(1))
+        events = tm.get("configs", {}).get("addtickets", {}).get("events", [])
+        prices = []
+        for ev in events:
+            for cont in ev.get("prices", {}).get("contingents", []):
+                for pt in cont.get("pricetypes", []):
+                    p = pt.get("price")
+                    if p is None or p <= 0:
+                        continue
+                    # Ignorer les tarifs conditionnels (ex : Kulturpass)
+                    cond_types = [
+                        c["type"]
+                        for sc in pt.get("saleschannels", [])
+                        for c in (sc.get("conditions") or [])
+                    ]
+                    if not any(t in ("orderticketlimit", "ticketlimit") for t in cond_types):
+                        prices.append(p)
+        if not prices:
+            return "Price Unavailable"
+        return f"{min(prices):.2f} EUR"
+    except Exception as exc:
+        logger.debug("Prix Atelier non récupéré pour %s : %s", atelier_url, exc)
+        return "Price Unavailable"
+
+
+def _fetch_show_details(url: str, custom_event_link: str | None = None) -> dict:
     """Scrape une page de concert individuelle (2 tentatives pour les détails)."""
     try:
         html = _request(url, retries=2)
         info = _parse_practical_info(html)
         if info["doors_time"] is None:
             logger.warning("Structure inattendue (show-detail__practical absent ou Doors manquant) : %s", url)
+
+        buy_url = info.pop("buy_url")  # retirer buy_url du dict final
+
+        if buy_url and "ticketmatic" in buy_url:
+            # Prix via le widget Ticketmatic Rockhal (vrai prix minimum sans presale fee)
+            info["price"] = _fetch_rockhal_price(buy_url)
+            # Si le widget Rockhal ne renvoie rien, tenter l'Atelier en fallback
+            if info["price"] == "Price Unavailable" and custom_event_link and "atelier.lu" in custom_event_link:
+                info["price"] = _fetch_atelier_price(custom_event_link)
+        elif custom_event_link and "atelier.lu" in custom_event_link:
+            # Concert co-organisé : utiliser le custom_event_link de l'API (édition à jour)
+            info["price"] = _fetch_atelier_price(custom_event_link)
+        elif buy_url and "atelier.lu" in buy_url:
+            # Fallback : buy_url de la page pointe vers l'Atelier (si pas de custom_event_link)
+            info["price"] = _fetch_atelier_price(buy_url)
+        else:
+            info["price"] = "Price Unavailable"
+
         return info
     except Exception as exc:
         logger.warning("Impossible de scraper %s : %s", url, exc)
-        return {"doors_time": None}
+        return {"doors_time": None, "price": "Price Unavailable"}
 
 
 # ---------------------------------------------------------------------------
@@ -303,12 +423,11 @@ def fetch_concerts(
     logger.info("Scraping de %d pages pour horaires…", len(shows))
 
     show_details: dict[str, dict] = {}
-    urls = {s["permalink"]: s["permalink"] for s in shows if s.get("permalink")}
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {
-            executor.submit(_fetch_show_details, url): url
-            for url in urls.values()
+            executor.submit(_fetch_show_details, s["permalink"], s.get("custom_event_link")): s["permalink"]
+            for s in shows if s.get("permalink")
         }
         done_count = 0
         fail_count = 0
@@ -357,6 +476,7 @@ def fetch_concerts(
                 )
             ),
             "image": show.get("image_url"),
+            "price": details.get("price", "Price Unavailable"),
             "date_created": run_timestamp,
         }
         concerts.append(concert)
