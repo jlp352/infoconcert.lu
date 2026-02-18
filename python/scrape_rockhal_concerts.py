@@ -348,7 +348,14 @@ def fetch_concerts(
             "genres": [unescape(g.get("name") or "Unknown") if (g.get("name") or "").strip() != "-" else "Unknown" for g in show.get("genres", [])] or ["Unknown"],
             "status": show.get("status_string"),
             "url": permalink,
-            "buy_link": show.get("custom_event_link"),
+            "buy_link": (
+                show.get("custom_event_link")
+                or (
+                    f"https://apps.ticketmatic.com/widgets/rockhal/addtickets?event={show['tm_id']}"
+                    if show.get("tm_id")
+                    else None
+                )
+            ),
             "image": show.get("image_url"),
             "date_created": run_timestamp,
         }

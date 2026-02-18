@@ -23,7 +23,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [ ] Recuperer Prix
 		- [ ] Mettre un extrait musical
 		- [x] Filtre par genres et status
-		- [ ] Mettre Rockhal par tous comme salle de concert
+		- [x] Mettre Rockhal par tous comme salle de concert
 		- [ ] Bug Rockhal pour certain buy link n'apparait pas
 		
 		
@@ -35,6 +35,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- Filtre pour afficher selon criteres
 			- [ ] type de musique
 			- [ ] type de salle
+				Voir Image ExempleFiltre.png
 		Filtre pour afficher les nouveaux concerts depuis last visite
 		Revoir design de la tuile concert
 			en cliquant sur la tuile allez sur la page concert
