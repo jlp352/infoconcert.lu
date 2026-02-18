@@ -1,0 +1,18 @@
+2026-02-17 14:34:07,137 [INFO] ============================================================
+2026-02-17 14:34:07,137 [INFO] Démarrage du scraper (format=csv, available_only=False)
+2026-02-17 14:34:07,137 [INFO] Récupération de la liste des concerts…
+2026-02-17 14:34:19,599 [INFO] 121 concerts trouvés via l'API
+2026-02-17 14:34:19,599 [INFO] Scraping de 121 pages pour horaires…
+2026-02-17 14:34:23,885 [INFO] Scraping terminé : 121/121 pages OK
+2026-02-17 14:34:23,892 [INFO] Premier scan, pas de comparaison possible
+2026-02-17 14:34:23,895 [INFO] ✅ 121 concerts sauvegardés → C:\Users\jlp\Documents\Dev\concerts\python\CSV\scrape_rockhal_concerts.csv
+2026-02-17 14:34:23,895 [INFO] Fin du scraper
+2026-02-17 14:38:16,437 [INFO] ============================================================
+2026-02-17 14:38:16,437 [INFO] Démarrage du scraper (format=json, available_only=False)
+2026-02-17 14:38:16,438 [INFO] Récupération de la liste des concerts…
+2026-02-17 14:38:29,760 [INFO] 121 concerts trouvés via l'API
+2026-02-17 14:38:29,760 [INFO] Scraping de 121 pages pour horaires…
+2026-02-17 14:38:36,269 [INFO] Scraping terminé : 121/121 pages OK
+2026-02-17 14:38:36,276 [INFO] Premier scan, pas de comparaison possible
+2026-02-17 14:38:36,278 [INFO] ✅ 121 concerts sauvegardés → C:\Users\jlp\Documents\Dev\concerts\python\JSON\scrape_rockhal_concerts.json
+2026-02-17 14:38:36,278 [INFO] Fin du scraper

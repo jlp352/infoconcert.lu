@@ -1,0 +1,3522 @@
+{
+  "scraped_at": "2026-02-17T18:35:21.971731",
+  "sources": [
+    "https://www.atelier.lu/wp-json/ate/shows",
+    "https://rockhal.lu/wp-json/rockhal/shows"
+  ],
+  "total": 190,
+  "duplicates_removed": 28,
+  "concerts": [
+    {
+      "id": 37677,
+      "artist": "Airbourne",
+      "date_live": "2026-02-17",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal Club",
+      "address": "5 avenue du Rock'n'Roll, 4361 Esch/Alzette",
+      "genres": [
+        "Hard Rock"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/airbourne-5/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=636517896512&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14118/image.685906e03aed1.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40123,
+      "artist": "Biffy Clyro",
+      "date_live": "2026-02-19",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/biffy-clyro-5/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=880091442300&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14218/image.6881ec9364aa4.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 76248,
+      "artist": "YOA",
+      "date_live": "2026-02-20",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "cancelled",
+      "url": "https://rockhal.lu/shows/yoa/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11606/image.68cd1371565bd.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 63410,
+      "artist": "AVATAR",
+      "date_live": "2026-02-21",
+      "doors_time": "18:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/avatar/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11480/image.6808a9a698946.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 68666,
+      "artist": "DIRK MAASSEN",
+      "date_live": "2026-02-22",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Classical"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/dirk-maassen/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11524/image.685275735bfd6.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 73261,
+      "artist": "LA DISPUTE",
+      "date_live": "2026-02-23",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/la-dispute/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11562/image.689c8acd2bec1.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39145,
+      "artist": "Jason Derulo",
+      "date_live": "2026-02-24",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Pop",
+        "R&amp;B / Soul"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/jason-derulo-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=190428345210&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14178/image.6825d03fbb0ca.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 37510,
+      "artist": "Coeur de Pirate",
+      "date_live": "2026-02-25",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "French",
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/coeur-de-pirate-4/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=110906565038&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14113/image.67c5956061e12.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 39904,
+      "artist": "MIKA",
+      "date_live": "2026-02-25",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "French",
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/mika-6/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=652476602464&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14208/image.686b8928ab672.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 76084,
+      "artist": "AUPINARD",
+      "date_live": "2026-02-26",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/aupinard-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11597/image.68cc198e97d4d.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40011,
+      "artist": "David Byrne",
+      "date_live": "2026-02-26",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "New Wave",
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/david-byrne/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=889367878755&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14212/image.68750d11b9f8b.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 73263,
+      "artist": "BETWEEN THE BURIED AND ME",
+      "date_live": "2026-02-27",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/between-the-buried-and-me/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11559/image.6891c22fbdb27.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41317,
+      "artist": "Moulinex - Atelier Afterwork",
+      "date_live": "2026-02-27",
+      "doors_time": "6:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Party"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/moulinex/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=123595280633&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14300/image.69665505b83ee.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40790,
+      "artist": "Sean Paul",
+      "date_live": "2026-02-27",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Reggae / Dancehall"
+      ],
+      "status": "Last tickets",
+      "url": "https://www.atelier.lu/shows/sean-paul-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=110453400492&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14264/image.691c1746a043f.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 43271,
+      "artist": "D'JAL",
+      "date_live": "2026-02-28",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/djal-2025/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11328/image.67613ed807edf.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 38554,
+      "artist": "Lalou",
+      "date_live": "2026-02-28",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Last tickets",
+      "url": "https://www.atelier.lu/shows/lalou-brt/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=418906587513&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14164/image.6811ff5c3bda6.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 89114,
+      "artist": "PLAY WITH COLORS",
+      "date_live": "2026-02-28",
+      "doors_time": "10:15",
+      "location": "Rocklab - The Lab",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Family",
+        "Kids/Young Audience"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/play-with-colors/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11693/image.697243643e3ff.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 38927,
+      "artist": "The Divine Comedy",
+      "date_live": "2026-02-28",
+      "doors_time": "6:30 pm",
+      "location": "Philharmonie Luxembourg",
+      "address": "1 place de l’Europe, 1499 Luxembourg",
+      "genres": [
+        "Pop",
+        "Singer-Songwriter"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/the-divine-comedy-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=649584834511&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14172/image.6818712e8bcb1.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41321,
+      "artist": "Al Di Meola",
+      "date_live": "2026-03-01",
+      "doors_time": "7:00 pm",
+      "location": "Opderschmelz",
+      "address": "1a Rue du Centenaire, 3475 Dudelange",
+      "genres": [
+        "Jazz"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/al-di-meola-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=164819523075&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14301/image.69665bfe26f2a.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 65685,
+      "artist": "OMNIUM GATHERUM + Fallujah + In Mourning",
+      "date_live": "2026-03-01",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/omnium-gatherum/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11498/image.6825ff3d81bba.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40345,
+      "artist": "PORTUGAL. THE MAN",
+      "date_live": "2026-03-01",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Alternative Rock",
+        "Indie"
+      ],
+      "status": "Postponed",
+      "url": "https://www.atelier.lu/shows/portugal-the-man-4/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=357503275315&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14236/image.68d1027bc6a15.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 60230,
+      "artist": "TONY CARREIRA",
+      "date_live": "2026-03-01",
+      "doors_time": "15:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/tony-carreira-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11461/image.67ed4bf92cc45.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41328,
+      "artist": "Al Di Meola",
+      "date_live": "2026-03-02",
+      "doors_time": "7:00 pm",
+      "location": "Opderschmelz",
+      "address": "1a Rue du Centenaire, 3475 Dudelange",
+      "genres": [
+        "Jazz"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/al-di-meola-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=843162386604&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14302/image.69666d1a93a6c.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 78848,
+      "artist": "THE CLASSIC ROCK SHOW",
+      "date_live": "2026-03-02",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/the-classic-rock-show-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11616/image.68deaf5a2be59.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40622,
+      "artist": "Taïro",
+      "date_live": "2026-03-04",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Reggae / Dancehall"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/tairo/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=431551837957&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14254/image.68e7d22bf2b79.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40331,
+      "artist": "OZARK HENRY",
+      "date_live": "2026-03-05",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Jazz",
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/ozark-henry-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=649311253188&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14234/image.68e8baec8ab30.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 79241,
+      "artist": "SUPERBUS",
+      "date_live": "2026-03-05",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/superbus/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11618/image.68e61d098d3c9.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40765,
+      "artist": "Grandbrothers",
+      "date_live": "2026-03-06",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Electronica"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/grandbrothers-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=300082567529&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14262/image.68fb92416f9b6.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 57012,
+      "artist": "THE WORLD OF HANS ZIMMER",
+      "date_live": "2026-03-06",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Entertainment"
+      ],
+      "status": "waiting-list",
+      "url": "https://rockhal.lu/shows/the-world-of-hans-zimmer/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11437/image.67e421b70a7d5.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39513,
+      "artist": "Grossstadtgeflüster",
+      "date_live": "2026-03-07",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Electro",
+        "Pop",
+        "Punk"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/grossstadtgefluster/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=165014369941&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14195/image.684ff4b7729c6.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 79090,
+      "artist": "JOSH ISLAND",
+      "date_live": "2026-03-07",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/josh-island/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11617/image.68e29e0f79401.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 88297,
+      "artist": "THE WORLD OF HANS ZIMMER",
+      "date_live": "2026-03-07",
+      "doors_time": "13:30",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Entertainment"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/the-world-of-hans-zimmer-matinee/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11689/image.6968ac88c6859.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40542,
+      "artist": "Maro",
+      "date_live": "2026-03-08",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/maro/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=942733568341&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14247/image.68ed078dbfe2a.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 72035,
+      "artist": "HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul",
+      "date_live": "2026-03-11",
+      "doors_time": "17:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/heaven-shall-burn/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11543/image.687fa20c435f6.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 69746,
+      "artist": "CARPENTER BRUT",
+      "date_live": "2026-03-12",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Electro/Clubbing"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/carpenter-brut-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11533/image.685ab5a4891f7.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40785,
+      "artist": "Tom Smith",
+      "date_live": "2026-03-12",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Alternative Rock",
+        "Singer-Songwriter"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/tom-smith/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=407933224258&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14263/image.6909ca5326f18.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 39269,
+      "artist": "Kraftklub",
+      "date_live": "2026-03-13",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Indie",
+        "Rock"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/kraftklub-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=394493399429&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14185/image.6838274a201e1.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 82729,
+      "artist": "LUXEMBOURG MUSIC VIDEO NIGHT 2026",
+      "date_live": "2026-03-13",
+      "doors_time": "18:30",
+      "location": "Ciné Utopia",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "-"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/luxembourg-music-video-night-2026/",
+      "buy_link": "https://www.luxfilmfest.lu/agenda/luxembourg-music-video-night-3/",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11636/image.6911fe6881f28.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39386,
+      "artist": "Alice Merton",
+      "date_live": "2026-03-14",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Pop",
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/alice-merton/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=696769125769&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14191/image.68419c252c00f.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40282,
+      "artist": "Helge Schneider",
+      "date_live": "2026-03-15",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Jazz",
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/helge-schneider-4/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=161462381396&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14223/image.68ad670add926.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 70442,
+      "artist": "LEVI.SCT",
+      "date_live": "2026-03-15",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Classical"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/levi-sct/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11537/image.68678777a6f70.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 86637,
+      "artist": "CAPITÃO FAUSTO",
+      "date_live": "2026-03-17",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/capitao-fausto/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11685/image.6945883ae320f.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 58774,
+      "artist": "DUB INC",
+      "date_live": "2026-03-19",
+      "doors_time": "20:00",
+      "location": "Rockhal Box",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/dub-inc-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11432/image.67e2c38b4c822.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 74884,
+      "artist": "GOOD NEIGHBOURS",
+      "date_live": "2026-03-19",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/the-good-neighbours/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11586/image.68baa0d87a761.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 37922,
+      "artist": "Les Négresses Vertes",
+      "date_live": "2026-03-19",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Alternative Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/les-negresses-vertes/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=396299946726&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14134/image.68de6875b68bf.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40861,
+      "artist": "Ão",
+      "date_live": "2026-03-19",
+      "doors_time": "8:30 pm",
+      "location": "De Gudde Wëllen",
+      "address": "17 Rue du St Esprit, 1475 Luxembourg",
+      "genres": [
+        "Indie",
+        "Pop"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/ao/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=774084699086&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14269/image.690b08cd68034.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40546,
+      "artist": "L.E.J",
+      "date_live": "2026-03-20",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "French",
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/l-e-j/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=436558289503&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14248/image.68e374ac46c68.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 83578,
+      "artist": "DISIZ",
+      "date_live": "2026-03-21",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "waiting-list",
+      "url": "https://rockhal.lu/shows/disiz/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11646/image.691eea6442f19.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39099,
+      "artist": "Hooverphonic",
+      "date_live": "2026-03-21",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Trip Hop"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/hooverphonic-11/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=244149660140&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14177/image.68234b26b8141.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 66419,
+      "artist": "ANDY TIMMONS",
+      "date_live": "2026-03-22",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/andy-timmons/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11477/image.682dea173db71.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41031,
+      "artist": "CLAIR OBSCUR : EXPEDITION 33",
+      "date_live": "2026-03-25",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Immersive concert + orchestral performance"
+      ],
+      "status": "Waiting list",
+      "url": "https://www.atelier.lu/shows/lair-obscur-expedition-33/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=142968227796&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14289/image.69258b4dcf6e1.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 85182,
+      "artist": "LUK. + LUC SPADA",
+      "date_live": "2026-03-25",
+      "doors_time": "20:00",
+      "location": "De Gudde Wëllen",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/luk-luc-spada/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11670/image.6931afa641d81.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40575,
+      "artist": "Charles Doré",
+      "date_live": "2026-03-27",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Chanson Française",
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/charles-dore/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=924630657773&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14249/image.68e4c4aeed2c3.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 89907,
+      "artist": "DO YOU RAVE?",
+      "date_live": "2026-03-28",
+      "doors_time": "23:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Electro/Clubbing"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/do-you-rave-march/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11701/image.697b86993c0ca.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 89118,
+      "artist": "MAACH MAT!",
+      "date_live": "2026-03-28",
+      "doors_time": "10:15",
+      "location": "Rocklab - The Lab",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Family",
+        "Kids/Young Audience"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/maach-mat/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11695/image.69724313852e7.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39981,
+      "artist": "Protoje",
+      "date_live": "2026-03-28",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Reggae / Dancehall"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/protoje/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=344191137379&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14210/image.686cdb0464456.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 63906,
+      "artist": "PAT PATROUILLE LE SPECTACLE !",
+      "date_live": "2026-03-29",
+      "doors_time": "13:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Family"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/pat-patrouille-le-spectacle-6/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11482/image.686793b77316b.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40247,
+      "artist": "Sprints",
+      "date_live": "2026-03-29",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Punk"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/sprints-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=261601125416&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14220/image.689c4e2260a9d.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 77756,
+      "artist": "KREATOR + Carcass + Exodus + Nails",
+      "date_live": "2026-03-31",
+      "doors_time": "17:00",
+      "location": "Rockhal Box",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/kreator-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11610/image.68d2e3cd636e8.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40615,
+      "artist": "Poppy",
+      "date_live": "2026-04-01",
+      "doors_time": "6:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/poppy/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=582993166360&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14252/image.68e79a29ea301.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 56726,
+      "artist": "JOSMAN",
+      "date_live": "2026-04-03",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/josman-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11331/image.691b1fd9781c6.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39666,
+      "artist": "Mobb Deep",
+      "date_live": "2026-04-08",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Hip Hop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/mobb-deep/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=275468857860&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14205/image.685aac872f8bb.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40254,
+      "artist": "Dirty Dancing",
+      "date_live": "2026-04-10",
+      "doors_time": "7:00 pm",
+      "location": "Trifolion Echternach",
+      "address": "2 Porte Sainte Willibrord, 6468 Echternach",
+      "genres": [
+        "Film"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/dirty-dancing-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=661394586214&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14222/image.68a2f212b9b5a.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 39439,
+      "artist": "Franz Ferdinand",
+      "date_live": "2026-04-10",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Alternative Rock",
+        "Indie"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/franz-ferdinand-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=719150906915&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14193/image.684fd1e4cef09.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 85585,
+      "artist": "ZAMDANE",
+      "date_live": "2026-04-11",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/zamdane/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11673/image.6938010ba284b.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 54408,
+      "artist": "LE LAC DES CYGNES",
+      "date_live": "2026-04-12",
+      "doors_time": "14:30",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Entertainment"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/le-lac-des-cygnes-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11421/image.67bdd85eb2c82.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41398,
+      "artist": "Kiefer Sutherland",
+      "date_live": "2026-04-14",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Folk"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/kiefer-sutherland/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=536578292638&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14308/image.6970f6500a742.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 72144,
+      "artist": "NEK",
+      "date_live": "2026-04-14",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/nek-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11556/image.68822684be8bf.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 36611,
+      "artist": "ISE",
+      "date_live": "2026-04-15",
+      "doors_time": "20:00",
+      "location": "Rockhal Floor",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/ise/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11149/image.667bdaa58a30c.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 85068,
+      "artist": "MOOFEST",
+      "date_live": "2026-04-18",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/moofest-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11652/image.69779503c2af6.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 74917,
+      "artist": "HAEVN",
+      "date_live": "2026-04-19",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/haevn-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11587/image.68d12b3bba732.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 85184,
+      "artist": "CARISA DIAS + NAOMI AYÉ",
+      "date_live": "2026-04-23",
+      "doors_time": "20:00",
+      "location": "Rockhal Floor",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/carisa-dias-naomi-aye/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11668/image.6931af773f8e7.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40456,
+      "artist": "Dekker",
+      "date_live": "2026-04-23",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/dekker/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=444118652327&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14242/image.68ecad0a45892.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41027,
+      "artist": "Bénabar",
+      "date_live": "2026-04-24",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Chanson Française",
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/benabar/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=166863442955&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14288/image.69246986d4e47.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 85819,
+      "artist": "NEXT DEED",
+      "date_live": "2026-04-25",
+      "doors_time": "20:00",
+      "location": "Rockhal Floor",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/next-deed/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11674/image.693999ba1a182.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40390,
+      "artist": "Alvaro Soler",
+      "date_live": "2026-04-26",
+      "doors_time": "6:30 pm",
+      "location": "GRIDX",
+      "address": "4-6 Rue des Trois Cantons, 3980 Wickrange-sur-Mess",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/alvaro-soler-4/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=150878131902&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14238/image.68c3f78fc1b88.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40339,
+      "artist": "Jools Holland and his Rhythm & Blues Orchestra",
+      "date_live": "2026-04-26",
+      "doors_time": "7:00 pm",
+      "location": "Opderschmelz",
+      "address": "1a Rue du Centenaire, 3475 Dudelange",
+      "genres": [
+        "Blues Rock",
+        "Jazz"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/jools-holland-and-his-rhythm-blues-orchestra/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=881878515868&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14235/image.68b85f5db51bd.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40322,
+      "artist": "Joe Bonamassa",
+      "date_live": "2026-04-27",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Blues Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/joe-bonamassa-5/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=256669235755&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14233/image.68b6c5434c208.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41062,
+      "artist": "Michael Patrick Kelly",
+      "date_live": "2026-04-30",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/michael-patrick-kelly-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=648745186931&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14291/image.6931bc8fe2257.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 82814,
+      "artist": "MATTEO MANCUSO",
+      "date_live": "2026-05-03",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/matteo-mancuso-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11629/image.69161263ed904.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39352,
+      "artist": "Kasalla",
+      "date_live": "2026-05-05",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/kasalla-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=282788886516&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14188/image.683edac622fb3.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 82731,
+      "artist": "SCOTT BRADLEE'S POSTMODERN JUKEBOX",
+      "date_live": "2026-05-05",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/scott-bradlees-postmodern-jukebox-2/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11634/image.6914664d41134.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 39931,
+      "artist": "Sarah Connor",
+      "date_live": "2026-05-07",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/sarah-connor/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=852027619294&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14209/image.686ccbe42ff02.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40540,
+      "artist": "Sofia Isella",
+      "date_live": "2026-05-08",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/sofia-isella/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=798777511708&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14246/image.68de75d7324a4.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 91673,
+      "artist": "TALI",
+      "date_live": "2026-05-08",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/tali/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11728/image.69942fbb58d82.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 91151,
+      "artist": "METAL BATTLE",
+      "date_live": "2026-05-09",
+      "doors_time": "18:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "on-sale-soon",
+      "url": "https://rockhal.lu/shows/metal-battle-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11705/image.6989b6a818f45.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 77928,
+      "artist": "CHRISTOPHER CROSS",
+      "date_live": "2026-05-10",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/christopher-cross/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11611/image.68d6c3fea76b2.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 71678,
+      "artist": "PINK FLOYD'S DARK SIDE OF THE MOON",
+      "date_live": "2026-05-10",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/pink-floyds-dark-side-of-the-moon/",
+      "buy_link": null,
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11550/image.6877bce963977.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 71676,
+      "artist": "PINK FLOYD'S THE WALL",
+      "date_live": "2026-05-10",
+      "doors_time": "15:15",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/pink-floyds-the-wall/",
+      "buy_link": null,
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11549/image.6877bcc6896a7.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41441,
+      "artist": "Jalen Ngonda",
+      "date_live": "2026-05-12",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "R&amp;B / Soul"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/jalen-ngonda/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=918758629409&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14312/image.6978e18d75239.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 85185,
+      "artist": "MAYA + THALAMUSPROJECT",
+      "date_live": "2026-05-13",
+      "doors_time": "20:00",
+      "location": "Rockhal Floor",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/maya-thalamusproject/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11669/image.6931b3d5a0de5.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 69822,
+      "artist": "LIGABUE",
+      "date_live": "2026-05-14",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "waiting-list",
+      "url": "https://rockhal.lu/shows/ligabue-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11529/image.685bec7a895f1.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40302,
+      "artist": "Blue",
+      "date_live": "2026-05-15",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/blue/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=306581473209&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14224/image.68b974e439dba.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 87831,
+      "artist": "HOUDI",
+      "date_live": "2026-05-16",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/houdi/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11687/image.695d2ac881bbf.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40956,
+      "artist": "Dermot Kennedy",
+      "date_live": "2026-05-20",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Pop",
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/dermot-kennedy-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=342772318189&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14282/image.691ee2403b38d.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41085,
+      "artist": "Rodrigo y Gabriela - 20th Anniversary Tour",
+      "date_live": "2026-05-20",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/rodrigo-y-gabriela-20th-anniversary-tour/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=194292849978&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14266/image.69316c841c3f8.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 88423,
+      "artist": "HIMRA",
+      "date_live": "2026-05-22",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/himra/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11681/image.6967a0581b3a2.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 83581,
+      "artist": "I HATE MODELS + GUESTS (DO YOU RAVE? XXL)",
+      "date_live": "2026-05-23",
+      "doors_time": "22:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Electro/Clubbing"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/do-you-rave-xxl-edition/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11650/image.691ef6806b248.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 76205,
+      "artist": "THE GATHERING",
+      "date_live": "2026-05-25",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/the-gathering/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11598/image.68c930672a366.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 35597,
+      "artist": "Beth Hart",
+      "date_live": "2026-05-26",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Blues Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/beth-hart-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=606327463667&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14028/image.66e1b4efeb0ad.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 76547,
+      "artist": "PLINI + SUNGAZER",
+      "date_live": "2026-05-27",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/plini-sungazer/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11607/image.68d2ec5a83df5.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40873,
+      "artist": "Antony Szmierek",
+      "date_live": "2026-05-28",
+      "doors_time": "8:00 pm",
+      "location": "Rotondes",
+      "address": "Place des Rotondes, 2448 Luxembourg",
+      "genres": [
+        "Electronica",
+        "Spoken Word"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/antony-szmierek/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=103985311213&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14271/image.690b808f61e54.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 82971,
+      "artist": "PUGGY",
+      "date_live": "2026-05-28",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/puggy/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11639/image.691c5c1c78576.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 66158,
+      "artist": "THE ARISTOCRATS",
+      "date_live": "2026-05-29",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Blues/Jazz"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/the-aristocrats-rockhal/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11500/image.682eee79bd057.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 86345,
+      "artist": "LUXEMBOURG  DU RIRE",
+      "date_live": "2026-05-30",
+      "doors_time": "14:45",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/luxembourg-du-rire-4/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11676/image.69494cb53e3c9.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 91231,
+      "artist": "MARI FROES",
+      "date_live": "2026-05-31",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Latino"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/mari-froes/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11719/image.698af8840f18c.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41342,
+      "artist": "XZIBIT (US) feat. Furnace Band",
+      "date_live": "2026-06-02",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Hip Hop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/xzibit-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=381118636449&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14303/image.6967654643fe4.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 46229,
+      "artist": "ZUCCHERO",
+      "date_live": "2026-06-03",
+      "doors_time": "18:30",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/zucchero-2026/",
+      "buy_link": "https://www.luxembourg-ticket.lu/de/8/eid,66513/zucchero-world-tour-2026.html",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11369/image.6953dbacae989.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 65675,
+      "artist": "DIE TOTEN HOSEN",
+      "date_live": "2026-06-07",
+      "doors_time": "18:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/die-toten-hosen-8/",
+      "buy_link": "https://www.dth.de/",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11497/image.6825c648a84dc.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 65164,
+      "artist": "DIE TOTEN HOSEN",
+      "date_live": "2026-06-08",
+      "doors_time": "18:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/die-toten-hosen-7/",
+      "buy_link": "https://shop.dietotenhosen.de/index.php/n.213-Tickets/l.1904-08_06_2026-_-Esch-Alzette-_-Rockhal/",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11493/image.6821c1465ed5e.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 90319,
+      "artist": "GHINZU",
+      "date_live": "2026-06-09",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/ghinzu/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11706/image.6982028077a74.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41013,
+      "artist": "MEGADETH",
+      "date_live": "2026-06-11",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/megadeth-4/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=732948680221&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14285/image.6925d1f41a8ed.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40477,
+      "artist": "Ethel Cain",
+      "date_live": "2026-06-13",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Alternative Rock",
+        "Indie"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/ethel-cain/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=254900824797&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14241/image.68d652e679715.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40251,
+      "artist": "Big Thief",
+      "date_live": "2026-06-18",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Folk",
+        "Indie"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/big-thief/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=669470676290&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14221/image.68b6e5ef7d1c4.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41016,
+      "artist": "ANTHRAX",
+      "date_live": "2026-06-21",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Metal"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/anthrax-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=438625273970&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14286/image.69241c84de67a.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41347,
+      "artist": "Rise Against",
+      "date_live": "2026-06-23",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Metal",
+        "Punk",
+        "Rock"
+      ],
+      "status": "Waiting list",
+      "url": "https://www.atelier.lu/shows/rise-against-6/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=517894426146&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14304/image.697795cba7ab1.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41106,
+      "artist": "Absolut Bartreng",
+      "date_live": "2026-06-27",
+      "doors_time": "3:00 pm",
+      "location": "Shared Space Bartreng",
+      "address": "Shared Space, 8058 Bertrange",
+      "genres": [
+        "Festival"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/absolut-bartreng-5/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=559861366807&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14292/image.693fccd70c53b.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40820,
+      "artist": "Chris Isaak",
+      "date_live": "2026-06-30",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Blues Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/chris-isaak-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=718725691029&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14267/image.69038a779049f.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40894,
+      "artist": "The Offspring",
+      "date_live": "2026-07-01",
+      "doors_time": "5:30 pm",
+      "location": "Luxexpo Open-Air",
+      "address": "10 Circuit de La Foire Internationale, 1347 Luxembourg",
+      "genres": [
+        "Punk",
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/the-offspring-4/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=719887829431&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14275/image.690cf16d6def1.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 39776,
+      "artist": "AnnenMayKantereit",
+      "date_live": "2026-07-02",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/annenmaykantereit-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=509440211866&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14206/image.6861614612d22.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40891,
+      "artist": "Dogstar",
+      "date_live": "2026-07-02",
+      "doors_time": "7:00 pm",
+      "location": "Festival de Wiltz",
+      "address": "1 rue du Chateau, 9516 Wiltz",
+      "genres": [
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/dogstar-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=848753823698&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14274/image.690ced883cf4f.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40903,
+      "artist": "Moby",
+      "date_live": "2026-07-03",
+      "doors_time": "7:00 pm",
+      "location": "neimënster",
+      "address": "28 rue Münster, 2160 Luxembourg",
+      "genres": [
+        "Electronica"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/moby-6/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=688623820503&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14277/image.690ded17958d0.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 80688,
+      "artist": "A PERFECT CIRCLE",
+      "date_live": "2026-07-04",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Alternative",
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/a-perfect-circle/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11622/image.68fb93e5ea7f8.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 89018,
+      "artist": "EMPIRE OF THE SUN",
+      "date_live": "2026-07-05",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Alternative",
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/empire-of-the-sun/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11679/image.6973791da53b8.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40897,
+      "artist": "Gorillaz",
+      "date_live": "2026-07-05",
+      "doors_time": "5:30 pm",
+      "location": "Luxexpo Open-Air",
+      "address": "10 Circuit de La Foire Internationale, 1347 Luxembourg",
+      "genres": [
+        "Alternative Rock",
+        "Hip Hop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/gorillaz-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=683509397956&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14276/image.690cf4d671089.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40969,
+      "artist": "Robbie Williams",
+      "date_live": "2026-07-06",
+      "doors_time": "5:30 pm",
+      "location": "Luxexpo Open-Air",
+      "address": "10 Circuit de La Foire Internationale, 1347 Luxembourg",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/robbie-williams-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=558870647932&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14284/image.691c0c8ae93f5.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40324,
+      "artist": "Jamiroquai",
+      "date_live": "2026-07-07",
+      "doors_time": "5:30 pm",
+      "location": "Luxexpo Open-Air",
+      "address": "10 Circuit de La Foire Internationale, 1347 Luxembourg",
+      "genres": [
+        "Funk",
+        "Jazz",
+        "R&amp;B / Soul"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/jamiroquai-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=831293508468&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14232/image.68c01017d0677.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 76250,
+      "artist": "ALICE COOPER",
+      "date_live": "2026-07-08",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hard Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/alice-cooper-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11605/image.68c96cc31d001.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40926,
+      "artist": "Lenny Kravitz",
+      "date_live": "2026-07-08",
+      "doors_time": "5:30 pm",
+      "location": "Luxexpo Open-Air",
+      "address": "10 Circuit de La Foire Internationale, 1347 Luxembourg",
+      "genres": [
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/lenny-kravitz/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=157183896345&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14281/image.6912d3e8846bb.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40900,
+      "artist": "Zaz",
+      "date_live": "2026-07-08",
+      "doors_time": "7:00 pm",
+      "location": "neimënster",
+      "address": "28 rue Münster, 2160 Luxembourg",
+      "genres": [
+        "Chanson Française",
+        "Jazz"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/zaz/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=317246302597&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14272/image.690c7a3c9b45a.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40870,
+      "artist": "Beirut",
+      "date_live": "2026-07-09",
+      "doors_time": "7:00 pm",
+      "location": "neimënster",
+      "address": "28 rue Münster, 2160 Luxembourg",
+      "genres": [
+        "Folk",
+        "Indie"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/beirut/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=343139417389&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14270/image.691c2a832b97b.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 83459,
+      "artist": "ZZ TOP",
+      "date_live": "2026-07-10",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/zz-top/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11644/image.691dd64cf0a5b.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40394,
+      "artist": "Clueso",
+      "date_live": "2026-07-12",
+      "doors_time": "7:00 pm",
+      "location": "neimënster",
+      "address": "28 rue Münster, 2160 Luxembourg",
+      "genres": [
+        "Pop",
+        "Singer-Songwriter"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/clueso-6/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=565414740362&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14239/image.68c4015a79e5e.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40921,
+      "artist": "Katy Perry",
+      "date_live": "2026-07-14",
+      "doors_time": "5:30 pm",
+      "location": "Luxexpo Open-Air",
+      "address": "10 Circuit de La Foire Internationale, 1347 Luxembourg",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/katy-perry-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=451976640897&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14278/image.6912ceb470de8.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41111,
+      "artist": "Jovanotti",
+      "date_live": "2026-07-15",
+      "doors_time": "7:00 pm",
+      "location": "neimënster",
+      "address": "28 rue Münster, 2160 Luxembourg",
+      "genres": [
+        "Hip Hop",
+        "Pop",
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/jovanotti-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=819944814248&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14294/image.6936b624ea723.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 84051,
+      "artist": "JAZEEK",
+      "date_live": "2026-07-16",
+      "doors_time": "18:30",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/jazeek/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11656/image.692475499c5fe.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 89968,
+      "artist": "ERIC JOHNSON",
+      "date_live": "2026-07-17",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Blues/Jazz"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/eric-johnson/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/flow/bundle?product=385809487132&l=en",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11703/image.6980c36e03d35.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41475,
+      "artist": "Paul Kalkbrenner",
+      "date_live": "2026-07-17",
+      "doors_time": "5:30 pm",
+      "location": "Luxexpo Open-Air",
+      "address": "10 Circuit de La Foire Internationale, 1347 Luxembourg",
+      "genres": [
+        "Electronica"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/paul-kalkbrenner-6/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=365419831961&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14314/image.697b78c470353.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 89970,
+      "artist": "ERIC JOHNSON",
+      "date_live": "2026-07-19",
+      "doors_time": "14:30",
+      "location": "Rockhal Floor",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Blues/Jazz"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/eric-johnson-2/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11702/image.6980c6951cafb.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 38157,
+      "artist": "Beatsteaks",
+      "date_live": "2026-08-13",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Alternative Rock",
+        "Punk"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/beatsteaks-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=415363392382&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14147/image.6808e32837136.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 38905,
+      "artist": "Lorde",
+      "date_live": "2026-09-01",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/lorde/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=552120471647&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14169/image.681c62f843911.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 61675,
+      "artist": "QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION",
+      "date_live": "2026-09-20",
+      "doors_time": "18:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/queen-the-unique-rock-symphonic-celebration-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11465/image.68be968a0e36f.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40699,
+      "artist": "1986zig",
+      "date_live": "2026-09-23",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/1986zig/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=842615666252&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14258/image.68f1fada082ab.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 92018,
+      "artist": "FISCHER Z",
+      "date_live": "2026-09-25",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "on-sale-soon",
+      "url": "https://rockhal.lu/shows/fischer-z/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11730/image.69942e7adbab5.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 86437,
+      "artist": "LEGENDS OF ROCK TRIBUTE FESTIVAL",
+      "date_live": "2026-09-26",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/legends-of-rock-tribute-festival-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11683/image.695b82c42ca81.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41142,
+      "artist": "Sportfreunde Stiller",
+      "date_live": "2026-10-07",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "status": "Waiting list",
+      "url": "https://www.atelier.lu/shows/sportfreunde-stiller/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=839880383710&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14299/image.6942c2847d404.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 84445,
+      "artist": "BEHEMOTH + DIMMU BORGIR + DARK FUNERAL",
+      "date_live": "2026-10-11",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/behemoth-dimmu-borgir/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11659/image.692879d26ceaa.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 83489,
+      "artist": "AMON AMARTH + ORBIT CULTURE + SOILWORK",
+      "date_live": "2026-10-14",
+      "doors_time": "17:30",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/amon-amarth/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11645/image.69207ca8523e6.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40603,
+      "artist": "Lake Street Dive",
+      "date_live": "2026-10-14",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Alternative Rock",
+        "Indie"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/lake-street-dive/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=203518881501&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14251/image.691c12ac2b10b.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 89003,
+      "artist": "PHILIPPE KATERINE SYMPHONIQUE",
+      "date_live": "2026-10-14",
+      "doors_time": "18:30",
+      "location": "Philharmonie",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/philippe-katerine-symphonique/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11699/image.69710dd802843.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40466,
+      "artist": "Samu Haber",
+      "date_live": "2026-10-15",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/samu-haber-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=591051114978&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14243/image.68ccff010c04a.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 86230,
+      "artist": "LARA FABIAN",
+      "date_live": "2026-10-18",
+      "doors_time": "18:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/lara-fabian/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11675/image.6942e26b40765.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 33570,
+      "artist": "LOI",
+      "date_live": "2026-10-18",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Singer"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/loi/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=255365271490&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/13981/image.679b8ae7e6c36.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41020,
+      "artist": "Sofia Belabbes",
+      "date_live": "2026-10-23",
+      "doors_time": "7:00 pm",
+      "location": "Opderschmelz",
+      "address": "1a Rue du Centenaire, 3475 Dudelange",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/sofia-belabbes/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=161162110754&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14287/image.69246375972f9.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 78745,
+      "artist": "THE FRONTM3N",
+      "date_live": "2026-10-23",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/the-frontm3n-rockhal-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11615/image.68dd095b16fad.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 90771,
+      "artist": "GUY2BEZBAR",
+      "date_live": "2026-10-24",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/guy2bezbar/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11720/image.698b663b19f96.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 75331,
+      "artist": "LAURA PAUSINI",
+      "date_live": "2026-10-27",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/laura-pausini-2026/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11591/image.68c17b9d6af0a.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41603,
+      "artist": "Kneecap",
+      "date_live": "2026-11-06",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Hip Hop"
+      ],
+      "status": "On sale soon",
+      "url": "https://www.atelier.lu/shows/kneecap/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=301095220204&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14315/image.698dbb3606683.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 79961,
+      "artist": "VANESSA PARADIS",
+      "date_live": "2026-11-07",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/vanessa-paradis/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11623/image.68ee462638af7.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 90440,
+      "artist": "THE SISTERS OF MERCY",
+      "date_live": "2026-11-08",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/the-sisters-of-mercy-26/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11704/image.698227bfe583c.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 86912,
+      "artist": "SKY FULL OF STARS",
+      "date_live": "2026-11-13",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/sky-full-of-stars-2026/",
+      "buy_link": "https://www.luxembourg-ticket.lu/de/8/eid,68636/sky-full-of-stars.html",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11686/image.694931f643a0b.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 72512,
+      "artist": "CALEMA",
+      "date_live": "2026-11-14",
+      "doors_time": "19:00",
+      "location": "Rockhal Box",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Global Music"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/calema/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11557/image.68888a09e0f7e.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40742,
+      "artist": "Heavysaurus",
+      "date_live": "2026-11-15",
+      "doors_time": "1:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Family Entertainment",
+        "Metal"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/heavysaurus-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=184215632137&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14260/image.68f8718261c60.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40807,
+      "artist": "Martin Kohlstedt",
+      "date_live": "2026-11-17",
+      "doors_time": "7:00 pm",
+      "location": "Trifolion Echternach",
+      "address": "2 Porte Sainte Willibrord, 6468 Echternach",
+      "genres": [
+        "Electronica"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/martin-kohlstedt-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=392756522663&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14265/image.692ff91ee3b76.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40866,
+      "artist": "Joe Jackson + Band",
+      "date_live": "2026-11-18",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/joe-jackson-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=677415489308&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14268/image.690b6684c1c1b.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 37983,
+      "artist": "Tokio Hotel",
+      "date_live": "2026-11-18",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Alternative Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/tokio-hotel/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=201581611506&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14137/image.67d2f71f9a40f.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41042,
+      "artist": "Zebrahead",
+      "date_live": "2026-11-19",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/zebrahead/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=400872373196&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14290/image.6925cf75ec38d.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 85158,
+      "artist": "MENTISSA",
+      "date_live": "2026-11-20",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/mentissa/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11502/image.6931785ed8929.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40919,
+      "artist": "The Witcher",
+      "date_live": "2026-11-20",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal",
+      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
+      "genres": [
+        "Immersive concert + orchestral performance"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/the-witcher/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=989332873672&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14279/image.691c0ff0bb54f.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40668,
+      "artist": "Beast in Black",
+      "date_live": "2026-11-21",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal Club",
+      "address": "5 avenue du Rock'n'Roll, 4361 Esch/Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/beast-in-black/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=524741888159&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14255/image.68ee69a60f87a.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41363,
+      "artist": "NeS",
+      "date_live": "2026-11-21",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Hip Hop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/nes/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=201464627039&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14307/image.69690c01239ae.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 40923,
+      "artist": "Conni - Das Musical!",
+      "date_live": "2026-11-22",
+      "doors_time": "2:00 pm",
+      "location": "Opderschmelz",
+      "address": "1a Rue du Centenaire, 3475 Dudelange",
+      "genres": [
+        "Family Entertainment"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/conni-das-musical/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=482167713306&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14280/image.69123ac4441b7.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41194,
+      "artist": "Lichterkinder",
+      "date_live": "2026-11-29",
+      "doors_time": "2:00 pm",
+      "location": "GRIDX",
+      "address": "4-6 Rue des Trois Cantons, 3980 Wickrange-sur-Mess",
+      "genres": [
+        "Family Entertainment"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/lichterkinder-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=191882324198&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14297/image.6942a444a2d1c.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41433,
+      "artist": "Zimmer90",
+      "date_live": "2026-11-30",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Indie",
+        "Pop"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/zimmer90-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=985963681876&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14309/image.6978b7488fd97.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 88975,
+      "artist": "MAMMOTH",
+      "date_live": "2026-12-01",
+      "doors_time": "19:30",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/mammoth/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11697/image.6977716aec8ff.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 88299,
+      "artist": "TYPH BARROW",
+      "date_live": "2026-12-05",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/typh-barrow-4/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11677/image.69679de2153ad.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 84854,
+      "artist": "TRIBUTE TO THE BEATLES",
+      "date_live": "2026-12-11",
+      "doors_time": "20:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/tribute-to-the-beatles/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11664/image.692d66e93ae0d.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41125,
+      "artist": "Philipp Poisel",
+      "date_live": "2026-12-15",
+      "doors_time": "7:00 pm",
+      "location": "Trifolion Echternach",
+      "address": "2 Porte Sainte Willibrord, 6468 Echternach",
+      "genres": [
+        "Singer-Songwriter"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/philipp-poisel-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=801343121279&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14296/image.6939954602fdd.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 88977,
+      "artist": "DORO",
+      "date_live": "2026-12-16",
+      "doors_time": "19:00",
+      "location": "Rockhal Club",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/doro/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11638/image.69724429f0e43.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 88547,
+      "artist": "SUZANE",
+      "date_live": "2027-01-15",
+      "doors_time": "19:00",
+      "location": "Rockhal Box",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/suzane/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11691/image.696a746cf3021.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 86461,
+      "artist": "CASSE-NOISETTE",
+      "date_live": "2027-02-07",
+      "doors_time": "14:30",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Entertainment"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/casse-noisette-13/",
+      "buy_link": null,
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11684/image.694412530cc38.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 81751,
+      "artist": "ONE VISION OF QUEEN",
+      "date_live": "2027-02-14",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Rock"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/one-vision-of-queen-2027/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11628/image.696a18fe89097.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 40363,
+      "artist": "Das Lumpenpack",
+      "date_live": "2027-02-27",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/das-lumpenpack-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=592202327457&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14237/image.68c0448314921.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 84416,
+      "artist": "IBRAHIM MAALOUF",
+      "date_live": "2027-03-30",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Blues/Jazz"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/ibrahim-maalouf/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11658/image.692d9bce86305.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 91259,
+      "artist": "EROS RAMAZZOTTI",
+      "date_live": "2027-04-01",
+      "doors_time": "18:30",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/eros-ramazzotti-2027/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11724/image.698dd980d848f.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 41115,
+      "artist": "Jessé",
+      "date_live": "2027-04-17",
+      "doors_time": "7:00 pm",
+      "location": "Opderschmelz",
+      "address": "1a Rue du Centenaire, 3475 Dudelange",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/jesse-2/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=628722820338&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14295/image.6937e59930267.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41473,
+      "artist": "Ana Godefroy",
+      "date_live": "2027-04-23",
+      "doors_time": "7:00 pm",
+      "location": "Rockhal Club",
+      "address": "5 avenue du Rock'n'Roll, 4361 Esch/Alzette",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/ana-godefroy/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=819409373806&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14313/image.6985b4ce0e5fb.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 41354,
+      "artist": "Cédric Salaun",
+      "date_live": "2027-04-29",
+      "doors_time": "6:30 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/cedric-salaun/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=139657657268&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14305/image.6968f29a8ce21.320.jpg",
+      "date_created": "2026-02-17T13:46:57.727463+00:00",
+      "new": ""
+    },
+    {
+      "id": 85587,
+      "artist": "RALF SCHMITZ",
+      "date_live": "2027-12-02",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/ralf-schmitz-2027/",
+      "buy_link": "https://tidd.ly/44WGTOy",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11672/image.6937e5ac86d93.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    },
+    {
+      "id": 85253,
+      "artist": "GRAND CORPS MALADE",
+      "date_live": "2027-12-09",
+      "doors_time": "19:00",
+      "location": "Rockhal Main Hall",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "French Pop"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/grand-corps-malade-2027/",
+      "buy_link": "",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11671/image.6932a2673fe45.jpg",
+      "date_created": "2026-02-17T13:38:16.438024+00:00",
+      "new": ""
+    }
+  ],
+  "genres": [
+    {
+      "term_id": 3839,
+      "name": "Afro",
+      "slug": "afro",
+      "term_group": 0,
+      "term_taxonomy_id": 3839,
+      "taxonomy": "roc_show_genre",
+      "description": "",
+      "parent": 0,
+      "count": 35,
+      "filter": "raw"
+    },
+    {
+      "id": 35,
+      "name": "Alternative Rock",
+      "slug": "alternative-rock"
+    },
+    {
+      "id": 57,
+      "name": "Blues Rock",
+      "slug": "blues-rock"
+    },
+    {
+      "id": 70,
+      "name": "Chanson Française",
+      "slug": "chanson-francaise"
+    },
+    {
+      "id": 59,
+      "name": "Comedy",
+      "slug": "comedy"
+    },
+    {
+      "id": 14,
+      "name": "Electro",
+      "slug": "electro"
+    },
+    {
+      "id": 54,
+      "name": "Electronica",
+      "slug": "electronica"
+    },
+    {
+      "id": 25,
+      "name": "Family Entertainment",
+      "slug": "family-entertainment"
+    },
+    {
+      "id": 21,
+      "name": "Festival",
+      "slug": "festival"
+    },
+    {
+      "id": 60,
+      "name": "Film",
+      "slug": "film"
+    },
+    {
+      "id": 49,
+      "name": "Folk",
+      "slug": "folk"
+    },
+    {
+      "id": 98,
+      "name": "French",
+      "slug": "french"
+    },
+    {
+      "id": 19,
+      "name": "Funk",
+      "slug": "funk"
+    },
+    {
+      "id": 31,
+      "name": "Hard Rock",
+      "slug": "hard-rock"
+    },
+    {
+      "id": 9,
+      "name": "Hip Hop",
+      "slug": "hip-hop"
+    },
+    {
+      "id": 96,
+      "name": "Immersive concert + orchestral performance",
+      "slug": "immersive-concert-orchestral-performance"
+    },
+    {
+      "id": 7,
+      "name": "Indie",
+      "slug": "indie"
+    },
+    {
+      "id": 17,
+      "name": "Jazz",
+      "slug": "jazz"
+    },
+    {
+      "id": 18,
+      "name": "Metal",
+      "slug": "metal"
+    },
+    {
+      "id": 22,
+      "name": "New Wave",
+      "slug": "new-wave"
+    },
+    {
+      "id": 10,
+      "name": "Party",
+      "slug": "party"
+    },
+    {
+      "id": 6,
+      "name": "Pop",
+      "slug": "pop"
+    },
+    {
+      "id": 16,
+      "name": "Punk",
+      "slug": "punk"
+    },
+    {
+      "id": 15,
+      "name": "R&amp;B / Soul",
+      "slug": "rb-soul"
+    },
+    {
+      "id": 20,
+      "name": "Reggae / Dancehall",
+      "slug": "reggae-dancehall"
+    },
+    {
+      "id": 8,
+      "name": "Rock",
+      "slug": "rock"
+    },
+    {
+      "id": 53,
+      "name": "Singer",
+      "slug": "singer"
+    },
+    {
+      "id": 12,
+      "name": "Singer-Songwriter",
+      "slug": "singer-songwriter"
+    },
+    {
+      "id": 64,
+      "name": "Spoken Word",
+      "slug": "spoken-word"
+    },
+    {
+      "id": 55,
+      "name": "Trip Hop",
+      "slug": "trip-hop"
+    }
+  ],
+  "venues": [
+    {
+      "id": 30154,
+      "name": "De Gudde Wëllen",
+      "slug": "de-gudde-wellen"
+    },
+    {
+      "id": 11680,
+      "name": "Festival de Wiltz",
+      "slug": "festival-de-wiltz"
+    },
+    {
+      "id": 40375,
+      "name": "GRIDX",
+      "slug": "gridx"
+    },
+    {
+      "id": 11954,
+      "name": "Luxexpo Open-Air",
+      "slug": "luxexpo-open-air"
+    },
+    {
+      "id": 39471,
+      "name": "Opderschmelz",
+      "slug": "opderschmelz-2"
+    },
+    {
+      "id": 11670,
+      "name": "Opderschmelz",
+      "slug": "opderschmelz"
+    },
+    {
+      "id": 11698,
+      "name": "Philharmonie de Luxembourg",
+      "slug": "philharmonie-de-luxembourg"
+    },
+    {
+      "id": 11682,
+      "name": "Rockhal",
+      "slug": "rockhal"
+    },
+    {
+      "id": 11686,
+      "name": "Rockhal Club",
+      "slug": "rockhal-club"
+    },
+    {
+      "id": 11666,
+      "name": "Rotondes",
+      "slug": "rotondes"
+    },
+    {
+      "id": 21918,
+      "name": "Shared Space Bartreng",
+      "slug": "shared-space-bartreng"
+    },
+    {
+      "id": 19891,
+      "name": "Trifolion Echternach",
+      "slug": "trifolion-echternach"
+    },
+    {
+      "id": 11662,
+      "name": "den Atelier",
+      "slug": "den-atelier"
+    },
+    {
+      "id": 39469,
+      "name": "neimënster",
+      "slug": "neimenster"
+    },
+    {
+      "id": 11710,
+      "name": "neimënster",
+      "slug": "neumunster-abbey-2"
+    }
+  ]
+}

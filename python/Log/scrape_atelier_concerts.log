@@ -1,0 +1,27 @@
+2026-02-17 14:33:10,454 [INFO] ============================================================
+2026-02-17 14:33:10,454 [INFO] Démarrage du scraper (format=csv, available_only=False)
+2026-02-17 14:33:10,454 [INFO] Récupération de la liste des concerts…
+2026-02-17 14:33:10,594 [INFO] 97 concerts trouvés via l'API
+2026-02-17 14:33:10,595 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-17 14:33:11,817 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-17 14:33:11,824 [INFO] Premier scan, pas de comparaison possible
+2026-02-17 14:33:11,827 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\concerts\python\CSV\scrape_atelier_concerts.csv
+2026-02-17 14:33:11,827 [INFO] Fin du scraper
+2026-02-17 14:39:00,667 [INFO] ============================================================
+2026-02-17 14:39:00,667 [INFO] Démarrage du scraper (format=json, available_only=False)
+2026-02-17 14:39:00,667 [INFO] Récupération de la liste des concerts…
+2026-02-17 14:39:00,785 [INFO] 97 concerts trouvés via l'API
+2026-02-17 14:39:00,786 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-17 14:39:02,177 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-17 14:39:02,184 [INFO] Premier scan, pas de comparaison possible
+2026-02-17 14:39:02,187 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\concerts\python\JSON\scrape_atelier_concerts.json
+2026-02-17 14:39:02,187 [INFO] Fin du scraper
+2026-02-17 14:46:57,727 [INFO] ============================================================
+2026-02-17 14:46:57,727 [INFO] Démarrage du scraper (format=json, available_only=False)
+2026-02-17 14:46:57,727 [INFO] Récupération de la liste des concerts…
+2026-02-17 14:46:57,859 [INFO] 97 concerts trouvés via l'API
+2026-02-17 14:46:57,860 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-17 14:46:59,216 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-17 14:46:59,225 [INFO] 0 nouveau(x) concert(s) détecté(s)
+2026-02-17 14:46:59,227 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\concerts\python\JSON\scrape_atelier_concerts.json
+2026-02-17 14:46:59,228 [INFO] Fin du scraper

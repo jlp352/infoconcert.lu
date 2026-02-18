@@ -1,0 +1,255 @@
+2026-02-17 18:31:16 [INFO] Démarrage du merge (format=json)
+2026-02-17 18:31:16 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:31:16 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-17 18:31:16 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : AIRBOURNE le 2026-02-17
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-17 18:31:16 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-17 18:31:16 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:31:16 [INFO] Résultat : 190 concerts (28 doublons supprimés)
+2026-02-17 18:31:16 [INFO] Fichier généré : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.json
+2026-02-17 18:31:16 [INFO] Merge terminé avec succès
+2026-02-17 18:31:17 [INFO] Démarrage du merge (format=csv)
+2026-02-17 18:31:17 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.csv.bak
+2026-02-17 18:31:17 [INFO] Traitement : scrape_atelier_concerts.csv
+2026-02-17 18:31:17 [INFO] Traitement : scrape_rockhal_concerts.csv
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : AIRBOURNE le 2026-02-17
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-17 18:31:17 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-17 18:31:17 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.csv.bak
+2026-02-17 18:31:17 [INFO] Résultat : 190 concerts (28 doublons supprimés)
+2026-02-17 18:31:17 [INFO] Fichier généré : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.csv
+2026-02-17 18:31:17 [INFO] Merge terminé avec succès
+2026-02-17 18:32:11 [INFO] Démarrage du merge (format=json)
+2026-02-17 18:32:11 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:32:11 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-17 18:32:11 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : AIRBOURNE le 2026-02-17
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-17 18:32:11 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-17 18:32:11 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:32:11 [INFO] Résultat : 190 concerts (28 doublons supprimés)
+2026-02-17 18:32:11 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json
+2026-02-17 18:32:11 [INFO] Merge terminé avec succès
+2026-02-17 18:32:59 [INFO] Démarrage du merge (format=json)
+2026-02-17 18:32:59 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:32:59 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-17 18:32:59 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : AIRBOURNE le 2026-02-17
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-17 18:32:59 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-17 18:32:59 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:32:59 [INFO] Résultat : 190 concerts (28 doublons supprimés)
+2026-02-17 18:32:59 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json
+2026-02-17 18:32:59 [INFO] Merge terminé avec succès
+2026-02-17 18:35:09 [INFO] ============================================================
+2026-02-17 18:35:09 [INFO] Démarrage du merge (format=json)
+2026-02-17 18:35:09 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:35:09 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-17 18:35:09 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : AIRBOURNE le 2026-02-17
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-17 18:35:09 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:35:09 [INFO] Résultat : 190 concerts (28 doublons supprimés)
+2026-02-17 18:35:09 [INFO] Fichier généré : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.json
+2026-02-17 18:35:09 [INFO] Merge terminé avec succès
+2026-02-17 18:35:09 [INFO] ============================================================
+2026-02-17 18:35:09 [INFO] Démarrage du merge (format=csv)
+2026-02-17 18:35:09 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.csv.bak
+2026-02-17 18:35:09 [INFO] Traitement : scrape_atelier_concerts.csv
+2026-02-17 18:35:09 [INFO] Traitement : scrape_rockhal_concerts.csv
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : AIRBOURNE le 2026-02-17
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-17 18:35:09 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-17 18:35:09 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.csv.bak
+2026-02-17 18:35:09 [INFO] Résultat : 190 concerts (28 doublons supprimés)
+2026-02-17 18:35:09 [INFO] Fichier généré : C:\Users\jlp\Documents\Dev\concerts\python\OUT\concerts.csv
+2026-02-17 18:35:09 [INFO] Merge terminé avec succès
+2026-02-17 18:35:21 [INFO] ============================================================
+2026-02-17 18:35:21 [INFO] Démarrage du merge (format=json)
+2026-02-17 18:35:21 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:35:21 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-17 18:35:21 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : AIRBOURNE le 2026-02-17
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-17 18:35:21 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-17 18:35:21 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json.bak
+2026-02-17 18:35:21 [INFO] Résultat : 190 concerts (28 doublons supprimés)
+2026-02-17 18:35:21 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\concerts\python\OUT\concerts.json
+2026-02-17 18:35:21 [INFO] Merge terminé avec succès
