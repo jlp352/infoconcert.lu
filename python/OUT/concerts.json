@@ -1,11 +1,11 @@
 {
-  "scraped_at": "2026-02-19T14:40:43.934142",
+  "scraped_at": "2026-02-19T17:37:52.295122",
   "sources": [
     "https://www.atelier.lu/wp-json/ate/shows",
     "https://rockhal.lu/wp-json/rockhal/shows"
   ],
-  "total": 186,
-  "duplicates_removed": 27,
+  "total": 185,
+  "duplicates_removed": 25,
   "concerts": [
     {
       "id": 40123,
@@ -270,27 +270,6 @@
       "new": "",
       "track_id": "3173280991",
       "track_id1": "3487719531"
-    },
-    {
-      "id": 89114,
-      "artist": "PLAY WITH COLORS",
-      "date_live": "2026-02-28",
-      "doors_time": "10:15",
-      "location": "Rocklab - The Lab",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Family",
-        "Kids/Young Audience"
-      ],
-      "status": "buy-now",
-      "url": "https://rockhal.lu/shows/play-with-colors/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11693",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11693/image.697243643e3ff.jpg",
-      "price": "8.00 EUR",
-      "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
-      "track_id": "1579438382",
-      "track_id1": "117794248"
     },
     {
       "id": 38927,
@@ -1045,27 +1024,6 @@
       "track_id1": ""
     },
     {
-      "id": 89118,
-      "artist": "MAACH MAT!",
-      "date_live": "2026-03-28",
-      "doors_time": "10:15",
-      "location": "Rocklab - The Lab",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Family",
-        "Kids/Young Audience"
-      ],
-      "status": "buy-now",
-      "url": "https://rockhal.lu/shows/maach-mat/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11695",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11695/image.69724313852e7.jpg",
-      "price": "8.00 EUR",
-      "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
-      "track_id": "4603408",
-      "track_id1": "4603398"
-    },
-    {
       "id": 39981,
       "artist": "Protoje",
       "date_live": "2026-03-28",
@@ -1156,7 +1114,7 @@
         "Pop",
         "Rock"
       ],
-      "status": "Buy Now",
+      "status": "Last tickets",
       "url": "https://www.atelier.lu/shows/poppy/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=582993166360&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14252/image.68e79a29ea301.320.jpg",
@@ -2165,7 +2123,7 @@
       "url": "https://rockhal.lu/shows/ghinzu/",
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11706",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11706/image.6982028077a74.jpg",
-      "price": "42.00 EUR",
+      "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
       "new": "",
       "track_id": "4303580",
@@ -2907,6 +2865,26 @@
       "new": "",
       "track_id": "",
       "track_id1": ""
+    },
+    {
+      "id": 92274,
+      "artist": "PHILIP SAYCE",
+      "date_live": "2026-10-12",
+      "doors_time": "19:30",
+      "location": "Rockhal",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Blues/Jazz"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/philip-sayce/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11732",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11732/image.6995dc255dfb3.jpg",
+      "price": "27.00 EUR",
+      "date_created": "2026-02-19T16:36:48.917530+00:00",
+      "new": "New",
+      "track_id": "61032651",
+      "track_id1": "3256887071"
     },
     {
       "id": 83489,

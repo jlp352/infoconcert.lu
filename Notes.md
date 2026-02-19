@@ -57,9 +57,9 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] Mettre GitHub pour la sauvegarde
 
 #### Serveur en local
-		Installer sur un serveur local (Python + Web)
-		Mettre le crom pour les mise à jour
-		Ouvrir les ports pour qu'il soit accessible depuis 
+		- [ ] Installer sur un serveur local (Python + Web)
+		- [ ] Mettre le crom pour les mise à jour
+		- [ ] Ouvrir les ports pour qu'il soit accessible depuis exterieur
 ## Python
 		Scrapper
 			Den Atelier: scrape_atelier_concerts.py

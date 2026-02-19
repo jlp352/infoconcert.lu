@@ -25,17 +25,20 @@ import requests
 # ──────────────────────────────────────────────
 
 _deezer_cache: dict[str, tuple[str, str]] = {}
+_date_created_cache: dict[tuple, str] = {}
 
 
 def load_cache_from_bak(bak_path: str, fmt: str, log: logging.Logger) -> None:
-    """Pré-alimente _deezer_cache depuis le fichier .bak (JSON ou CSV).
-    Seuls les artistes avec track_id non vide sont mis en cache
+    """Pré-alimente _deezer_cache et _date_created_cache depuis le fichier .bak (JSON ou CSV).
+    Seuls les artistes avec track_id non vide sont mis en cache pour Deezer
     (les autres seront retentés via l'API Deezer).
+    Tous les concerts avec date_created non vide sont mis en cache pour date_created.
     """
     if not os.path.exists(bak_path):
         return
 
-    loaded = 0
+    loaded_deezer = 0
+    loaded_dates  = 0
     try:
         if fmt == "json":
             with open(bak_path, encoding="utf-8") as f:
@@ -46,19 +49,29 @@ def load_cache_from_bak(bak_path: str, fmt: str, log: logging.Logger) -> None:
                 concerts = list(csv.DictReader(f))
 
         for concert in concerts:
-            artist   = (concert.get("artist")   or "").strip()
+            artist    = (concert.get("artist")    or "").strip()
+            date_live = (concert.get("date_live") or "").strip()
             track_id  = str(concert.get("track_id")  or "").strip()
             track_id1 = str(concert.get("track_id1") or "").strip()
-            if artist and track_id:          # seulement si track_id non vide
+            date_created = (concert.get("date_created") or "").strip()
+
+            if artist and track_id:
                 cache_key = artist.lower()
                 if cache_key not in _deezer_cache:
                     _deezer_cache[cache_key] = (track_id, track_id1)
-                    loaded += 1
+                    loaded_deezer += 1
 
-        log.info(f"Cache Deezer pré-chargé depuis .bak : {loaded} artiste(s)")
+            if artist and date_live and date_created:
+                dc_key = (artist.lower(), date_live)
+                if dc_key not in _date_created_cache:
+                    _date_created_cache[dc_key] = date_created
+                    loaded_dates += 1
+
+        log.info(f"Cache Deezer pré-chargé depuis .bak : {loaded_deezer} artiste(s)")
+        log.info(f"Cache date_created pré-chargé depuis .bak : {loaded_dates} concert(s)")
 
     except Exception as e:
-        log.warning(f"Impossible de lire le .bak pour le cache Deezer : {e}")
+        log.warning(f"Impossible de lire le .bak pour le cache : {e}")
 
 
 def get_top2_track_ids(artist_name: str) -> tuple[str, str]:
@@ -219,6 +232,10 @@ def merge_json(input_dir: str, output_file: str, log: logging.Logger) -> None:
                     log.debug(f"Deezer track_id : {artist} → {track_id or 'introuvable'}")
                     concert["track_id"]  = track_id
                     concert["track_id1"] = track_id1
+                    dc_key = (artist.strip().lower(), (concert.get("date_live") or "").strip())
+                    if dc_key in _date_created_cache:
+                        concert["date_created"] = _date_created_cache[dc_key]
+                        log.debug(f"date_created conservé depuis .bak : {artist} le {dc_key[1]}")
                     merged_concerts[key] = concert
 
             for genre in data.get("genres", []):
@@ -308,6 +325,10 @@ def merge_csv(input_dir: str, output_file: str, log: logging.Logger) -> None:
                         log.debug(f"Deezer track_id : {artist} → {track_id or 'introuvable'}")
                         row["track_id"]  = track_id
                         row["track_id1"] = track_id1
+                        dc_key = (artist.strip().lower(), (row.get("date_live") or "").strip())
+                        if dc_key in _date_created_cache:
+                            row["date_created"] = _date_created_cache[dc_key]
+                            log.debug(f"date_created conservé depuis .bak : {artist} le {dc_key[1]}")
                         merged_concerts[key] = row
 
         concerts_list = sorted(
