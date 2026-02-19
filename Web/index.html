@@ -705,6 +705,302 @@
             color: var(--primary);
         }
 
+        /* ── Cookie banner ───────────────────────────────────────────────── */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2000;
+            background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+            border-top: 3px solid var(--primary);
+            padding: 1.2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+            animation: slideUpBanner 0.4s ease-out;
+        }
+
+        @keyframes slideUpBanner {
+            from { transform: translateY(100%); opacity: 0; }
+            to   { transform: translateY(0);    opacity: 1; }
+        }
+
+        .cookie-banner-text {
+            flex: 1;
+            min-width: 220px;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            opacity: 0.85;
+        }
+
+        .cookie-banner-text strong {
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .cookie-banner-btns {
+            display: flex;
+            gap: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn-accept {
+            padding: 0.6rem 1.6rem;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .cookie-btn-accept:hover {
+            background: #ff5580;
+            transform: translateY(-2px);
+        }
+
+        .cookie-btn-decline {
+            padding: 0.6rem 1.6rem;
+            background: transparent;
+            color: var(--light);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 30px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .cookie-btn-decline:hover {
+            border-color: var(--light);
+        }
+
+        /* ── Toast nouveaux concerts ─────────────────────────────────────── */
+
+        /* Séparateur vertical dans le nav */
+        .nav-separator {
+            width: 1px;
+            height: 36px;
+            background: rgba(255,255,255,0.15);
+            flex-shrink: 0;
+        }
+
+        /* Wrapper ancre pour positionner le toast sous le lang-switcher */
+        .lang-switcher-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .toast-new {
+            position: absolute;
+            top: calc(100% + 14px);
+            right: 0;
+            z-index: 1500;
+            background: #1e1e1e;
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            width: 360px;
+            box-shadow: 0 16px 50px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,51,102,0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: visible;
+            animation: slideInToast 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Clip interne pour que le contenu ne déborde pas du border-radius */
+        .toast-new-inner {
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes slideInToast {
+            from { transform: translateY(-10px); opacity: 0; }
+            to   { transform: translateY(0);     opacity: 1; }
+        }
+
+        .toast-new.hiding {
+            animation: slideOutToast 0.25s ease-in forwards;
+        }
+
+        @keyframes slideOutToast {
+            from { transform: translateY(0);     opacity: 1; }
+            to   { transform: translateY(-10px); opacity: 0; }
+        }
+
+        /* Petite flèche pointant vers le haut */
+        .toast-new::before {
+            content: '';
+            position: absolute;
+            top: -9px;
+            right: 28px;
+            width: 16px;
+            height: 9px;
+            background: var(--primary);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            z-index: 1;
+        }
+        /* Cache la bordure derrière la flèche */
+        .toast-new::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            right: 30px;
+            width: 12px;
+            height: 7px;
+            background: #1e1e1e;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            z-index: 2;
+        }
+
+        .toast-new-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.85rem 1rem 0.7rem;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+
+        .toast-new-msg {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.3px;
+        }
+
+        .toast-new-close {
+            background: none;
+            border: none;
+            color: rgba(245,245,245,0.4);
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .toast-new-close:hover { color: var(--primary); }
+
+        /* Liste des concerts dans le toast */
+        .toast-concerts-list {
+            overflow-y: auto;
+            max-height: 320px;
+        }
+
+        .toast-concert-item {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.65rem 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .toast-concert-item:last-child { border-bottom: none; }
+
+        .toast-concert-item:hover {
+            background: rgba(255,51,102,0.1);
+        }
+
+        .toast-concert-thumb {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        .toast-concert-thumb-placeholder {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        .toast-concert-info { flex: 1; min-width: 0; }
+
+        .toast-concert-artist {
+            font-weight: 700;
+            font-size: 0.88rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .toast-concert-meta {
+            font-size: 0.74rem;
+            opacity: 0.5;
+            margin-top: 0.1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .toast-concert-date {
+            font-size: 0.74rem;
+            color: var(--secondary);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Footer du toast : bouton Voir tous */
+        .toast-new-footer {
+            padding: 0.65rem 1rem;
+            border-top: 1px solid rgba(255,255,255,0.07);
+            display: flex;
+            justify-content: center;
+        }
+
+        .toast-btn-view {
+            padding: 0.45rem 1.4rem;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+        }
+
+        .toast-btn-view:hover {
+            background: #ff5580;
+            transform: translateY(-1px);
+        }
+
+        /* Barre de progression */
+        .toast-new-progress {
+            height: 3px;
+            background: rgba(255,255,255,0.08);
+        }
+
+        .toast-new-progress-bar {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width linear;
+        }
+
         /* Mobile adjustments */
         @media (max-width: 768px) {
             nav ul {
@@ -942,10 +1238,30 @@
                     </div>
                 </li>
             </ul>
-            <div class="lang-switcher" id="lang-switcher">
-                <button class="lang-btn" data-lang="fr">FR</button>
-                <button class="lang-btn" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="de">DE</button>
+            <div class="lang-switcher-wrapper">
+                <div class="nav-separator"></div>
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                </div>
+
+                <!-- Toast nouveaux concerts ancré ici -->
+                <div class="toast-new" id="toast-new" style="display:none;">
+                    <div class="toast-new-inner">
+                        <div class="toast-new-header">
+                            <span class="toast-new-msg" id="toast-new-msg"></span>
+                            <button class="toast-new-close" id="toast-new-close">✕</button>
+                        </div>
+                        <div class="toast-concerts-list" id="toast-concerts-list"></div>
+                        <div class="toast-new-footer">
+                            <button class="toast-btn-view" id="toast-btn-view"></button>
+                        </div>
+                        <div class="toast-new-progress">
+                            <div class="toast-new-progress-bar" id="toast-progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -994,7 +1310,38 @@
         <p data-i18n="footer_copy">&copy; 2026 infoConcert.lu – Tous droits réservés</p>
     </footer>
 
+    <!-- Cookie consent banner -->
+    <div class="cookie-banner" id="cookie-banner" style="display:none;">
+        <div class="cookie-banner-text">
+            <strong>🍪 Cookies</strong><br>
+            <span id="cookie-banner-text"></span>
+        </div>
+        <div class="cookie-banner-btns">
+            <button class="cookie-btn-accept" id="cookie-btn-accept"></button>
+            <button class="cookie-btn-decline" id="cookie-btn-decline"></button>
+        </div>
+    </div>
+
     <script>
+        // ── Cookie utilities ─────────────────────────────────────────────────
+        function setCookie(name, value, days) {
+            const expires = new Date(Date.now() + days * 864e5).toUTCString();
+            document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires};path=/;SameSite=Lax`;
+        }
+
+        function getCookie(name) {
+            const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+            return match ? decodeURIComponent(match[1]) : null;
+        }
+
+        function generateUID() {
+            if (typeof crypto !== 'undefined' && crypto.randomUUID) return crypto.randomUUID();
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+                const r = Math.random() * 16 | 0;
+                return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+            });
+        }
+
         // ── i18n ─────────────────────────────────────────────────────────────
         const TRANSLATIONS = {
             fr: {
@@ -1028,6 +1375,12 @@
                 newsletter_alert:     'Merci pour votre inscription ! Vous recevrez bientôt nos actualités à ',
                 footer_copy:          '© 2026 infoConcert.lu – Tous droits réservés',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
+                cookie_banner_text:   'Nous utilisons des cookies pour mémoriser votre identifiant et la date de votre dernière visite, afin de vous afficher les nouveaux concerts. Aucune donnée personnelle n\'est partagée.',
+                cookie_accept:        'Accepter',
+                cookie_decline:       'Refuser',
+                toast_new_concerts:   (n) => `🆕 ${n} nouveau${n > 1 ? 'x' : ''} concert${n > 1 ? 's' : ''} depuis votre dernière visite`,
+                toast_view:           'Voir',
+                filter_new:           (n) => `🆕 Nouveautés (${n})`,
             },
             en: {
                 site_title:           'infoConcert.lu – Concerts in your area',
@@ -1060,6 +1413,12 @@
                 newsletter_alert:     'Thank you for subscribing! You will soon receive our news at ',
                 footer_copy:          '© 2026 infoConcert.lu – All rights reserved',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
+                cookie_banner_text:   'We use cookies to remember your ID and your last visit date, so we can show you new concerts. No personal data is shared.',
+                cookie_accept:        'Accept',
+                cookie_decline:       'Decline',
+                toast_new_concerts:   (n) => `🆕 ${n} new concert${n > 1 ? 's' : ''} since your last visit`,
+                toast_view:           'View',
+                filter_new:           (n) => `🆕 New (${n})`,
             },
             de: {
                 site_title:           'infoConcert.lu – Konzerte in Ihrer Region',
@@ -1092,6 +1451,12 @@
                 newsletter_alert:     'Vielen Dank für Ihre Anmeldung! Sie erhalten unsere Neuigkeiten bald an ',
                 footer_copy:          '© 2026 infoConcert.lu – Alle Rechte vorbehalten',
                 concert_count:        (n) => `${n} Konzert${n > 1 ? 'e' : ''}`,
+                cookie_banner_text:   'Wir verwenden Cookies, um Ihre ID und Ihr letztes Besuchsdatum zu speichern, damit wir Ihnen neue Konzerte anzeigen können. Es werden keine persönlichen Daten weitergegeben.',
+                cookie_accept:        'Akzeptieren',
+                cookie_decline:       'Ablehnen',
+                toast_new_concerts:   (n) => `🆕 ${n} neue${n > 1 ? '' : 's'} Konzert${n > 1 ? 'e' : ''} seit Ihrem letzten Besuch`,
+                toast_view:           'Anzeigen',
+                filter_new:           (n) => `🆕 Neu (${n})`,
             }
         };
 
@@ -1309,13 +1674,19 @@
             const locations = [...new Set(concerts.map(c => c.location).filter(Boolean))].sort();
             const filtersEl = document.getElementById('filters');
 
+            // Calcul des nouveaux concerts pour le bouton Nouveautés
+            const newCount = (cookieConsent === 'true' && lastVisitDate)
+                ? concerts.filter(c => new Date(c.date_created) > new Date(lastVisitDate)).length
+                : 0;
+
             const buttons = [
                 { label: t('filter_all'), value: 'all' },
+                ...(newCount > 0 ? [{ label: t('filter_new')(newCount), value: 'new' }] : []),
                 ...locations.map(l => ({ label: l, value: l }))
             ];
 
             filtersEl.innerHTML = buttons.map(b =>
-                `<button class="filter-btn${b.value === 'all' ? ' active' : ''}" data-filter="${b.value}">${b.label}</button>`
+                `<button class="filter-btn${b.value === activeFilter ? ' active' : ''}" data-filter="${b.value}">${b.label}</button>`
             ).join('');
 
             filtersEl.addEventListener('click', e => {
@@ -1324,16 +1695,23 @@
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 activeFilter = btn.dataset.filter;
-                const filtered = activeFilter === 'all'
-                    ? allConcerts
-                    : allConcerts.filter(c => c.location === activeFilter);
+                let filtered;
+                if (activeFilter === 'all') {
+                    filtered = allConcerts;
+                } else if (activeFilter === 'new') {
+                    filtered = allConcerts.filter(c =>
+                        lastVisitDate && new Date(c.date_created) > new Date(lastVisitDate)
+                    );
+                } else {
+                    filtered = allConcerts.filter(c => c.location === activeFilter);
+                }
                 renderConcerts(filtered);
             });
         }
 
         async function loadConcerts() {
             try {
-                const res = await fetch('IN/concerts.json');
+                const res = await fetch('IN/concerts.json?v=' + Date.now(), { cache: 'no-store' });
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const data = await res.json();
                 allConcerts = (data.concerts || []).sort((a, b) =>
@@ -1341,6 +1719,7 @@
                 );
                 buildFilters(allConcerts);
                 renderConcerts(allConcerts);
+                computeAndShowNew();
             } catch (err) {
                 document.getElementById('concerts-grid').innerHTML =
                     `<p style="text-align:center;color:var(--primary);padding:3rem;">${t('error_load')} ${err.message}</p>`;
@@ -1578,6 +1957,178 @@
         });
 
         applyTranslations();
+
+        // ── Cookie & visits init ──────────────────────────────────────────────
+        let cookieConsent    = getCookie('ic_consent');    // "true" | "false" | null
+        let lastVisitDate    = getCookie('ic_last_visit'); // ISO string | null — lu AVANT d'écraser
+        let newConcertsCount = 0;
+
+        console.log('[Cookies] consent:', cookieConsent, '| lastVisit:', lastVisitDate);
+
+        // Mise à jour du texte du banner selon la langue courante
+        function updateCookieBannerTexts() {
+            const bannerText = document.getElementById('cookie-banner-text');
+            const btnAccept  = document.getElementById('cookie-btn-accept');
+            const btnDecline = document.getElementById('cookie-btn-decline');
+            if (bannerText) bannerText.textContent = t('cookie_banner_text');
+            if (btnAccept)  btnAccept.textContent  = t('cookie_accept');
+            if (btnDecline) btnDecline.textContent  = t('cookie_decline');
+        }
+
+        function closeCookieBanner() {
+            const banner = document.getElementById('cookie-banner');
+            if (banner) banner.style.display = 'none';
+        }
+
+        function acceptCookies() {
+            // lastVisitDate reste null → 1ère visite, pas de toast
+            setCookie('ic_consent',    'true',        365);
+            setCookie('ic_uid',        generateUID(), 365);
+            setCookie('ic_last_visit', new Date().toISOString(), 365);
+            cookieConsent = 'true';
+            closeCookieBanner();
+            // lastVisitDate est null ici donc computeAndShowNew() ne déclenchera pas de toast
+            // (normal : c'est la 1ère visite, il n'y a pas encore d'"ancienne" date)
+            buildFilters(allConcerts);
+        }
+
+        function declineCookies() {
+            setCookie('ic_consent', 'false', 365);
+            cookieConsent = 'false';
+            closeCookieBanner();
+        }
+
+        document.getElementById('cookie-btn-accept').addEventListener('click', acceptCookies);
+        document.getElementById('cookie-btn-decline').addEventListener('click', declineCookies);
+
+        // Afficher ou non le banner RGPD
+        if (cookieConsent === null) {
+            updateCookieBannerTexts();
+            document.getElementById('cookie-banner').style.display = 'flex';
+        }
+
+        // Mettre à jour la date de visite si consentement déjà accordé
+        // IMPORTANT : lastVisitDate est déjà capturé plus haut AVANT cet écrasement
+        if (cookieConsent === 'true') {
+            setCookie('ic_last_visit', new Date().toISOString(), 365);
+            console.log('[Cookies] lastVisit mis à jour → maintenant:', new Date().toISOString());
+        }
+
+        // ── Toast nouveaux concerts ───────────────────────────────────────────
+        let toastTimer = null;
+
+        function showToast(newConcerts) {
+            const n        = newConcerts.length;
+            const toast    = document.getElementById('toast-new');
+            const msgEl    = document.getElementById('toast-new-msg');
+            const btnView  = document.getElementById('toast-btn-view');
+            const progress = document.getElementById('toast-progress-bar');
+            const list     = document.getElementById('toast-concerts-list');
+
+            msgEl.textContent   = t('toast_new_concerts')(n);
+            btnView.textContent = t('toast_view');
+
+            // Construire la liste de prévisualisations (max 6)
+            list.innerHTML = newConcerts.slice(0, 6).map(c => {
+                const thumb = c.image
+                    ? `<img class="toast-concert-thumb" src="${c.image}" alt="${c.artist}"
+                           onerror="this.outerHTML='<div class=\\'toast-concert-thumb-placeholder\\'>♫</div>'">`
+                    : `<div class="toast-concert-thumb-placeholder">♫</div>`;
+                const shortDate = (() => {
+                    const d = new Date(c.date_live + 'T00:00:00');
+                    return d.toLocaleDateString(LOCALE_MAP[currentLang] || 'fr-FR', { day: 'numeric', month: 'short' });
+                })();
+                return `
+                <div class="toast-concert-item" data-concert-id="${c.id}">
+                    ${thumb}
+                    <div class="toast-concert-info">
+                        <div class="toast-concert-artist">${c.artist}</div>
+                        <div class="toast-concert-meta">${c.location}</div>
+                    </div>
+                    <span class="toast-concert-date">${shortDate}</span>
+                </div>`;
+            }).join('');
+
+            toast.style.display = 'flex';
+
+            // Barre de progression sur 8s
+            const DURATION = 8000;
+            progress.style.transition = 'none';
+            progress.style.width = '100%';
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    progress.style.transition = `width ${DURATION}ms linear`;
+                    progress.style.width = '0%';
+                });
+            });
+
+            toastTimer = setTimeout(() => hideToast(), DURATION);
+
+            // Clic sur une carte → filtre par artiste
+            list.querySelectorAll('.toast-concert-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const id = item.dataset.concertId;
+                    const concert = allConcerts.find(c => String(c.id) === String(id));
+                    if (concert) {
+                        hideToast();
+                        filterByArtist(concert.artist);
+                    }
+                });
+            });
+        }
+
+        function hideToast() {
+            clearTimeout(toastTimer);
+            const toast = document.getElementById('toast-new');
+            toast.classList.add('hiding');
+            setTimeout(() => {
+                toast.style.display = 'none';
+                toast.classList.remove('hiding');
+            }, 380);
+        }
+
+        document.getElementById('toast-new-close').addEventListener('click', hideToast);
+
+        document.getElementById('toast-btn-view').addEventListener('click', () => {
+            hideToast();
+            activeFilter = 'new';
+            buildFilters(allConcerts);
+            renderConcerts(allConcerts.filter(c =>
+                lastVisitDate && new Date(c.date_created) > new Date(lastVisitDate)
+            ));
+            document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        // Appelé après loadConcerts pour calculer et afficher les nouveautés
+        function computeAndShowNew() {
+            if (cookieConsent !== 'true' || !lastVisitDate) {
+                console.log('[New] Ignoré — consent:', cookieConsent, '| lastVisit:', lastVisitDate);
+                return;
+            }
+            const lastVisit = new Date(lastVisitDate);
+            const newConcerts = allConcerts.filter(c => new Date(c.date_created) > lastVisit);
+            newConcertsCount = newConcerts.length;
+            console.log('[New] lastVisit:', lastVisit.toISOString(), '| nouveaux:', newConcertsCount,
+                newConcerts.map(c => c.artist + ' (' + c.date_created + ')'));
+            buildFilters(allConcerts);
+            if (newConcertsCount > 0) {
+                setTimeout(() => showToast(newConcerts), 800);
+            }
+        }
+
+        // Met à jour les textes du banner si on change de langue
+        const _origApplyTranslations = applyTranslations;
+        applyTranslations = function() {
+            _origApplyTranslations();
+            updateCookieBannerTexts();
+            // Mettre à jour le toast s'il est visible
+            const toast = document.getElementById('toast-new');
+            if (toast && toast.style.display !== 'none' && newConcertsCount > 0) {
+                document.getElementById('toast-new-msg').textContent = t('toast_new_concerts')(newConcertsCount);
+                document.getElementById('toast-btn-view').textContent = t('toast_view');
+            }
+        };
+
         loadConcerts();
     </script>
 </body>
