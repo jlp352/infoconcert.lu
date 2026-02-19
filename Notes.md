@@ -46,7 +46,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [ ] Voir les mentions légales à mettre en place pour un site internet
 
 		- [ ] Page Salle de concerts
-		- [ ] Ajouter a quick search pour artiste
+		- [x] Ajouter a quick search pour artiste
 		- [ ] Page contacts	
 				
 	

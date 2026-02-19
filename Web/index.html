@@ -130,16 +130,17 @@
             padding: 8rem 2rem 6rem;
             max-width: 1400px;
             margin: 0 auto;
-            text-align: center;
+            text-align: left;
         }
 
         .hero h1 {
             font-family: 'Bebas Neue', sans-serif;
             font-size: clamp(3rem, 8vw, 7rem);
-            line-height: 0.9;
+            line-height: 0.95;
             margin-bottom: 1.5rem;
-            letter-spacing: 5px;
-            background: linear-gradient(135deg, var(--light), var(--secondary));
+            letter-spacing: 4px;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -158,10 +159,12 @@
         }
 
         .hero p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 3rem;
-            opacity: 0.9;
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 0 3rem;
+            color: var(--light);
+            opacity: 0.85;
+            line-height: 1.7;
             animation: fadeIn 1s ease-out 0.3s both;
         }
 
@@ -185,6 +188,7 @@
             transition: all 0.3s;
             box-shadow: 0 10px 30px rgba(255, 51, 102, 0.4);
             animation: fadeIn 1s ease-out 0.6s both;
+            align-self: flex-start;
         }
 
         .cta-button::before {
@@ -1002,8 +1006,8 @@
                 search_no_result:     'Aucun artiste trouvé',
                 search_filter_label:  'Artiste :',
                 search_filter_reset:  'Voir tous les concerts',
-                hero_title:           'LA MUSIQUE VIENT<br>À VOUS',
-                hero_subtitle:        "Découvrez les meilleurs concerts et événements musicaux de votre région. De l'indie au rock, du jazz à l'électro.",
+                hero_title:           'LA SCÈNE MUSICALE<br>LUXEMBOURGEOISE<br>EN UN CLIC',
+                hero_subtitle:        'Tous les concerts et événements musicaux au Luxembourg.<br>Du rock à l\'électro, du jazz à l\'indie.',
                 hero_cta:             'Voir les concerts',
                 section_upcoming:     'Concerts à venir',
                 filter_all:           'Tous',
@@ -1034,8 +1038,8 @@
                 search_no_result:     'No artist found',
                 search_filter_label:  'Artist:',
                 search_filter_reset:  'Show all concerts',
-                hero_title:           'MUSIC COMES<br>TO YOU',
-                hero_subtitle:        'Discover the best concerts and music events in your area. From indie to rock, jazz to electro.',
+                hero_title:           'THE LUXEMBOURG<br>MUSIC SCENE<br>IN ONE CLICK',
+                hero_subtitle:        'All concerts and music events in Luxembourg.<br>From rock to electro, jazz to indie.',
                 hero_cta:             'See concerts',
                 section_upcoming:     'Upcoming concerts',
                 filter_all:           'All',
@@ -1066,8 +1070,8 @@
                 search_no_result:     'Kein Künstler gefunden',
                 search_filter_label:  'Künstler:',
                 search_filter_reset:  'Alle Konzerte anzeigen',
-                hero_title:           'MUSIK KOMMT<br>ZU IHNEN',
-                hero_subtitle:        'Entdecken Sie die besten Konzerte und Musikveranstaltungen in Ihrer Region. Von Indie bis Rock, Jazz bis Elektro.',
+                hero_title:           'DIE LUXEMBURGER<br>MUSIKSZENE<br>AUF EINEN KLICK',
+                hero_subtitle:        'Alle Konzerte und Musikveranstaltungen in Luxemburg.<br>Von Rock bis Elektro, Jazz bis Indie.',
                 hero_cta:             'Konzerte ansehen',
                 section_upcoming:     'Bevorstehende Konzerte',
                 filter_all:           'Alle',
