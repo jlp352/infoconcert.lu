@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="html-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scène Locale - Concerts dans votre région</title>
+    <title data-i18n="site_title">Scène Locale - Concerts dans votre région</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -475,6 +475,40 @@
             font-size: 0.9rem;
         }
 
+        /* Language switcher */
+        .lang-switcher {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.2);
+            color: var(--light);
+            border-radius: 20px;
+            padding: 0.35rem 0.85rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .lang-btn.active {
+            border-color: var(--accent);
+            background: rgba(0, 217, 255, 0.15);
+            color: var(--accent);
+        }
+
         /* Mobile adjustments */
         @media (max-width: 768px) {
             nav ul {
@@ -696,38 +730,43 @@
         <nav>
             <div class="logo">Scène Locale</div>
             <ul>
-                <li><a href="#concerts">Concerts</a></li>
-                <li><a href="#lieux">Lieux</a></li>
-                <li><a href="#artistes">Artistes</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#concerts" data-i18n="nav_concerts">Concerts</a></li>
+                <li><a href="#lieux" data-i18n="nav_venues">Lieux</a></li>
+                <li><a href="#artistes" data-i18n="nav_artists">Artistes</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>LA MUSIQUE VIENT<br>À VOUS</h1>
-        <p>Découvrez les meilleurs concerts et événements musicaux de votre région. De l'indie au rock, du jazz à l'électro.</p>
-        <a href="#concerts" class="cta-button">Voir les concerts</a>
+        <h1 data-i18n="hero_title">LA MUSIQUE VIENT<br>À VOUS</h1>
+        <p data-i18n="hero_subtitle">Découvrez les meilleurs concerts et événements musicaux de votre région. De l'indie au rock, du jazz à l'électro.</p>
+        <a href="#concerts" class="cta-button" data-i18n="hero_cta">Voir les concerts</a>
     </section>
 
     <section class="concerts" id="concerts">
-        <h2 class="section-title">Concerts à venir</h2>
+        <h2 class="section-title" data-i18n="section_upcoming">Concerts à venir</h2>
 
         <div class="filters" id="filters"></div>
         <p class="concerts-count" id="concerts-count"></p>
 
         <div class="concerts-grid" id="concerts-grid">
-            <p class="loading">Chargement des concerts</p>
+            <p class="loading" data-i18n="loading">Chargement des concerts</p>
         </div>
     </section>
 
     <section class="newsletter">
         <div class="newsletter-content">
-            <h2>Ne manquez aucun concert</h2>
-            <p>Inscrivez-vous à notre newsletter et recevez les dernières annonces directement dans votre boîte mail</p>
+            <h2 data-i18n="newsletter_title">Ne manquez aucun concert</h2>
+            <p data-i18n="newsletter_subtitle">Inscrivez-vous à notre newsletter et recevez les dernières annonces directement dans votre boîte mail</p>
             <form class="newsletter-form" onsubmit="return handleSubmit(event)">
-                <input type="email" placeholder="Votre email" required>
-                <button type="submit">S'inscrire</button>
+                <input type="email" data-i18n-placeholder="newsletter_placeholder" placeholder="Votre email" required>
+                <button type="submit" data-i18n="newsletter_btn">S'inscrire</button>
             </form>
         </div>
     </section>
@@ -739,14 +778,169 @@
             <a href="#" title="Twitter">🐦</a>
             <a href="#" title="YouTube">📹</a>
         </div>
-        <p>&copy; 2026 Scène Locale - Tous droits réservés</p>
+        <p data-i18n="footer_copy">&copy; 2026 Scène Locale - Tous droits réservés</p>
     </footer>
 
     <script>
+        // ── i18n ─────────────────────────────────────────────────────────────
+        const TRANSLATIONS = {
+            fr: {
+                site_title:           'Scène Locale – Concerts dans votre région',
+                nav_concerts:         'Concerts',
+                nav_venues:           'Lieux',
+                nav_artists:          'Artistes',
+                nav_contact:          'Contact',
+                hero_title:           'LA MUSIQUE VIENT<br>À VOUS',
+                hero_subtitle:        "Découvrez les meilleurs concerts et événements musicaux de votre région. De l'indie au rock, du jazz à l'électro.",
+                hero_cta:             'Voir les concerts',
+                section_upcoming:     'Concerts à venir',
+                filter_all:           'Tous',
+                loading:              'Chargement des concerts',
+                no_concerts:          'Aucun concert trouvé.',
+                error_load:           'Erreur de chargement :',
+                status_sold_out:      'Complet',
+                status_buy_now:       'Billets disponibles',
+                status_cancelled:     'Annulé',
+                btn_cancelled:        'Annulé',
+                btn_sold_out:         'Complet',
+                btn_reserve:          'Réserver →',
+                preview_extract:      'Extrait',
+                newsletter_title:     'Ne manquez aucun concert',
+                newsletter_subtitle:  'Inscrivez-vous à notre newsletter et recevez les dernières annonces directement dans votre boîte mail',
+                newsletter_placeholder:'Votre email',
+                newsletter_btn:       "S'inscrire",
+                newsletter_alert:     'Merci pour votre inscription ! Vous recevrez bientôt nos actualités à ',
+                footer_copy:          '© 2026 Scène Locale – Tous droits réservés',
+                concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
+            },
+            en: {
+                site_title:           'Local Scene – Concerts in your area',
+                nav_concerts:         'Concerts',
+                nav_venues:           'Venues',
+                nav_artists:          'Artists',
+                nav_contact:          'Contact',
+                hero_title:           'MUSIC COMES<br>TO YOU',
+                hero_subtitle:        'Discover the best concerts and music events in your area. From indie to rock, jazz to electro.',
+                hero_cta:             'See concerts',
+                section_upcoming:     'Upcoming concerts',
+                filter_all:           'All',
+                loading:              'Loading concerts',
+                no_concerts:          'No concerts found.',
+                error_load:           'Loading error:',
+                status_sold_out:      'Sold out',
+                status_buy_now:       'Tickets available',
+                status_cancelled:     'Cancelled',
+                btn_cancelled:        'Cancelled',
+                btn_sold_out:         'Sold out',
+                btn_reserve:          'Book →',
+                preview_extract:      'Preview',
+                newsletter_title:     'Never miss a concert',
+                newsletter_subtitle:  'Subscribe to our newsletter and get the latest announcements straight to your inbox.',
+                newsletter_placeholder:'Your email',
+                newsletter_btn:       'Subscribe',
+                newsletter_alert:     'Thank you for subscribing! You will soon receive our news at ',
+                footer_copy:          '© 2026 Local Scene – All rights reserved',
+                concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
+            },
+            de: {
+                site_title:           'Lokale Szene – Konzerte in Ihrer Region',
+                nav_concerts:         'Konzerte',
+                nav_venues:           'Veranstaltungsorte',
+                nav_artists:          'Künstler',
+                nav_contact:          'Kontakt',
+                hero_title:           'MUSIK KOMMT<br>ZU IHNEN',
+                hero_subtitle:        'Entdecken Sie die besten Konzerte und Musikveranstaltungen in Ihrer Region. Von Indie bis Rock, Jazz bis Elektro.',
+                hero_cta:             'Konzerte ansehen',
+                section_upcoming:     'Bevorstehende Konzerte',
+                filter_all:           'Alle',
+                loading:              'Konzerte werden geladen',
+                no_concerts:          'Keine Konzerte gefunden.',
+                error_load:           'Ladefehler:',
+                status_sold_out:      'Ausverkauft',
+                status_buy_now:       'Tickets verfügbar',
+                status_cancelled:     'Abgesagt',
+                btn_cancelled:        'Abgesagt',
+                btn_sold_out:         'Ausverkauft',
+                btn_reserve:          'Buchen →',
+                preview_extract:      'Vorschau',
+                newsletter_title:     'Kein Konzert verpassen',
+                newsletter_subtitle:  'Abonnieren Sie unseren Newsletter und erhalten Sie die neuesten Ankündigungen direkt in Ihr Postfach.',
+                newsletter_placeholder:'Ihre E-Mail',
+                newsletter_btn:       'Anmelden',
+                newsletter_alert:     'Vielen Dank für Ihre Anmeldung! Sie erhalten unsere Neuigkeiten bald an ',
+                footer_copy:          '© 2026 Lokale Szene – Alle Rechte vorbehalten',
+                concert_count:        (n) => `${n} Konzert${n > 1 ? 'e' : ''}`,
+            }
+        };
+
+        const SUPPORTED_LANGS = ['fr', 'en', 'de'];
+
+        function detectLang() {
+            const saved = localStorage.getItem('lang');
+            if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
+            const navLangs = navigator.languages || [navigator.language || 'fr'];
+            for (const l of navLangs) {
+                const code = l.split('-')[0].toLowerCase();
+                if (SUPPORTED_LANGS.includes(code)) return code;
+            }
+            return 'fr';
+        }
+
+        let currentLang = detectLang();
+
+        function t(key) {
+            return (TRANSLATIONS[currentLang] || TRANSLATIONS.fr)[key] || key;
+        }
+
+        function applyTranslations() {
+            const lang = currentLang;
+            document.getElementById('html-root').lang = lang;
+            document.title = t('site_title');
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.dataset.i18n;
+                const val = t(key);
+                if (val !== key) el.innerHTML = val;
+            });
+
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.dataset.i18nPlaceholder;
+                const val = t(key);
+                if (val !== key) el.placeholder = val;
+            });
+
+            // Update active lang button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            // Re-render dynamic content if already loaded
+            if (allConcerts.length) {
+                buildFilters(allConcerts);
+                const filtered = activeFilter === 'all'
+                    ? allConcerts
+                    : allConcerts.filter(c => c.location === activeFilter);
+                renderConcerts(filtered);
+            }
+        }
+
+        function switchLang(lang) {
+            if (!SUPPORTED_LANGS.includes(lang)) return;
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            applyTranslations();
+        }
+
+        document.getElementById('lang-switcher').addEventListener('click', e => {
+            const btn = e.target.closest('.lang-btn');
+            if (btn) switchLang(btn.dataset.lang);
+        });
+
+        // ── Newsletter ────────────────────────────────────────────────────────
         function handleSubmit(event) {
             event.preventDefault();
             const input = event.target.querySelector('input');
-            alert('Merci pour votre inscription ! Vous recevrez bientôt nos actualités à ' + input.value);
+            alert(t('newsletter_alert') + input.value);
             input.value = '';
             return false;
         }
@@ -791,16 +985,19 @@
             return s;
         }
 
+        const LOCALE_MAP = { fr: 'fr-FR', en: 'en-GB', de: 'de-DE' };
+
         function formatDate(dateStr) {
             const d = new Date(dateStr + 'T00:00:00');
-            return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+            const locale = LOCALE_MAP[currentLang] || 'fr-FR';
+            return d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
         }
 
         function statusLabel(status) {
             switch (status) {
-                case 'sold-out':   return 'Complet';
-                case 'buy-now':    return 'Billets disponibles';
-                case 'cancelled':  return 'Annulé';
+                case 'sold-out':   return t('status_sold_out');
+                case 'buy-now':    return t('status_buy_now');
+                case 'cancelled':  return t('status_cancelled');
                 default:           return '';
             }
         }
@@ -835,7 +1032,7 @@
             const buyLink = concert.buy_link || concert.url || '#';
             const isSoldOut = status === 'sold-out';
             const isCancelled = status === 'cancelled';
-            const buttonLabel = isCancelled ? 'Annulé' : isSoldOut ? 'Complet' : 'Réserver →';
+            const buttonLabel = isCancelled ? t('btn_cancelled') : isSoldOut ? t('btn_sold_out') : t('btn_reserve');
             const buttonDisabled = (isCancelled || isSoldOut) ? 'style="opacity:0.4;pointer-events:none;"' : '';
 
             const priceHtml = concert.price
@@ -847,7 +1044,7 @@
             const previewHtml = hasPreview
                 ? `<div class="preview-buttons">${trackIds.map((id, i) =>
                     `<button class="preview-btn" data-track-id="${id}" data-label="${i + 1}">
-                        <span class="icon">▶</span> Extrait ${trackIds.length > 1 ? i + 1 : ''}
+                        <span class="icon">▶</span> ${t('preview_extract')}${trackIds.length > 1 ? ' ' + (i + 1) : ''}
                     </button>`).join('')}</div>`
                 : '';
 
@@ -878,13 +1075,12 @@
             const grid = document.getElementById('concerts-grid');
             const count = document.getElementById('concerts-count');
             if (!concerts.length) {
-                grid.innerHTML = '<p style="text-align:center;opacity:0.5;padding:3rem;">Aucun concert trouvé.</p>';
+                grid.innerHTML = `<p style="text-align:center;opacity:0.5;padding:3rem;">${t('no_concerts')}</p>`;
                 count.textContent = '';
                 return;
             }
             grid.innerHTML = concerts.map((c, i) => buildCard(c, i)).join('');
-            count.textContent = `${concerts.length} concert${concerts.length > 1 ? 's' : ''}`;
-
+            count.textContent = t('concert_count')(concerts.length);
         }
 
         function buildFilters(concerts) {
@@ -892,7 +1088,7 @@
             const filtersEl = document.getElementById('filters');
 
             const buttons = [
-                { label: 'Tous', value: 'all' },
+                { label: t('filter_all'), value: 'all' },
                 ...locations.map(l => ({ label: l, value: l }))
             ];
 
@@ -925,29 +1121,54 @@
                 renderConcerts(allConcerts);
             } catch (err) {
                 document.getElementById('concerts-grid').innerHTML =
-                    `<p style="text-align:center;color:var(--primary);padding:3rem;">Erreur de chargement : ${err.message}</p>`;
+                    `<p style="text-align:center;color:var(--primary);padding:3rem;">${t('error_load')} ${err.message}</p>`;
                 console.error('Concerts load error:', err);
             }
         }
 
-        // ── Audio preview player ─────────────────────────────────────────────
+        // ── Audio preview player (Deezer JSONP — pas de CORS) ────────────────
         let currentAudio = null;
-        let currentBtn = null;
+        let currentBtn   = null;
+
+        // Cache trackId → preview URL
+        const previewCache = {};
 
         function stopCurrent() {
-            if (!currentAudio) return;
-            currentAudio.pause();
-            currentAudio.src = '';
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.src = '';
+                currentAudio = null;
+            }
             if (currentBtn) {
                 currentBtn.classList.remove('playing');
                 currentBtn.querySelector('.icon').textContent = '▶';
+                currentBtn = null;
             }
-            currentAudio = null;
-            currentBtn = null;
         }
 
-        // Cache: trackId → preview URL
-        const previewCache = {};
+        function fetchPreviewByTrackId(trackId, callback) {
+            if (previewCache[trackId] !== undefined) {
+                callback(previewCache[trackId]);
+                return;
+            }
+            const cbName = '_dz_' + trackId;
+            const script = document.createElement('script');
+            window[cbName] = function(data) {
+                delete window[cbName];
+                script.remove();
+                const url = (data && data.preview) || null;
+                previewCache[trackId] = url;
+                callback(url);
+            };
+            script.src = 'https://api.deezer.com/track/' + trackId + '?output=jsonp&callback=' + cbName;
+            script.onerror = function() {
+                delete window[cbName];
+                script.remove();
+                previewCache[trackId] = null;
+                callback(null);
+            };
+            document.head.appendChild(script);
+        }
 
         function playUrl(btn, url) {
             const audio = new Audio(url);
@@ -956,49 +1177,25 @@
                     btn.classList.remove('playing');
                     btn.querySelector('.icon').textContent = '▶';
                     currentAudio = null;
-                    currentBtn = null;
+                    currentBtn   = null;
                 }
             });
             currentAudio = audio;
-            currentBtn = btn;
+            currentBtn   = btn;
             btn.classList.add('playing');
             btn.querySelector('.icon').textContent = '■';
-            audio.play().catch(function(err) {
-                console.error('play() rejeté :', err);
+            audio.play().catch(function() {
                 stopCurrent();
                 btn.title = 'Lecture impossible';
             });
         }
 
-        function fetchPreviewByTrackId(trackId, callback) {
-            if (previewCache[trackId] !== undefined) {
-                callback(previewCache[trackId] || null);
-                return;
-            }
-            fetch('https://api.deezer.com/track/' + trackId)
-                .then(function(r) { return r.json(); })
-                .then(function(d) {
-                    const url = d.preview || null;
-                    previewCache[trackId] = url;
-                    callback(url);
-                })
-                .catch(function(err) {
-                    console.error('Deezer fetch échoué pour track ' + trackId + ' :', err);
-                    previewCache[trackId] = null;
-                    callback(null);
-                });
-        }
-
-        // Listener délégué unique — appelé DIRECTEMENT par le clic (user gesture intact)
+        // Listener délégué unique
         document.getElementById('concerts-grid').addEventListener('click', function(e) {
             const btn = e.target.closest('.preview-btn');
             if (!btn) return;
 
-            // Même bouton → stop
-            if (currentBtn === btn) {
-                stopCurrent();
-                return;
-            }
+            if (currentBtn === btn) { stopCurrent(); return; }
 
             stopCurrent();
 
@@ -1015,13 +1212,13 @@
                     setTimeout(function() { btn.querySelector('.icon').textContent = '▶'; }, 2000);
                     return;
                 }
-                // Vérifie que l'utilisateur n'a pas cliqué ailleurs entre-temps
-                if (currentBtn && currentBtn !== btn) return;
-                currentAudio = null; currentBtn = null;
+                if (currentBtn && currentBtn !== btn) return; // annulé entre-temps
+                currentBtn = null;
                 playUrl(btn, url);
             });
         });
 
+        applyTranslations();
         loadConcerts();
     </script>
 </body>
