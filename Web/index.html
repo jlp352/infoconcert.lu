@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="site_title">Scène Locale - Concerts dans votre région</title>
+    <title data-i18n="site_title">infoConcert.lu - Concerts dans votre région</title>
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -728,7 +729,7 @@
 
     <header>
         <nav>
-            <div class="logo">Scène Locale</div>
+            <a href="#" class="logo"><img src="image/logo/Logo.png" alt="infoConcert.lu" style="height:90px;width:auto;display:block;"></a>
             <ul>
                 <li><a href="#concerts" data-i18n="nav_concerts">Concerts</a></li>
                 <li><a href="#lieux" data-i18n="nav_venues">Lieux</a></li>
@@ -778,14 +779,14 @@
             <a href="#" title="Twitter">🐦</a>
             <a href="#" title="YouTube">📹</a>
         </div>
-        <p data-i18n="footer_copy">&copy; 2026 Scène Locale - Tous droits réservés</p>
+        <p data-i18n="footer_copy">&copy; 2026 infoConcert.lu – Tous droits réservés</p>
     </footer>
 
     <script>
         // ── i18n ─────────────────────────────────────────────────────────────
         const TRANSLATIONS = {
             fr: {
-                site_title:           'Scène Locale – Concerts dans votre région',
+                site_title:           'infoConcert.lu – Concerts dans votre région',
                 nav_concerts:         'Concerts',
                 nav_venues:           'Lieux',
                 nav_artists:          'Artistes',
@@ -810,11 +811,11 @@
                 newsletter_placeholder:'Votre email',
                 newsletter_btn:       "S'inscrire",
                 newsletter_alert:     'Merci pour votre inscription ! Vous recevrez bientôt nos actualités à ',
-                footer_copy:          '© 2026 Scène Locale – Tous droits réservés',
+                footer_copy:          '© 2026 infoConcert.lu – Tous droits réservés',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
             },
             en: {
-                site_title:           'Local Scene – Concerts in your area',
+                site_title:           'infoConcert.lu – Concerts in your area',
                 nav_concerts:         'Concerts',
                 nav_venues:           'Venues',
                 nav_artists:          'Artists',
@@ -839,11 +840,11 @@
                 newsletter_placeholder:'Your email',
                 newsletter_btn:       'Subscribe',
                 newsletter_alert:     'Thank you for subscribing! You will soon receive our news at ',
-                footer_copy:          '© 2026 Local Scene – All rights reserved',
+                footer_copy:          '© 2026 infoConcert.lu – All rights reserved',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
             },
             de: {
-                site_title:           'Lokale Szene – Konzerte in Ihrer Region',
+                site_title:           'infoConcert.lu – Konzerte in Ihrer Region',
                 nav_concerts:         'Konzerte',
                 nav_venues:           'Veranstaltungsorte',
                 nav_artists:          'Künstler',
@@ -868,7 +869,7 @@
                 newsletter_placeholder:'Ihre E-Mail',
                 newsletter_btn:       'Anmelden',
                 newsletter_alert:     'Vielen Dank für Ihre Anmeldung! Sie erhalten unsere Neuigkeiten bald an ',
-                footer_copy:          '© 2026 Lokale Szene – Alle Rechte vorbehalten',
+                footer_copy:          '© 2026 infoConcert.lu – Alle Rechte vorbehalten',
                 concert_count:        (n) => `${n} Konzert${n > 1 ? 'e' : ''}`,
             }
         };
