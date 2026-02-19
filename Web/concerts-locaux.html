@@ -628,6 +628,65 @@
             margin-top: -1.5rem;
             margin-bottom: 2rem;
         }
+
+        /* Price badge */
+        .concert-price {
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        /* Card footer: price + button */
+        .concert-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* Audio preview */
+        .preview-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .preview-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1rem;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.4);
+            border-radius: 20px;
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+        }
+
+        .preview-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            border-color: var(--accent);
+        }
+
+        .preview-btn.playing {
+            background: rgba(0, 217, 255, 0.25);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .preview-btn .icon {
+            font-style: normal;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -759,6 +818,7 @@
             const status = normalizeStatus(concert.status);
             const gradient = CARD_GRADIENTS[index % CARD_GRADIENTS.length];
             const delay = Math.min(index * 0.05, 1).toFixed(2);
+            const cardId = `card-${concert.id ?? index}`;
 
             const genresHtml = (concert.genres || [])
                 .map(g => `<span class="genre-badge">${g}</span>`)
@@ -778,8 +838,21 @@
             const buttonLabel = isCancelled ? 'Annulé' : isSoldOut ? 'Complet' : 'Réserver →';
             const buttonDisabled = (isCancelled || isSoldOut) ? 'style="opacity:0.4;pointer-events:none;"' : '';
 
+            const priceHtml = concert.price
+                ? `<span class="concert-price">🎟 ${concert.price}</span>`
+                : '';
+
+            const trackIds = [concert.track_id, concert.track_id1].filter(Boolean);
+            const hasPreview = trackIds.length > 0;
+            const previewHtml = hasPreview
+                ? `<div class="preview-buttons">${trackIds.map((id, i) =>
+                    `<button class="preview-btn" data-track-id="${id}" data-label="${i + 1}">
+                        <span class="icon">▶</span> Extrait ${trackIds.length > 1 ? i + 1 : ''}
+                    </button>`).join('')}</div>`
+                : '';
+
             return `
-            <div class="concert-card" style="animation-delay:${delay}s">
+            <div class="concert-card" id="${cardId}" style="animation-delay:${delay}s">
                 <div class="concert-image" style="background:${gradient}">
                     ${imageHtml}
                     ${statusHtml}
@@ -789,7 +862,11 @@
                     <h3 class="concert-title">${concert.artist}</h3>
                     <div class="concert-genres">${genresHtml}</div>
                     <div class="concert-venue">${concert.location}${concert.address ? ' — ' + concert.address : ''}</div>
-                    <a href="${buyLink}" class="ticket-button" target="_blank" rel="noopener" ${buttonDisabled}>${buttonLabel}</a>
+                    ${previewHtml}
+                    <div class="concert-footer">
+                        ${priceHtml}
+                        <a href="${buyLink}" class="ticket-button" target="_blank" rel="noopener" ${buttonDisabled}>${buttonLabel}</a>
+                    </div>
                 </div>
             </div>`;
         }
@@ -807,6 +884,7 @@
             }
             grid.innerHTML = concerts.map((c, i) => buildCard(c, i)).join('');
             count.textContent = `${concerts.length} concert${concerts.length > 1 ? 's' : ''}`;
+
         }
 
         function buildFilters(concerts) {
@@ -851,6 +929,98 @@
                 console.error('Concerts load error:', err);
             }
         }
+
+        // ── Audio preview player ─────────────────────────────────────────────
+        let currentAudio = null;
+        let currentBtn = null;
+
+        function stopCurrent() {
+            if (!currentAudio) return;
+            currentAudio.pause();
+            currentAudio.src = '';
+            if (currentBtn) {
+                currentBtn.classList.remove('playing');
+                currentBtn.querySelector('.icon').textContent = '▶';
+            }
+            currentAudio = null;
+            currentBtn = null;
+        }
+
+        // Cache: trackId → preview URL
+        const previewCache = {};
+
+        function playUrl(btn, url) {
+            const audio = new Audio(url);
+            audio.addEventListener('ended', function() {
+                if (currentBtn === btn) {
+                    btn.classList.remove('playing');
+                    btn.querySelector('.icon').textContent = '▶';
+                    currentAudio = null;
+                    currentBtn = null;
+                }
+            });
+            currentAudio = audio;
+            currentBtn = btn;
+            btn.classList.add('playing');
+            btn.querySelector('.icon').textContent = '■';
+            audio.play().catch(function(err) {
+                console.error('play() rejeté :', err);
+                stopCurrent();
+                btn.title = 'Lecture impossible';
+            });
+        }
+
+        function fetchPreviewByTrackId(trackId, callback) {
+            if (previewCache[trackId] !== undefined) {
+                callback(previewCache[trackId] || null);
+                return;
+            }
+            fetch('https://api.deezer.com/track/' + trackId)
+                .then(function(r) { return r.json(); })
+                .then(function(d) {
+                    const url = d.preview || null;
+                    previewCache[trackId] = url;
+                    callback(url);
+                })
+                .catch(function(err) {
+                    console.error('Deezer fetch échoué pour track ' + trackId + ' :', err);
+                    previewCache[trackId] = null;
+                    callback(null);
+                });
+        }
+
+        // Listener délégué unique — appelé DIRECTEMENT par le clic (user gesture intact)
+        document.getElementById('concerts-grid').addEventListener('click', function(e) {
+            const btn = e.target.closest('.preview-btn');
+            if (!btn) return;
+
+            // Même bouton → stop
+            if (currentBtn === btn) {
+                stopCurrent();
+                return;
+            }
+
+            stopCurrent();
+
+            const trackId = btn.dataset.trackId;
+            if (!trackId) return;
+
+            btn.classList.add('playing');
+            btn.querySelector('.icon').textContent = '⏳';
+
+            fetchPreviewByTrackId(trackId, function(url) {
+                if (!url) {
+                    btn.classList.remove('playing');
+                    btn.querySelector('.icon').textContent = '✕';
+                    setTimeout(function() { btn.querySelector('.icon').textContent = '▶'; }, 2000);
+                    return;
+                }
+                // Vérifie que l'utilisateur n'a pas cliqué ailleurs entre-temps
+                if (currentBtn && currentBtn !== btn) return;
+                currentAudio = null; currentBtn = null;
+                playUrl(btn, url);
+            });
+        });
 
         loadConcerts();
     </script>

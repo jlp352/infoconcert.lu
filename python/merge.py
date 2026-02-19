@@ -29,7 +29,7 @@ _deezer_cache: dict[str, tuple[str, str]] = {}
 
 def load_cache_from_bak(bak_path: str, fmt: str, log: logging.Logger) -> None:
     """Pré-alimente _deezer_cache depuis le fichier .bak (JSON ou CSV).
-    Seuls les artistes avec preview_url non vide sont mis en cache
+    Seuls les artistes avec track_id non vide sont mis en cache
     (les autres seront retentés via l'API Deezer).
     """
     if not os.path.exists(bak_path):
@@ -46,13 +46,13 @@ def load_cache_from_bak(bak_path: str, fmt: str, log: logging.Logger) -> None:
                 concerts = list(csv.DictReader(f))
 
         for concert in concerts:
-            artist      = (concert.get("artist") or "").strip()
-            preview_url  = (concert.get("preview_url")  or "").strip()
-            preview_url1 = (concert.get("preview_url1") or "").strip()
-            if artist and preview_url:          # seulement si preview non vide
+            artist   = (concert.get("artist")   or "").strip()
+            track_id  = str(concert.get("track_id")  or "").strip()
+            track_id1 = str(concert.get("track_id1") or "").strip()
+            if artist and track_id:          # seulement si track_id non vide
                 cache_key = artist.lower()
                 if cache_key not in _deezer_cache:
-                    _deezer_cache[cache_key] = (preview_url, preview_url1)
+                    _deezer_cache[cache_key] = (track_id, track_id1)
                     loaded += 1
 
         log.info(f"Cache Deezer pré-chargé depuis .bak : {loaded} artiste(s)")
@@ -61,8 +61,8 @@ def load_cache_from_bak(bak_path: str, fmt: str, log: logging.Logger) -> None:
         log.warning(f"Impossible de lire le .bak pour le cache Deezer : {e}")
 
 
-def get_top2_previews(artist_name: str) -> tuple[str, str]:
-    """Retourne (preview_url, preview_url1) pour l'artiste via l'API Deezer.
+def get_top2_track_ids(artist_name: str) -> tuple[str, str]:
+    """Retourne (track_id, track_id1) pour l'artiste via l'API Deezer.
     Résultats mis en cache par nom d'artiste. Retourne ("", "") si introuvable.
     """
     key = artist_name.strip().lower()
@@ -90,11 +90,11 @@ def get_top2_previews(artist_name: str) -> tuple[str, str]:
         tracks = r2.json().get("data", [])
         tracks_sorted = sorted(tracks, key=lambda x: x.get("rank", 0), reverse=True)
 
-        previews = [t.get("preview", "") for t in tracks_sorted[:2]]
-        while len(previews) < 2:
-            previews.append("")
+        track_ids = [str(t.get("id", "")) for t in tracks_sorted[:2]]
+        while len(track_ids) < 2:
+            track_ids.append("")
 
-        result = (previews[0], previews[1])
+        result = (track_ids[0], track_ids[1])
         _deezer_cache[key] = result
         return result
 
@@ -215,10 +215,10 @@ def merge_json(input_dir: str, output_file: str, log: logging.Logger) -> None:
                     log.debug(f"Doublon ignoré : {concert.get('artist','?')} le {key[1]}")
                 else:
                     artist = concert.get("artist", "")
-                    preview_url, preview_url1 = get_top2_previews(artist)
-                    log.debug(f"Deezer preview : {artist} → {preview_url or 'introuvable'}")
-                    concert["preview_url"]  = preview_url
-                    concert["preview_url1"] = preview_url1
+                    track_id, track_id1 = get_top2_track_ids(artist)
+                    log.debug(f"Deezer track_id : {artist} → {track_id or 'introuvable'}")
+                    concert["track_id"]  = track_id
+                    concert["track_id1"] = track_id1
                     merged_concerts[key] = concert
 
             for genre in data.get("genres", []):
@@ -293,7 +293,7 @@ def merge_csv(input_dir: str, output_file: str, log: logging.Logger) -> None:
                 reader = csv.DictReader(f)
                 if fieldnames is None:
                     fieldnames = list(reader.fieldnames or [])
-                    for extra in ("preview_url", "preview_url1"):
+                    for extra in ("track_id", "track_id1"):
                         if extra not in fieldnames:
                             fieldnames.append(extra)
 
@@ -304,10 +304,10 @@ def merge_csv(input_dir: str, output_file: str, log: logging.Logger) -> None:
                         log.debug(f"Doublon ignoré : {row.get('artist','?')} le {key[1]}")
                     else:
                         artist = row.get("artist", "")
-                        preview_url, preview_url1 = get_top2_previews(artist)
-                        log.debug(f"Deezer preview : {artist} → {preview_url or 'introuvable'}")
-                        row["preview_url"]  = preview_url
-                        row["preview_url1"] = preview_url1
+                        track_id, track_id1 = get_top2_track_ids(artist)
+                        log.debug(f"Deezer track_id : {artist} → {track_id or 'introuvable'}")
+                        row["track_id"]  = track_id
+                        row["track_id1"] = track_id1
                         merged_concerts[key] = row
 
         concerts_list = sorted(

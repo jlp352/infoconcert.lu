@@ -21,7 +21,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 
 #### Scrapper
 		- [x] Recuperer Prix
-		- [ ] Mettre un extrait musical
+		- [ ] Mettre un extrait musical - Bug Deezer avec avec expiration
 		- [x] Filtre par genres et status
 		- [x] Mettre Rockhal par tous comme salle de concert
 		- [x] Bug Rockhal pour certain buy link n'apparait pas

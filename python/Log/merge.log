@@ -479,3 +479,226 @@
 2026-02-18 18:48:37 [INFO] Résultat : 186 concerts (27 doublons supprimés)
 2026-02-18 18:48:37 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json
 2026-02-18 18:48:37 [INFO] Merge terminé avec succès
+2026-02-19 14:37:56 [INFO] ============================================================
+2026-02-19 14:37:56 [INFO] Démarrage du merge (format=json)
+2026-02-19 14:37:56 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-19 14:37:56 [INFO] Cache Deezer pré-chargé depuis .bak : 0 artiste(s)
+2026-02-19 14:37:56 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-19 14:37:57 [DEBUG] Deezer track_id : Biffy Clyro → 3548243381
+2026-02-19 14:37:58 [DEBUG] Deezer track_id : Jason Derulo → 5420471
+2026-02-19 14:37:59 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-19 14:38:00 [DEBUG] Deezer track_id : MIKA → 953606
+2026-02-19 14:38:01 [DEBUG] Deezer track_id : David Byrne → 3622778352
+2026-02-19 14:38:02 [DEBUG] Deezer track_id : Sean Paul → 3401876061
+2026-02-19 14:38:03 [DEBUG] Deezer track_id : The Divine Comedy → 3438162031
+2026-02-19 14:38:04 [DEBUG] Deezer track_id : Lalou → 3173280991
+2026-02-19 14:38:05 [DEBUG] Deezer track_id : PORTUGAL. THE MAN → 371593461
+2026-02-19 14:38:07 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-19 14:38:07 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-19 14:38:07 [DEBUG] Deezer track_id : Taïro → 1449437502
+2026-02-19 14:38:08 [DEBUG] Deezer track_id : OZARK HENRY → 3274346861
+2026-02-19 14:38:09 [DEBUG] Deezer track_id : Grandbrothers → 3665882992
+2026-02-19 14:38:10 [DEBUG] Deezer track_id : Grossstadtgeflüster → 3782845982
+2026-02-19 14:38:11 [DEBUG] Deezer track_id : Maro → 3092383971
+2026-02-19 14:38:12 [DEBUG] Deezer track_id : Tom Smith → 3434173851
+2026-02-19 14:38:13 [DEBUG] Deezer track_id : Kraftklub → 3551861331
+2026-02-19 14:38:14 [DEBUG] Deezer track_id : Alice Merton → 140182699
+2026-02-19 14:38:15 [DEBUG] Deezer track_id : Helge Schneider → 69405472
+2026-02-19 14:38:16 [DEBUG] Deezer track_id : Les Négresses Vertes → 355628701
+2026-02-19 14:38:17 [DEBUG] Deezer track_id : Ão → 2589355202
+2026-02-19 14:38:18 [DEBUG] Deezer track_id : L.E.J → 3751803362
+2026-02-19 14:38:19 [DEBUG] Deezer track_id : Hooverphonic → 850423
+2026-02-19 14:38:20 [DEBUG] Deezer track_id : CLAIR OBSCUR : EXPEDITION 33 → 3315246271
+2026-02-19 14:38:21 [DEBUG] Deezer track_id : Charles Doré → 3546543301
+2026-02-19 14:38:23 [DEBUG] Deezer track_id : Protoje → 3365737181
+2026-02-19 14:38:24 [DEBUG] Deezer track_id : Sprints → 3725078372
+2026-02-19 14:38:25 [DEBUG] Deezer track_id : Poppy → 3541168831
+2026-02-19 14:38:26 [DEBUG] Deezer track_id : Mobb Deep → 1044131
+2026-02-19 14:38:27 [DEBUG] Deezer track_id : Franz Ferdinand → 4315684
+2026-02-19 14:38:28 [DEBUG] Deezer track_id : Kiefer Sutherland → 3788336172
+2026-02-19 14:38:29 [DEBUG] Deezer track_id : Dekker → 3807173122
+2026-02-19 14:38:30 [DEBUG] Deezer track_id : Bénabar → 583033
+2026-02-19 14:38:31 [DEBUG] Deezer track_id : Alvaro Soler → 1512096542
+2026-02-19 14:38:32 [DEBUG] Deezer track_id : Jools Holland and his Rhythm & Blues Orchestra → 3029916881
+2026-02-19 14:38:33 [DEBUG] Deezer track_id : Joe Bonamassa → 7731922
+2026-02-19 14:38:34 [DEBUG] Deezer track_id : Michael Patrick Kelly → 1977980357
+2026-02-19 14:38:35 [DEBUG] Deezer track_id : Kasalla → 94654714
+2026-02-19 14:38:36 [DEBUG] Deezer track_id : Sarah Connor → 98348314
+2026-02-19 14:38:37 [DEBUG] Deezer track_id : Sofia Isella → 3650500662
+2026-02-19 14:38:38 [DEBUG] Deezer track_id : Jalen Ngonda → 3456173171
+2026-02-19 14:38:39 [DEBUG] Deezer track_id : Blue → 3097538
+2026-02-19 14:38:40 [DEBUG] Deezer track_id : Dermot Kennedy → 610861462
+2026-02-19 14:38:41 [DEBUG] Deezer track_id : Rodrigo y Gabriela - 20th Anniversary Tour → introuvable
+2026-02-19 14:38:42 [DEBUG] Deezer track_id : Beth Hart → 1587111862
+2026-02-19 14:38:43 [DEBUG] Deezer track_id : Antony Szmierek → 3247931101
+2026-02-19 14:38:43 [DEBUG] Deezer track_id : XZIBIT (US) feat. Furnace Band → introuvable
+2026-02-19 14:38:44 [DEBUG] Deezer track_id : MEGADETH → 61382107
+2026-02-19 14:38:45 [DEBUG] Deezer track_id : Ethel Cain → 1875510297
+2026-02-19 14:38:46 [DEBUG] Deezer track_id : Big Thief → 2300028585
+2026-02-19 14:38:47 [DEBUG] Deezer track_id : ANTHRAX → 1176687
+2026-02-19 14:38:48 [DEBUG] Deezer track_id : Rise Against → 7472037
+2026-02-19 14:38:48 [DEBUG] Deezer track_id : Absolut Bartreng → introuvable
+2026-02-19 14:38:49 [DEBUG] Deezer track_id : Chris Isaak → 788457
+2026-02-19 14:38:50 [DEBUG] Deezer track_id : The Offspring → 137233986
+2026-02-19 14:38:51 [DEBUG] Deezer track_id : AnnenMayKantereit → 700711312
+2026-02-19 14:38:52 [DEBUG] Deezer track_id : Dogstar → 2369141675
+2026-02-19 14:38:53 [DEBUG] Deezer track_id : Moby → 134817088
+2026-02-19 14:38:54 [DEBUG] Deezer track_id : Gorillaz → 3129407
+2026-02-19 14:38:55 [DEBUG] Deezer track_id : Robbie Williams → 3098217
+2026-02-19 14:38:56 [DEBUG] Deezer track_id : Jamiroquai → 1884719637
+2026-02-19 14:38:57 [DEBUG] Deezer track_id : Lenny Kravitz → 3107395
+2026-02-19 14:38:58 [DEBUG] Deezer track_id : Zaz → 65220769
+2026-02-19 14:38:59 [DEBUG] Deezer track_id : Beirut → 426572052
+2026-02-19 14:39:00 [DEBUG] Deezer track_id : Clueso → 1727984087
+2026-02-19 14:39:01 [DEBUG] Deezer track_id : Katy Perry → 3160142
+2026-02-19 14:39:02 [DEBUG] Deezer track_id : Jovanotti → 922477
+2026-02-19 14:39:03 [DEBUG] Deezer track_id : Paul Kalkbrenner → 3502053411
+2026-02-19 14:39:04 [DEBUG] Deezer track_id : Beatsteaks → 106828470
+2026-02-19 14:39:05 [DEBUG] Deezer track_id : Lorde → 70403437
+2026-02-19 14:39:06 [DEBUG] Deezer track_id : 1986zig → 3817588512
+2026-02-19 14:39:07 [DEBUG] Deezer track_id : Sportfreunde Stiller → 1791078487
+2026-02-19 14:39:08 [DEBUG] Deezer track_id : Lake Street Dive → 74689498
+2026-02-19 14:39:09 [DEBUG] Deezer track_id : Samu Haber → 2664911172
+2026-02-19 14:39:10 [DEBUG] Deezer track_id : LOI → 2086818497
+2026-02-19 14:39:10 [DEBUG] Deezer track_id : Sofia Belabbes → introuvable
+2026-02-19 14:39:11 [DEBUG] Deezer track_id : Kneecap → 2643667232
+2026-02-19 14:39:12 [DEBUG] Deezer track_id : Heavysaurus → 13784094
+2026-02-19 14:39:13 [DEBUG] Deezer track_id : Martin Kohlstedt → 672944332
+2026-02-19 14:39:14 [DEBUG] Deezer track_id : Tokio Hotel → 7718640
+2026-02-19 14:39:15 [DEBUG] Deezer track_id : Joe Jackson + Band → introuvable
+2026-02-19 14:39:16 [DEBUG] Deezer track_id : Zebrahead → 2299895755
+2026-02-19 14:39:16 [DEBUG] Deezer track_id : The Witcher → 2826779992
+2026-02-19 14:39:17 [DEBUG] Deezer track_id : Beast in Black → 659569532
+2026-02-19 14:39:18 [DEBUG] Deezer track_id : NeS → 2876956142
+2026-02-19 14:39:19 [DEBUG] Deezer track_id : Conni - Das Musical! → introuvable
+2026-02-19 14:39:20 [DEBUG] Deezer track_id : Lichterkinder → 1209436532
+2026-02-19 14:39:21 [DEBUG] Deezer track_id : Zimmer90 → 2968007141
+2026-02-19 14:39:22 [DEBUG] Deezer track_id : Philipp Poisel → 1721562237
+2026-02-19 14:39:23 [DEBUG] Deezer track_id : Das Lumpenpack → 1951178967
+2026-02-19 14:39:24 [DEBUG] Deezer track_id : Jessé → 424970262
+2026-02-19 14:39:25 [DEBUG] Deezer track_id : Ana Godefroy → introuvable
+2026-02-19 14:39:26 [DEBUG] Deezer track_id : Cédric Salaun → introuvable
+2026-02-19 14:39:26 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-19 14:39:26 [DEBUG] Doublon ignoré : BIFFY CLYRO le 2026-02-19
+2026-02-19 14:39:27 [DEBUG] Deezer track_id : AVATAR → 124600306
+2026-02-19 14:39:28 [DEBUG] Deezer track_id : DIRK MAASSEN → 3375802161
+2026-02-19 14:39:29 [DEBUG] Deezer track_id : LA DISPUTE → 2188772857
+2026-02-19 14:39:29 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-19 14:39:29 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-19 14:39:29 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-19 14:39:30 [DEBUG] Deezer track_id : AUPINARD → 3640132372
+2026-02-19 14:39:31 [DEBUG] Deezer track_id : BETWEEN THE BURIED AND ME → 3547183121
+2026-02-19 14:39:31 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-19 14:39:32 [DEBUG] Deezer track_id : PLAY WITH COLORS → 1579438382
+2026-02-19 14:39:32 [DEBUG] Doublon ignoré : PLAY WITH COLORS le 2026-02-28
+2026-02-19 14:39:32 [DEBUG] Deezer track_id : D'JAL → 924897842
+2026-02-19 14:39:33 [DEBUG] Deezer track_id : TONY CARREIRA → 1091896092
+2026-02-19 14:39:34 [DEBUG] Deezer track_id : OMNIUM GATHERUM + Fallujah + In Mourning → introuvable
+2026-02-19 14:39:34 [DEBUG] Deezer track_id : THE CLASSIC ROCK SHOW → introuvable
+2026-02-19 14:39:35 [DEBUG] Deezer track_id : SUPERBUS → 3198384621
+2026-02-19 14:39:36 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-19 14:39:36 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-19 14:39:36 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-19 14:39:37 [DEBUG] Deezer track_id : JOSH ISLAND → 1347656192
+2026-02-19 14:39:37 [DEBUG] Deezer track_id : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul → introuvable
+2026-02-19 14:39:38 [DEBUG] Deezer track_id : CARPENTER BRUT → 3689743052
+2026-02-19 14:39:39 [DEBUG] Deezer track_id : LUXEMBOURG MUSIC VIDEO NIGHT 2026 → introuvable
+2026-02-19 14:39:39 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-19 14:39:40 [DEBUG] Deezer track_id : LEVI.SCT → 2437376535
+2026-02-19 14:39:41 [DEBUG] Deezer track_id : CAPITÃO FAUSTO → 2698280712
+2026-02-19 14:39:42 [DEBUG] Deezer track_id : DUB INC → 93916028
+2026-02-19 14:39:42 [DEBUG] Deezer track_id : GOOD NEIGHBOURS → 2622232942
+2026-02-19 14:39:43 [DEBUG] Deezer track_id : DISIZ → 3558373981
+2026-02-19 14:39:44 [DEBUG] Deezer track_id : ANDY TIMMONS → 109186636
+2026-02-19 14:39:44 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-19 14:39:45 [DEBUG] Deezer track_id : LUK. + LUC SPADA → 3817636891
+2026-02-19 14:39:47 [DEBUG] Deezer track_id : MAACH MAT! → 4603408
+2026-02-19 14:39:47 [DEBUG] Doublon ignoré : MAACH MAT! le 2026-03-28
+2026-02-19 14:39:47 [DEBUG] Deezer track_id : DO YOU RAVE? → introuvable
+2026-02-19 14:39:47 [DEBUG] Deezer track_id : PAT PATROUILLE LE SPECTACLE ! → introuvable
+2026-02-19 14:39:47 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-19 14:39:48 [DEBUG] Deezer track_id : KREATOR + Carcass + Exodus + Nails → introuvable
+2026-02-19 14:39:49 [DEBUG] Deezer track_id : JOSMAN → 1684004267
+2026-02-19 14:39:49 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-19 14:39:50 [DEBUG] Deezer track_id : ZAMDANE → 3574546951
+2026-02-19 14:39:51 [DEBUG] Deezer track_id : LE LAC DES CYGNES → introuvable
+2026-02-19 14:39:51 [DEBUG] Deezer track_id : NEK → 683846
+2026-02-19 14:39:53 [DEBUG] Deezer track_id : ISE → 3579448581
+2026-02-19 14:39:53 [DEBUG] Deezer track_id : MOOFEST → 2294072085
+2026-02-19 14:39:55 [DEBUG] Deezer track_id : HAEVN → 3067264031
+2026-02-19 14:39:55 [DEBUG] Deezer track_id : CARISA DIAS + NAOMI AYÉ → introuvable
+2026-02-19 14:39:56 [DEBUG] Deezer track_id : NEXT DEED → 2099986987
+2026-02-19 14:39:56 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-19 14:39:56 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-19 14:39:57 [DEBUG] Deezer track_id : MATTEO MANCUSO → 3728637832
+2026-02-19 14:39:58 [DEBUG] Deezer track_id : SCOTT BRADLEE'S POSTMODERN JUKEBOX → 133034462
+2026-02-19 14:39:58 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-19 14:39:59 [DEBUG] Deezer track_id : TALI → 2703400752
+2026-02-19 14:40:00 [DEBUG] Deezer track_id : METAL BATTLE → 414750102
+2026-02-19 14:40:01 [DEBUG] Deezer track_id : PINK FLOYD'S THE WALL → 116914042
+2026-02-19 14:40:02 [DEBUG] Deezer track_id : PINK FLOYD'S DARK SIDE OF THE MOON → introuvable
+2026-02-19 14:40:03 [DEBUG] Deezer track_id : CHRISTOPHER CROSS → 4828150
+2026-02-19 14:40:03 [DEBUG] Deezer track_id : MAYA + THALAMUSPROJECT → introuvable
+2026-02-19 14:40:04 [DEBUG] Deezer track_id : LIGABUE → 6633023
+2026-02-19 14:40:05 [DEBUG] Deezer track_id : HOUDI → 2554977372
+2026-02-19 14:40:05 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-19 14:40:06 [DEBUG] Deezer track_id : HIMRA → 3803817212
+2026-02-19 14:40:06 [DEBUG] Deezer track_id : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) → introuvable
+2026-02-19 14:40:07 [DEBUG] Deezer track_id : THE GATHERING → 108645480
+2026-02-19 14:40:07 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-19 14:40:08 [DEBUG] Deezer track_id : PLINI + SUNGAZER → 1333998522
+2026-02-19 14:40:10 [DEBUG] Deezer track_id : PUGGY → 2522139891
+2026-02-19 14:40:11 [DEBUG] Deezer track_id : THE ARISTOCRATS → 13645471
+2026-02-19 14:40:11 [DEBUG] Deezer track_id : LUXEMBOURG  DU RIRE → introuvable
+2026-02-19 14:40:11 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-19 14:40:12 [DEBUG] Deezer track_id : MARI FROES → 3336883571
+2026-02-19 14:40:13 [DEBUG] Deezer track_id : ZUCCHERO → 1565238
+2026-02-19 14:40:14 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-19 14:40:14 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-19 14:40:15 [DEBUG] Deezer track_id : GHINZU → 4303580
+2026-02-19 14:40:15 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-19 14:40:15 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-19 14:40:16 [DEBUG] Deezer track_id : A PERFECT CIRCLE → 3092700
+2026-02-19 14:40:17 [DEBUG] Deezer track_id : EMPIRE OF THE SUN → 4286053
+2026-02-19 14:40:18 [DEBUG] Deezer track_id : ALICE COOPER → 730866
+2026-02-19 14:40:19 [DEBUG] Deezer track_id : ZZ TOP → 3667326
+2026-02-19 14:40:20 [DEBUG] Deezer track_id : JAZEEK → 3244582061
+2026-02-19 14:40:21 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-19 14:40:21 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-19 14:40:21 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-19 14:40:22 [DEBUG] Deezer track_id : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION → introuvable
+2026-02-19 14:40:23 [DEBUG] Deezer track_id : FISCHER Z → 3460908
+2026-02-19 14:40:23 [DEBUG] Deezer track_id : LEGENDS OF ROCK TRIBUTE FESTIVAL → introuvable
+2026-02-19 14:40:24 [DEBUG] Deezer track_id : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL → introuvable
+2026-02-19 14:40:24 [DEBUG] Deezer track_id : AMON AMARTH + ORBIT CULTURE + SOILWORK → introuvable
+2026-02-19 14:40:25 [DEBUG] Deezer track_id : PHILIPPE KATERINE SYMPHONIQUE → introuvable
+2026-02-19 14:40:25 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-19 14:40:26 [DEBUG] Deezer track_id : LARA FABIAN → 80920774
+2026-02-19 14:40:26 [DEBUG] Deezer track_id : THE FRONTM3N → 579940692
+2026-02-19 14:40:27 [DEBUG] Deezer track_id : GUY2BEZBAR → 3329681251
+2026-02-19 14:40:28 [DEBUG] Deezer track_id : LAURA PAUSINI → 760199
+2026-02-19 14:40:28 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-19 14:40:29 [DEBUG] Deezer track_id : VANESSA PARADIS → 13621853
+2026-02-19 14:40:30 [DEBUG] Deezer track_id : THE SISTERS OF MERCY → 70212122
+2026-02-19 14:40:31 [DEBUG] Deezer track_id : SKY FULL OF STARS → introuvable
+2026-02-19 14:40:32 [DEBUG] Deezer track_id : CALEMA → 1802220957
+2026-02-19 14:40:32 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-19 14:40:32 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-19 14:40:33 [DEBUG] Deezer track_id : MENTISSA → 1534970092
+2026-02-19 14:40:33 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-19 14:40:34 [DEBUG] Deezer track_id : MAMMOTH → 3805773112
+2026-02-19 14:40:35 [DEBUG] Deezer track_id : TYPH BARROW → 143420876
+2026-02-19 14:40:36 [DEBUG] Deezer track_id : TRIBUTE TO THE BEATLES → 76979311
+2026-02-19 14:40:37 [DEBUG] Deezer track_id : DORO → 3572450371
+2026-02-19 14:40:38 [DEBUG] Deezer track_id : SUZANE → 3480520401
+2026-02-19 14:40:39 [DEBUG] Deezer track_id : CASSE-NOISETTE → introuvable
+2026-02-19 14:40:40 [DEBUG] Deezer track_id : ONE VISION OF QUEEN → introuvable
+2026-02-19 14:40:41 [DEBUG] Deezer track_id : IBRAHIM MAALOUF → 3810795232
+2026-02-19 14:40:41 [DEBUG] Deezer track_id : EROS RAMAZZOTTI → 604845
+2026-02-19 14:40:41 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-19 14:40:42 [DEBUG] Deezer track_id : RALF SCHMITZ → introuvable
+2026-02-19 14:40:43 [DEBUG] Deezer track_id : GRAND CORPS MALADE → 991348192
+2026-02-19 14:40:43 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-19 14:40:43 [INFO] Résultat : 186 concerts (27 doublons supprimés)
+2026-02-19 14:40:43 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json
+2026-02-19 14:40:43 [INFO] Merge terminé avec succès
