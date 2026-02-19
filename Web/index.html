@@ -374,80 +374,6 @@
             transform: translateX(5px);
         }
 
-        /* Newsletter Section */
-        .newsletter {
-            position: relative;
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--gray) 0%, var(--dark) 100%);
-            margin: 4rem 0;
-            border-top: 3px solid var(--primary);
-            border-bottom: 3px solid var(--primary);
-        }
-
-        .newsletter-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .newsletter h2 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            margin-bottom: 1rem;
-            letter-spacing: 3px;
-        }
-
-        .newsletter p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.8;
-        }
-
-        .newsletter-form {
-            display: flex;
-            gap: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            min-width: 250px;
-            padding: 1.2rem 1.5rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: 30px;
-            color: var(--light);
-            font-size: 1rem;
-            transition: all 0.3s;
-        }
-
-        .newsletter-form input:focus {
-            outline: none;
-            border-color: var(--primary);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .newsletter-form button {
-            padding: 1.2rem 3rem;
-            background: var(--secondary);
-            color: var(--dark);
-            border: none;
-            border-radius: 30px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .newsletter-form button:hover {
-            background: var(--accent);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.4);
-        }
-
         /* Footer */
         footer {
             position: relative;
@@ -1016,14 +942,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .newsletter-form {
-                flex-direction: column;
-            }
-
-            .newsletter-form input,
-            .newsletter-form button {
-                width: 100%;
-            }
         }
 
         /* Loading animation */
@@ -1289,16 +1207,7 @@
         </div>
     </section>
 
-    <section class="newsletter">
-        <div class="newsletter-content">
-            <h2 data-i18n="newsletter_title">Ne manquez aucun concert</h2>
-            <p data-i18n="newsletter_subtitle">Inscrivez-vous à notre newsletter et recevez les dernières annonces directement dans votre boîte mail</p>
-            <form class="newsletter-form" onsubmit="return handleSubmit(event)">
-                <input type="email" data-i18n-placeholder="newsletter_placeholder" placeholder="Votre email" required>
-                <button type="submit" data-i18n="newsletter_btn">S'inscrire</button>
-            </form>
-        </div>
-    </section>
+    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 0;">
 
     <footer>
         <div class="social-links">
@@ -1368,11 +1277,6 @@
                 btn_sold_out:         'Complet',
                 btn_reserve:          'Réserver →',
                 preview_extract:      'Extrait',
-                newsletter_title:     'Ne manquez aucun concert',
-                newsletter_subtitle:  'Inscrivez-vous à notre newsletter et recevez les dernières annonces directement dans votre boîte mail',
-                newsletter_placeholder:'Votre email',
-                newsletter_btn:       "S'inscrire",
-                newsletter_alert:     'Merci pour votre inscription ! Vous recevrez bientôt nos actualités à ',
                 footer_copy:          '© 2026 infoConcert.lu – Tous droits réservés',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
                 cookie_banner_text:   'Nous utilisons des cookies pour mémoriser votre identifiant et la date de votre dernière visite, afin de vous afficher les nouveaux concerts. Aucune donnée personnelle n\'est partagée.',
@@ -1406,11 +1310,6 @@
                 btn_sold_out:         'Sold out',
                 btn_reserve:          'Book →',
                 preview_extract:      'Preview',
-                newsletter_title:     'Never miss a concert',
-                newsletter_subtitle:  'Subscribe to our newsletter and get the latest announcements straight to your inbox.',
-                newsletter_placeholder:'Your email',
-                newsletter_btn:       'Subscribe',
-                newsletter_alert:     'Thank you for subscribing! You will soon receive our news at ',
                 footer_copy:          '© 2026 infoConcert.lu – All rights reserved',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
                 cookie_banner_text:   'We use cookies to remember your ID and your last visit date, so we can show you new concerts. No personal data is shared.',
@@ -1444,11 +1343,6 @@
                 btn_sold_out:         'Ausverkauft',
                 btn_reserve:          'Buchen →',
                 preview_extract:      'Vorschau',
-                newsletter_title:     'Kein Konzert verpassen',
-                newsletter_subtitle:  'Abonnieren Sie unseren Newsletter und erhalten Sie die neuesten Ankündigungen direkt in Ihr Postfach.',
-                newsletter_placeholder:'Ihre E-Mail',
-                newsletter_btn:       'Anmelden',
-                newsletter_alert:     'Vielen Dank für Ihre Anmeldung! Sie erhalten unsere Neuigkeiten bald an ',
                 footer_copy:          '© 2026 infoConcert.lu – Alle Rechte vorbehalten',
                 concert_count:        (n) => `${n} Konzert${n > 1 ? 'e' : ''}`,
                 cookie_banner_text:   'Wir verwenden Cookies, um Ihre ID und Ihr letztes Besuchsdatum zu speichern, damit wir Ihnen neue Konzerte anzeigen können. Es werden keine persönlichen Daten weitergegeben.',
@@ -1522,15 +1416,6 @@
             const btn = e.target.closest('.lang-btn');
             if (btn) switchLang(btn.dataset.lang);
         });
-
-        // ── Newsletter ────────────────────────────────────────────────────────
-        function handleSubmit(event) {
-            event.preventDefault();
-            const input = event.target.querySelector('input');
-            alert(t('newsletter_alert') + input.value);
-            input.value = '';
-            return false;
-        }
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
