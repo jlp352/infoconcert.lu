@@ -30,24 +30,24 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 
 #### Web
 		- [x] Site Multi Langue (Fr, En, Ge) selection langue en function du navigateur
-		- [ ] Revoir Barre Menu. Mettre Logo
+		- [x] Revoir Barre Menu. Mettre Logo
 		- [ ] Rajouter les mois
 		- Filtre pour afficher selon criteres
 			- [ ] type de musique
 			- [ ] type de salle
 				Voir Image ExempleFiltre.png
-		Filtre pour afficher les nouveaux concerts depuis last visite
-		Revoir design de la tuile concert
-			en cliquant sur la tuile allez sur la page concert
-			rajouter bouton pour ecouter un extrait
-			Mettre un bouton more details sur la page concert
-			Si concert Sold out, mettre un bouton vers Ticket Swap
-		Message Cookies
-		Voir les mentions légales à mettre en place pour un site internet
+		- [ ] Filtre pour afficher les nouveaux concerts depuis last visite
+		- Revoir design de la tuile concert
+			- [ ] en cliquant sur la tuile allez sur la page concert
+			- [ ] rajouter bouton pour ecouter un extrait
+			- [ ] Mettre un bouton more details sur la page concert
+			- [ ] Si concert Sold out, mettre un bouton vers Ticket Swap
+		- [ ] Message Cookies
+		- [ ] Voir les mentions légales à mettre en place pour un site internet
 
-		Page Salle de concerts
-		Supprimer artiste
-		Page contacts	
+		- [ ] Page Salle de concerts
+		- [ ] Ajouter a quick search pour artiste
+		- [ ] Page contacts	
 				
 	
 #### General

@@ -91,6 +91,7 @@
             display: flex;
             list-style: none;
             gap: 2rem;
+            align-items: center;
         }
 
         nav a {
@@ -510,6 +511,196 @@
             color: var(--accent);
         }
 
+        /* Quick search */
+        .nav-search {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-search-input {
+            background: rgba(255,255,255,0.07);
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            color: var(--light);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            padding: 0.65rem 1rem 0.65rem 2.6rem;
+            width: 260px;
+            outline: none;
+        }
+
+        .nav-search-input::placeholder {
+            color: rgba(245,245,245,0.4);
+        }
+
+        .nav-search-icon {
+            position: absolute;
+            left: 0.85rem;
+            font-size: 1rem;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .nav-search-clear {
+            position: absolute;
+            right: 0.7rem;
+            background: none;
+            border: none;
+            color: rgba(245,245,245,0.5);
+            cursor: pointer;
+            font-size: 1rem;
+            line-height: 1;
+            padding: 0;
+            display: none;
+            transition: color 0.2s;
+        }
+
+        .nav-search-clear:hover { color: var(--primary); }
+
+        .search-dropdown {
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            right: 0;
+            background: #1e1e1e;
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            overflow: hidden;
+            z-index: 1000;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            display: none;
+            max-height: 380px;
+            overflow-y: auto;
+        }
+
+        .search-dropdown.open { display: block; }
+
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            padding: 0.75rem 1.1rem;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: background 0.2s;
+        }
+
+        .search-result-item:last-child { border-bottom: none; }
+
+        .search-result-item:hover,
+        .search-result-item.focused {
+            background: rgba(255, 51, 102, 0.12);
+        }
+
+        .search-result-thumb {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        .search-result-thumb-placeholder {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        .search-result-info { flex: 1; min-width: 0; }
+
+        .search-result-artist {
+            font-weight: 700;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .search-result-artist mark {
+            background: none;
+            color: var(--primary);
+            font-weight: 900;
+        }
+
+        .search-result-meta {
+            font-size: 0.75rem;
+            opacity: 0.55;
+            margin-top: 0.1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .search-result-date {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .search-no-result {
+            padding: 1.2rem;
+            text-align: center;
+            opacity: 0.45;
+            font-size: 0.9rem;
+        }
+
+        /* Artist active filter banner */
+        .artist-filter-banner {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 51, 102, 0.1);
+            border: 2px solid var(--primary);
+            border-radius: 40px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .artist-filter-banner.visible {
+            display: flex;
+        }
+
+        .artist-filter-banner span {
+            font-size: 0.95rem;
+            opacity: 0.7;
+        }
+
+        .artist-filter-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+        }
+
+        .artist-filter-reset {
+            background: none;
+            border: 2px solid rgba(255,255,255,0.25);
+            color: var(--light);
+            border-radius: 20px;
+            padding: 0.3rem 1rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .artist-filter-reset:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
         /* Mobile adjustments */
         @media (max-width: 768px) {
             nav ul {
@@ -733,8 +924,19 @@
             <ul>
                 <li><a href="#concerts" data-i18n="nav_concerts">Concerts</a></li>
                 <li><a href="#lieux" data-i18n="nav_venues">Lieux</a></li>
-                <li><a href="#artistes" data-i18n="nav_artists">Artistes</a></li>
                 <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li>
+                    <div class="nav-search" id="nav-search">
+                        <span class="nav-search-icon">🔍</span>
+                        <input class="nav-search-input" id="nav-search-input"
+                               type="text"
+                               data-i18n-placeholder="search_placeholder"
+                               placeholder="Tapez un artiste…"
+                               autocomplete="off" spellcheck="false">
+                        <button class="nav-search-clear" id="nav-search-clear" tabindex="-1">✕</button>
+                        <div class="search-dropdown" id="search-dropdown"></div>
+                    </div>
+                </li>
             </ul>
             <div class="lang-switcher" id="lang-switcher">
                 <button class="lang-btn" data-lang="fr">FR</button>
@@ -752,6 +954,12 @@
 
     <section class="concerts" id="concerts">
         <h2 class="section-title" data-i18n="section_upcoming">Concerts à venir</h2>
+
+        <div class="artist-filter-banner" id="artist-filter-banner">
+            <span id="artist-filter-label" data-i18n="search_filter_label">Artiste :</span>
+            <span class="artist-filter-name" id="artist-filter-name"></span>
+            <button class="artist-filter-reset" id="artist-filter-reset" data-i18n="search_filter_reset">Voir tous les concerts</button>
+        </div>
 
         <div class="filters" id="filters"></div>
         <p class="concerts-count" id="concerts-count"></p>
@@ -789,8 +997,11 @@
                 site_title:           'infoConcert.lu – Concerts dans votre région',
                 nav_concerts:         'Concerts',
                 nav_venues:           'Lieux',
-                nav_artists:          'Artistes',
                 nav_contact:          'Contact',
+                search_placeholder:   'Tapez un artiste…',
+                search_no_result:     'Aucun artiste trouvé',
+                search_filter_label:  'Artiste :',
+                search_filter_reset:  'Voir tous les concerts',
                 hero_title:           'LA MUSIQUE VIENT<br>À VOUS',
                 hero_subtitle:        "Découvrez les meilleurs concerts et événements musicaux de votre région. De l'indie au rock, du jazz à l'électro.",
                 hero_cta:             'Voir les concerts',
@@ -818,8 +1029,11 @@
                 site_title:           'infoConcert.lu – Concerts in your area',
                 nav_concerts:         'Concerts',
                 nav_venues:           'Venues',
-                nav_artists:          'Artists',
                 nav_contact:          'Contact',
+                search_placeholder:   'Type an artist…',
+                search_no_result:     'No artist found',
+                search_filter_label:  'Artist:',
+                search_filter_reset:  'Show all concerts',
                 hero_title:           'MUSIC COMES<br>TO YOU',
                 hero_subtitle:        'Discover the best concerts and music events in your area. From indie to rock, jazz to electro.',
                 hero_cta:             'See concerts',
@@ -847,8 +1061,11 @@
                 site_title:           'infoConcert.lu – Konzerte in Ihrer Region',
                 nav_concerts:         'Konzerte',
                 nav_venues:           'Veranstaltungsorte',
-                nav_artists:          'Künstler',
                 nav_contact:          'Kontakt',
+                search_placeholder:   'Künstler eingeben…',
+                search_no_result:     'Kein Künstler gefunden',
+                search_filter_label:  'Künstler:',
+                search_filter_reset:  'Alle Konzerte anzeigen',
                 hero_title:           'MUSIK KOMMT<br>ZU IHNEN',
                 hero_subtitle:        'Entdecken Sie die besten Konzerte und Musikveranstaltungen in Ihrer Region. Von Indie bis Rock, Jazz bis Elektro.',
                 hero_cta:             'Konzerte ansehen',
@@ -1217,6 +1434,143 @@
                 currentBtn = null;
                 playUrl(btn, url);
             });
+        });
+
+        // ── Quick artist search ───────────────────────────────────────────────
+        const searchInput    = document.getElementById('nav-search-input');
+        const searchClear    = document.getElementById('nav-search-clear');
+        const searchDropdown = document.getElementById('search-dropdown');
+        let focusedIdx = -1;
+
+        function highlight(text, query) {
+            if (!query) return text;
+            const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>');
+        }
+
+        function formatShortDate(dateStr) {
+            const d = new Date(dateStr + 'T00:00:00');
+            const locale = LOCALE_MAP[currentLang] || 'fr-FR';
+            return d.toLocaleDateString(locale, { day: 'numeric', month: 'short' });
+        }
+
+        function renderDropdown(query) {
+            const q = query.trim().toLowerCase();
+            searchDropdown.innerHTML = '';
+            focusedIdx = -1;
+
+            if (!q) { searchDropdown.classList.remove('open'); return; }
+
+            const results = allConcerts.filter(c =>
+                c.artist.toLowerCase().includes(q)
+            ).slice(0, 8);
+
+            if (!results.length) {
+                searchDropdown.innerHTML = `<p class="search-no-result">${t('search_no_result')}</p>`;
+                searchDropdown.classList.add('open');
+                return;
+            }
+
+            searchDropdown.innerHTML = results.map((c, i) => {
+                const thumb = c.image
+                    ? `<img class="search-result-thumb" src="${c.image}" alt="${c.artist}" onerror="this.outerHTML='<div class=\\'search-result-thumb-placeholder\\'>♫</div>'">`
+                    : `<div class="search-result-thumb-placeholder">♫</div>`;
+                return `
+                <div class="search-result-item" data-concert-id="${c.id ?? i}" tabindex="-1">
+                    ${thumb}
+                    <div class="search-result-info">
+                        <div class="search-result-artist">${highlight(c.artist, query.trim())}</div>
+                        <div class="search-result-meta">${c.location}${c.address ? ' · ' + c.address : ''}</div>
+                    </div>
+                    <span class="search-result-date">${formatShortDate(c.date_live)}</span>
+                </div>`;
+            }).join('');
+
+            searchDropdown.classList.add('open');
+        }
+
+        function closeDropdown() {
+            searchDropdown.classList.remove('open');
+            focusedIdx = -1;
+        }
+
+        // ── Artist filter ─────────────────────────────────────────────────────
+        let activeArtistFilter = null;
+
+        function filterByArtist(artistName) {
+            activeArtistFilter = artistName;
+            const banner      = document.getElementById('artist-filter-banner');
+            const bannerName  = document.getElementById('artist-filter-name');
+            bannerName.textContent = artistName;
+            banner.classList.add('visible');
+
+            const filtered = allConcerts.filter(c =>
+                c.artist.toLowerCase() === artistName.toLowerCase()
+            );
+            renderConcerts(filtered);
+
+            // Scroll to section
+            document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function resetArtistFilter() {
+            activeArtistFilter = null;
+            document.getElementById('artist-filter-banner').classList.remove('visible');
+            const filtered = activeFilter === 'all'
+                ? allConcerts
+                : allConcerts.filter(c => c.location === activeFilter);
+            renderConcerts(filtered);
+        }
+
+        document.getElementById('artist-filter-reset').addEventListener('click', resetArtistFilter);
+
+        searchInput.addEventListener('input', () => {
+            const q = searchInput.value;
+            searchClear.style.display = q ? 'block' : 'none';
+            renderDropdown(q);
+        });
+
+        searchInput.addEventListener('keydown', e => {
+            const items = searchDropdown.querySelectorAll('.search-result-item');
+            if (!items.length) return;
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                focusedIdx = (focusedIdx + 1) % items.length;
+                items.forEach((el, i) => el.classList.toggle('focused', i === focusedIdx));
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                focusedIdx = (focusedIdx - 1 + items.length) % items.length;
+                items.forEach((el, i) => el.classList.toggle('focused', i === focusedIdx));
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                const active = focusedIdx >= 0 ? items[focusedIdx] : items[0];
+                if (active) active.click();
+            } else if (e.key === 'Escape') {
+                closeDropdown();
+                searchInput.blur();
+            }
+        });
+
+        searchDropdown.addEventListener('click', e => {
+            const item = e.target.closest('.search-result-item');
+            if (!item) return;
+            const artistName = item.querySelector('.search-result-artist').textContent;
+            closeDropdown();
+            searchInput.value = '';
+            searchClear.style.display = 'none';
+            filterByArtist(artistName);
+        });
+
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchClear.style.display = 'none';
+            closeDropdown();
+            searchInput.focus();
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', e => {
+            if (!document.getElementById('nav-search').contains(e.target)) closeDropdown();
         });
 
         applyTranslations();
