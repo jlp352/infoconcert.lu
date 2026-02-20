@@ -166,25 +166,34 @@
             color: var(--accent);
         }
 
-        /* Page content */
-        .page-content {
+        /* ── Venues page main ── */
+        .venues-main {
             position: relative;
-            max-width: 900px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 6rem 2rem;
-            text-align: center;
+            padding: 4rem 2rem 6rem;
         }
 
-        .page-content h1 {
+        /* Page title */
+        .venues-title {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: clamp(3rem, 6vw, 5rem);
+            font-size: clamp(3rem, 7vw, 6rem);
             letter-spacing: 4px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
             animation: slideDown 0.8s ease-out;
+            text-align: center;
+        }
+
+        .venues-subtitle {
+            text-align: center;
+            opacity: 0.5;
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            animation: fadeInSub 0.8s ease-out 0.2s both;
         }
 
         @keyframes slideDown {
@@ -192,16 +201,198 @@
             to   { opacity: 1; transform: translateY(0); }
         }
 
-        .page-content p {
-            opacity: 0.5;
-            font-size: 1.1rem;
-            animation: fadeIn 0.8s ease-out 0.2s both;
-        }
-
-        @keyframes fadeIn {
+        @keyframes fadeInSub {
             from { opacity: 0; }
             to   { opacity: 0.5; }
         }
+
+        /* ── Filter buttons ── */
+        .venues-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .filter-btn {
+            padding: 0.6rem 1.5rem;
+            background: transparent;
+            color: var(--light);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(255, 51, 102, 0.1);
+        }
+
+        /* ── Venue cards grid ── */
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Card */
+        .venue-card {
+            background: var(--gray);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.07);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .venue-card.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .venue-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(255, 51, 102, 0.2);
+            border-color: rgba(255, 51, 102, 0.4);
+        }
+
+        .venue-card.highlight {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary), 0 20px 50px rgba(255, 51, 102, 0.3);
+        }
+
+        /* Card image */
+        .venue-img-wrap {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        .venue-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .venue-card:hover .venue-img-wrap img {
+            transform: scale(1.06);
+        }
+
+        .venue-img-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(10,10,10,0.85) 100%);
+        }
+
+        /* Card body */
+        .venue-body {
+            padding: 1.5rem;
+        }
+
+        .venue-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.75rem;
+            line-height: 1;
+        }
+
+        .venue-desc {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            opacity: 0.8;
+            margin-bottom: 1.2rem;
+        }
+
+        .venue-address {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.04);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            opacity: 0.75;
+        }
+
+        .venue-address .pin {
+            font-size: 1rem;
+            margin-top: 0.1rem;
+            flex-shrink: 0;
+        }
+
+        /* GPS navigation button */
+        .venue-nav-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.45rem;
+            margin: 1rem auto 0;
+            width: fit-content;
+            padding: 0.55rem 1.2rem;
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 30px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .venue-nav-btn:hover {
+            background: rgba(0, 217, 255, 0.12);
+            box-shadow: 0 0 16px rgba(0, 217, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .venue-nav-btn svg {
+            flex-shrink: 0;
+        }
+
+        /* Footer image attribution */
+        .footer-attribution {
+            max-width: 1400px;
+            margin: 0 auto 0;
+            padding: 1.2rem 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.45;
+            line-height: 1.6;
+        }
+
+        .footer-attribution a {
+            color: rgba(245,245,245,0.65);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: color 0.2s;
+        }
+
+        .footer-attribution a:hover { color: var(--accent); opacity: 1; }
 
         /* Footer */
         footer {
@@ -310,6 +501,7 @@
         /* Mobile */
         @media (max-width: 768px) {
             nav ul { width: 100%; justify-content: center; }
+            .venues-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -334,12 +526,19 @@
         </nav>
     </header>
 
-    <main class="page-content">
-        <h1 data-i18n="page_title">Lieux</h1>
-        <p data-i18n="page_coming_soon">Contenu à venir.</p>
+    <main class="venues-main">
+        <h1 class="venues-title" data-i18n="page_title">Lieux</h1>
+        <p class="venues-subtitle" data-i18n="page_subtitle">Les scènes musicales du Luxembourg</p>
+
+        <!-- Filter buttons -->
+        <div class="venues-filters" id="venues-filters"></div>
+
+        <!-- Venue cards -->
+        <div class="venues-grid" id="venues-grid"></div>
     </main>
 
     <footer>
+        <p class="footer-attribution" data-i18n="img_attribution"></p>
         <div class="footer-legal">
             <a href="legalnotice.html#cookies" data-i18n="legal_cookies">Charte des cookies</a>
             <span class="footer-sep">·</span>
@@ -364,6 +563,7 @@
     </div>
 
     <script>
+        // ── Cookie helpers ──────────────────────────────────────────────────────
         function setCookie(name, value, days) {
             const expires = new Date(Date.now() + days * 864e5).toUTCString();
             document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires};path=/;SameSite=Lax`;
@@ -382,6 +582,7 @@
             });
         }
 
+        // ── Translations ────────────────────────────────────────────────────────
         const TRANSLATIONS = {
             fr: {
                 site_title:       'infoConcert.lu – Lieux',
@@ -389,11 +590,14 @@
                 nav_venues:       'Lieux',
                 nav_contact:      'Contact',
                 page_title:       'Lieux',
-                page_coming_soon: 'Contenu à venir.',
+                page_subtitle:    'Les scènes musicales du Luxembourg',
+                filter_all:       'Tous',
                 footer_copy:      '© 2026 infoConcert.lu',
                 legal_cookies:    'Charte des cookies',
                 legal_cgu:        'Conditions d\'utilisation (CGU) du site',
                 legal_protection: 'Protection des données à caractère personnel',
+                img_attribution:  '⚠️ Avertissement : Les images proviennent du site <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" rel="noopener">Wikimedia Commons</a> et sont libres de droits ou sous licence <a href="https://creativecommons.org/licenses/" target="_blank" rel="noopener">Creative Commons</a>.',
+                nav_gps:          'Naviguez vers ce lieu',
                 cookie_banner_text: 'Nous utilisons des cookies pour mémoriser votre identifiant et la date de votre dernière visite, afin de vous afficher les nouveaux concerts. Aucune donnée personnelle n\'est partagée.',
                 cookie_accept:    'Accepter',
                 cookie_decline:   'Refuser',
@@ -404,11 +608,14 @@
                 nav_venues:       'Venues',
                 nav_contact:      'Contact',
                 page_title:       'Venues',
-                page_coming_soon: 'Content coming soon.',
+                page_subtitle:    'Luxembourg\'s music stages',
+                filter_all:       'All',
                 footer_copy:      '© 2026 infoConcert.lu',
                 legal_cookies:    'Cookie Policy',
                 legal_cgu:        'Terms of Use',
                 legal_protection: 'Personal Data Protection',
+                img_attribution:  '⚠️ Notice: Images are sourced from <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" rel="noopener">Wikimedia Commons</a> and are either in the public domain or licensed under <a href="https://creativecommons.org/licenses/" target="_blank" rel="noopener">Creative Commons</a>.',
+                nav_gps:          'Navigate to venue',
                 cookie_banner_text: 'We use cookies to remember your ID and your last visit date, so we can show you new concerts. No personal data is shared.',
                 cookie_accept:    'Accept',
                 cookie_decline:   'Decline',
@@ -419,11 +626,14 @@
                 nav_venues:       'Veranstaltungsorte',
                 nav_contact:      'Kontakt',
                 page_title:       'Veranstaltungsorte',
-                page_coming_soon: 'Inhalt folgt in Kürze.',
+                page_subtitle:    'Luxemburgs Musikbühnen',
+                filter_all:       'Alle',
                 footer_copy:      '© 2026 infoConcert.lu',
                 legal_cookies:    'Cookie-Richtlinie',
                 legal_cgu:        'Nutzungsbedingungen',
                 legal_protection: 'Datenschutz',
+                img_attribution:  '⚠️ Hinweis: Die Bilder stammen von <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" rel="noopener">Wikimedia Commons</a> und sind gemeinfrei oder stehen unter einer <a href="https://creativecommons.org/licenses/" target="_blank" rel="noopener">Creative-Commons-Lizenz</a>.',
+                nav_gps:          'Zum Veranstaltungsort navigieren',
                 cookie_banner_text: 'Wir verwenden Cookies, um Ihre ID und Ihr letztes Besuchsdatum zu speichern, damit wir Ihnen neue Konzerte anzeigen können. Es werden keine persönlichen Daten weitergegeben.',
                 cookie_accept:    'Akzeptieren',
                 cookie_decline:   'Ablehnen',
@@ -459,6 +669,9 @@
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.lang === currentLang);
             });
+            // Update "Tous/All/Alle" filter button
+            const allBtn = document.querySelector('.filter-btn[data-id="all"]');
+            if (allBtn) allBtn.textContent = t('filter_all');
             updateCookieBannerTexts();
         }
 
@@ -466,6 +679,8 @@
             if (!SUPPORTED_LANGS.includes(lang)) return;
             currentLang = lang;
             localStorage.setItem('lang', lang);
+            renderCards();
+            initAnimations();
             applyTranslations();
         }
 
@@ -474,7 +689,190 @@
             if (btn) switchLang(btn.dataset.lang);
         });
 
-        // Cookie banner
+        // ── Venue data ──────────────────────────────────────────────────────────
+        const VENUES = [
+            {
+                id: 'rockhal',
+                name: 'Rockhal',
+                image: 'image/location/rockhal.png',
+                desc: {
+                    fr: 'Rockhal est <strong>la scène musicale emblématique du Luxembourg</strong> depuis son ouverture en 2005, au cœur du quartier culturel de Belval. Avec ses trois espaces – le Main Hall (jusqu\'à 6&nbsp;500 personnes), le Club (1&nbsp;200) et The Floor (200) – elle accueille tous les styles, du rock à l\'électro, du hip‑hop à la pop. Au‑delà des concerts, la Rockhal est aussi un vrai carrefour culturel : son Rocklab soutient les artistes locaux et aide à faire éclore de nouvelles carrières musicales.',
+                    en: 'Rockhal is <strong>Luxembourg\'s iconic music venue</strong> since it opened in 2005, at the heart of the Belval cultural district. With three spaces – the Main Hall (up to 6,500 people), the Club (1,200) and The Floor (200) – it welcomes all styles, from rock to electronic, hip-hop to pop. Beyond concerts, Rockhal is also a cultural hub: its Rocklab supports local artists and helps nurture new musical careers.',
+                    de: 'Die Rockhal ist <strong>Luxemburgs ikonische Musikbühne</strong> seit ihrer Eröffnung 2005, im Herzen des Kulturviertels Belval. Mit drei Bereichen – der Main Hall (bis zu 6.500 Personen), dem Club (1.200) und The Floor (200) – empfängt sie alle Musikstile, von Rock bis Elektronik, Hip-Hop bis Pop. Neben Konzerten ist die Rockhal auch ein kulturelles Zentrum: ihr Rocklab unterstützt lokale Künstler und fördert neue Musikkarrieren.',
+                },
+                address: ['Rockhal', '5 Avenue du Rock\'n\'Roll', 'L‑4361 Esch‑sur‑Alzette', 'Luxembourg'],
+                gps: [49.5009, 5.9474],
+            },
+            {
+                id: 'trifolion',
+                name: 'Trifolion',
+                image: 'image/location/trifolion.png',
+                desc: {
+                    fr: 'Le Trifolion d\'Echternach est bien plus qu\'une simple salle de spectacle : c\'est <strong>un centre culturel dynamique au cœur du Luxembourg</strong>. Dans son auditorium principal, jusqu\'à <strong>700 spectateurs</strong> peuvent profiter de concerts, spectacles et performances dans une ambiance chaleureuse et bien acoustique. Le Trifolion brille par sa programmation éclectique, de la musique classique au jazz en passant par les musiques du monde.',
+                    en: 'The Trifolion in Echternach is much more than a simple performance hall: it is <strong>a dynamic cultural centre at the heart of Luxembourg</strong>. Its main auditorium hosts up to <strong>700 spectators</strong> who enjoy concerts and performances in a warm, acoustically excellent setting. The Trifolion shines with its eclectic programme, from classical music and jazz to world music.',
+                    de: 'Das Trifolion in Echternach ist weit mehr als ein einfacher Veranstaltungssaal: Es ist <strong>ein dynamisches Kulturzentrum im Herzen Luxemburgs</strong>. Im Hauptauditorium können bis zu <strong>700 Zuschauer</strong> Konzerte und Aufführungen in einer herzlichen und akustisch hervorragenden Atmosphäre genießen. Das Trifolion punktet mit einem vielseitigen Programm, von klassischer Musik und Jazz bis hin zu Weltmusik.',
+                },
+                address: ['Trifolion', '2 Porte Saint Willibrord', 'L‑6486 Echternach', 'Luxembourg'],
+                gps: [49.813499, 6.419918],
+            },
+            {
+                id: 'kulturfabrik',
+                name: 'Kulturfabrik',
+                image: 'image/location/kulturfabrik.jpg',
+                desc: {
+                    fr: 'Dans les murs d\'un ancien abattoir construit en 1885‑86, la <strong>Kulturfabrik (KuFa)</strong> a trouvé une seconde vie. Aujourd\'hui, la KuFa s\'étend sur <strong>4&nbsp;500 m²</strong>, avec deux salles de spectacles, un cinéma, une galerie et une brasserie. Ce centre culturel alternatif et transfrontalier propose chaque année plus de <strong>200 événements</strong> : concerts, festivals, pièces de théâtre, expos…',
+                    en: 'Within the walls of a former slaughterhouse built in 1885–86, the <strong>Kulturfabrik (KuFa)</strong> has found a new lease of life. Today, the KuFa covers <strong>4,500 m²</strong>, housing two performance halls, a cinema, a gallery and a brewery. This alternative, cross-border cultural centre hosts more than <strong>200 events</strong> per year: concerts, festivals, theatre productions, exhibitions…',
+                    de: 'In den Mauern eines ehemaligen Schlachthofs aus dem Jahr 1885–86 hat die <strong>Kulturfabrik (KuFa)</strong> ein zweites Leben gefunden. Heute erstreckt sie sich über <strong>4.500 m²</strong> mit zwei Veranstaltungssälen, einem Kino, einer Galerie und einer Brauerei. Dieses alternative, grenzüberschreitende Kulturzentrum veranstaltet jährlich mehr als <strong>200 Veranstaltungen</strong>: Konzerte, Festivals, Theaterstücke, Ausstellungen…',
+                },
+                address: ['Kulturfabrik', '116 Rue de Luxembourg', 'L‑4221 Esch‑sur‑Alzette', 'Luxembourg'],
+                gps: [49.50386, 5.98782],
+            },
+            {
+                id: 'neimenster',
+                name: 'Neimënster',
+                image: 'image/location/neimenster.png',
+                desc: {
+                    fr: 'Au cœur du pittoresque quartier du Grund, l\'<strong>ancienne abbaye bénédictine de Neumünster</strong> invite à un voyage entre histoire et culture. Monastère au Moyen Âge, prison quelques siècles plus tard, il est aujourd\'hui un centre culturel vivant. Dans ses murs chargés d\'histoire, concerts gratuits, pièces de théâtre et expositions se succèdent tout au long de l\'année.',
+                    en: 'At the heart of the picturesque Grund quarter, the <strong>former Benedictine abbey of Neumünster</strong> invites visitors on a journey between history and culture. A monastery in the Middle Ages, a prison centuries later, it is today a vibrant cultural centre. Within its history-laden walls, free concerts, theatre performances and exhibitions follow one another throughout the year.',
+                    de: 'Im Herzen des malerischen Stadtteils Grund lädt die <strong>ehemalige Benediktinerabtei Neumünster</strong> zu einer Reise zwischen Geschichte und Kultur ein. Im Mittelalter ein Kloster, später ein Gefängnis, ist sie heute ein lebendiges Kulturzentrum. In ihren geschichtsträchtigen Mauern folgen kostenlose Konzerte, Theaterstücke und Ausstellungen das ganze Jahr über aufeinander.',
+                },
+                address: ['Abbaye de Neumünster', '28 Rue Münster', 'L‑2160 Grund', 'Luxembourg'],
+                gps: [49.60952, 6.13588],
+            },
+            {
+                id: 'denatelier',
+                name: 'Den Atelier',
+                image: 'image/location/denatelier.png',
+                desc: {
+                    fr: 'Au cœur du quartier de la gare, <strong>Den Atelier</strong> est une salle de concert alternative pouvant accueillir <strong>1&nbsp;200 personnes</strong>. Née en 1995 dans un ancien garage, elle a été créée par trois passionnés de musique pour combler l\'absence de scène dédiée au rock et à la musique indépendante au Luxembourg. Son concept s\'inspire des salles alternatives de Bruxelles, Amsterdam ou Paris.',
+                    en: 'In the heart of the station district, <strong>Den Atelier</strong> is an alternative concert venue with a capacity of <strong>1,200 people</strong>. Born in 1995 from a former garage, it was created by three music enthusiasts to fill the gap for rock and independent music in Luxembourg. Its concept draws inspiration from alternative venues in Brussels, Amsterdam and Paris.',
+                    de: 'Im Herzen des Bahnhofsviertels ist <strong>Den Atelier</strong> ein alternatives Konzerthaus mit einer Kapazität von <strong>1.200 Personen</strong>. 1995 in einer ehemaligen Garage gegründet, wurde es von drei Musikbegeisterten ins Leben gerufen, um die fehlende Bühne für Rock und unabhängige Musik in Luxemburg zu füllen. Das Konzept orientiert sich an alternativen Veranstaltungsorten in Brüssel, Amsterdam und Paris.',
+                },
+                address: ['Den Atelier', '54 Rue de Hollerich', 'L‑1740 Luxembourg Ville', 'Luxembourg'],
+                gps: [49.59868, 6.12607],
+            },
+            {
+                id: 'philharmonie',
+                name: 'Philharmonie',
+                image: 'image/location/philharmonie.png',
+                desc: {
+                    fr: 'La <strong>Philharmonie</strong> est un bijou architectural : 823 colonnes blanches forment une ellipse autour de trois salles uniques. Le grand auditorium accueille <strong>1&nbsp;472 spectateurs</strong>, tandis que l\'Espace Découverte (180 personnes) et la Salle de Musique de Chambre (313) offrent des ambiances intimistes. Plus de <strong>150&nbsp;000 mélomanes</strong> franchissent chaque année ses portes.',
+                    en: 'The <strong>Philharmonie</strong> is an architectural gem: 823 white columns form an ellipse around three unique halls. The grand auditorium seats <strong>1,472 spectators</strong>, while the Espace Découverte (180 people) and the Chamber Music Hall (313) offer more intimate settings. More than <strong>150,000 music lovers</strong> pass through its doors every year.',
+                    de: 'Die <strong>Philharmonie</strong> ist ein architektonisches Juwel: 823 weiße Säulen bilden eine Ellipse um drei einzigartige Säle. Der große Konzertsaal fasst <strong>1.472 Zuschauer</strong>, während der Espace Découverte (180 Personen) und der Kammermusiksaal (313) intimere Atmosphären bieten. Mehr als <strong>150.000 Musikliebhaber</strong> strömen jedes Jahr durch seine Türen.',
+                },
+                address: ['Philharmonie', '1 Place de l\'Europe', 'L‑1499 Luxembourg Ville', 'Luxembourg'],
+                gps: [49.61849, 6.14209],
+            },
+            {
+                id: 'rotondes',
+                name: 'Rotondes',
+                image: 'image/location/rotondes.png',
+                desc: {
+                    fr: 'Au cœur de Luxembourg‑Ville, les <strong>Rotondes</strong> transforment l\'ancien site ferroviaire en un véritable carrefour culturel. Anciennes remises de locomotives, elles accueillent aujourd\'hui concerts, musiques actuelles, théâtre et arts visuels. Véritable incubateur de créativité, le lieu favorise les initiatives à l\'intersection de la culture et de l\'éducation.',
+                    en: 'At the heart of Luxembourg City, the <strong>Rotondes</strong> have transformed a former railway site into a genuine cultural crossroads. Once locomotive sheds, they now host concerts, contemporary music, theatre and visual arts. A true incubator of creativity, the venue fosters initiatives at the intersection of culture and education.',
+                    de: 'Im Herzen von Luxemburg-Stadt verwandeln die <strong>Rotondes</strong> ein ehemaliges Eisenbahngelände in einen echten kulturellen Treffpunkt. Einst Lokomotivschuppen, beherbergen sie heute Konzerte, zeitgenössische Musik, Theater und bildende Kunst. Ein echter Kreativinkubator, der Initiativen an der Schnittstelle von Kultur und Bildung fördert.',
+                },
+                address: ['Rotondes', '3 Place des Rotondes', 'L‑2448 Luxembourg‑Bonnevoie', 'Luxembourg'],
+                gps: [49.60316, 6.13327],
+            },
+            {
+                id: 'casino2000',
+                name: 'Casino 2000',
+                image: 'image/location/casino2000.png',
+                desc: {
+                    fr: '<strong>Casino 2000</strong>, à Mondorf‑les‑Bains, est bien connu comme casino, mais c\'est aussi une véritable scène pour <strong>concerts, one‑man shows et spectacles variés</strong> ! Dans sa salle de spectacle, on applaudit artistes et humoristes de renom. La programmation mêle styles et publics : du pop à la chanson française, des récitals aux soirées humoristiques.',
+                    en: '<strong>Casino 2000</strong>, in Mondorf-les-Bains, is well known as a casino, but it is also a genuine stage for <strong>concerts, one-man shows and variety performances</strong>! Its show hall welcomes renowned artists and comedians. The programme blends styles and audiences: from pop to French chanson, recitals to comedy evenings.',
+                    de: '<strong>Casino 2000</strong> in Mondorf-les-Bains ist als Kasino bekannt, ist aber auch eine echte Bühne für <strong>Konzerte, One-Man-Shows und Varietévorstellungen</strong>! In seinem Showsaal werden renommierte Künstler und Comedians gefeiert. Das Programm vereint Stile und Publikum: von Pop bis Chanson, von Recitals bis zu Comedyabenden.',
+                },
+                address: ['Casino 2000', 'Rue Flammang', 'L‑5618 Mondorf‑les‑Bains', 'Luxembourg'],
+                gps: [49.50761, 6.28104],
+            },
+        ];
+
+        // ── Render filters ───────────────────────────────────────────────────────
+        function renderFilters() {
+            const container = document.getElementById('venues-filters');
+            const allBtn = `<button class="filter-btn active" data-id="all">${t('filter_all')}</button>`;
+            const venuesBtns = VENUES.map(v =>
+                `<button class="filter-btn" data-id="${v.id}">${v.name}</button>`
+            ).join('');
+            container.innerHTML = allBtn + venuesBtns;
+
+            container.addEventListener('click', e => {
+                const btn = e.target.closest('.filter-btn');
+                if (!btn) return;
+                const id = btn.dataset.id;
+
+                // Update active state
+                container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                if (id === 'all') {
+                    // Remove all highlights
+                    document.querySelectorAll('.venue-card').forEach(c => c.classList.remove('highlight'));
+                    // Scroll to top of grid
+                    document.getElementById('venues-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                    // Highlight the targeted card and scroll to it
+                    document.querySelectorAll('.venue-card').forEach(c => c.classList.remove('highlight'));
+                    const card = document.querySelector(`.venue-card[data-id="${id}"]`);
+                    if (card) {
+                        card.classList.add('highlight');
+                        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+            });
+        }
+
+        // ── Render cards ─────────────────────────────────────────────────────────
+        function renderCards() {
+            const grid = document.getElementById('venues-grid');
+            grid.innerHTML = VENUES.map(v => {
+                const desc = v.desc[currentLang] || v.desc.fr;
+                const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${v.gps[0]},${v.gps[1]}`;
+                return `
+                <article class="venue-card" data-id="${v.id}">
+                    <div class="venue-img-wrap">
+                        <img src="${v.image}" alt="${v.name}" loading="lazy">
+                        <div class="venue-img-overlay"></div>
+                    </div>
+                    <div class="venue-body">
+                        <h2 class="venue-name">${v.name}</h2>
+                        <p class="venue-desc">${desc}</p>
+                        <div class="venue-address">
+                            <span class="pin">📍</span>
+                            <span>${v.address.join('<br>')}</span>
+                        </div>
+                        <a href="${mapsUrl}" target="_blank" rel="noopener" class="venue-nav-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                            </svg>
+                            ${t('nav_gps')}
+                        </a>
+                    </div>
+                </article>
+            `}).join('');
+        }
+
+        // ── IntersectionObserver for card animations ─────────────────────────────
+        function initAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        // Staggered delay based on position in grid
+                        const cards = Array.from(document.querySelectorAll('.venue-card'));
+                        const idx = cards.indexOf(entry.target);
+                        entry.target.style.animationDelay = `${(idx % 3) * 0.1}s`;
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.venue-card').forEach(card => observer.observe(card));
+        }
+
+        // ── Cookie banner ────────────────────────────────────────────────────────
         let cookieConsent = getCookie('ic_consent');
 
         function updateCookieBannerTexts() {
@@ -510,6 +908,10 @@
             document.getElementById('cookie-banner').style.display = 'flex';
         }
 
+        // ── Init ─────────────────────────────────────────────────────────────────
+        renderFilters();
+        renderCards();
+        initAnimations();
         applyTranslations();
     </script>
 </body>
