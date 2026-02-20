@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">infoConcert.lu – Mentions légales</title>
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF3366;
+            --secondary: #FFD700;
+            --dark: #0A0A0A;
+            --gray: #1A1A1A;
+            --light: #F5F5F5;
+            --accent: #00D9FF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+
+        /* Background animation */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.03;
+            background-image:
+                repeating-linear-gradient(45deg, transparent, transparent 35px, var(--primary) 35px, var(--primary) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--secondary) 35px, var(--secondary) 70px);
+            animation: patternMove 60s linear infinite;
+        }
+
+        @keyframes patternMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(70px, 70px); }
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--gray) 0%, var(--dark) 100%);
+            border-bottom: 3px solid var(--primary);
+            box-shadow: 0 10px 40px rgba(255, 51, 102, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 51, 102, 0.5);
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.3); }
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Language switcher */
+        .lang-switcher {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.2);
+            color: var(--light);
+            border-radius: 20px;
+            padding: 0.35rem 0.85rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .lang-btn.active {
+            border-color: var(--accent);
+            background: rgba(0, 217, 255, 0.15);
+            color: var(--accent);
+        }
+
+        .nav-separator {
+            width: 1px;
+            height: 36px;
+            background: rgba(255,255,255,0.15);
+            flex-shrink: 0;
+        }
+
+        .lang-switcher-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        /* Footer */
+        footer {
+            position: relative;
+            padding: 0 0 2rem;
+            text-align: center;
+            background: var(--dark);
+        }
+
+        footer p {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        .footer-sep {
+            margin: 0 0.6rem;
+            opacity: 0.4;
+        }
+
+        .footer-legal {
+            background: var(--dark);
+            padding: 1.8rem 2rem 1.4rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer-legal a {
+            color: rgba(245,245,245,0.5);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+
+        .footer-legal a:hover { color: var(--primary); }
+
+        /* Cookie banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2000;
+            background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+            border-top: 3px solid var(--primary);
+            padding: 1.2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+            animation: slideUpBanner 0.4s ease-out;
+        }
+
+        @keyframes slideUpBanner {
+            from { transform: translateY(100%); opacity: 0; }
+            to   { transform: translateY(0);    opacity: 1; }
+        }
+
+        .cookie-banner-text {
+            flex: 1;
+            min-width: 220px;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            opacity: 0.85;
+        }
+
+        .cookie-banner-text strong {
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .cookie-banner-btns {
+            display: flex;
+            gap: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn-accept {
+            padding: 0.6rem 1.6rem;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .cookie-btn-accept:hover {
+            background: #ff5580;
+            transform: translateY(-2px);
+        }
+
+        .cookie-btn-decline {
+            padding: 0.6rem 1.6rem;
+            background: transparent;
+            color: var(--light);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 30px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .cookie-btn-decline:hover {
+            border-color: var(--light);
+        }
+
+        /* Legal content */
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .legal-nav {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: nowrap;
+            margin-bottom: 3rem;
+            justify-content: center;
+        }
+
+        .legal-nav a {
+            padding: 0.45rem 0.9rem;
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            color: var(--light);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+            flex-shrink: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.3s;
+        }
+
+        .legal-nav a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Override nav a::after for legal-nav anchors */
+        .legal-nav a::after { display: none; }
+
+        .legal-section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 2rem;
+        }
+
+        .legal-section h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(255,51,102,0.2);
+        }
+
+        .legal-section h3 {
+            color: var(--accent);
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 1.8rem 0 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .legal-section p {
+            opacity: 0.85;
+            line-height: 1.75;
+            margin-bottom: 0.9rem;
+        }
+
+        .legal-section ul {
+            padding-left: 1.5rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .legal-section li {
+            opacity: 0.85;
+            line-height: 1.75;
+            margin-bottom: 0.4rem;
+        }
+
+        .legal-section a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .legal-section a:hover { opacity: 0.7; }
+
+        .legal-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.88rem;
+        }
+
+        .legal-table th,
+        .legal-table td {
+            border: 1px solid rgba(255,255,255,0.12);
+            padding: 0.65rem 1rem;
+            text-align: left;
+        }
+
+        .legal-table th {
+            background: rgba(255,51,102,0.1);
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .legal-table td { opacity: 0.8; }
+
+        .legal-table code {
+            background: rgba(255,255,255,0.08);
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .legal-nav {
+                gap: 0.6rem;
+            }
+
+            .legal-nav a {
+                font-size: 0.78rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="image/logo/Logo.png" alt="infoConcert.lu" style="height:90px;width:auto;display:block;"></a>
+            <ul>
+                <li><a href="index.html#concerts" data-i18n="nav_concerts">Concerts</a></li>
+                <li><a href="index.html#lieux" data-i18n="nav_venues">Lieux</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="lang-switcher-wrapper">
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="legal-content">
+        <!-- Mini navigation interne -->
+        <nav class="legal-nav" id="legal-nav">
+            <a href="#cookies" data-i18n="legal_cookies">Charte des cookies</a>
+            <a href="#cgu" data-i18n="legal_cgu">Conditions d'utilisation (CGU) du site</a>
+            <a href="#protection" data-i18n="legal_protection">Protection des données à caractère personnel</a>
+        </nav>
+
+        <!-- Section Charte des cookies -->
+        <section class="legal-section" id="cookies">
+            <h2 data-i18n="legal_cookies">Charte des cookies</h2>
+            <div id="cookies-content"></div>
+        </section>
+
+        <!-- Section CGU -->
+        <section class="legal-section" id="cgu">
+            <h2 data-i18n="legal_cgu">Conditions d'utilisation (CGU) du site</h2>
+            <div id="cgu-content"></div>
+        </section>
+
+        <!-- Section Protection des données -->
+        <section class="legal-section" id="protection">
+            <h2 data-i18n="legal_protection">Protection des données à caractère personnel</h2>
+            <div id="protection-content"></div>
+        </section>
+    </main>
+
+    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 0;">
+
+    <footer>
+        <div class="footer-legal">
+            <a href="#cookies" data-i18n="legal_cookies">Charte des cookies</a>
+            <span class="footer-sep">·</span>
+            <a href="#cgu" data-i18n="legal_cgu">Conditions d'utilisation (CGU) du site</a>
+            <span class="footer-sep">·</span>
+            <a href="#protection" data-i18n="legal_protection">Protection des données à caractère personnel</a>
+        </div>
+        <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.12); margin: 0 2rem;">
+        <p data-i18n="footer_copy" style="padding-top: 1.5rem;">&copy; 2026 infoConcert.lu</p>
+    </footer>
+
+    <!-- Cookie consent banner -->
+    <div class="cookie-banner" id="cookie-banner" style="display:none;">
+        <div class="cookie-banner-text">
+            <strong>🍪 Cookies</strong><br>
+            <span id="cookie-banner-text"></span>
+        </div>
+        <div class="cookie-banner-btns">
+            <button class="cookie-btn-accept" id="cookie-btn-accept"></button>
+            <button class="cookie-btn-decline" id="cookie-btn-decline"></button>
+        </div>
+    </div>
+
+    <script>
+        // ── Cookie utilities ──────────────────────────────────────────────────
+        function setCookie(name, value, days) {
+            const expires = new Date(Date.now() + days * 864e5).toUTCString();
+            document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires};path=/;SameSite=Lax`;
+        }
+
+        function getCookie(name) {
+            const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+            return match ? decodeURIComponent(match[1]) : null;
+        }
+
+        function generateUID() {
+            if (typeof crypto !== 'undefined' && crypto.randomUUID) return crypto.randomUUID();
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+                const r = Math.random() * 16 | 0;
+                return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+            });
+        }
+
+        // ── i18n ──────────────────────────────────────────────────────────────
+        const TRANSLATIONS = {
+            fr: {
+                site_title:       'infoConcert.lu – Mentions légales',
+                nav_concerts:     'Concerts',
+                nav_venues:       'Lieux',
+                nav_contact:      'Contact',
+                footer_copy:      '© 2026 infoConcert.lu',
+                cookie_banner_text: 'Nous utilisons des cookies pour mémoriser votre identifiant et la date de votre dernière visite, afin de vous afficher les nouveaux concerts. Aucune donnée personnelle n\'est partagée.',
+                cookie_accept:    'Accepter',
+                cookie_decline:   'Refuser',
+                legal_cookies:    'Charte des cookies',
+                legal_cgu:        'Conditions d\'utilisation (CGU) du site',
+                legal_protection: 'Protection des données à caractère personnel',
+
+                cookies_content: `
+                    <h3>1. Qu'est-ce qu'un cookie ?</h3>
+                    <p>Un cookie est un petit fichier texte enregistré par votre navigateur sur votre terminal (ordinateur, smartphone, tablette) lors de la visite d'un site internet. Il permet de mémoriser certaines informations relatives à votre navigation.</p>
+
+                    <h3>2. Les cookies que nous utilisons</h3>
+                    <p><strong>Cookies techniques (obligatoires)</strong></p>
+                    <p>Ces cookies sont indispensables au bon fonctionnement du site. Ils ne collectent aucune donnée personnelle et ne nécessitent pas votre consentement.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Cookie</th><th>Finalité</th><th>Durée</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>session_id</code></td><td>Maintien de la session de navigation</td><td>Supprimé à la fermeture du navigateur</td></tr>
+                            <tr><td><code>last_visit</code></td><td>Mémorisation de la date de votre dernière visite afin d'afficher uniquement les nouveaux concerts depuis votre passage</td><td>1 an</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>Cookies statistiques (Google Analytics)</strong></p>
+                    <p>Ce site utilise <strong>Google Analytics</strong>, un service d'analyse d'audience fourni par Google LLC. Ces cookies permettent de mesurer le nombre de visiteurs, les pages consultées et le comportement de navigation, afin d'améliorer le site.</p>
+                    <p>Les données collectées sont transmises à Google et peuvent être hébergées en dehors de l'Union européenne. Google est soumis aux clauses contractuelles types de la Commission européenne encadrant ces transferts.</p>
+                    <p>Ces cookies <strong>nécessitent votre consentement</strong> et ne sont activés qu'après votre accord via le bandeau de consentement.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Cookie</th><th>Finalité</th><th>Durée</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>_ga</code></td><td>Identification unique du visiteur</td><td>2 ans</td></tr>
+                            <tr><td><code>_ga_*</code></td><td>Maintien de la session Google Analytics</td><td>1 an</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Pour en savoir plus : <a href="https://policies.google.com/privacy?hl=fr" target="_blank" rel="noopener">Politique de confidentialité Google</a></p>
+                    <p><strong>Cookies publicitaires</strong></p>
+                    <p>Ce site n'utilise <strong>aucun</strong> cookie publicitaire ou de tracking commercial.</p>
+
+                    <h3>3. Comment gérer vos cookies ?</h3>
+                    <p>Vous pouvez à tout moment revenir sur votre consentement en cliquant sur le lien « Gérer mes cookies » présent en bas de page.</p>
+                    <p>Vous pouvez également configurer votre navigateur pour refuser ou supprimer les cookies via les menus « Options », « Outils » ou « Préférences ». Veuillez noter que le refus des cookies techniques peut affecter le bon fonctionnement du site, notamment l'affichage des nouveaux concerts.</p>
+                `,
+
+                cgu_content: `
+                    <h3>Présentation du site</h3>
+                    <p>Le site infoConcert.lu est un site vitrine dédié à l'affichage d'informations sur les concerts au Luxembourg. Il ne propose ni vente en ligne, ni espace personnel utilisateur.</p>
+
+                    <h3>Éditeur</h3>
+                    <p>Le site est édité par jlp352, accessible via son profil <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github</a> et via email : <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Hébergement</h3>
+                    <p>Le site est hébergé par OVH France.</p>
+
+                    <h3>Accès et utilisation</h3>
+                    <p>L'accès au site est gratuit et ouvert à tous. En consultant ce site, l'utilisateur accepte les présentes conditions d'utilisation. L'éditeur ne peut être tenu responsable des dommages directs ou indirects liés à la navigation sur ce site ou à l'utilisation des informations qu'il contient.</p>
+
+                    <h3>Sources des données</h3>
+                    <p>Les informations relatives aux concerts affichées sur ce site proviennent de sites tiers, notamment <a href="https://www.atelier.lu" target="_blank" rel="noopener">atelier.lu</a> et <a href="https://www.rockhal.lu" target="_blank" rel="noopener">rockhal.lu</a>. Ces données restent la propriété de leurs ayants droit respectifs.</p>
+                    <p>Ce site ne revendique aucun droit sur ces contenus. En cas de demande de retrait de la part des propriétaires concernés, les données seront supprimées dans les meilleurs délais. Pour toute demande : <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Propriété intellectuelle</h3>
+                    <p>Le code source de ce site est publié sous <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">licence MIT</a>. Vous êtes libre de le réutiliser, le modifier et le redistribuer selon les termes de cette licence.</p>
+                    <p>Les contenus tiers affichés sur ce site (visuels, descriptions de concerts, affiches) restent la propriété exclusive de leurs auteurs respectifs. Ces contenus ne sont pas couverts par la licence MIT et ne peuvent faire l'objet d'aucune réutilisation sans l'accord de leurs ayants droit.</p>
+
+                    <h3>Liens externes</h3>
+                    <p>Le site peut contenir des liens vers des sites tiers (salles de concerts, billetteries, artistes, etc.). L'éditeur n'est pas responsable du contenu de ces sites externes.</p>
+
+                    <h3>Disponibilité du site</h3>
+                    <p>L'éditeur s'efforcera d'assurer la disponibilité du site, mais ne saurait être tenu responsable en cas d'indisponibilité momentanée ou totale, quelle qu'en soit la cause.</p>
+
+                    <h3>Modifications des CGU</h3>
+                    <p>Les présentes conditions d'utilisation pourront être modifiées à tout moment sans préavis. Il appartient à l'utilisateur de les consulter régulièrement.</p>
+
+                    <h3>Droit applicable</h3>
+                    <p>Tout litige relatif à l'utilisation de ce site est soumis au droit luxembourgeois et relève de la compétence exclusive des juridictions du Grand-Duché de Luxembourg.</p>
+                `,
+
+                protection_content: `
+                    <h3>Responsable du traitement</h3>
+                    <p>jlp352, accessible via son profil <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github</a> et via email : <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Données collectées</h3>
+                    <p>Ce site est un site vitrine sans formulaire d'inscription ni espace personnel. <strong>Aucune donnée personnelle n'est collectée</strong> auprès des visiteurs, à l'exception des adresses IP partielles enregistrées automatiquement dans les logs du serveur pour des raisons de sécurité technique. Ces données ne permettent pas d'identifier un individu.</p>
+                    <p>Si un formulaire de contact est présent, les données saisies (nom, e-mail, message) sont utilisées uniquement pour répondre à la demande et ne sont pas conservées au-delà du temps nécessaire.</p>
+
+                    <h3>Données issues de sites tiers</h3>
+                    <p>Les informations sur les concerts affichées sur ce site proviennent de sites tiers (<a href="https://www.atelier.lu" target="_blank" rel="noopener">atelier.lu</a>, <a href="https://www.rockhal.lu" target="_blank" rel="noopener">rockhal.lu</a>, etc.). Ces données ne constituent pas des données à caractère personnel et restent la propriété de leurs sources respectives.</p>
+
+                    <h3>Base légale</h3>
+                    <p>Le traitement repose sur l'intérêt légitime de l'éditeur (sécurité du site) conformément au <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679" target="_blank" rel="noopener">Règlement (UE) 2016/679 (RGPD)</a>.</p>
+
+                    <h3>Vos droits</h3>
+                    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez : <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+                    <p>Vous pouvez également introduire une réclamation auprès de la <a href="https://cnpd.public.lu" target="_blank" rel="noopener">Commission Nationale pour la Protection des Données (CNPD)</a> — 15, Boulevard du Jazz, L-4370 Belvaux.</p>
+                `,
+            },
+
+            en: {
+                site_title:       'infoConcert.lu – Legal Notice',
+                nav_concerts:     'Concerts',
+                nav_venues:       'Venues',
+                nav_contact:      'Contact',
+                footer_copy:      '© 2026 infoConcert.lu',
+                cookie_banner_text: 'We use cookies to remember your ID and your last visit date, so we can show you new concerts. No personal data is shared.',
+                cookie_accept:    'Accept',
+                cookie_decline:   'Decline',
+                legal_cookies:    'Cookie Policy',
+                legal_cgu:        'Terms of Use',
+                legal_protection: 'Personal Data Protection',
+
+                cookies_content: `
+                    <h3>1. What is a cookie?</h3>
+                    <p>A cookie is a small text file stored by your browser on your device (computer, smartphone, tablet) when you visit a website. It allows certain information about your browsing to be remembered.</p>
+
+                    <h3>2. Cookies we use</h3>
+                    <p><strong>Technical cookies (required)</strong></p>
+                    <p>These cookies are essential for the website to function properly. They collect no personal data and do not require your consent.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Cookie</th><th>Purpose</th><th>Duration</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>session_id</code></td><td>Maintaining the browsing session</td><td>Deleted when the browser is closed</td></tr>
+                            <tr><td><code>last_visit</code></td><td>Remembering your last visit date to display only new concerts since your last visit</td><td>1 year</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>Analytics cookies (Google Analytics)</strong></p>
+                    <p>This site uses <strong>Google Analytics</strong>, an audience analysis service provided by Google LLC. These cookies measure the number of visitors, pages viewed and browsing behaviour, in order to improve the site.</p>
+                    <p>The data collected is transmitted to Google and may be hosted outside the European Union. Google is subject to the European Commission's standard contractual clauses governing these transfers.</p>
+                    <p>These cookies <strong>require your consent</strong> and are only activated after your agreement via the consent banner.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Cookie</th><th>Purpose</th><th>Duration</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>_ga</code></td><td>Unique visitor identification</td><td>2 years</td></tr>
+                            <tr><td><code>_ga_*</code></td><td>Google Analytics session maintenance</td><td>1 year</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Learn more: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+                    <p><strong>Advertising cookies</strong></p>
+                    <p>This site uses <strong>no</strong> advertising or commercial tracking cookies.</p>
+
+                    <h3>3. How to manage your cookies?</h3>
+                    <p>You can withdraw your consent at any time by clicking the "Manage my cookies" link at the bottom of the page.</p>
+                    <p>You can also configure your browser to refuse or delete cookies via the "Options", "Tools" or "Preferences" menus. Please note that refusing technical cookies may affect the proper functioning of the site, particularly the display of new concerts.</p>
+                `,
+
+                cgu_content: `
+                    <h3>About the site</h3>
+                    <p>infoConcert.lu is a showcase website dedicated to displaying information about concerts in Luxembourg. It offers neither online sales nor a personal user area.</p>
+
+                    <h3>Publisher</h3>
+                    <p>The site is published by jlp352, accessible via his <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github profile</a> and by email: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Hosting</h3>
+                    <p>The site is hosted by OVH France.</p>
+
+                    <h3>Access and use</h3>
+                    <p>Access to the site is free and open to all. By visiting this site, the user accepts these terms of use. The publisher cannot be held responsible for direct or indirect damages related to browsing this site or using the information it contains.</p>
+
+                    <h3>Data sources</h3>
+                    <p>Concert information displayed on this site comes from third-party sites, including <a href="https://www.atelier.lu" target="_blank" rel="noopener">atelier.lu</a> and <a href="https://www.rockhal.lu" target="_blank" rel="noopener">rockhal.lu</a>. This data remains the property of their respective rights holders.</p>
+                    <p>This site claims no rights over this content. In the event of a removal request from the relevant owners, the data will be deleted as soon as possible. For any request: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Intellectual property</h3>
+                    <p>The source code of this site is published under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT licence</a>. You are free to reuse, modify and redistribute it under the terms of this licence.</p>
+                    <p>Third-party content displayed on this site (visuals, concert descriptions, posters) remains the exclusive property of their respective authors. This content is not covered by the MIT licence and cannot be reused without the agreement of their rights holders.</p>
+
+                    <h3>External links</h3>
+                    <p>The site may contain links to third-party sites (concert venues, ticketing, artists, etc.). The publisher is not responsible for the content of these external sites.</p>
+
+                    <h3>Site availability</h3>
+                    <p>The publisher will endeavour to ensure the availability of the site, but cannot be held responsible in the event of temporary or total unavailability, whatever the cause.</p>
+
+                    <h3>Modifications to terms</h3>
+                    <p>These terms of use may be modified at any time without notice. It is the user's responsibility to consult them regularly.</p>
+
+                    <h3>Applicable law</h3>
+                    <p>Any dispute relating to the use of this site is subject to Luxembourg law and falls under the exclusive jurisdiction of the courts of the Grand Duchy of Luxembourg.</p>
+                `,
+
+                protection_content: `
+                    <h3>Data controller</h3>
+                    <p>jlp352, accessible via his <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github profile</a> and by email: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Data collected</h3>
+                    <p>This is a showcase site with no registration form or personal area. <strong>No personal data is collected</strong> from visitors, except for partial IP addresses automatically recorded in server logs for technical security reasons. This data does not allow identification of an individual.</p>
+                    <p>If a contact form is present, the data entered (name, email, message) is used solely to respond to the request and is not kept longer than necessary.</p>
+
+                    <h3>Data from third-party sites</h3>
+                    <p>Concert information displayed on this site comes from third-party sites (<a href="https://www.atelier.lu" target="_blank" rel="noopener">atelier.lu</a>, <a href="https://www.rockhal.lu" target="_blank" rel="noopener">rockhal.lu</a>, etc.). This data does not constitute personal data and remains the property of their respective sources.</p>
+
+                    <h3>Legal basis</h3>
+                    <p>The processing is based on the publisher's legitimate interest (site security) in accordance with <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679" target="_blank" rel="noopener">EU Regulation 2016/679 (GDPR)</a>.</p>
+
+                    <h3>Your rights</h3>
+                    <p>In accordance with the GDPR, you have the right to access, rectify and delete your data. To exercise these rights, contact: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+                    <p>You can also lodge a complaint with the <a href="https://cnpd.public.lu" target="_blank" rel="noopener">National Commission for Data Protection (CNPD)</a> — 15, Boulevard du Jazz, L-4370 Belvaux, Luxembourg.</p>
+                `,
+            },
+
+            de: {
+                site_title:       'infoConcert.lu – Rechtliche Hinweise',
+                nav_concerts:     'Konzerte',
+                nav_venues:       'Veranstaltungsorte',
+                nav_contact:      'Kontakt',
+                footer_copy:      '© 2026 infoConcert.lu',
+                cookie_banner_text: 'Wir verwenden Cookies, um Ihre ID und Ihr letztes Besuchsdatum zu speichern, damit wir Ihnen neue Konzerte anzeigen können. Es werden keine persönlichen Daten weitergegeben.',
+                cookie_accept:    'Akzeptieren',
+                cookie_decline:   'Ablehnen',
+                legal_cookies:    'Cookie-Richtlinie',
+                legal_cgu:        'Nutzungsbedingungen',
+                legal_protection: 'Datenschutz',
+
+                cookies_content: `
+                    <h3>1. Was ist ein Cookie?</h3>
+                    <p>Ein Cookie ist eine kleine Textdatei, die Ihr Browser auf Ihrem Gerät (Computer, Smartphone, Tablet) speichert, wenn Sie eine Website besuchen. Es ermöglicht, bestimmte Informationen über Ihr Surfverhalten zu speichern.</p>
+
+                    <h3>2. Cookies, die wir verwenden</h3>
+                    <p><strong>Technische Cookies (erforderlich)</strong></p>
+                    <p>Diese Cookies sind für das ordnungsgemäße Funktionieren der Website unerlässlich. Sie erheben keine personenbezogenen Daten und erfordern keine Ihre Einwilligung.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Cookie</th><th>Zweck</th><th>Dauer</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>session_id</code></td><td>Aufrechterhaltung der Browsersitzung</td><td>Wird beim Schließen des Browsers gelöscht</td></tr>
+                            <tr><td><code>last_visit</code></td><td>Speicherung des Datums Ihres letzten Besuchs, um nur neue Konzerte seit Ihrem letzten Besuch anzuzeigen</td><td>1 Jahr</td></tr>
+                        </tbody>
+                    </table>
+                    <p><strong>Statistik-Cookies (Google Analytics)</strong></p>
+                    <p>Diese Website verwendet <strong>Google Analytics</strong>, einen von Google LLC bereitgestellten Besucheranalysedienst. Diese Cookies messen die Anzahl der Besucher, die aufgerufenen Seiten und das Surfverhalten, um die Website zu verbessern.</p>
+                    <p>Die erhobenen Daten werden an Google übermittelt und können außerhalb der Europäischen Union gespeichert werden. Google unterliegt den Standardvertragsklauseln der Europäischen Kommission, die diese Übermittlungen regeln.</p>
+                    <p>Diese Cookies <strong>erfordern Ihre Einwilligung</strong> und werden erst nach Ihrer Zustimmung über das Einwilligungsbanner aktiviert.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Cookie</th><th>Zweck</th><th>Dauer</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>_ga</code></td><td>Eindeutige Besucheridentifikation</td><td>2 Jahre</td></tr>
+                            <tr><td><code>_ga_*</code></td><td>Google Analytics-Sitzungspflege</td><td>1 Jahr</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Mehr erfahren: <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener">Google-Datenschutzerklärung</a></p>
+                    <p><strong>Werbe-Cookies</strong></p>
+                    <p>Diese Website verwendet <strong>keine</strong> Werbe- oder kommerziellen Tracking-Cookies.</p>
+
+                    <h3>3. Wie verwalten Sie Ihre Cookies?</h3>
+                    <p>Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie auf den Link „Meine Cookies verwalten" am unteren Seitenrand klicken.</p>
+                    <p>Sie können Ihren Browser auch so konfigurieren, dass Cookies abgelehnt oder gelöscht werden, über die Menüs „Optionen", „Extras" oder „Einstellungen". Bitte beachten Sie, dass die Ablehnung technischer Cookies die ordnungsgemäße Funktion der Website beeinträchtigen kann, insbesondere die Anzeige neuer Konzerte.</p>
+                `,
+
+                cgu_content: `
+                    <h3>Über die Website</h3>
+                    <p>infoConcert.lu ist eine Präsentationswebsite, die Informationen über Konzerte in Luxemburg anzeigt. Sie bietet weder Online-Verkauf noch einen persönlichen Benutzerbereich.</p>
+
+                    <h3>Herausgeber</h3>
+                    <p>Die Website wird von jlp352 herausgegeben, erreichbar über sein <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github-Profil</a> und per E-Mail: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Hosting</h3>
+                    <p>Die Website wird von OVH Frankreich gehostet.</p>
+
+                    <h3>Zugang und Nutzung</h3>
+                    <p>Der Zugang zur Website ist kostenlos und für alle offen. Durch den Besuch dieser Website akzeptiert der Nutzer diese Nutzungsbedingungen. Der Herausgeber kann nicht für direkte oder indirekte Schäden haftbar gemacht werden, die durch die Navigation auf dieser Website oder die Nutzung der darin enthaltenen Informationen entstehen.</p>
+
+                    <h3>Datenquellen</h3>
+                    <p>Die auf dieser Website angezeigten Konzertinformationen stammen von Drittanbieter-Websites, insbesondere <a href="https://www.atelier.lu" target="_blank" rel="noopener">atelier.lu</a> und <a href="https://www.rockhal.lu" target="_blank" rel="noopener">rockhal.lu</a>. Diese Daten bleiben Eigentum ihrer jeweiligen Rechteinhaber.</p>
+                    <p>Diese Website erhebt keine Ansprüche auf diese Inhalte. Im Falle eines Löschantrags der betreffenden Eigentümer werden die Daten so schnell wie möglich gelöscht. Für Anfragen: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Geistiges Eigentum</h3>
+                    <p>Der Quellcode dieser Website wird unter der <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT-Lizenz</a> veröffentlicht. Sie dürfen ihn gemäß den Bedingungen dieser Lizenz wiederverwenden, modifizieren und weiterverbreiten.</p>
+                    <p>Auf dieser Website angezeigte Drittinhalte (Visuals, Konzertbeschreibungen, Plakate) bleiben ausschließliches Eigentum ihrer jeweiligen Autoren. Diese Inhalte sind nicht durch die MIT-Lizenz abgedeckt und dürfen ohne Zustimmung der Rechteinhaber nicht wiederverwendet werden.</p>
+
+                    <h3>Externe Links</h3>
+                    <p>Die Website kann Links zu Drittanbieter-Websites enthalten (Konzerthallen, Ticketing, Künstler usw.). Der Herausgeber ist nicht für den Inhalt dieser externen Websites verantwortlich.</p>
+
+                    <h3>Verfügbarkeit der Website</h3>
+                    <p>Der Herausgeber wird sich bemühen, die Verfügbarkeit der Website zu gewährleisten, kann jedoch nicht für vorübergehende oder vollständige Nichtverfügbarkeit, gleich welcher Ursache, haftbar gemacht werden.</p>
+
+                    <h3>Änderungen der Nutzungsbedingungen</h3>
+                    <p>Diese Nutzungsbedingungen können jederzeit ohne vorherige Ankündigung geändert werden. Es liegt in der Verantwortung des Nutzers, sie regelmäßig zu konsultieren.</p>
+
+                    <h3>Anwendbares Recht</h3>
+                    <p>Alle Streitigkeiten im Zusammenhang mit der Nutzung dieser Website unterliegen luxemburgischem Recht und fallen unter die ausschließliche Zuständigkeit der Gerichte des Großherzogtums Luxemburg.</p>
+                `,
+
+                protection_content: `
+                    <h3>Verantwortlicher für die Verarbeitung</h3>
+                    <p>jlp352, erreichbar über sein <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github-Profil</a> und per E-Mail: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+
+                    <h3>Erhobene Daten</h3>
+                    <p>Dies ist eine Präsentationswebsite ohne Anmeldeformular oder persönlichen Bereich. <strong>Es werden keine personenbezogenen Daten</strong> von Besuchern erhoben, mit Ausnahme von partiellen IP-Adressen, die automatisch in Server-Logs aus technischen Sicherheitsgründen erfasst werden. Diese Daten ermöglichen keine Identifizierung einer Person.</p>
+                    <p>Wenn ein Kontaktformular vorhanden ist, werden die eingegebenen Daten (Name, E-Mail, Nachricht) ausschließlich zur Beantwortung der Anfrage verwendet und nicht länger als notwendig aufbewahrt.</p>
+
+                    <h3>Daten von Drittanbieter-Websites</h3>
+                    <p>Auf dieser Website angezeigte Konzertinformationen stammen von Drittanbieter-Websites (<a href="https://www.atelier.lu" target="_blank" rel="noopener">atelier.lu</a>, <a href="https://www.rockhal.lu" target="_blank" rel="noopener">rockhal.lu</a> usw.). Diese Daten stellen keine personenbezogenen Daten dar und bleiben Eigentum ihrer jeweiligen Quellen.</p>
+
+                    <h3>Rechtsgrundlage</h3>
+                    <p>Die Verarbeitung basiert auf dem berechtigten Interesse des Herausgebers (Website-Sicherheit) gemäß der <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679" target="_blank" rel="noopener">EU-Verordnung 2016/679 (DSGVO)</a>.</p>
+
+                    <h3>Ihre Rechte</h3>
+                    <p>Gemäß der DSGVO haben Sie das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten. Um diese Rechte auszuüben, kontaktieren Sie: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
+                    <p>Sie können auch eine Beschwerde bei der <a href="https://cnpd.public.lu" target="_blank" rel="noopener">Nationalen Kommission für den Datenschutz (CNPD)</a> einreichen — 15, Boulevard du Jazz, L-4370 Belvaux, Luxemburg.</p>
+                `,
+            }
+        };
+
+        const SUPPORTED_LANGS = ['fr', 'en', 'de'];
+
+        function detectLang() {
+            const saved = localStorage.getItem('lang');
+            if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
+            const navLangs = navigator.languages || [navigator.language || 'fr'];
+            for (const l of navLangs) {
+                const code = l.split('-')[0].toLowerCase();
+                if (SUPPORTED_LANGS.includes(code)) return code;
+            }
+            return 'fr';
+        }
+
+        let currentLang = detectLang();
+
+        function t(key) {
+            return (TRANSLATIONS[currentLang] || TRANSLATIONS.fr)[key] || key;
+        }
+
+        function renderLegalContent() {
+            document.getElementById('cookies-content').innerHTML  = t('cookies_content');
+            document.getElementById('cgu-content').innerHTML      = t('cgu_content');
+            document.getElementById('protection-content').innerHTML = t('protection_content');
+        }
+
+        function applyTranslations() {
+            document.getElementById('html-root').lang = currentLang;
+            document.title = t('site_title');
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.dataset.i18n;
+                const val = t(key);
+                if (val !== key) el.innerHTML = val;
+            });
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === currentLang);
+            });
+
+            renderLegalContent();
+            updateCookieBannerTexts();
+        }
+
+        function switchLang(lang) {
+            if (!SUPPORTED_LANGS.includes(lang)) return;
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            applyTranslations();
+        }
+
+        document.getElementById('lang-switcher').addEventListener('click', e => {
+            const btn = e.target.closest('.lang-btn');
+            if (btn) switchLang(btn.dataset.lang);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll to hash on load
+        function scrollToHash() {
+            const hash = window.location.hash;
+            if (hash) {
+                const target = document.querySelector(hash);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        }
+
+        // ── Cookie & consent ──────────────────────────────────────────────────
+        let cookieConsent = getCookie('ic_consent');
+
+        function updateCookieBannerTexts() {
+            const bannerText = document.getElementById('cookie-banner-text');
+            const btnAccept  = document.getElementById('cookie-btn-accept');
+            const btnDecline = document.getElementById('cookie-btn-decline');
+            if (bannerText) bannerText.textContent = t('cookie_banner_text');
+            if (btnAccept)  btnAccept.textContent  = t('cookie_accept');
+            if (btnDecline) btnDecline.textContent  = t('cookie_decline');
+        }
+
+        function closeCookieBanner() {
+            const banner = document.getElementById('cookie-banner');
+            if (banner) banner.style.display = 'none';
+        }
+
+        function acceptCookies() {
+            setCookie('ic_consent',    'true',        365);
+            setCookie('ic_uid',        generateUID(), 365);
+            setCookie('ic_last_visit', new Date().toISOString(), 365);
+            cookieConsent = 'true';
+            closeCookieBanner();
+        }
+
+        function declineCookies() {
+            setCookie('ic_consent', 'false', 365);
+            cookieConsent = 'false';
+            closeCookieBanner();
+        }
+
+        document.getElementById('cookie-btn-accept').addEventListener('click', acceptCookies);
+        document.getElementById('cookie-btn-decline').addEventListener('click', declineCookies);
+
+        if (cookieConsent === null) {
+            updateCookieBannerTexts();
+            document.getElementById('cookie-banner').style.display = 'flex';
+        }
+
+        // Init
+        applyTranslations();
+        scrollToHash();
+    </script>
+</body>
+</html>

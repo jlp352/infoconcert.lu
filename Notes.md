@@ -43,7 +43,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 			- [ ] Mettre un bouton more details sur la page concert
 			- [ ] Si concert Sold out, mettre un bouton vers Ticket Swap
 		- [x] Message Cookies
-		- [ ] Voir les mentions légales à mettre en place pour un site internet
+		- [x] Voir les mentions légales à mettre en place pour un site internet
 
 		- [ ] Page Salle de concerts
 		- [x] Ajouter a quick search pour artiste

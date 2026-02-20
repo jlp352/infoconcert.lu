@@ -377,10 +377,9 @@
         /* Footer */
         footer {
             position: relative;
-            padding: 3rem 2rem 2rem;
+            padding: 1.5rem 2rem 2rem;
             text-align: center;
             background: var(--dark);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         footer p {
@@ -397,6 +396,26 @@
             margin: 0 0.6rem;
             opacity: 0.4;
         }
+
+        .footer-legal {
+            background: var(--dark);
+            padding: 1.8rem 2rem 1.4rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer-legal a {
+            color: rgba(245,245,245,0.5);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+
+        .footer-legal a:hover { color: var(--primary); }
 
         /* Language switcher */
         .lang-switcher {
@@ -1148,7 +1167,6 @@
                 </li>
             </ul>
             <div class="lang-switcher-wrapper">
-                <div class="nav-separator"></div>
                 <div class="lang-switcher" id="lang-switcher">
                     <button class="lang-btn" data-lang="fr">FR</button>
                     <button class="lang-btn" data-lang="en">EN</button>
@@ -1198,10 +1216,16 @@
         </div>
     </section>
 
-    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 0;">
-
     <footer>
-        <p data-i18n="footer_copy">&copy; 2026 infoConcert.lu</p>
+        <div class="footer-legal">
+            <a href="legalnotice.html#cookies" data-i18n="legal_cookies">Charte des cookies</a>
+            <span class="footer-sep">·</span>
+            <a href="legalnotice.html#cgu" data-i18n="legal_cgu">Conditions d'utilisation (CGU) du site</a>
+            <span class="footer-sep">·</span>
+            <a href="legalnotice.html#protection" data-i18n="legal_protection">Protection des données à caractère personnel</a>
+        </div>
+        <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.12); margin: 0 2rem;">
+        <p data-i18n="footer_copy" style="padding-top: 1.5rem;">&copy; 2026 infoConcert.lu</p>
         <p class="footer-meta">
             <span id="footer-version"></span>
             <span class="footer-sep">|</span>
@@ -1277,6 +1301,9 @@
                 toast_new_concerts:   (n) => `🆕 ${n} nouveau${n > 1 ? 'x' : ''} concert${n > 1 ? 's' : ''} depuis votre dernière visite`,
                 toast_view:           'Voir',
                 filter_new:           (n) => `🆕 Nouveautés (${n})`,
+                legal_cookies:        'Charte des cookies',
+                legal_cgu:            'Conditions d\'utilisation (CGU) du site',
+                legal_protection:     'Protection des données à caractère personnel',
             },
             en: {
                 site_title:           'infoConcert.lu – Concerts in your area',
@@ -1312,6 +1339,9 @@
                 toast_new_concerts:   (n) => `🆕 ${n} new concert${n > 1 ? 's' : ''} since your last visit`,
                 toast_view:           'View',
                 filter_new:           (n) => `🆕 New (${n})`,
+                legal_cookies:        'Cookie Policy',
+                legal_cgu:            'Terms of Use',
+                legal_protection:     'Personal Data Protection',
             },
             de: {
                 site_title:           'infoConcert.lu – Konzerte in Ihrer Region',
@@ -1347,6 +1377,9 @@
                 toast_new_concerts:   (n) => `🆕 ${n} neue${n > 1 ? '' : 's'} Konzert${n > 1 ? 'e' : ''} seit Ihrem letzten Besuch`,
                 toast_view:           'Anzeigen',
                 filter_new:           (n) => `🆕 Neu (${n})`,
+                legal_cookies:        'Cookie-Richtlinie',
+                legal_cgu:            'Nutzungsbedingungen',
+                legal_protection:     'Datenschutz',
             }
         };
 
