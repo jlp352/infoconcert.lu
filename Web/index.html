@@ -383,28 +383,19 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .social-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            margin-bottom: 2rem;
-        }
-
-        .social-links a {
-            color: var(--light);
-            font-size: 1.5rem;
-            transition: all 0.3s;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            color: var(--primary);
-            transform: translateY(-5px);
-        }
-
         footer p {
             opacity: 0.6;
             font-size: 0.9rem;
+        }
+
+        .footer-meta {
+            margin-top: 0.4rem;
+            font-size: 0.78rem;
+        }
+
+        .footer-sep {
+            margin: 0 0.6rem;
+            opacity: 0.4;
         }
 
         /* Language switcher */
@@ -1210,13 +1201,12 @@
     <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 0;">
 
     <footer>
-        <div class="social-links">
-            <a href="#" title="Facebook">📘</a>
-            <a href="#" title="Instagram">📷</a>
-            <a href="#" title="Twitter">🐦</a>
-            <a href="#" title="YouTube">📹</a>
-        </div>
-        <p data-i18n="footer_copy">&copy; 2026 infoConcert.lu – Tous droits réservés</p>
+        <p data-i18n="footer_copy">&copy; 2026 infoConcert.lu</p>
+        <p class="footer-meta">
+            <span id="footer-version"></span>
+            <span class="footer-sep">|</span>
+            <span id="footer-lastupdate-label"></span> <span id="footer-lastupdate">–</span>
+        </p>
     </footer>
 
     <!-- Cookie consent banner -->
@@ -1277,7 +1267,9 @@
                 btn_sold_out:         'Complet',
                 btn_reserve:          'Réserver →',
                 preview_extract:      'Extrait',
-                footer_copy:          '© 2026 infoConcert.lu – Tous droits réservés',
+                footer_copy:          '© 2026 infoConcert.lu',
+                footer_version:       'Version :',
+                footer_lastupdate:    'Dernière mise à jour :',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
                 cookie_banner_text:   'Nous utilisons des cookies pour mémoriser votre identifiant et la date de votre dernière visite, afin de vous afficher les nouveaux concerts. Aucune donnée personnelle n\'est partagée.',
                 cookie_accept:        'Accepter',
@@ -1310,7 +1302,9 @@
                 btn_sold_out:         'Sold out',
                 btn_reserve:          'Book →',
                 preview_extract:      'Preview',
-                footer_copy:          '© 2026 infoConcert.lu – All rights reserved',
+                footer_copy:          '© 2026 infoConcert.lu',
+                footer_version:       'Version:',
+                footer_lastupdate:    'Last update:',
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
                 cookie_banner_text:   'We use cookies to remember your ID and your last visit date, so we can show you new concerts. No personal data is shared.',
                 cookie_accept:        'Accept',
@@ -1343,7 +1337,9 @@
                 btn_sold_out:         'Ausverkauft',
                 btn_reserve:          'Buchen →',
                 preview_extract:      'Vorschau',
-                footer_copy:          '© 2026 infoConcert.lu – Alle Rechte vorbehalten',
+                footer_copy:          '© 2026 infoConcert.lu',
+                footer_version:       'Version:',
+                footer_lastupdate:    'Letztes Update:',
                 concert_count:        (n) => `${n} Konzert${n > 1 ? 'e' : ''}`,
                 cookie_banner_text:   'Wir verwenden Cookies, um Ihre ID und Ihr letztes Besuchsdatum zu speichern, damit wir Ihnen neue Konzerte anzeigen können. Es werden keine persönlichen Daten weitergegeben.',
                 cookie_accept:        'Akzeptieren',
@@ -1594,6 +1590,9 @@
             });
         }
 
+        // ── Version (modifier ici pour changer le numéro de version) ─────────
+        const APP_VERSION = '1.0';
+
         async function loadConcerts() {
             try {
                 const res = await fetch('IN/concerts.json?v=' + Date.now(), { cache: 'no-store' });
@@ -1605,6 +1604,16 @@
                 buildFilters(allConcerts);
                 renderConcerts(allConcerts);
                 computeAndShowNew();
+
+                // Footer : version + last update depuis scraped_at du JSON
+                document.getElementById('footer-version').textContent = t('footer_version') + ' ' + APP_VERSION;
+                document.getElementById('footer-lastupdate-label').textContent = t('footer_lastupdate');
+                if (data.scraped_at) {
+                    const d = new Date(data.scraped_at);
+                    const fmt = d.toLocaleDateString('fr-LU', { day: '2-digit', month: '2-digit', year: 'numeric' })
+                              + ' ' + d.toLocaleTimeString('fr-LU', { hour: '2-digit', minute: '2-digit' });
+                    document.getElementById('footer-lastupdate').textContent = fmt;
+                }
             } catch (err) {
                 document.getElementById('concerts-grid').innerHTML =
                     `<p style="text-align:center;color:var(--primary);padding:3rem;">${t('error_load')} ${err.message}</p>`;
@@ -2012,6 +2021,13 @@
                 document.getElementById('toast-new-msg').textContent = t('toast_new_concerts')(newConcertsCount);
                 document.getElementById('toast-btn-view').textContent = t('toast_view');
             }
+            // Mettre à jour les labels du footer
+            const elVer = document.getElementById('footer-version');
+            if (elVer && elVer.textContent) {
+                elVer.textContent = t('footer_version') + ' ' + APP_VERSION;
+            }
+            const elLabel = document.getElementById('footer-lastupdate-label');
+            if (elLabel) elLabel.textContent = t('footer_lastupdate');
         };
 
         loadConcerts();
