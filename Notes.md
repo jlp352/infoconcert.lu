@@ -31,7 +31,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 #### Web
 		- [x] Site Multi Langue (Fr, En, Ge) selection langue en function du navigateur
 		- [x] Revoir Barre Menu. Mettre Logo
-		- [ ] Rajouter les mois
+		- [x] Rajouter les mois
 		- Filtre pour afficher selon criteres
 			- [ ] type de musique
 			- [ ] type de salle

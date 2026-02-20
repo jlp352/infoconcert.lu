@@ -244,10 +244,35 @@
         }
 
         .concerts-grid {
+            display: block;
+            margin-top: 3rem;
+        }
+
+        .month-group {
+            margin-bottom: 3rem;
+        }
+
+        .month-group-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+        }
+
+        .month-group-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .month-group-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .concert-card {
@@ -948,10 +973,6 @@
                 padding: 4rem 1rem 3rem;
             }
 
-            .concerts-grid {
-                grid-template-columns: 1fr;
-            }
-
         }
 
         /* Loading animation */
@@ -1294,6 +1315,7 @@
                 footer_copy:          '© 2026 infoConcert.lu',
                 footer_version:       'Version :',
                 footer_lastupdate:    'Dernière mise à jour :',
+                months:               ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
                 cookie_banner_text:   'Nous utilisons des cookies pour mémoriser votre identifiant et la date de votre dernière visite, afin de vous afficher les nouveaux concerts. Aucune donnée personnelle n\'est partagée.',
                 cookie_accept:        'Accepter',
@@ -1332,6 +1354,7 @@
                 footer_copy:          '© 2026 infoConcert.lu',
                 footer_version:       'Version:',
                 footer_lastupdate:    'Last update:',
+                months:               ['January','February','March','April','May','June','July','August','September','October','November','December'],
                 concert_count:        (n) => `${n} concert${n > 1 ? 's' : ''}`,
                 cookie_banner_text:   'We use cookies to remember your ID and your last visit date, so we can show you new concerts. No personal data is shared.',
                 cookie_accept:        'Accept',
@@ -1370,6 +1393,7 @@
                 footer_copy:          '© 2026 infoConcert.lu',
                 footer_version:       'Version:',
                 footer_lastupdate:    'Letztes Update:',
+                months:               ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
                 concert_count:        (n) => `${n} Konzert${n > 1 ? 'e' : ''}`,
                 cookie_banner_text:   'Wir verwenden Cookies, um Ihre ID und Ihr letztes Besuchsdatum zu speichern, damit wir Ihnen neue Konzerte anzeigen können. Es werden keine persönlichen Daten weitergegeben.',
                 cookie_accept:        'Akzeptieren',
@@ -1573,14 +1597,42 @@
         let activeFilter = 'all';
 
         function renderConcerts(concerts) {
-            const grid = document.getElementById('concerts-grid');
+            const grid  = document.getElementById('concerts-grid');
             const count = document.getElementById('concerts-count');
             if (!concerts.length) {
                 grid.innerHTML = `<p style="text-align:center;opacity:0.5;padding:3rem;">${t('no_concerts')}</p>`;
                 count.textContent = '';
                 return;
             }
-            grid.innerHTML = concerts.map((c, i) => buildCard(c, i)).join('');
+
+            // Grouper par "YYYY-MM" en préservant l'ordre chronologique
+            const groups = [];
+            const groupMap = {};
+            concerts.forEach(c => {
+                const d   = new Date(c.date_live + 'T00:00:00');
+                const key = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
+                if (!groupMap[key]) {
+                    groupMap[key] = { year: d.getFullYear(), monthIndex: d.getMonth(), concerts: [] };
+                    groups.push(groupMap[key]);
+                }
+                groupMap[key].concerts.push(c);
+            });
+
+            const months = t('months');
+            let globalCardIndex = 0;
+
+            grid.innerHTML = groups.map(group => {
+                const monthName = months[group.monthIndex];
+                const cardsHtml = group.concerts.map(c => buildCard(c, globalCardIndex++)).join('');
+                return `
+                <div class="month-group">
+                    <h3 class="month-group-title">${monthName} ${group.year}</h3>
+                    <div class="month-group-grid">
+                        ${cardsHtml}
+                    </div>
+                </div>`;
+            }).join('');
+
             count.textContent = t('concert_count')(concerts.length);
         }
 
