@@ -67,6 +67,10 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [ ] Casino 2000
 		- [ ] Kulturfabrik
 		- [ ] Rockhall regroupé tous le salles sous Rockhal dans location
+#### Test
+		- Test en détail
+			- [ ] Partie Puthon
+			- [ ] Partie Web
 ## Python
 		Scrapper
 			Den Atelier: scrape_atelier_concerts.py

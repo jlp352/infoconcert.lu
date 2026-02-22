@@ -1,0 +1,7 @@
+# Dépendances Python pour infoconcert.lu
+#
+# scrape_atelier_concerts.py  → stdlib uniquement (pas de dépendance externe)
+# scrape_rockhal_concerts.py  → stdlib uniquement (pas de dépendance externe)
+# merge.py                    → requiert requests
+
+requests>=2.28.0
