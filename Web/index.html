@@ -399,6 +399,80 @@
             transform: translateX(5px);
         }
 
+        /* Bouton Détails du concert */
+        .btn-details {
+            display: inline-block;
+            width: auto;
+            padding: 0.8rem 2rem;
+            background: transparent;
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .btn-details:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        /* Prix + boutons sur une ligne */
+        .price-section {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .price-actions {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn-small {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.25s;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid var(--primary);
+            color: var(--light);
+            background: transparent;
+        }
+
+        .btn-small:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-small-ts {
+            border-color: #009fe3;
+            color: #009fe3;
+        }
+
+        .btn-small-ts:hover {
+            background: #009fe3;
+            color: white;
+        }
+
         /* Footer */
         footer {
             position: relative;
@@ -1041,27 +1115,6 @@
             color: #fff;
         }
 
-        .ticketswap-link {
-            position: absolute;
-            top: 3rem;
-            right: 0;
-            z-index: 2;
-            display: block;
-            background: #fff;
-            padding: 0.3rem 0.6rem 0.3rem 0.8rem;
-            border-radius: 20px 0 0 20px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            transition: background 0.2s;
-        }
-
-        .ticketswap-link:hover {
-            background: #e8f4fc;
-        }
-
-        .ticketswap-logo {
-            height: 32px;
-            display: block;
-        }
 
         /* Loading state */
         .loading {
@@ -1104,7 +1157,7 @@
             font-size: 0.9rem;
             font-weight: 700;
             color: var(--secondary);
-            margin-bottom: 1rem;
+            margin-bottom: 0;
         }
 
         .price-info {
@@ -1170,13 +1223,24 @@
             display: block;
         }
 
-        /* Card footer: price + button */
+        /* Card footer: price + boutons + détails */
         .concert-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .concert-footer-top {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 0.5rem;
             flex-wrap: wrap;
+        }
+
+        .concert-footer-bottom {
+            display: flex;
+            justify-content: center;
         }
 
         /* ── Advanced filters ─────────────────────────────────────────────── */
@@ -2173,26 +2237,33 @@
                 ? `<img src="${concert.image}" alt="${concert.artist}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.background='${gradient}'">`
                 : '';
 
-            const buyLink = concert.buy_link || concert.url || '#';
+            const buyLink    = concert.buy_link || concert.url || '#';
             const concertUrl = concert.url || buyLink;
-            const isFull = status === 'full';
-            const buttonLabel = isFull ? t('btn_sold_out') : t('btn_reserve');
-            const buttonDisabled = isFull ? 'style="opacity:0.4;pointer-events:none;"' : '';
+            const isFull     = status === 'full';
 
             const ticketswapUrl = `https://www.google.com/search?q=site:ticketswap.com+%22${encodeURIComponent(concert.artist)}%22+%22${encodeURIComponent(concert.location || '')}%22`;
-            const ticketswapHtml = isFull
-                ? `<a href="${ticketswapUrl}" target="_blank" rel="noopener" class="ticketswap-link" title="Trouver des billets sur TicketSwap">
-                        <img src="image/logo/ticketswap.png" alt="TicketSwap" class="ticketswap-logo">
-                   </a>`
+
+            const isSoon = status === 'soon';
+            const btnReserverHtml = (!isFull && !isSoon)
+                ? `<a href="${buyLink}" class="btn-small" target="_blank" rel="noopener">🎟 Réserver</a>`
+                : '';
+            const btnTicketswapHtml = (!isSoon)
+                ? `<a href="${ticketswapUrl}" class="btn-small btn-small-ts" target="_blank" rel="noopener">🔄 TicketSwap</a>`
                 : '';
 
-            const priceHtml = concert.price
-                ? `<span class="concert-price">🎟 ${concert.price}
-                       <span class="price-info">
-                           <span class="price-info-icon" tabindex="0">ⓘ</span>
-                           <span class="price-tooltip">Prix à titre indicatif.<br>Prix à partir de.<br>Vérifier le prix exact sur le site officiel.</span>
+            const priceActionsHtml = concert.price
+                ? `<div class="price-section">
+                       <span class="concert-price">🎟 ${concert.price}
+                           <span class="price-info">
+                               <span class="price-info-icon" tabindex="0">ⓘ</span>
+                               <span class="price-tooltip">Prix à titre indicatif.<br>Prix à partir de.<br>Vérifier le prix exact sur le site officiel.</span>
+                           </span>
                        </span>
-                   </span>`
+                       <div class="price-actions">
+                           ${btnReserverHtml}
+                           ${btnTicketswapHtml}
+                       </div>
+                   </div>`
                 : '';
 
             const trackIds = [concert.track_id, concert.track_id1].filter(Boolean);
@@ -2228,7 +2299,6 @@
                 <div class="concert-image" style="background:${gradient}">
                     ${imageHtml}
                     ${statusHtml}
-                    ${ticketswapHtml}
                 </div>
                 <div class="concert-content">
                     <span class="concert-date">${formatDate(concert.date_live)}</span>
@@ -2237,8 +2307,12 @@
                     <div class="concert-venue">${concert.location}${concert.address ? ' — ' + concert.address : ''}</div>
                     ${previewHtml}
                     <div class="concert-footer">
-                        ${priceHtml}
-                        <a href="${buyLink}" class="ticket-button" target="_blank" rel="noopener" ${buttonDisabled}>${buttonLabel}</a>
+                        <div class="concert-footer-top">
+                            ${priceActionsHtml}
+                        </div>
+                        <div class="concert-footer-bottom">
+                            <a href="${concertUrl}" class="btn-details" target="_blank" rel="noopener">Détails du concert</a>
+                        </div>
                     </div>
                 </div>
             </div>`;

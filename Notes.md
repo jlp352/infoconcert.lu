@@ -38,10 +38,10 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 			- [x] Filter par salle
 		- [x] Filtre pour afficher les nouveaux concerts depuis last visite
 		- Revoir design de la tuile concert
-			- [ ] en cliquant sur la tuile allez sur la page concert
-			- [ ] rajouter bouton pour ecouter un extrait
-			- [ ] Mettre un bouton more details sur la page concert
-			- [ ] Si concert Sold out, mettre un bouton vers Ticket Swap
+			- [x] en cliquant sur la tuile allez sur la page concert
+			- [x] rajouter bouton pour ecouter un extrait
+			- [x] Mettre un bouton more details sur la page concert
+			- [x] Si concert Sold out, mettre un bouton vers Ticket Swap
 		- [x] Message Cookies
 		- [x] Voir les mentions légales à mettre en place pour un site internet
 
