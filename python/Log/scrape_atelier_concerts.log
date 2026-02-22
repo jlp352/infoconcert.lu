@@ -20,3 +20,25 @@
 2026-02-19 17:36:10,206 [INFO] 0 nouveau(x) concert(s) détecté(s)
 2026-02-19 17:36:10,208 [INFO] ✅ 94 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_atelier_concerts.json
 2026-02-19 17:36:10,209 [INFO] Fin du scraper
+2026-02-22 09:55:50,837 [INFO] ============================================================
+2026-02-22 09:55:50,837 [INFO] Démarrage du scraper (format=json, exclude_genres=Party; Film, exclude_statuses=cancelled)
+2026-02-22 09:55:50,837 [INFO] Récupération de la liste des concerts…
+2026-02-22 09:55:51,123 [INFO] 96 concerts trouvés via l'API
+2026-02-22 09:55:51,124 [INFO] Scraping de 96 pages pour adresse et horaires…
+2026-02-22 09:55:56,932 [INFO] Scraping terminé : 96/96 pages OK
+2026-02-22 09:55:56,944 [INFO] Filtre genres exclus {'film', 'party'} : 96 → 93 concerts
+2026-02-22 09:55:56,944 [INFO] Filtre statuts exclus {'cancelled'} : 93 → 93 concerts
+2026-02-22 09:55:56,946 [INFO] 0 nouveau(x) concert(s) détecté(s)
+2026-02-22 09:55:56,948 [INFO] ✅ 93 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_atelier_concerts.json
+2026-02-22 09:55:56,948 [INFO] Fin du scraper
+2026-02-22 09:56:22,601 [INFO] ============================================================
+2026-02-22 09:56:22,601 [INFO] Démarrage du scraper (format=csv, exclude_genres=Party; Film, exclude_statuses=cancelled)
+2026-02-22 09:56:22,601 [INFO] Récupération de la liste des concerts…
+2026-02-22 09:56:22,753 [INFO] 96 concerts trouvés via l'API
+2026-02-22 09:56:22,753 [INFO] Scraping de 96 pages pour adresse et horaires…
+2026-02-22 09:56:27,662 [INFO] Scraping terminé : 96/96 pages OK
+2026-02-22 09:56:27,668 [INFO] Filtre genres exclus {'party', 'film'} : 96 → 93 concerts
+2026-02-22 09:56:27,668 [INFO] Filtre statuts exclus {'cancelled'} : 93 → 93 concerts
+2026-02-22 09:56:27,670 [INFO] 0 nouveau(x) concert(s) détecté(s)
+2026-02-22 09:56:27,673 [INFO] ✅ 93 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
+2026-02-22 09:56:27,673 [INFO] Fin du scraper

@@ -1065,37 +1065,6 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Filters */
-        .filters {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 2rem;
-        }
-
-        .filter-btn {
-            padding: 0.6rem 1.5rem;
-            background: transparent;
-            color: var(--light);
-            border: 2px solid rgba(255,255,255,0.2);
-            border-radius: 30px;
-            cursor: pointer;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s;
-        }
-
-        .filter-btn:hover,
-        .filter-btn.active {
-            border-color: var(--primary);
-            color: var(--primary);
-            background: rgba(255, 51, 102, 0.1);
-        }
-
         .concerts-count {
             text-align: center;
             opacity: 0.5;
@@ -1120,6 +1089,307 @@
             justify-content: space-between;
             gap: 0.5rem;
             flex-wrap: wrap;
+        }
+
+        /* ── Advanced filters ─────────────────────────────────────────────── */
+        .adv-filters {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        /* Dropdowns row (row 1) — label + dropdowns + reset */
+        .adv-filters-dropdowns {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        /* "Filtres :" label */
+        .adv-filters-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(245,245,245,0.4);
+            white-space: nowrap;
+            margin-right: 0.2rem;
+        }
+
+        /* Quick buttons row (row 2) — right-aligned, smaller */
+        .adv-filters-quick {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: flex-end;
+        }
+
+        /* "Filtre rapide :" sub-label */
+        .adv-quick-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(245,245,245,0.3);
+            white-space: nowrap;
+            margin-right: 0.1rem;
+        }
+
+        .quick-btn {
+            padding: 0.35rem 0.9rem;
+            background: transparent;
+            color: rgba(245,245,245,0.6);
+            border: 1.5px solid rgba(255,255,255,0.15);
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            transition: all 0.25s;
+            white-space: nowrap;
+        }
+
+        .quick-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .quick-btn.active {
+            border-color: var(--accent);
+            background: rgba(0,217,255,0.12);
+            color: var(--accent);
+        }
+
+        /* Dropdown wrapper */
+        .adv-dropdown {
+            position: relative;
+        }
+
+        .adv-dropdown-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.5rem 1.1rem;
+            background: transparent;
+            color: var(--light);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            transition: all 0.25s;
+            white-space: nowrap;
+            user-select: none;
+        }
+
+        .adv-dropdown-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .adv-dropdown-btn.active {
+            border-color: var(--primary);
+            background: rgba(255,51,102,0.12);
+            color: var(--primary);
+        }
+
+        .adv-dropdown-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 800;
+            min-width: 18px;
+            height: 18px;
+            border-radius: 9px;
+            padding: 0 4px;
+            line-height: 1;
+        }
+
+        .adv-dropdown-arrow {
+            font-size: 0.6rem;
+            opacity: 0.6;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+
+        .adv-dropdown-btn.open .adv-dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Dropdown panel — opens UPWARD by default */
+        .adv-dropdown-panel {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            top: auto;
+            left: 0;
+            min-width: 220px;
+            background: #1e1e1e;
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            z-index: 500;
+            box-shadow: 0 -8px 50px rgba(0,0,0,0.7);
+            overflow: hidden;
+            animation: dropUp 0.18s ease-out;
+        }
+
+        @keyframes dropUp {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .adv-dropdown-panel.open {
+            display: block;
+        }
+
+        /* Fallback: opens downward when not enough space above */
+        .adv-dropdown-panel.down {
+            bottom: auto;
+            top: calc(100% + 8px);
+            box-shadow: 0 16px 50px rgba(0,0,0,0.7);
+            animation: dropDown 0.18s ease-out;
+        }
+
+        @keyframes dropDown {
+            from { opacity: 0; transform: translateY(-6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Genre groups inside panel */
+        .adv-panel-group-label {
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(245,245,245,0.35);
+            padding: 0.7rem 1rem 0.25rem;
+        }
+
+        .adv-panel-item {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background 0.15s;
+            font-size: 0.88rem;
+        }
+
+        .adv-panel-item:hover {
+            background: rgba(255,51,102,0.1);
+        }
+
+        .adv-panel-item input[type="checkbox"] {
+            accent-color: var(--primary);
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .adv-panel-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.06);
+            margin: 0.3rem 0;
+        }
+
+        /* Reset button */
+        .adv-reset-btn {
+            margin-left: auto;
+            padding: 0.5rem 1.2rem;
+            background: transparent;
+            color: rgba(245,245,245,0.5);
+            border: 2px solid rgba(255,255,255,0.15);
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.82rem;
+            letter-spacing: 0.5px;
+            transition: all 0.25s;
+            display: none;
+        }
+
+        .adv-reset-btn.visible {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .adv-reset-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Active filter pills summary */
+        .adv-active-pills {
+            display: none;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .adv-active-pills.visible {
+            display: flex;
+        }
+
+        .adv-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255,51,102,0.15);
+            border: 1px solid rgba(255,51,102,0.4);
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .adv-pill-remove {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 0.75rem;
+            padding: 0;
+            line-height: 1;
+            opacity: 0.7;
+            transition: opacity 0.15s;
+        }
+
+        .adv-pill-remove:hover { opacity: 1; }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .adv-filters-quick {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .adv-filters-dropdowns {
+                flex-wrap: wrap;
+            }
+
+            .adv-dropdown-panel {
+                min-width: 180px;
+                left: 0;
+                right: auto;
+            }
+
+            .adv-reset-btn {
+                margin-left: 0;
+            }
         }
 
         /* Audio preview */
@@ -1229,7 +1499,51 @@
             <button class="artist-filter-reset" id="artist-filter-reset" data-i18n="search_filter_reset">Voir tous les concerts</button>
         </div>
 
-        <div class="filters" id="filters"></div>
+        <!-- Advanced filter bar -->
+        <div class="adv-filters" id="adv-filters">
+            <!-- Row 1 : label + dropdowns + reset -->
+            <div class="adv-filters-dropdowns">
+                <span class="adv-filters-label" id="adv-filters-label"></span>
+                <!-- Month dropdown -->
+                <div class="adv-dropdown" id="dd-month">
+                    <button class="adv-dropdown-btn" id="dd-month-btn">
+                        <span id="dd-month-label"></span>
+                        <span class="adv-dropdown-badge" id="dd-month-badge" style="display:none"></span>
+                        <span class="adv-dropdown-arrow">▼</span>
+                    </button>
+                    <div class="adv-dropdown-panel" id="dd-month-panel"></div>
+                </div>
+                <!-- Genre dropdown -->
+                <div class="adv-dropdown" id="dd-genre">
+                    <button class="adv-dropdown-btn" id="dd-genre-btn">
+                        <span id="dd-genre-label"></span>
+                        <span class="adv-dropdown-badge" id="dd-genre-badge" style="display:none"></span>
+                        <span class="adv-dropdown-arrow">▼</span>
+                    </button>
+                    <div class="adv-dropdown-panel" id="dd-genre-panel"></div>
+                </div>
+                <!-- Venue dropdown -->
+                <div class="adv-dropdown" id="dd-venue">
+                    <button class="adv-dropdown-btn" id="dd-venue-btn">
+                        <span id="dd-venue-label"></span>
+                        <span class="adv-dropdown-badge" id="dd-venue-badge" style="display:none"></span>
+                        <span class="adv-dropdown-arrow">▼</span>
+                    </button>
+                    <div class="adv-dropdown-panel" id="dd-venue-panel"></div>
+                </div>
+                <!-- Reset -->
+                <button class="adv-reset-btn" id="adv-reset-btn">✕ <span id="adv-reset-label"></span></button>
+            </div>
+            <!-- Row 2 : quick buttons (right-aligned, smaller) -->
+            <div class="adv-filters-quick">
+                <span class="adv-quick-label" id="adv-quick-label">Filtre rapide :</span>
+                <button class="quick-btn" id="qbtn-this-month"></button>
+                <button class="quick-btn" id="qbtn-next-month"></button>
+            </div>
+            <!-- Row 3 : active pills -->
+            <div class="adv-active-pills" id="adv-active-pills"></div>
+        </div>
+
         <p class="concerts-count" id="concerts-count"></p>
 
         <div class="concerts-grid" id="concerts-grid">
@@ -1326,6 +1640,25 @@
                 legal_cookies:        'Charte des cookies',
                 legal_cgu:            'Conditions d\'utilisation (CGU) du site',
                 legal_protection:     'Protection des données à caractère personnel',
+                // Filtres avancés
+                filter_label:         'Filtres :',
+                filter_this_month:    'Ce mois',
+                filter_next_month:    'Mois prochain',
+                filter_month_label:   'Mois',
+                filter_genre_label:   'Genre',
+                filter_venue_label:   'Salle',
+                filter_venue_other:   'Autres',
+                filter_reset:         'Réinitialiser',
+                filter_month_year_placeholder: 'Mois / Année',
+                filter_no_date:       'Toutes dates',
+                genre_group_rock:     'Rock / Metal',
+                genre_group_electro:  'Électro / Dance',
+                genre_group_hiphop:   'Hip-Hop / R&B',
+                genre_group_pop:      'Pop / Chanson',
+                genre_group_jazz:     'Jazz / Blues',
+                genre_group_reggae:   'Reggae / Latino',
+                genre_group_family:   'Famille / Classique',
+                genre_group_other:    'Non classifié',
             },
             en: {
                 site_title:           'infoConcert.lu – Concerts in your area',
@@ -1365,6 +1698,25 @@
                 legal_cookies:        'Cookie Policy',
                 legal_cgu:            'Terms of Use',
                 legal_protection:     'Personal Data Protection',
+                // Advanced filters
+                filter_label:         'Filters:',
+                filter_this_month:    'This month',
+                filter_next_month:    'Next month',
+                filter_month_label:   'Month',
+                filter_genre_label:   'Genre',
+                filter_venue_label:   'Venue',
+                filter_venue_other:   'Others',
+                filter_reset:         'Reset',
+                filter_month_year_placeholder: 'Month / Year',
+                filter_no_date:       'All dates',
+                genre_group_rock:     'Rock / Metal',
+                genre_group_electro:  'Electro / Dance',
+                genre_group_hiphop:   'Hip-Hop / R&B',
+                genre_group_pop:      'Pop / Chanson',
+                genre_group_jazz:     'Jazz / Blues',
+                genre_group_reggae:   'Reggae / Latino',
+                genre_group_family:   'Family / Classical',
+                genre_group_other:    'Unclassified',
             },
             de: {
                 site_title:           'infoConcert.lu – Konzerte in Ihrer Region',
@@ -1404,6 +1756,25 @@
                 legal_cookies:        'Cookie-Richtlinie',
                 legal_cgu:            'Nutzungsbedingungen',
                 legal_protection:     'Datenschutz',
+                // Erweiterte Filter
+                filter_label:         'Filter:',
+                filter_this_month:    'Diesen Monat',
+                filter_next_month:    'Nächsten Monat',
+                filter_month_label:   'Monat',
+                filter_genre_label:   'Genre',
+                filter_venue_label:   'Veranstaltungsort',
+                filter_venue_other:   'Andere',
+                filter_reset:         'Zurücksetzen',
+                filter_month_year_placeholder: 'Monat / Jahr',
+                filter_no_date:       'Alle Daten',
+                genre_group_rock:     'Rock / Metal',
+                genre_group_electro:  'Elektro / Dance',
+                genre_group_hiphop:   'Hip-Hop / R&B',
+                genre_group_pop:      'Pop / Chanson',
+                genre_group_jazz:     'Jazz / Blues',
+                genre_group_reggae:   'Reggae / Latino',
+                genre_group_family:   'Familie / Klassik',
+                genre_group_other:    'Nicht klassifiziert',
             }
         };
 
@@ -1450,11 +1821,28 @@
 
             // Re-render dynamic content if already loaded
             if (allConcerts.length) {
-                buildFilters(allConcerts);
-                const filtered = activeFilter === 'all'
-                    ? allConcerts
-                    : allConcerts.filter(c => c.location === activeFilter);
-                renderConcerts(filtered);
+                // Update static labels
+                const flbl = document.getElementById('adv-filters-label');
+                const qThis = document.getElementById('qbtn-this-month');
+                const qNext = document.getElementById('qbtn-next-month');
+                if (flbl)  flbl.textContent  = t('filter_label');
+                if (qThis) qThis.textContent = t('filter_this_month');
+                if (qNext) qNext.textContent = t('filter_next_month');
+                const ddMl = document.getElementById('dd-month-label');
+                const ddGl = document.getElementById('dd-genre-label');
+                const ddVl = document.getElementById('dd-venue-label');
+                const rstL = document.getElementById('adv-reset-label');
+                if (ddMl) ddMl.textContent = t('filter_month_label');
+                if (ddGl) ddGl.textContent = t('filter_genre_label');
+                if (ddVl) ddVl.textContent = t('filter_venue_label');
+                if (rstL) rstL.textContent = t('filter_reset');
+                // Rebuild translated panel contents
+                if (window._advBuildMonthPanel) window._advBuildMonthPanel();
+                if (window._advBuildGenrePanel) window._advBuildGenrePanel();
+                if (window._advBuildVenuePanel) window._advBuildVenuePanel();
+                // Re-render pills with new lang
+                updateActivePills();
+                applyAdvFilters();
             }
         }
 
@@ -1593,8 +1981,44 @@
             </div>`;
         }
 
-        let allConcerts = [];
-        let activeFilter = 'all';
+        let allConcerts  = [];
+        let venueCounts  = {}; // populated in buildFilters, used in applyAdvFilters
+        let activeFilter = 'all'; // kept for compatibility with toast/cookie logic
+
+        // ── Genre mapping ─────────────────────────────────────────────────────
+        const GENRE_GROUPS = [
+            { key: 'rock',    rawGenres: ['Rock','Alternative','Alternative Rock','Hard Rock','Metal','Punk','Blues Rock','New Wave'] },
+            { key: 'electro', rawGenres: ['Electro','Electro/Clubbing','Electronica','Trip Hop'] },
+            { key: 'hiphop',  rawGenres: ['Hip Hop','Hip-Hop/Rap','R&B / Soul','Funk'] },
+            { key: 'pop',     rawGenres: ['Pop','French Pop','French','Chanson Française','Singer','Singer-Songwriter','Indie'] },
+            { key: 'jazz',    rawGenres: ['Jazz','Blues/Jazz'] },
+            { key: 'reggae',  rawGenres: ['Reggae','Reggae / Dancehall','Latino','Global Music','Folk'] },
+            { key: 'family',  rawGenres: ['Comedy','Entertainment','Family','Family Entertainment','Classical','Spoken Word','Festival','Immersive concert + orchestral performance'] },
+            { key: 'other',   rawGenres: ['Unknown'] }, // catches all unrecognised genres too
+        ];
+
+        function getGenreGroupKey(rawGenre) {
+            const g = rawGenre.trim();
+            for (const grp of GENRE_GROUPS) {
+                if (grp.rawGenres.includes(g)) return grp.key;
+            }
+            return 'other'; // new / unrecognised → Non classifié
+        }
+
+        // ── Advanced filter state ─────────────────────────────────────────────
+        const advFilter = {
+            quickMode: null,      // 'this-month' | 'next-month' | null
+            months:    new Set(), // month keys 'YYYY-MM'
+            genres:    new Set(), // genre group keys
+            venues:    new Set(), // location strings
+        };
+
+        function advIsEmpty() {
+            return !advFilter.quickMode
+                && advFilter.months.size === 0
+                && advFilter.genres.size  === 0
+                && advFilter.venues.size  === 0;
+        }
 
         function renderConcerts(concerts) {
             const grid  = document.getElementById('concerts-grid');
@@ -1636,43 +2060,321 @@
             count.textContent = t('concert_count')(concerts.length);
         }
 
-        function buildFilters(concerts) {
-            const locations = [...new Set(concerts.map(c => c.location).filter(Boolean))].sort();
-            const filtersEl = document.getElementById('filters');
+        // ── Apply all active filters and re-render ────────────────────────────
+        function applyAdvFilters() {
+            const now       = new Date();
+            const thisYear  = now.getFullYear();
+            const thisMonth = now.getMonth() + 1; // 1-based
+            const nextMonth = thisMonth === 12 ? 1 : thisMonth + 1;
+            const nextYear  = thisMonth === 12 ? thisYear + 1 : thisYear;
 
-            // Calcul des nouveaux concerts pour le bouton Nouveautés
-            const newCount = (cookieConsent === 'true' && lastVisitDate)
-                ? concerts.filter(c => new Date(c.date_created) > new Date(lastVisitDate)).length
-                : 0;
+            let filtered = allConcerts.filter(c => {
+                const d    = new Date(c.date_live + 'T00:00:00');
+                const cY   = d.getFullYear();
+                const cM   = d.getMonth() + 1;
+                const cKey = cY + '-' + String(cM).padStart(2,'0');
 
-            const buttons = [
-                { label: t('filter_all'), value: 'all' },
-                ...(newCount > 0 ? [{ label: t('filter_new')(newCount), value: 'new' }] : []),
-                ...locations.map(l => ({ label: l, value: l }))
-            ];
-
-            filtersEl.innerHTML = buttons.map(b =>
-                `<button class="filter-btn${b.value === activeFilter ? ' active' : ''}" data-filter="${b.value}">${b.label}</button>`
-            ).join('');
-
-            filtersEl.addEventListener('click', e => {
-                const btn = e.target.closest('.filter-btn');
-                if (!btn) return;
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                activeFilter = btn.dataset.filter;
-                let filtered;
-                if (activeFilter === 'all') {
-                    filtered = allConcerts;
-                } else if (activeFilter === 'new') {
-                    filtered = allConcerts.filter(c =>
-                        lastVisitDate && new Date(c.date_created) > new Date(lastVisitDate)
-                    );
-                } else {
-                    filtered = allConcerts.filter(c => c.location === activeFilter);
+                // Quick mode
+                if (advFilter.quickMode === 'this-month') {
+                    if (!(cY === thisYear && cM === thisMonth)) return false;
+                } else if (advFilter.quickMode === 'next-month') {
+                    if (!(cY === nextYear && cM === nextMonth)) return false;
                 }
-                renderConcerts(filtered);
+
+                // Multi-month filter
+                if (advFilter.months.size > 0 && !advFilter.months.has(cKey)) return false;
+
+                // Genre groups (OR within genres, each genre may be multi-raw split by ";")
+                if (advFilter.genres.size > 0) {
+                    const concertGroupKeys = new Set(
+                        (c.genres || [])
+                            .flatMap(g => g.split(';').map(s => s.trim()))
+                            .map(getGenreGroupKey)
+                    );
+                    const match = [...advFilter.genres].some(gk => concertGroupKeys.has(gk));
+                    if (!match) return false;
+                }
+
+                // Venues (OR) — '__other__' matches all minor venues (< 2 concerts)
+                if (advFilter.venues.size > 0) {
+                    const directMatch = advFilter.venues.has(c.location);
+                    const otherMatch  = advFilter.venues.has('__other__') && (venueCounts[c.location] || 0) < 2;
+                    if (!directMatch && !otherMatch) return false;
+                }
+
+                return true;
             });
+
+            // Toast "new" override (kept from old logic)
+            if (activeFilter === 'new') {
+                filtered = allConcerts.filter(c =>
+                    lastVisitDate && new Date(c.date_created) > new Date(lastVisitDate)
+                );
+            }
+
+            renderConcerts(filtered);
+            updateResetBtn();
+            updateActivePills();
+        }
+
+        // ── Build and wire the full filter bar ────────────────────────────────
+        function buildFilters(concerts) {
+            // ── Static labels ──────────────────────────────────────────────
+            document.getElementById('adv-filters-label').textContent = t('filter_label');
+
+            // ── Quick buttons ──────────────────────────────────────────────
+            const qThis = document.getElementById('qbtn-this-month');
+            const qNext = document.getElementById('qbtn-next-month');
+            qThis.textContent = t('filter_this_month');
+            qNext.textContent = t('filter_next_month');
+
+            function setQuickMode(mode) {
+                advFilter.quickMode = (advFilter.quickMode === mode) ? null : mode;
+                qThis.classList.toggle('active', advFilter.quickMode === 'this-month');
+                qNext.classList.toggle('active', advFilter.quickMode === 'next-month');
+                applyAdvFilters();
+            }
+
+            qThis.addEventListener('click', () => setQuickMode('this-month'));
+            qNext.addEventListener('click', () => setQuickMode('next-month'));
+
+            // ── Month dropdown ─────────────────────────────────────────────
+            document.getElementById('dd-month-label').textContent = t('filter_month_label');
+
+            // Collect unique YYYY-MM keys from data
+            const monthKeys = [...new Set(
+                concerts.map(c => {
+                    const d = new Date(c.date_live + 'T00:00:00');
+                    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0');
+                })
+            )].sort();
+
+            function buildMonthPanel() {
+                const panel = document.getElementById('dd-month-panel');
+                panel.innerHTML = monthKeys.map(key => {
+                    const [y, m] = key.split('-');
+                    const label  = t('months')[parseInt(m)-1] + ' ' + y;
+                    const chk    = advFilter.months.has(key) ? 'checked' : '';
+                    return `<label class="adv-panel-item">
+                        <input type="checkbox" value="${key}" ${chk}> ${label}
+                    </label>`;
+                }).join('');
+                panel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        if (cb.checked) advFilter.months.add(cb.value);
+                        else advFilter.months.delete(cb.value);
+                        updateDropdownBadge('dd-month', advFilter.months.size);
+                        applyAdvFilters();
+                    });
+                });
+            }
+            buildMonthPanel();
+
+            // ── Genre dropdown ─────────────────────────────────────────────
+            document.getElementById('dd-genre-label').textContent = t('filter_genre_label');
+
+            function buildGenrePanel() {
+                const panel = document.getElementById('dd-genre-panel');
+                panel.innerHTML = GENRE_GROUPS.map(grp => {
+                    const labelKey = 'genre_group_' + grp.key;
+                    const chk      = advFilter.genres.has(grp.key) ? 'checked' : '';
+                    return `<label class="adv-panel-item">
+                        <input type="checkbox" value="${grp.key}" ${chk}> ${t(labelKey)}
+                    </label>`;
+                }).join('');
+                panel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        if (cb.checked) advFilter.genres.add(cb.value);
+                        else advFilter.genres.delete(cb.value);
+                        updateDropdownBadge('dd-genre', advFilter.genres.size);
+                        applyAdvFilters();
+                    });
+                });
+            }
+            buildGenrePanel();
+
+            // ── Venue dropdown ─────────────────────────────────────────────
+            document.getElementById('dd-venue-label').textContent = t('filter_venue_label');
+
+            // Count concerts per location (written to module-level venueCounts)
+            venueCounts = {};
+            concerts.forEach(c => {
+                if (c.location) venueCounts[c.location] = (venueCounts[c.location] || 0) + 1;
+            });
+            // Main venues (≥ 2 concerts), sorted alphabetically
+            const mainVenues  = Object.keys(venueCounts).filter(v => venueCounts[v] >= 2).sort();
+            // Minor venues (1 concert) — grouped under "Autres"
+            const otherVenues = Object.keys(venueCounts).filter(v => venueCounts[v] < 2).sort();
+            // Special sentinel value for the "Autres" group
+            const VENUE_OTHER_KEY = '__other__';
+
+            function buildVenuePanel() {
+                const panel = document.getElementById('dd-venue-panel');
+                let html = mainVenues.map(loc => {
+                    const chk   = advFilter.venues.has(loc) ? 'checked' : '';
+                    const count = venueCounts[loc];
+                    return `<label class="adv-panel-item">
+                        <input type="checkbox" value="${loc}" ${chk}>
+                        <span>${loc}</span>
+                        <span style="margin-left:auto;font-size:0.72rem;opacity:0.4">${count}</span>
+                    </label>`;
+                }).join('');
+
+                if (otherVenues.length > 0) {
+                    if (mainVenues.length > 0) html += `<div class="adv-panel-divider"></div>`;
+                    const chk = advFilter.venues.has(VENUE_OTHER_KEY) ? 'checked' : '';
+                    html += `<label class="adv-panel-item">
+                        <input type="checkbox" value="${VENUE_OTHER_KEY}" ${chk}>
+                        <span>${t('filter_venue_other')}</span>
+                        <span style="margin-left:auto;font-size:0.72rem;opacity:0.4">${otherVenues.length}</span>
+                    </label>`;
+                }
+
+                panel.innerHTML = html;
+                panel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        if (cb.checked) advFilter.venues.add(cb.value);
+                        else advFilter.venues.delete(cb.value);
+                        updateDropdownBadge('dd-venue', advFilter.venues.size);
+                        applyAdvFilters();
+                    });
+                });
+            }
+            buildVenuePanel();
+
+            // ── Dropdown open/close logic ──────────────────────────────────
+            ['dd-month','dd-genre','dd-venue'].forEach(id => {
+                const wrapper = document.getElementById(id);
+                const btn     = document.getElementById(id + '-btn');
+                const panel   = document.getElementById(id + '-panel');
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    const isOpen = panel.classList.contains('open');
+                    // close all
+                    closeAllDropdowns();
+                    if (!isOpen) {
+                        panel.classList.add('open');
+                        btn.classList.add('open');
+                        // Default: opens upward. Fallback to downward if not enough space above.
+                        const rect = panel.getBoundingClientRect();
+                        if (rect.top < 0) {
+                            panel.classList.add('down');
+                        }
+                    }
+                });
+            });
+
+            document.addEventListener('click', closeAllDropdowns);
+
+            // ── Reset button ───────────────────────────────────────────────
+            document.getElementById('adv-reset-label').textContent = t('filter_reset');
+            document.getElementById('adv-reset-btn').addEventListener('click', resetAdvFilters);
+
+            // Initial render
+            updateResetBtn();
+            updateActivePills();
+
+            // Store rebuild helpers for lang changes
+            window._advBuildMonthPanel   = buildMonthPanel;
+            window._advBuildGenrePanel   = buildGenrePanel;
+            window._advBuildVenuePanel   = buildVenuePanel;
+        }
+
+        function closeAllDropdowns() {
+            document.querySelectorAll('.adv-dropdown-panel').forEach(p => p.classList.remove('open','down'));
+            document.querySelectorAll('.adv-dropdown-btn').forEach(b => b.classList.remove('open'));
+        }
+
+        function updateDropdownBadge(id, count) {
+            const badge = document.getElementById(id + '-badge');
+            const btn   = document.getElementById(id + '-btn');
+            if (count > 0) {
+                badge.textContent = count;
+                badge.style.display = 'inline-flex';
+                btn.classList.add('active');
+            } else {
+                badge.style.display = 'none';
+                btn.classList.remove('active');
+            }
+        }
+
+        function updateResetBtn() {
+            const btn = document.getElementById('adv-reset-btn');
+            if (btn) btn.classList.toggle('visible', !advIsEmpty());
+        }
+
+        function updateActivePills() {
+            const container = document.getElementById('adv-active-pills');
+            if (!container) return;
+            const pills = [];
+            const monthNames = t('months');
+
+            if (advFilter.quickMode === 'this-month') pills.push({ label: t('filter_this_month'), clear: () => { advFilter.quickMode = null; document.getElementById('qbtn-this-month').classList.remove('active'); applyAdvFilters(); } });
+            if (advFilter.quickMode === 'next-month') pills.push({ label: t('filter_next_month'),  clear: () => { advFilter.quickMode = null; document.getElementById('qbtn-next-month').classList.remove('active');  applyAdvFilters(); } });
+
+            advFilter.months.forEach(key => {
+                const [y,m] = key.split('-');
+                pills.push({ label: monthNames[parseInt(m)-1]+' '+y, clear: () => {
+                    advFilter.months.delete(key);
+                    updateDropdownBadge('dd-month', advFilter.months.size);
+                    // uncheck checkbox in panel
+                    const cb = document.querySelector(`#dd-month-panel input[value="${key}"]`);
+                    if (cb) cb.checked = false;
+                    applyAdvFilters();
+                }});
+            });
+
+            advFilter.genres.forEach(gk => {
+                pills.push({ label: t('genre_group_'+gk), clear: () => {
+                    advFilter.genres.delete(gk);
+                    updateDropdownBadge('dd-genre', advFilter.genres.size);
+                    const cb = document.querySelector(`#dd-genre-panel input[value="${gk}"]`);
+                    if (cb) cb.checked = false;
+                    applyAdvFilters();
+                }});
+            });
+
+            advFilter.venues.forEach(v => {
+                const label = v === '__other__' ? t('filter_venue_other') : v;
+                pills.push({ label, clear: () => {
+                    advFilter.venues.delete(v);
+                    updateDropdownBadge('dd-venue', advFilter.venues.size);
+                    const cb = document.querySelector(`#dd-venue-panel input[value="${CSS.escape(v)}"]`);
+                    if (cb) cb.checked = false;
+                    applyAdvFilters();
+                }});
+            });
+
+            container.innerHTML = pills.map((p, i) =>
+                `<span class="adv-pill">${p.label}<button class="adv-pill-remove" data-pill-idx="${i}">✕</button></span>`
+            ).join('');
+            container.classList.toggle('visible', pills.length > 0);
+
+            // wire remove buttons
+            container.querySelectorAll('.adv-pill-remove').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    pills[parseInt(btn.dataset.pillIdx)].clear();
+                });
+            });
+        }
+
+        function resetAdvFilters() {
+            advFilter.quickMode = null;
+            advFilter.months.clear();
+            advFilter.genres.clear();
+            advFilter.venues.clear();
+
+            document.getElementById('qbtn-this-month').classList.remove('active');
+            document.getElementById('qbtn-next-month').classList.remove('active');
+            updateDropdownBadge('dd-month', 0);
+            updateDropdownBadge('dd-genre', 0);
+            updateDropdownBadge('dd-venue', 0);
+
+            // uncheck all checkboxes
+            document.querySelectorAll('.adv-dropdown-panel input[type="checkbox"]').forEach(cb => cb.checked = false);
+
+            activeFilter = 'all';
+            applyAdvFilters();
         }
 
         // ── Version (modifier ici pour changer le numéro de version) ─────────
@@ -1861,6 +2563,8 @@
 
         function filterByArtist(artistName) {
             activeArtistFilter = artistName;
+            // Reset all advanced filters when doing an artist search
+            if (typeof resetAdvFilters === 'function') resetAdvFilters();
             const banner      = document.getElementById('artist-filter-banner');
             const bannerName  = document.getElementById('artist-filter-name');
             bannerName.textContent = artistName;
@@ -1878,10 +2582,7 @@
         function resetArtistFilter() {
             activeArtistFilter = null;
             document.getElementById('artist-filter-banner').classList.remove('visible');
-            const filtered = activeFilter === 'all'
-                ? allConcerts
-                : allConcerts.filter(c => c.location === activeFilter);
-            renderConcerts(filtered);
+            applyAdvFilters();
         }
 
         document.getElementById('artist-filter-reset').addEventListener('click', resetArtistFilter);
@@ -1968,7 +2669,7 @@
             closeCookieBanner();
             // lastVisitDate est null ici donc computeAndShowNew() ne déclenchera pas de toast
             // (normal : c'est la 1ère visite, il n'y a pas encore d'"ancienne" date)
-            buildFilters(allConcerts);
+            applyAdvFilters();
         }
 
         function declineCookies() {
@@ -2070,8 +2771,8 @@
 
         document.getElementById('toast-btn-view').addEventListener('click', () => {
             hideToast();
+            resetAdvFilters();
             activeFilter = 'new';
-            buildFilters(allConcerts);
             renderConcerts(allConcerts.filter(c =>
                 lastVisitDate && new Date(c.date_created) > new Date(lastVisitDate)
             ));
@@ -2089,7 +2790,7 @@
             newConcertsCount = newConcerts.length;
             console.log('[New] lastVisit:', lastVisit.toISOString(), '| nouveaux:', newConcertsCount,
                 newConcerts.map(c => c.artist + ' (' + c.date_created + ')'));
-            buildFilters(allConcerts);
+            // No need to rebuild filters — just show toast if applicable
             if (newConcertsCount > 0) {
                 setTimeout(() => showToast(newConcerts), 800);
             }

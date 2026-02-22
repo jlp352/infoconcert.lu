@@ -33,9 +33,9 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] Revoir Barre Menu. Mettre Logo
 		- [x] Rajouter les mois
 		- Filtre pour afficher selon criteres
-			- [ ] type de musique
-			- [ ] type de salle
-				Voir Image ExempleFiltre.png
+			- [x] Filtre par mois
+			- [x] Filtre par type de musique
+			- [x] Filter par salle
 		- [x] Filtre pour afficher les nouveaux concerts depuis last visite
 		- Revoir design de la tuile concert
 			- [ ] en cliquant sur la tuile allez sur la page concert
@@ -48,6 +48,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] Page Salle de concerts
 		- [x] Ajouter a quick search pour artiste
 		- [x] Page contacts	
+			- [ ] Relire si pas trop geek
 				
 	
 #### General
@@ -57,9 +58,15 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] Mettre GitHub pour la sauvegarde
 
 #### Serveur en local
+		- [ ] Faire la doc générale et technique
 		- [ ] Installer sur un serveur local (Python + Web)
 		- [ ] Mettre le crom pour les mise à jour
 		- [ ] Ouvrir les ports pour qu'il soit accessible depuis exterieur
+
+#### Scrapper
+		- [ ] Casino 2000
+		- [ ] Kulturfabrik
+		- [ ] Rockhall regroupé tous le salles sous Rockhal dans location
 ## Python
 		Scrapper
 			Den Atelier: scrape_atelier_concerts.py
