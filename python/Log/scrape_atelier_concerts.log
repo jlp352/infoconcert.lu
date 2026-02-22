@@ -42,3 +42,13 @@
 2026-02-22 09:56:27,670 [INFO] 0 nouveau(x) concert(s) détecté(s)
 2026-02-22 09:56:27,673 [INFO] ✅ 93 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
 2026-02-22 09:56:27,673 [INFO] Fin du scraper
+2026-02-22 17:01:23,471 [INFO] ============================================================
+2026-02-22 17:01:23,471 [INFO] Démarrage du scraper (format=json, exclude_genres=Kids/Young Audience, exclude_statuses=cancelled)
+2026-02-22 17:01:23,471 [INFO] Récupération de la liste des concerts…
+2026-02-22 17:01:23,633 [INFO] 96 concerts trouvés via l'API
+2026-02-22 17:01:23,633 [INFO] Scraping de 96 pages pour adresse et horaires…
+2026-02-22 17:01:28,819 [INFO] Scraping terminé : 96/96 pages OK
+2026-02-22 17:01:28,825 [INFO] Filtre genres exclus {'kids/young audience'} : 96 → 96 concerts
+2026-02-22 17:01:28,825 [INFO] Filtre statuts exclus {'cancelled'} : 96 → 96 concerts
+2026-02-22 17:01:28,828 [INFO] ✅ 96 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_atelier_concerts.json
+2026-02-22 17:01:28,828 [INFO] Fin du scraper

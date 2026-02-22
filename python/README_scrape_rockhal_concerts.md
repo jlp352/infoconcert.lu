@@ -22,10 +22,6 @@ La stratégie de prix est multi-niveaux :
 
 Les tarifs conditionnels (ex: Kulturpass) sont ignorés pour n'afficher que le prix plancher standard.
 
-### Détection des nouveaux concerts
-
-À chaque exécution, le script compare les IDs du fichier généré précédemment avec les résultats courants. Un champ `new` est mis à `"New"` pour les concerts apparus depuis le dernier scan.
-
 ### Écriture atomique
 
 Le fichier de sortie est d'abord écrit dans un fichier temporaire, puis renommé. Cela protège le fichier existant en cas de crash pendant l'écriture.
@@ -52,7 +48,6 @@ Les requêtes HTTP sont relancées jusqu'à 3 fois en cas d'échec. Le scraping 
 | `address`      | Adresse fixe : `5, avenue du Rock, L-4361 Esch-sur-Alzette` |
 | `genres`       | Liste des genres musicaux (séparés par `;` en CSV) |
 | `status`       | Statut billetterie (ex: `Buy Tickets`, `Sold Out`) |
-| `new`          | `"New"` si apparu depuis le dernier scan, sinon vide |
 | `url`          | Lien vers la page du concert                     |
 | `buy_link`     | Lien de réservation (Ticketmatic ou Atelier)     |
 | `image`        | URL de l'image de l'événement                    |

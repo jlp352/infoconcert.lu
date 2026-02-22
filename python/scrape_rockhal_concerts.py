@@ -9,9 +9,6 @@ relatifs à l'emplacement du script :
     ./CSV/scrape_rockhal_concerts.csv
     ./Log/scrape_rockhal_concerts.log
 
-Un champ "new" indique "New" si le concert n'existait pas lors du
-scan précédent (comparaison par id).
-
 Usage:
     python scrape_rockhal_concerts.py                           # JSON (défaut)
     python scrape_rockhal_concerts.py -f csv                    # CSV
@@ -55,7 +52,7 @@ ROCKHAL_ADDRESS = "5, avenue du Rock, L-4361 Esch-sur-Alzette"
 
 CSV_COLUMNS = [
     "id", "artist", "date_live", "doors_time", "location",
-    "address", "genres", "status", "new", "url", "buy_link", "image",
+    "address", "genres", "status", "url", "buy_link", "image",
     "price", "date_created",
 ]
 
@@ -515,28 +512,6 @@ def fetch_concerts(
 
 
 # ---------------------------------------------------------------------------
-# Détection des nouveaux concerts
-# ---------------------------------------------------------------------------
-
-def _load_previous_ids(out_file: Path, fmt: str) -> set[int]:
-    """Charge les IDs du fichier de sortie précédent (JSON ou CSV)."""
-    if not out_file.exists():
-        return set()
-
-    try:
-        text = out_file.read_text(encoding="utf-8")
-        if fmt == "json":
-            data = json.loads(text)
-            return {c["id"] for c in data.get("concerts", []) if c.get("id")}
-        else:
-            reader = csv.DictReader(io.StringIO(text))
-            return {int(row["id"]) for row in reader if row.get("id")}
-    except Exception as exc:
-        logger.warning("Impossible de lire le fichier précédent %s : %s", out_file, exc)
-        return set()
-
-
-# ---------------------------------------------------------------------------
 # Écriture sécurisée (atomic write)
 # ---------------------------------------------------------------------------
 
@@ -627,21 +602,6 @@ def main():
             out_file = DIR_CSV / f"{SCRIPT_NAME}.csv"
         else:
             out_file = DIR_JSON / f"{SCRIPT_NAME}.json"
-
-        # --- Charger les IDs du scan précédent ---
-        previous_ids = _load_previous_ids(out_file, args.format)
-        new_count = 0
-        for concert in data["concerts"]:
-            if previous_ids and concert["id"] not in previous_ids:
-                concert["new"] = "New"
-                new_count += 1
-            else:
-                concert["new"] = ""
-
-        if previous_ids:
-            logger.info("%d nouveau(x) concert(s) détecté(s)", new_count)
-        else:
-            logger.info("Premier scan, pas de comparaison possible")
 
         # --- Écriture sécurisée du résultat ---
         if args.format == "csv":

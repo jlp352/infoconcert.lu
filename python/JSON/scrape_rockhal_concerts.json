@@ -1,44 +1,8 @@
 {
-  "scraped_at": "2026-02-19T16:36:48.917530+00:00",
+  "scraped_at": "2026-02-22T16:00:40.978961+00:00",
   "source": "https://rockhal.lu/wp-json/rockhal/shows",
-  "total": 116,
+  "total": 115,
   "concerts": [
-    {
-      "id": 72141,
-      "artist": "BIFFY CLYRO",
-      "date_live": "2026-02-19",
-      "doors_time": "19:00",
-      "location": "Rockhal",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Rock"
-      ],
-      "status": "buy-now",
-      "url": "https://rockhal.lu/shows/biffy-clyro-2026/",
-      "buy_link": "https://www.atelier.lu/shows/biffy-clyro-5/",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11555/image.6881fbd06af68.jpg",
-      "price": "56.50 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
-    },
-    {
-      "id": 63410,
-      "artist": "AVATAR",
-      "date_live": "2026-02-21",
-      "doors_time": "18:00",
-      "location": "Rockhal",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Metal"
-      ],
-      "status": "buy-now",
-      "url": "https://rockhal.lu/shows/avatar/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11480",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11480/image.6808a9a698946.jpg",
-      "price": "33.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
-    },
     {
       "id": 68666,
       "artist": "DIRK MAASSEN",
@@ -54,8 +18,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11524",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11524/image.685275735bfd6.jpg",
       "price": "49.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 73261,
@@ -72,8 +35,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11562",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11562/image.689c8acd2bec1.jpg",
       "price": "28.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 65853,
@@ -90,8 +52,7 @@
       "buy_link": "https://www.atelier.lu/shows/jason-derulo-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11499/image.68274da54354b.jpg",
       "price": "78.50 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 70455,
@@ -108,8 +69,7 @@
       "buy_link": "https://www.atelier.lu/shows/mika-6/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11541/image.68667c9e5ee06.jpg",
       "price": "59.80 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 71086,
@@ -126,8 +86,7 @@
       "buy_link": "https://www.atelier.lu/shows/david-byrne/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11546/image.686fc645e8ec1.jpg",
       "price": "85.10 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 76084,
@@ -144,8 +103,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11597",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11597/image.68cc198e97d4d.jpg",
       "price": "25.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 73263,
@@ -162,8 +120,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11559",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11559/image.6891c22fbdb27.jpg",
       "price": "31.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 83363,
@@ -181,8 +138,7 @@
       "buy_link": "https://www.atelier.lu/shows/sean-paul-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11641/image.691c4788739de.jpg",
       "price": "78.50 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 43271,
@@ -199,8 +155,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11328",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11328/image.67613ed807edf.jpg",
       "price": "35.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 60230,
@@ -217,8 +172,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11461",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11461/image.67ed4bf92cc45.jpg",
       "price": "45.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 65685,
@@ -235,8 +189,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11498",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11498/image.6825ff3d81bba.jpg",
       "price": "27.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 78848,
@@ -253,8 +206,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11616",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11616/image.68deaf5a2be59.jpg",
       "price": "35.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 79241,
@@ -271,8 +223,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11618",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11618/image.68e61d098d3c9.jpg",
       "price": "34.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 57012,
@@ -289,8 +240,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11437",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11437/image.67e421b70a7d5.jpg",
       "price": "72.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 88297,
@@ -307,8 +257,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11689",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11689/image.6968ac88c6859.jpg",
       "price": "72.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 57387,
@@ -325,8 +274,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11442",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11442/image.67e421c242b6a.jpg",
       "price": "72.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 79090,
@@ -343,8 +291,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11617",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11617/image.68e29e0f79401.jpg",
       "price": "20.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 72035,
@@ -361,8 +308,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11543",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11543/image.687fa20c435f6.jpg",
       "price": "63.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 69746,
@@ -379,8 +325,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11533",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11533/image.685ab5a4891f7.jpg",
       "price": "33.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 82729,
@@ -397,8 +342,7 @@
       "buy_link": "https://www.luxfilmfest.lu/agenda/luxembourg-music-video-night-3/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11636/image.6911fe6881f28.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 67757,
@@ -415,8 +359,7 @@
       "buy_link": "https://www.atelier.lu/shows/kraftklub-3/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11505/image.68400ebdef115.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 70442,
@@ -433,8 +376,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11537",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11537/image.68678777a6f70.jpg",
       "price": "49.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 86637,
@@ -451,8 +393,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11685",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11685/image.6945883ae320f.jpg",
       "price": "25.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 58774,
@@ -469,8 +410,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11432",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11432/image.67e2c38b4c822.jpg",
       "price": "30.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 74884,
@@ -487,8 +427,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11586",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11586/image.68baa0d87a761.jpg",
       "price": "29.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 83578,
@@ -505,8 +444,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11646",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11646/image.691eea6442f19.jpg",
       "price": "33.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 66419,
@@ -523,8 +461,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11477",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11477/image.682dea173db71.jpg",
       "price": "32.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 84540,
@@ -541,8 +478,7 @@
       "buy_link": "https://www.atelier.lu/shows/lair-obscur-expedition-33/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11660/image.692862e025f46.jpg",
       "price": "37.80 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85182,
@@ -559,8 +495,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11670",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11670/image.6931afa641d81.jpg",
       "price": "7.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 89907,
@@ -577,8 +512,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11701",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11701/image.697b86993c0ca.jpg",
       "price": "25.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 63906,
@@ -595,8 +529,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11482",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11482/image.686793b77316b.jpg",
       "price": "27.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 63908,
@@ -613,8 +546,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11483",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11483/image.686793cf1f59b.jpg",
       "price": "27.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 77756,
@@ -631,8 +563,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11610",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11610/image.68d2e3cd636e8.jpg",
       "price": "63.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 56726,
@@ -649,8 +580,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11331",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11331/image.691b1fd9781c6.jpg",
       "price": "36.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 68965,
@@ -668,8 +598,7 @@
       "buy_link": "https://www.atelier.lu/shows/franz-ferdinand-3/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11526/image.685005dce2b57.jpg",
       "price": "56.50 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85585,
@@ -686,8 +615,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11673",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11673/image.6938010ba284b.jpg",
       "price": "30.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 54408,
@@ -704,8 +632,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11421",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11421/image.67bdd85eb2c82.jpg",
       "price": "51.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 72144,
@@ -722,8 +649,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11556",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11556/image.68822684be8bf.jpg",
       "price": "44.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 36611,
@@ -740,8 +666,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11149",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11149/image.667bdaa58a30c.jpg",
       "price": "19.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85068,
@@ -758,8 +683,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11652",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11652/image.69779503c2af6.jpg",
       "price": "20.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 74917,
@@ -776,8 +700,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11587",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11587/image.68d12b3bba732.jpg",
       "price": "36.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85184,
@@ -794,8 +717,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11668",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11668/image.6931af773f8e7.jpg",
       "price": "7.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85819,
@@ -812,8 +734,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11674",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11674/image.693999ba1a182.jpg",
       "price": "10.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 78701,
@@ -830,8 +751,7 @@
       "buy_link": "https://www.atelier.lu/shows/joe-bonamassa-5/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11614/image.68dc344c4bffd.jpg",
       "price": "62.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85048,
@@ -848,8 +768,7 @@
       "buy_link": "https://www.atelier.lu/shows/michael-patrick-kelly-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11666/image.69300d9910361.jpg",
       "price": "58.85 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 82814,
@@ -866,8 +785,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11629",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11629/image.69161263ed904.jpg",
       "price": "33.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 82731,
@@ -884,8 +802,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11634",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11634/image.6914664d41134.jpg",
       "price": "36.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 70793,
@@ -902,8 +819,7 @@
       "buy_link": "https://www.atelier.lu/shows/sarah-connor/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11542/image.686ce092e354a.jpg",
       "price": "86.75 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 91673,
@@ -920,8 +836,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11728",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11728/image.69942fbb58d82.jpg",
       "price": "21.80 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 91151,
@@ -938,8 +853,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11705",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11705/image.6989b6a818f45.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 71676,
@@ -956,8 +870,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11549",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11549/image.6877bcc6896a7.jpg",
       "price": "54.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 71678,
@@ -974,8 +887,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11550",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11550/image.6877bce963977.jpg",
       "price": "54.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 77928,
@@ -992,8 +904,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11611",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11611/image.68d6c3fea76b2.jpg",
       "price": "49.50 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85185,
@@ -1010,8 +921,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11669",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11669/image.6931b3d5a0de5.jpg",
       "price": "7.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 69822,
@@ -1028,8 +938,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11529",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11529/image.685bec7a895f1.jpg",
       "price": "55.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 87831,
@@ -1046,8 +955,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11687",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11687/image.695d2ac881bbf.jpg",
       "price": "36.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 83580,
@@ -1064,8 +972,7 @@
       "buy_link": "https://www.atelier.lu/shows/dermot-kennedy-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11651/image.691ee78eba5be.jpg",
       "price": "57.60 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 88423,
@@ -1082,8 +989,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11681",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11681/image.6967a0581b3a2.jpg",
       "price": "33.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 83581,
@@ -1100,8 +1006,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11650",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11650/image.691ef6806b248.jpg",
       "price": "50.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 76205,
@@ -1118,8 +1023,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11598",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11598/image.68c930672a366.jpg",
       "price": "42.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 40192,
@@ -1137,8 +1041,7 @@
       "buy_link": "https://www.atelier.lu/shows/beth-hart-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11276/image.66fd1d86dcc99.jpg",
       "price": "58.70 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 76547,
@@ -1155,8 +1058,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11607",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11607/image.68d2ec5a83df5.jpg",
       "price": "34.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 82971,
@@ -1173,8 +1075,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11639",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11639/image.691c5c1c78576.jpg",
       "price": "39.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 66158,
@@ -1191,8 +1092,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11500",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11500/image.682eee79bd057.jpg",
       "price": "39.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 86345,
@@ -1209,8 +1109,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11676",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11676/image.69494cb53e3c9.jpg",
       "price": "55.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 68647,
@@ -1227,8 +1126,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11523",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11523/image.6937eca85f5d7.jpg",
       "price": "55.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 91231,
@@ -1245,8 +1143,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11719",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11719/image.698af8840f18c.jpg",
       "price": "39.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 46229,
@@ -1263,8 +1160,7 @@
       "buy_link": "https://www.luxembourg-ticket.lu/de/8/eid,66513/zucchero-world-tour-2026.html",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11369/image.6953dbacae989.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 65675,
@@ -1281,8 +1177,7 @@
       "buy_link": "https://www.dth.de/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11497/image.6825c648a84dc.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 65164,
@@ -1299,8 +1194,7 @@
       "buy_link": "https://shop.dietotenhosen.de/index.php/n.213-Tickets/l.1904-08_06_2026-_-Esch-Alzette-_-Rockhal/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11493/image.6821c1465ed5e.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 90319,
@@ -1316,9 +1210,8 @@
       "url": "https://rockhal.lu/shows/ghinzu/",
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11706",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11706/image.6982028077a74.jpg",
-      "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "price": "42.00 EUR",
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 84966,
@@ -1335,8 +1228,24 @@
       "buy_link": "https://www.atelier.lu/shows/megadeth-4/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11665/image.692ebca1cc7e3.jpg",
       "price": "59.80 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
+    },
+    {
+      "id": 92272,
+      "artist": "TRIVIUM",
+      "date_live": "2026-06-15",
+      "doors_time": "19:00",
+      "location": "Rockhal",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "on-sale-soon",
+      "url": "https://rockhal.lu/shows/trivium/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11733",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11733/image.69981c2acad35.jpg",
+      "price": "40.00 EUR",
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 70214,
@@ -1353,8 +1262,7 @@
       "buy_link": "https://www.atelier.lu/shows/annenmaykantereit-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11536/image.6862453670a37.jpg",
       "price": "56.50 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 80688,
@@ -1372,8 +1280,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11622",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11622/image.68fb93e5ea7f8.jpg",
       "price": "59.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 89018,
@@ -1391,8 +1298,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11679",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11679/image.6973791da53b8.jpg",
       "price": "55.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 76250,
@@ -1409,8 +1315,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11605",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11605/image.68c96cc31d001.jpg",
       "price": "76.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 83459,
@@ -1427,8 +1332,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11644",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11644/image.691dd64cf0a5b.jpg",
       "price": "75.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 84051,
@@ -1445,8 +1349,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11656",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11656/image.692475499c5fe.jpg",
       "price": "66.95 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 89968,
@@ -1463,8 +1366,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/flow/bundle?product=385809487132&l=en",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11703/image.6980c36e03d35.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 89970,
@@ -1481,8 +1383,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11702",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11702/image.6980c6951cafb.jpg",
       "price": "39.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 65169,
@@ -1499,8 +1400,7 @@
       "buy_link": "https://www.atelier.lu/shows/lorde/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11492/image.6821ab14c3166.jpg",
       "price": "57.60 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 61675,
@@ -1517,8 +1417,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11465",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11465/image.68be968a0e36f.jpg",
       "price": "42.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 92018,
@@ -1530,13 +1429,12 @@
       "genres": [
         "Rock"
       ],
-      "status": "on-sale-soon",
+      "status": "buy-now",
       "url": "https://rockhal.lu/shows/fischer-z/",
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11730",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11730/image.69942e7adbab5.jpg",
       "price": "34.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 86437,
@@ -1553,8 +1451,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11683",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11683/image.695b82c42ca81.jpg",
       "price": "35.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 84445,
@@ -1571,8 +1468,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11659",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11659/image.692879d26ceaa.jpg",
       "price": "69.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 92274,
@@ -1589,8 +1485,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11732",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11732/image.6995dc255dfb3.jpg",
       "price": "27.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": "New"
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 83489,
@@ -1607,8 +1502,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11645",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11645/image.69207ca8523e6.jpg",
       "price": "63.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 89003,
@@ -1625,8 +1519,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11699",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11699/image.69710dd802843.jpg",
       "price": "27.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 77083,
@@ -1643,8 +1536,7 @@
       "buy_link": "https://www.atelier.lu/shows/samu-haber-2/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11608/image.68cd197694dfe.jpg",
       "price": "66.40 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 86230,
@@ -1661,8 +1553,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11675",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11675/image.6942e26b40765.jpg",
       "price": "60.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 78745,
@@ -1679,8 +1570,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11615",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11615/image.68dd095b16fad.jpg",
       "price": "40.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 90771,
@@ -1697,8 +1587,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11720",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11720/image.698b663b19f96.jpg",
       "price": "33.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 75331,
@@ -1715,8 +1604,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11591",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11591/image.68c17b9d6af0a.jpg",
       "price": "89.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 91611,
@@ -1732,9 +1620,8 @@
       "url": "https://rockhal.lu/shows/kneecap/",
       "buy_link": "https://www.atelier.lu/shows/kneecap/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11726/image.698eee31088d2.jpg",
-      "price": "31.20 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "price": "56.50 EUR",
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 79961,
@@ -1751,8 +1638,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11623",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11623/image.68ee462638af7.jpg",
       "price": "45.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 90440,
@@ -1769,8 +1655,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11704",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11704/image.698227bfe583c.jpg",
       "price": "42.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 86912,
@@ -1787,8 +1672,7 @@
       "buy_link": "https://www.luxembourg-ticket.lu/de/8/eid,68636/sky-full-of-stars.html",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11686/image.694931f643a0b.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 72512,
@@ -1805,8 +1689,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11557",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11557/image.68888a09e0f7e.jpg",
       "price": "33.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 57627,
@@ -1823,8 +1706,7 @@
       "buy_link": "https://www.atelier.lu/shows/tokio-hotel/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11445/image.67d98a02c40f7.jpg",
       "price": "70.20 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 83357,
@@ -1841,8 +1723,7 @@
       "buy_link": "https://www.atelier.lu/shows/the-witcher/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11640/image.691c3c4ce591a.jpg",
       "price": "59.80 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85158,
@@ -1859,8 +1740,24 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11502",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11502/image.6931785ed8929.jpg",
       "price": "35.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
+    },
+    {
+      "id": 86461,
+      "artist": "CASSE-NOISETTE",
+      "date_live": "2026-11-21",
+      "doors_time": "14:30",
+      "location": "Rockhal",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Entertainment"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/casse-noisette-13/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11684",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11684/image.694412530cc38.jpg",
+      "price": "53.00 EUR",
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 80021,
@@ -1877,8 +1774,7 @@
       "buy_link": "https://www.atelier.lu/shows/beast-in-black/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11624/image.68ef72efbd03f.jpg",
       "price": "55.80 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 88975,
@@ -1895,8 +1791,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11697",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11697/image.6977716aec8ff.jpg",
       "price": "34.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 88299,
@@ -1913,8 +1808,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11677",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11677/image.69679de2153ad.jpg",
       "price": "35.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 84854,
@@ -1931,8 +1825,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11664",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11664/image.692d66e93ae0d.jpg",
       "price": "28.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 88977,
@@ -1949,8 +1842,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11638",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11638/image.69724429f0e43.jpg",
       "price": "46.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 88547,
@@ -1967,26 +1859,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11691",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11691/image.696a746cf3021.jpg",
       "price": "39.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
-    },
-    {
-      "id": 86461,
-      "artist": "CASSE-NOISETTE",
-      "date_live": "2027-02-07",
-      "doors_time": "14:30",
-      "location": "Rockhal",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Entertainment"
-      ],
-      "status": "buy-now",
-      "url": "https://rockhal.lu/shows/casse-noisette-13/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11684",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11684/image.694412530cc38.jpg",
-      "price": "53.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 81751,
@@ -2003,8 +1876,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11628",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11628/image.696a18fe89097.jpg",
       "price": "53.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 84416,
@@ -2021,8 +1893,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11658",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11658/image.692d9bce86305.jpg",
       "price": "55.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 91259,
@@ -2039,8 +1910,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11724",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11724/image.698dd980d848f.jpg",
       "price": "92.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 90775,
@@ -2057,8 +1927,7 @@
       "buy_link": "https://www.atelier.lu/shows/ana-godefroy/",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11721/image.6985ce1985e3f.jpg",
       "price": "45.50 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85587,
@@ -2075,8 +1944,7 @@
       "buy_link": "https://tidd.ly/44WGTOy",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11672/image.6937e5ac86d93.jpg",
       "price": "Price Unavailable",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     },
     {
       "id": 85253,
@@ -2093,8 +1961,7 @@
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11671",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11671/image.6932a2673fe45.jpg",
       "price": "50.00 EUR",
-      "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": ""
+      "date_created": "2026-02-22T16:00:40.978961+00:00"
     }
   ],
   "genres": [
@@ -2359,7 +2226,7 @@
       "taxonomy": "roc_show_genre",
       "description": "",
       "parent": 0,
-      "count": 240,
+      "count": 241,
       "filter": "raw"
     },
     {

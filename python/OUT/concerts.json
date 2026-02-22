@@ -1,52 +1,12 @@
 {
-  "scraped_at": "2026-02-19T17:37:52.295122",
+  "scraped_at": "2026-02-22T17:02:26.154466",
   "sources": [
     "https://www.atelier.lu/wp-json/ate/shows",
     "https://rockhal.lu/wp-json/rockhal/shows"
   ],
-  "total": 185,
-  "duplicates_removed": 25,
+  "total": 187,
+  "duplicates_removed": 24,
   "concerts": [
-    {
-      "id": 40123,
-      "artist": "Biffy Clyro",
-      "date_live": "2026-02-19",
-      "doors_time": "7:00 pm",
-      "location": "Rockhal",
-      "address": "5 avenue du Rock'n'Roll, L-4361 Esch/Alzette",
-      "genres": [
-        "Rock"
-      ],
-      "status": "Buy Now",
-      "url": "https://www.atelier.lu/shows/biffy-clyro-5/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=880091442300&ref=#!/addtickets",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14218/image.6881ec9364aa4.320.jpg",
-      "price": "56.50 EUR",
-      "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
-      "track_id": "3548243381",
-      "track_id1": "4640027"
-    },
-    {
-      "id": 63410,
-      "artist": "AVATAR",
-      "date_live": "2026-02-21",
-      "doors_time": "18:00",
-      "location": "Rockhal",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Metal"
-      ],
-      "status": "buy-now",
-      "url": "https://rockhal.lu/shows/avatar/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11480",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11480/image.6808a9a698946.jpg",
-      "price": "33.00 EUR",
-      "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
-      "track_id": "124600306",
-      "track_id1": "355121561"
-    },
     {
       "id": 68666,
       "artist": "DIRK MAASSEN",
@@ -63,7 +23,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11524/image.685275735bfd6.jpg",
       "price": "49.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3375802161",
       "track_id1": "3198234091"
     },
@@ -83,7 +42,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11562/image.689c8acd2bec1.jpg",
       "price": "28.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2188772857",
       "track_id1": "2188772787"
     },
@@ -104,7 +62,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14178/image.6825d03fbb0ca.320.jpg",
       "price": "78.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "5420471",
       "track_id1": "100598482"
     },
@@ -125,7 +82,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14113/image.67c5956061e12.320.jpg",
       "price": "38.90 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2517277181",
       "track_id1": "2326175975"
     },
@@ -146,7 +102,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14208/image.686b8928ab672.320.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "953606",
       "track_id1": "953602"
     },
@@ -166,7 +121,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11597/image.68cc198e97d4d.jpg",
       "price": "25.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3640132372",
       "track_id1": "3696196342"
     },
@@ -187,7 +141,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14212/image.68750d11b9f8b.320.jpg",
       "price": "85.10 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3622778352",
       "track_id1": "2301076435"
     },
@@ -207,9 +160,27 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11559/image.6891c22fbdb27.jpg",
       "price": "31.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3547183121",
       "track_id1": "3547183111"
+    },
+    {
+      "id": 41317,
+      "artist": "Moulinex - Atelier Afterwork",
+      "date_live": "2026-02-27",
+      "doors_time": "6:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Party"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/moulinex/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=123595280633&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14300/image.69665505b83ee.320.jpg",
+      "price": "12.50 EUR",
+      "date_created": "2026-02-22T16:01:23.471705+00:00",
+      "track_id": "",
+      "track_id1": ""
     },
     {
       "id": 40790,
@@ -227,7 +198,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14264/image.691c1746a043f.320.jpg",
       "price": "78.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3401876061",
       "track_id1": ""
     },
@@ -247,7 +217,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11328/image.67613ed807edf.jpg",
       "price": "35.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "924897842",
       "track_id1": "3243108561"
     },
@@ -267,7 +236,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14164/image.6811ff5c3bda6.320.jpg",
       "price": "35.60 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3173280991",
       "track_id1": "3487719531"
     },
@@ -288,7 +256,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14172/image.6818712e8bcb1.320.jpg",
       "price": "26.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3438162031",
       "track_id1": "3115425"
     },
@@ -308,7 +275,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14301/image.69665bfe26f2a.320.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1031231",
       "track_id1": "1028903"
     },
@@ -328,30 +294,8 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11498/image.6825ff3d81bba.jpg",
       "price": "27.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
-    },
-    {
-      "id": 40345,
-      "artist": "PORTUGAL. THE MAN",
-      "date_live": "2026-03-01",
-      "doors_time": "7:00 pm",
-      "location": "den Atelier",
-      "address": "54 rue de Hollerich, 1740 Luxembourg",
-      "genres": [
-        "Alternative Rock",
-        "Indie"
-      ],
-      "status": "Postponed",
-      "url": "https://www.atelier.lu/shows/portugal-the-man-4/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=357503275315&ref=#!/addtickets",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14236/image.68d1027bc6a15.320.jpg",
-      "price": "Price Unavailable",
-      "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
-      "track_id": "371593461",
-      "track_id1": "3279214291"
     },
     {
       "id": 60230,
@@ -369,7 +313,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11461/image.67ed4bf92cc45.jpg",
       "price": "45.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "1091896092",
       "track_id1": "3418086591"
     },
@@ -389,7 +332,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14302/image.69666d1a93a6c.320.jpg",
       "price": "45.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1031231",
       "track_id1": "1028903"
     },
@@ -409,7 +351,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11616/image.68deaf5a2be59.jpg",
       "price": "35.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -429,7 +370,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14254/image.68e7d22bf2b79.320.jpg",
       "price": "38.90 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1449437502",
       "track_id1": "1434914752"
     },
@@ -450,7 +390,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14234/image.68e8baec8ab30.320.jpg",
       "price": "43.30 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3274346861",
       "track_id1": "3274346871"
     },
@@ -470,7 +409,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11618/image.68e61d098d3c9.jpg",
       "price": "34.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3198384621",
       "track_id1": "3386759271"
     },
@@ -490,7 +428,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14262/image.68fb92416f9b6.320.jpg",
       "price": "40.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3665882992",
       "track_id1": "2582855442"
     },
@@ -510,7 +447,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11437/image.67e421b70a7d5.jpg",
       "price": "72.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -532,7 +468,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14195/image.684ff4b7729c6.320.jpg",
       "price": "45.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3782845982",
       "track_id1": "3750975922"
     },
@@ -552,7 +487,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11617/image.68e29e0f79401.jpg",
       "price": "20.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "1347656192",
       "track_id1": "2435684465"
     },
@@ -572,7 +506,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11689/image.6968ac88c6859.jpg",
       "price": "72.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -592,7 +525,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14247/image.68ed078dbfe2a.320.jpg",
       "price": "36.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3092383971",
       "track_id1": "3597872162"
     },
@@ -612,7 +544,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11543/image.687fa20c435f6.jpg",
       "price": "63.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -632,7 +563,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11533/image.685ab5a4891f7.jpg",
       "price": "33.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3689743052",
       "track_id1": "3689743042"
     },
@@ -647,13 +577,12 @@
         "Alternative Rock",
         "Singer-Songwriter"
       ],
-      "status": "Sold Out",
+      "status": "Last tickets",
       "url": "https://www.atelier.lu/shows/tom-smith/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=407933224258&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14263/image.6909ca5326f18.320.jpg",
       "price": "48.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3434173851",
       "track_id1": "3434173831"
     },
@@ -674,7 +603,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14185/image.6838274a201e1.320.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3551861331",
       "track_id1": "3551861311"
     },
@@ -694,7 +622,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11636/image.6911fe6881f28.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -715,9 +642,27 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14191/image.68419c252c00f.320.jpg",
       "price": "35.60 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "140182699",
       "track_id1": "140182701"
+    },
+    {
+      "id": 41672,
+      "artist": "Stop Making Sense",
+      "date_live": "2026-03-14",
+      "doors_time": "8:00 pm",
+      "location": "Cinémathèque",
+      "address": "17 Place du Théâtre, L-2613 Luxembourg",
+      "genres": [
+        "Film"
+      ],
+      "status": "Sold Out",
+      "url": "https://www.atelier.lu/shows/stop-making-sense/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=264663805599&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14323/image.6998386dc915f.320.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-22T16:01:23.471705+00:00",
+      "track_id": "",
+      "track_id1": ""
     },
     {
       "id": 40282,
@@ -736,7 +681,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14223/image.68ad670add926.320.jpg",
       "price": "51.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "69405472",
       "track_id1": "1727518347"
     },
@@ -756,7 +700,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11537/image.68678777a6f70.jpg",
       "price": "49.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2437376535",
       "track_id1": "2783245272"
     },
@@ -776,7 +719,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11685/image.6945883ae320f.jpg",
       "price": "25.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2698280712",
       "track_id1": "2698280732"
     },
@@ -796,7 +738,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11432/image.67e2c38b4c822.jpg",
       "price": "30.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "93916028",
       "track_id1": "93916046"
     },
@@ -816,7 +757,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11586/image.68baa0d87a761.jpg",
       "price": "29.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2622232942",
       "track_id1": "3189524911"
     },
@@ -836,7 +776,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14134/image.68de6875b68bf.320.jpg",
       "price": "36.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "355628701",
       "track_id1": "355615581"
     },
@@ -857,7 +796,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14269/image.690b08cd68034.320.jpg",
       "price": "14.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2589355202",
       "track_id1": "3769651502"
     },
@@ -878,7 +816,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14248/image.68e374ac46c68.320.jpg",
       "price": "36.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3751803362",
       "track_id1": "3562144961"
     },
@@ -898,7 +835,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11646/image.691eea6442f19.jpg",
       "price": "33.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3558373981",
       "track_id1": "3660747302"
     },
@@ -918,7 +854,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14177/image.68234b26b8141.320.jpg",
       "price": "47.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "850423",
       "track_id1": "61213994"
     },
@@ -938,7 +873,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11477/image.682dea173db71.jpg",
       "price": "32.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "109186636",
       "track_id1": ""
     },
@@ -958,7 +892,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14289/image.69258b4dcf6e1.320.jpg",
       "price": "37.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3315246271",
       "track_id1": "3315246251"
     },
@@ -978,7 +911,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11670/image.6931afa641d81.jpg",
       "price": "7.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3817636891",
       "track_id1": "2308642345"
     },
@@ -999,7 +931,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14249/image.68e4c4aeed2c3.320.jpg",
       "price": "29.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3546543301",
       "track_id1": "3635892962"
     },
@@ -1019,8 +950,7 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11701/image.697b86993c0ca.jpg",
       "price": "25.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
-      "track_id": "",
+      "track_id": "2456145305",
       "track_id1": ""
     },
     {
@@ -1039,7 +969,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14210/image.686cdb0464456.320.jpg",
       "price": "37.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3365737181",
       "track_id1": "26363701"
     },
@@ -1059,7 +988,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11482/image.686793b77316b.jpg",
       "price": "27.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1079,7 +1007,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14220/image.689c4e2260a9d.320.jpg",
       "price": "31.20 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3725078372",
       "track_id1": "2574166022"
     },
@@ -1099,7 +1026,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11610/image.68d2e3cd636e8.jpg",
       "price": "63.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1120,7 +1046,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14252/image.68e79a29ea301.320.jpg",
       "price": "45.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3541168831",
       "track_id1": "3391988601"
     },
@@ -1140,7 +1065,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11331/image.691b1fd9781c6.jpg",
       "price": "36.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "1684004267",
       "track_id1": "2500843751"
     },
@@ -1160,9 +1084,27 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14205/image.685aac872f8bb.320.jpg",
       "price": "51.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1044131",
       "track_id1": "2841116112"
+    },
+    {
+      "id": 40254,
+      "artist": "Dirty Dancing",
+      "date_live": "2026-04-10",
+      "doors_time": "7:00 pm",
+      "location": "Trifolion Echternach",
+      "address": "2 Porte Sainte Willibrord, 6468 Echternach",
+      "genres": [
+        "Film"
+      ],
+      "status": "Buy Now",
+      "url": "https://www.atelier.lu/shows/dirty-dancing-3/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=661394586214&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14222/image.68a2f212b9b5a.320.jpg",
+      "price": "63.10 EUR",
+      "date_created": "2026-02-22T16:01:23.471705+00:00",
+      "track_id": "127471883",
+      "track_id1": "127471881"
     },
     {
       "id": 39439,
@@ -1181,7 +1123,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14193/image.684fd1e4cef09.320.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "4315684",
       "track_id1": "2939415221"
     },
@@ -1201,7 +1142,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11673/image.6938010ba284b.jpg",
       "price": "30.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3574546951",
       "track_id1": "3373466521"
     },
@@ -1221,7 +1161,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11421/image.67bdd85eb2c82.jpg",
       "price": "51.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1241,7 +1180,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14308/image.6970f6500a742.320.jpg",
       "price": "48.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3788336172",
       "track_id1": "3802972162"
     },
@@ -1261,7 +1199,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11556/image.68822684be8bf.jpg",
       "price": "44.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "683846",
       "track_id1": "811782"
     },
@@ -1281,7 +1218,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11149/image.667bdaa58a30c.jpg",
       "price": "19.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3579448581",
       "track_id1": "3579448591"
     },
@@ -1301,7 +1237,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11652/image.69779503c2af6.jpg",
       "price": "20.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2294072085",
       "track_id1": "2668763592"
     },
@@ -1321,7 +1256,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11587/image.68d12b3bba732.jpg",
       "price": "36.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3067264031",
       "track_id1": "2814429742"
     },
@@ -1341,7 +1275,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11668/image.6931af773f8e7.jpg",
       "price": "7.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1361,7 +1294,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14242/image.68ecad0a45892.320.jpg",
       "price": "34.65 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3807173122",
       "track_id1": "3805289832"
     },
@@ -1382,7 +1314,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14288/image.69246986d4e47.320.jpg",
       "price": "48.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "583033",
       "track_id1": "3755791782"
     },
@@ -1402,7 +1333,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11674/image.693999ba1a182.jpg",
       "price": "10.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2099986987",
       "track_id1": "2133999557"
     },
@@ -1422,7 +1352,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14238/image.68c3f78fc1b88.320.jpg",
       "price": "53.35 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1512096542",
       "track_id1": "1721704657"
     },
@@ -1443,7 +1372,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14235/image.68b85f5db51bd.320.jpg",
       "price": "45.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3029916881",
       "track_id1": "2420477"
     },
@@ -1463,7 +1391,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14233/image.68b6c5434c208.320.jpg",
       "price": "62.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "7731922",
       "track_id1": "59888631"
     },
@@ -1483,7 +1410,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14291/image.6931bc8fe2257.320.jpg",
       "price": "58.85 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1977980357",
       "track_id1": "935958362"
     },
@@ -1503,7 +1429,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11629/image.69161263ed904.jpg",
       "price": "33.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3728637832",
       "track_id1": "2214125417"
     },
@@ -1523,7 +1448,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14188/image.683edac622fb3.320.jpg",
       "price": "45.13 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "94654714",
       "track_id1": "3045007861"
     },
@@ -1543,7 +1467,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11634/image.6914664d41134.jpg",
       "price": "36.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "133034462",
       "track_id1": "889744612"
     },
@@ -1563,7 +1486,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14209/image.686ccbe42ff02.320.jpg",
       "price": "86.75 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "98348314",
       "track_id1": "3618299032"
     },
@@ -1583,7 +1505,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14246/image.68de75d7324a4.320.jpg",
       "price": "37.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3650500662",
       "track_id1": "2387083665"
     },
@@ -1603,7 +1524,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11728/image.69942fbb58d82.jpg",
       "price": "21.80 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2703400752",
       "track_id1": "3110917171"
     },
@@ -1623,7 +1543,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11705/image.6989b6a818f45.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "414750102",
       "track_id1": "2257039477"
     },
@@ -1643,7 +1562,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11611/image.68d6c3fea76b2.jpg",
       "price": "49.50 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "4828150",
       "track_id1": "4828148"
     },
@@ -1663,7 +1581,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11550/image.6877bce963977.jpg",
       "price": "54.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1683,7 +1600,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11549/image.6877bcc6896a7.jpg",
       "price": "54.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "116914042",
       "track_id1": "116914094"
     },
@@ -1703,7 +1619,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14312/image.6978e18d75239.320.jpg",
       "price": "41.10 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3456173171",
       "track_id1": "2172217337"
     },
@@ -1723,7 +1638,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11669/image.6931b3d5a0de5.jpg",
       "price": "7.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1743,7 +1657,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11529/image.685bec7a895f1.jpg",
       "price": "55.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "6633023",
       "track_id1": "643707002"
     },
@@ -1763,7 +1676,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14224/image.68b974e439dba.320.jpg",
       "price": "53.20 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3097538",
       "track_id1": "3152219"
     },
@@ -1783,7 +1695,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11687/image.695d2ac881bbf.jpg",
       "price": "36.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2554977372",
       "track_id1": "2887754382"
     },
@@ -1804,7 +1715,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14282/image.691ee2403b38d.320.jpg",
       "price": "57.60 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "610861462",
       "track_id1": "1883582747"
     },
@@ -1824,7 +1734,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14266/image.69316c841c3f8.320.jpg",
       "price": "44.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1844,7 +1753,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11681/image.6967a0581b3a2.jpg",
       "price": "33.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3803817212",
       "track_id1": "3295867421"
     },
@@ -1864,7 +1772,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11650/image.691ef6806b248.jpg",
       "price": "50.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -1884,7 +1791,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11598/image.68c930672a366.jpg",
       "price": "42.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "108645480",
       "track_id1": "486506922"
     },
@@ -1904,7 +1810,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14028/image.66e1b4efeb0ad.320.jpg",
       "price": "58.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1587111862",
       "track_id1": "59888631"
     },
@@ -1924,7 +1829,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11607/image.68d2ec5a83df5.jpg",
       "price": "34.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "1333998522",
       "track_id1": "1333998722"
     },
@@ -1945,7 +1849,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14271/image.690b808f61e54.320.jpg",
       "price": "29.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3247931101",
       "track_id1": "3185715641"
     },
@@ -1965,7 +1868,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11639/image.691c5c1c78576.jpg",
       "price": "39.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "2522139891",
       "track_id1": "7928041"
     },
@@ -1985,7 +1887,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11500/image.682eee79bd057.jpg",
       "price": "39.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "13645471",
       "track_id1": "13645473"
     },
@@ -2005,7 +1906,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11676/image.69494cb53e3c9.jpg",
       "price": "55.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2025,7 +1925,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11719/image.698af8840f18c.jpg",
       "price": "39.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3336883571",
       "track_id1": "3809281862"
     },
@@ -2045,7 +1944,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14303/image.6967654643fe4.320.jpg",
       "price": "49.90 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2065,7 +1963,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11369/image.6953dbacae989.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "1565238",
       "track_id1": "2305654"
     },
@@ -2085,7 +1982,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11497/image.6825c648a84dc.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "142393383",
       "track_id1": "142393465"
     },
@@ -2105,7 +2001,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11493/image.6821c1465ed5e.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "142393383",
       "track_id1": "142393465"
     },
@@ -2123,9 +2018,8 @@
       "url": "https://rockhal.lu/shows/ghinzu/",
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11706",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11706/image.6982028077a74.jpg",
-      "price": "Price Unavailable",
+      "price": "42.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "4303580",
       "track_id1": "3769698982"
     },
@@ -2145,7 +2039,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14285/image.6925d1f41a8ed.320.jpg",
       "price": "59.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "61382107",
       "track_id1": "3088984"
     },
@@ -2166,9 +2059,27 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14241/image.68d652e679715.320.jpg",
       "price": "47.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1875510297",
       "track_id1": "1875510907"
+    },
+    {
+      "id": 92272,
+      "artist": "TRIVIUM",
+      "date_live": "2026-06-15",
+      "doors_time": "19:00",
+      "location": "Rockhal",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Metal"
+      ],
+      "status": "on-sale-soon",
+      "url": "https://rockhal.lu/shows/trivium/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11733",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11733/image.69981c2acad35.jpg",
+      "price": "40.00 EUR",
+      "date_created": "2026-02-22T16:00:40.978961+00:00",
+      "track_id": "395723882",
+      "track_id1": "847140"
     },
     {
       "id": 40251,
@@ -2187,7 +2098,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14221/image.68b6e5ef7d1c4.320.jpg",
       "price": "49.02 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2300028585",
       "track_id1": "2421606815"
     },
@@ -2207,7 +2117,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14286/image.69241c84de67a.320.jpg",
       "price": "55.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1176687",
       "track_id1": "3212862171"
     },
@@ -2229,7 +2138,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14304/image.697795cba7ab1.320.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "7472037",
       "track_id1": "7419123"
     },
@@ -2249,7 +2157,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14292/image.693fccd70c53b.320.jpg",
       "price": "34.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2269,7 +2176,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14267/image.69038a779049f.320.jpg",
       "price": "67.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "788457",
       "track_id1": "788532"
     },
@@ -2290,7 +2196,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14275/image.690cf16d6def1.320.jpg",
       "price": "88.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "137233986",
       "track_id1": "137234014"
     },
@@ -2310,7 +2215,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14206/image.6861614612d22.320.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "700711312",
       "track_id1": "121123256"
     },
@@ -2330,7 +2234,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14274/image.690ced883cf4f.320.jpg",
       "price": "56.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2369141675",
       "track_id1": "2369141585"
     },
@@ -2350,7 +2253,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14277/image.690ded17958d0.320.jpg",
       "price": "97.20 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "134817088",
       "track_id1": "3786205012"
     },
@@ -2371,7 +2273,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11622/image.68fb93e5ea7f8.jpg",
       "price": "59.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3092700",
       "track_id1": "3135442"
     },
@@ -2392,7 +2293,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11679/image.6973791da53b8.jpg",
       "price": "55.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "4286053",
       "track_id1": "4286051"
     },
@@ -2413,7 +2313,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14276/image.690cf4d671089.320.jpg",
       "price": "88.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3129407",
       "track_id1": "3100444"
     },
@@ -2433,7 +2332,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14284/image.691c0c8ae93f5.320.jpg",
       "price": "155.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3098217",
       "track_id1": "3138729"
     },
@@ -2455,7 +2353,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14232/image.68c01017d0677.320.jpg",
       "price": "91.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1884719637",
       "track_id1": "1884719647"
     },
@@ -2475,7 +2372,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11605/image.68c96cc31d001.jpg",
       "price": "76.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "730866",
       "track_id1": "1015071"
     },
@@ -2495,7 +2391,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14281/image.6912d3e8846bb.320.jpg",
       "price": "100.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3107395",
       "track_id1": "3156968"
     },
@@ -2516,7 +2411,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14272/image.690c7a3c9b45a.320.jpg",
       "price": "75.20 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "65220769",
       "track_id1": "17199784"
     },
@@ -2537,7 +2431,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14270/image.691c2a832b97b.320.jpg",
       "price": "65.30 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "426572052",
       "track_id1": "623024972"
     },
@@ -2557,7 +2450,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11644/image.691dd64cf0a5b.jpg",
       "price": "75.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3667326",
       "track_id1": "3667336"
     },
@@ -2578,7 +2470,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14239/image.68c4015a79e5e.320.jpg",
       "price": "77.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1727984087",
       "track_id1": "3808584932"
     },
@@ -2598,7 +2489,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14278/image.6912ceb470de8.320.jpg",
       "price": "119.20 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3160142",
       "track_id1": "3169161"
     },
@@ -2620,7 +2510,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14294/image.6936b624ea723.320.jpg",
       "price": "80.70 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "922477",
       "track_id1": "2305601"
     },
@@ -2640,7 +2529,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11656/image.692475499c5fe.jpg",
       "price": "66.95 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3244582061",
       "track_id1": "3771971852"
     },
@@ -2660,7 +2548,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11703/image.6980c36e03d35.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "14600400",
       "track_id1": "563513212"
     },
@@ -2680,7 +2567,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14314/image.697b78c470353.320.jpg",
       "price": "77.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3502053411",
       "track_id1": "1761983427"
     },
@@ -2700,7 +2586,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11702/image.6980c6951cafb.jpg",
       "price": "39.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "14600400",
       "track_id1": "563513212"
     },
@@ -2721,7 +2606,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14147/image.6808e32837136.320.jpg",
       "price": "48.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "106828470",
       "track_id1": "106828472"
     },
@@ -2741,7 +2625,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14169/image.681c62f843911.320.jpg",
       "price": "57.60 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "70403437",
       "track_id1": "70403438"
     },
@@ -2761,7 +2644,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11465/image.68be968a0e36f.jpg",
       "price": "42.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2781,7 +2663,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14258/image.68f1fada082ab.320.jpg",
       "price": "55.31 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "3817588512",
       "track_id1": "1771007527"
     },
@@ -2795,13 +2676,12 @@
       "genres": [
         "Rock"
       ],
-      "status": "on-sale-soon",
+      "status": "buy-now",
       "url": "https://rockhal.lu/shows/fischer-z/",
       "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11730",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11730/image.69942e7adbab5.jpg",
       "price": "34.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3460908",
       "track_id1": "3460961"
     },
@@ -2821,7 +2701,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11683/image.695b82c42ca81.jpg",
       "price": "35.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2842,7 +2721,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14299/image.6942c2847d404.320.jpg",
       "price": "52.10 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1791078487",
       "track_id1": "3750880362"
     },
@@ -2862,7 +2740,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11659/image.692879d26ceaa.jpg",
       "price": "69.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2882,7 +2759,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11732/image.6995dc255dfb3.jpg",
       "price": "27.00 EUR",
       "date_created": "2026-02-19T16:36:48.917530+00:00",
-      "new": "New",
       "track_id": "61032651",
       "track_id1": "3256887071"
     },
@@ -2902,7 +2778,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11645/image.69207ca8523e6.jpg",
       "price": "63.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2923,7 +2798,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14251/image.691c12ac2b10b.320.jpg",
       "price": "41.10 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "74689498",
       "track_id1": "76392620"
     },
@@ -2943,7 +2817,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11699/image.69710dd802843.jpg",
       "price": "27.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -2964,7 +2837,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14243/image.68ccff010c04a.320.jpg",
       "price": "66.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2664911172",
       "track_id1": "2792718522"
     },
@@ -2984,7 +2856,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11675/image.6942e26b40765.jpg",
       "price": "60.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "80920774",
       "track_id1": "3585715361"
     },
@@ -3004,7 +2875,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/13981/image.679b8ae7e6c36.320.jpg",
       "price": "35.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2086818497",
       "track_id1": "1880483707"
     },
@@ -3024,7 +2894,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14287/image.69246375972f9.320.jpg",
       "price": "40.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -3044,7 +2913,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11615/image.68dd095b16fad.jpg",
       "price": "40.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "579940692",
       "track_id1": ""
     },
@@ -3064,7 +2932,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11720/image.698b663b19f96.jpg",
       "price": "33.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3329681251",
       "track_id1": "3301821051"
     },
@@ -3084,7 +2951,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11591/image.68c17b9d6af0a.jpg",
       "price": "89.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "760199",
       "track_id1": "3769033962"
     },
@@ -3098,13 +2964,12 @@
       "genres": [
         "Hip Hop"
       ],
-      "status": "On sale soon",
+      "status": "Buy Now",
       "url": "https://www.atelier.lu/shows/kneecap/",
       "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=301095220204&ref=#!/addtickets",
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14315/image.698dbb3606683.320.jpg",
       "price": "56.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2643667232",
       "track_id1": "3603519752"
     },
@@ -3124,7 +2989,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11623/image.68ee462638af7.jpg",
       "price": "45.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "13621853",
       "track_id1": "3538928211"
     },
@@ -3144,7 +3008,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11704/image.698227bfe583c.jpg",
       "price": "42.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "70212122",
       "track_id1": "104094652"
     },
@@ -3164,8 +3027,7 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11686/image.694931f643a0b.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
-      "track_id": "",
+      "track_id": "80849496",
       "track_id1": ""
     },
     {
@@ -3184,7 +3046,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11557/image.68888a09e0f7e.jpg",
       "price": "33.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "1802220957",
       "track_id1": "864448582"
     },
@@ -3205,7 +3066,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14260/image.68f8718261c60.320.jpg",
       "price": "33.40 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "13784094",
       "track_id1": "1470255372"
     },
@@ -3225,7 +3085,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14265/image.692ff91ee3b76.320.jpg",
       "price": "41.10 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "672944332",
       "track_id1": "1153140972"
     },
@@ -3246,9 +3105,8 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14268/image.690b6684c1c1b.320.jpg",
       "price": "53.20 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
-      "track_id": "",
-      "track_id1": ""
+      "track_id": "3864069",
+      "track_id1": "3864067"
     },
     {
       "id": 37983,
@@ -3266,7 +3124,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14137/image.67d2f71f9a40f.320.jpg",
       "price": "70.20 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "7718640",
       "track_id1": "4711013"
     },
@@ -3286,7 +3143,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14290/image.6925cf75ec38d.320.jpg",
       "price": "38.90 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2299895755",
       "track_id1": "2299895785"
     },
@@ -3306,7 +3162,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11502/image.6931785ed8929.jpg",
       "price": "35.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "1534970092",
       "track_id1": "1940930987"
     },
@@ -3326,7 +3181,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14279/image.691c0ff0bb54f.320.jpg",
       "price": "59.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2826779992",
       "track_id1": ""
     },
@@ -3346,9 +3200,27 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14255/image.68ee69a60f87a.320.jpg",
       "price": "55.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "659569532",
       "track_id1": "597403752"
+    },
+    {
+      "id": 86461,
+      "artist": "CASSE-NOISETTE",
+      "date_live": "2026-11-21",
+      "doors_time": "14:30",
+      "location": "Rockhal",
+      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
+      "genres": [
+        "Entertainment"
+      ],
+      "status": "buy-now",
+      "url": "https://rockhal.lu/shows/casse-noisette-13/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11684",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11684/image.694412530cc38.jpg",
+      "price": "53.00 EUR",
+      "date_created": "2026-02-22T16:00:40.978961+00:00",
+      "track_id": "1009294272",
+      "track_id1": "1849881757"
     },
     {
       "id": 41363,
@@ -3366,7 +3238,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14307/image.69690c01239ae.320.jpg",
       "price": "29.00 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2876956142",
       "track_id1": ""
     },
@@ -3386,7 +3257,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14280/image.69123ac4441b7.320.jpg",
       "price": "27.90 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -3406,7 +3276,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14297/image.6942a444a2d1c.320.jpg",
       "price": "46.65 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1209436532",
       "track_id1": "1209436332"
     },
@@ -3427,7 +3296,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14309/image.6978b7488fd97.320.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "2968007141",
       "track_id1": "2757885611"
     },
@@ -3447,9 +3315,28 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11697/image.6977716aec8ff.jpg",
       "price": "34.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3805773112",
       "track_id1": "3761266442"
+    },
+    {
+      "id": 40345,
+      "artist": "PORTUGAL. THE MAN",
+      "date_live": "2026-12-03",
+      "doors_time": "7:00 pm",
+      "location": "den Atelier",
+      "address": "54 rue de Hollerich, 1740 Luxembourg",
+      "genres": [
+        "Alternative Rock",
+        "Indie"
+      ],
+      "status": "New Date",
+      "url": "https://www.atelier.lu/shows/portugal-the-man-4/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/atelier/flow/campaign?event=357503275315&ref=#!/addtickets",
+      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14236/image.68d1027bc6a15.320.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-22T16:01:23.471705+00:00",
+      "track_id": "371593461",
+      "track_id1": "3279214291"
     },
     {
       "id": 88299,
@@ -3467,7 +3354,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11677/image.69679de2153ad.jpg",
       "price": "35.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "143420876",
       "track_id1": "143420880"
     },
@@ -3487,7 +3373,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11664/image.692d66e93ae0d.jpg",
       "price": "28.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "76979311",
       "track_id1": ""
     },
@@ -3507,7 +3392,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14296/image.6939954602fdd.320.jpg",
       "price": "71.55 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1721562237",
       "track_id1": "3640189322"
     },
@@ -3527,7 +3411,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11638/image.69724429f0e43.jpg",
       "price": "46.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3572450371",
       "track_id1": "3657014702"
     },
@@ -3547,29 +3430,8 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11691/image.696a746cf3021.jpg",
       "price": "39.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3480520401",
       "track_id1": "3318335821"
-    },
-    {
-      "id": 86461,
-      "artist": "CASSE-NOISETTE",
-      "date_live": "2027-02-07",
-      "doors_time": "14:30",
-      "location": "Rockhal",
-      "address": "5, avenue du Rock, L-4361 Esch-sur-Alzette",
-      "genres": [
-        "Entertainment"
-      ],
-      "status": "buy-now",
-      "url": "https://rockhal.lu/shows/casse-noisette-13/",
-      "buy_link": "https://apps.ticketmatic.com/widgets/rockhal/addtickets?event=11684",
-      "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11684/image.694412530cc38.jpg",
-      "price": "53.00 EUR",
-      "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
-      "track_id": "",
-      "track_id1": ""
     },
     {
       "id": 81751,
@@ -3587,7 +3449,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11628/image.696a18fe89097.jpg",
       "price": "53.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -3608,7 +3469,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14237/image.68c0448314921.320.jpg",
       "price": "48.80 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "1951178967",
       "track_id1": "3515466971"
     },
@@ -3628,7 +3488,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11658/image.692d9bce86305.jpg",
       "price": "55.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "3810795232",
       "track_id1": "142704136"
     },
@@ -3648,7 +3507,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11724/image.698dd980d848f.jpg",
       "price": "92.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "604845",
       "track_id1": "604840"
     },
@@ -3668,7 +3526,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14295/image.6937e59930267.320.jpg",
       "price": "41.10 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
       "track_id": "424970262",
       "track_id1": "593707622"
     },
@@ -3688,8 +3545,7 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14313/image.6985b4ce0e5fb.320.jpg",
       "price": "45.50 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
-      "track_id": "",
+      "track_id": "1876217737",
       "track_id1": ""
     },
     {
@@ -3708,9 +3564,8 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10328/events/14305/image.6968f29a8ce21.320.jpg",
       "price": "35.60 EUR",
       "date_created": "2026-02-18T17:22:00.468705+00:00",
-      "new": "",
-      "track_id": "",
-      "track_id1": ""
+      "track_id": "2539237531",
+      "track_id1": "2285247057"
     },
     {
       "id": 85587,
@@ -3728,7 +3583,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11672/image.6937e5ac86d93.jpg",
       "price": "Price Unavailable",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "",
       "track_id1": ""
     },
@@ -3748,7 +3602,6 @@
       "image": "https://apps.ticketmatic.com/obj/filestore/prod/10491/events/11671/image.6932a2673fe45.jpg",
       "price": "50.00 EUR",
       "date_created": "2026-02-18T17:20:54.868129+00:00",
-      "new": "",
       "track_id": "991348192",
       "track_id1": "1073804642"
     }
@@ -3908,6 +3761,11 @@
     }
   ],
   "venues": [
+    {
+      "id": 31895,
+      "name": "Cinémathèque",
+      "slug": "cinematheque"
+    },
     {
       "id": 30154,
       "name": "De Gudde Wëllen",
