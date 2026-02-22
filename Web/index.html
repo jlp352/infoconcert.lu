@@ -2033,6 +2033,7 @@
                 : '';
 
             const buyLink = concert.buy_link || concert.url || '#';
+            const concertUrl = concert.url || buyLink;
             const isFull = status === 'full';
             const buttonLabel = isFull ? t('btn_sold_out') : t('btn_reserve');
             const buttonDisabled = isFull ? 'style="opacity:0.4;pointer-events:none;"' : '';
@@ -2063,7 +2064,7 @@
                 : '';
 
             return `
-            <div class="concert-card" id="${cardId}" style="animation-delay:${delay}s">
+            <div class="concert-card" id="${cardId}" style="animation-delay:${delay}s" data-url="${concertUrl}">
                 <div class="concert-image" style="background:${gradient}">
                     ${imageHtml}
                     ${statusHtml}
@@ -2577,7 +2578,15 @@
         // Listener délégué unique
         document.getElementById('concerts-grid').addEventListener('click', function(e) {
             const btn = e.target.closest('.preview-btn');
-            if (!btn) return;
+            if (!btn) {
+                // Clic sur la carte → ouvrir l'URL du concert si pas sur un élément interactif
+                if (!e.target.closest('a, button, .price-info-icon')) {
+                    const card = e.target.closest('.concert-card');
+                    const url = card && card.dataset.url;
+                    if (url && url !== '#') window.open(url, '_blank', 'noopener');
+                }
+                return;
+            }
 
             if (currentBtn === btn) { stopCurrent(); return; }
 
