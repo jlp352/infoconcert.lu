@@ -11,7 +11,7 @@ Le script opère en deux étapes :
 
 Les deux étapes sont résilientes : chaque requête HTTP est relancée jusqu'à 3 fois en cas d'échec. Le scraping des pages individuelles est parallélisé (10 threads simultanés).
 
-### Écriture atomique
+### Fichier de Sortie
 
 Le fichier de sortie est d'abord écrit dans un fichier temporaire, puis renommé. Cela protège le fichier existant en cas de crash pendant l'écriture.
 

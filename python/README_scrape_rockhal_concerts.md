@@ -22,7 +22,7 @@ La stratégie de prix est multi-niveaux :
 
 Les tarifs conditionnels (ex: Kulturpass) sont ignorés pour n'afficher que le prix plancher standard.
 
-### Écriture atomique
+### Fichier de Sortie
 
 Le fichier de sortie est d'abord écrit dans un fichier temporaire, puis renommé. Cela protège le fichier existant en cas de crash pendant l'écriture.
 
