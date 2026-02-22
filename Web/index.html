@@ -1015,29 +1015,52 @@
         .status-badge {
             position: absolute;
             top: 1rem;
-            right: 1rem;
+            right: 0;
+            left: auto;
             font-size: 0.75rem;
             font-weight: 700;
             padding: 0.3rem 0.8rem;
-            border-radius: 20px;
+            border-radius: 20px 0 0 20px;
             text-transform: uppercase;
             letter-spacing: 1px;
             z-index: 2;
         }
 
-        .status-sold-out {
-            background: #333;
-            color: #aaa;
+        .status-available {
+            background: #FFD700;
+            color: #0A0A0A;
         }
 
-        .status-buy-now {
-            background: var(--secondary);
-            color: var(--dark);
+        .status-soon {
+            background: #FF8C00;
+            color: #fff;
         }
 
-        .status-cancelled {
-            background: #c0392b;
-            color: white;
+        .status-full {
+            background: #880E4F;
+            color: #fff;
+        }
+
+        .ticketswap-link {
+            position: absolute;
+            top: 3rem;
+            right: 0;
+            z-index: 2;
+            display: block;
+            background: #fff;
+            padding: 0.3rem 0.6rem 0.3rem 0.8rem;
+            border-radius: 20px 0 0 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            transition: background 0.2s;
+        }
+
+        .ticketswap-link:hover {
+            background: #e8f4fc;
+        }
+
+        .ticketswap-logo {
+            height: 32px;
+            display: block;
         }
 
         /* Loading state */
@@ -1892,10 +1915,12 @@
         function normalizeStatus(status) {
             if (!status) return '';
             const s = status.toLowerCase().replace(/[\s_-]/g, '');
-            if (s === 'soldout') return 'sold-out';
-            if (s === 'buynow') return 'buy-now';
-            if (s === 'cancelled' || s === 'canceled') return 'cancelled';
-            return s;
+            // Billets Disponibles
+            if (['buynow', 'lasttickets', 'newdate'].includes(s)) return 'available';
+            // Complet
+            if (['soldout', 'waitinglist'].includes(s)) return 'full';
+            // Mise en vente prochaine (termes connus + fallback pour tout inconnu non vide)
+            return 'soon';
         }
 
         const LOCALE_MAP = { fr: 'fr-FR', en: 'en-GB', de: 'de-DE' };
@@ -1908,18 +1933,18 @@
 
         function statusLabel(status) {
             switch (status) {
-                case 'sold-out':   return t('status_sold_out');
-                case 'buy-now':    return t('status_buy_now');
-                case 'cancelled':  return t('status_cancelled');
-                default:           return '';
+                case 'available': return 'Billets Disponibles';
+                case 'soon':      return 'Mise en vente prochaine';
+                case 'full':      return 'Complet';
+                default:          return '';
             }
         }
 
         function statusClass(status) {
             switch (status) {
-                case 'sold-out':  return 'status-sold-out';
-                case 'buy-now':   return 'status-buy-now';
-                case 'cancelled': return 'status-cancelled';
+                case 'available': return 'status-available';
+                case 'soon':      return 'status-soon';
+                case 'full':      return 'status-full';
                 default:          return '';
             }
         }
@@ -1943,10 +1968,16 @@
                 : '';
 
             const buyLink = concert.buy_link || concert.url || '#';
-            const isSoldOut = status === 'sold-out';
-            const isCancelled = status === 'cancelled';
-            const buttonLabel = isCancelled ? t('btn_cancelled') : isSoldOut ? t('btn_sold_out') : t('btn_reserve');
-            const buttonDisabled = (isCancelled || isSoldOut) ? 'style="opacity:0.4;pointer-events:none;"' : '';
+            const isFull = status === 'full';
+            const buttonLabel = isFull ? t('btn_sold_out') : t('btn_reserve');
+            const buttonDisabled = isFull ? 'style="opacity:0.4;pointer-events:none;"' : '';
+
+            const ticketswapUrl = `https://www.google.com/search?q=site:ticketswap.com+%22${encodeURIComponent(concert.artist)}%22+%22${encodeURIComponent(concert.location || '')}%22`;
+            const ticketswapHtml = isFull
+                ? `<a href="${ticketswapUrl}" target="_blank" rel="noopener" class="ticketswap-link" title="Trouver des billets sur TicketSwap">
+                        <img src="image/logo/ticketswap.png" alt="TicketSwap" class="ticketswap-logo">
+                   </a>`
+                : '';
 
             const priceHtml = concert.price
                 ? `<span class="concert-price">🎟 ${concert.price}</span>`
@@ -1966,6 +1997,7 @@
                 <div class="concert-image" style="background:${gradient}">
                     ${imageHtml}
                     ${statusHtml}
+                    ${ticketswapHtml}
                 </div>
                 <div class="concert-content">
                     <span class="concert-date">${formatDate(concert.date_live)}</span>
