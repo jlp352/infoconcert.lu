@@ -1098,11 +1098,76 @@
 
         /* Price badge */
         .concert-price {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
             font-size: 0.9rem;
             font-weight: 700;
             color: var(--secondary);
             margin-bottom: 1rem;
+        }
+
+        .price-info {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .price-info-icon {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--secondary);
+            opacity: 0.7;
+            cursor: help;
+            border: 1px solid currentColor;
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transition: opacity 0.2s;
+        }
+
+        .price-info-icon:hover,
+        .price-info-icon:focus {
+            opacity: 1;
+            outline: none;
+        }
+
+        .price-tooltip {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(20, 20, 20, 0.95);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1.4;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        .price-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: rgba(20, 20, 20, 0.95);
+        }
+
+        .price-info-icon:hover + .price-tooltip,
+        .price-info-icon:focus + .price-tooltip {
+            display: block;
         }
 
         /* Card footer: price + button */
@@ -1980,7 +2045,12 @@
                 : '';
 
             const priceHtml = concert.price
-                ? `<span class="concert-price">🎟 ${concert.price}</span>`
+                ? `<span class="concert-price">🎟 ${concert.price}
+                       <span class="price-info">
+                           <span class="price-info-icon" tabindex="0">ⓘ</span>
+                           <span class="price-tooltip">Prix à titre indicatif.<br>Prix à partir de.<br>Vérifier le prix exact sur le site officiel.</span>
+                       </span>
+                   </span>`
                 : '';
 
             const trackIds = [concert.track_id, concert.track_id1].filter(Boolean);
