@@ -1481,14 +1481,13 @@
         }
 
         /* Audio preview */
+        /* ── Preview trigger button ───────────────────────────────────────── */
         .preview-buttons {
-            display: flex;
-            gap: 0.5rem;
             margin-bottom: 1rem;
         }
 
         .preview-btn {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 0.4rem;
             padding: 0.45rem 1rem;
@@ -1519,6 +1518,148 @@
         .preview-btn .icon {
             font-style: normal;
             font-size: 0.9rem;
+        }
+
+        /* ── Mini player ──────────────────────────────────────────────────── */
+        .mini-player {
+            display: none;
+            margin-top: 0.6rem;
+            background: rgba(0, 217, 255, 0.07);
+            border: 1px solid rgba(0, 217, 255, 0.25);
+            border-radius: 12px;
+            padding: 0.6rem 0.8rem;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .mini-player.open {
+            display: flex;
+        }
+
+        .mini-player-progress {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .mini-player-bar-wrap {
+            flex: 1;
+            height: 4px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .mini-player-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--accent);
+            border-radius: 2px;
+            transition: width 0.3s linear;
+        }
+
+        .mini-player-time {
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.5);
+            min-width: 2.5rem;
+            text-align: right;
+        }
+
+        .mini-ctrl-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--accent);
+            font-size: 1rem;
+            padding: 0;
+            line-height: 1;
+            opacity: 0.8;
+            transition: opacity 0.2s, transform 0.15s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+
+        .mini-ctrl-btn:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        .mini-volume-wrap {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .mini-volume-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 52px;
+            height: 3px;
+            border-radius: 2px;
+            background: rgba(255,255,255,0.2);
+            outline: none;
+            cursor: pointer;
+        }
+
+        .mini-volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            cursor: pointer;
+        }
+
+        .mini-volume-slider::-moz-range-thumb {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            cursor: pointer;
+            border: none;
+        }
+
+        .mini-player-tracks {
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .mini-track-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            padding: 0.3rem 0.5rem;
+            background: transparent;
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            border-radius: 8px;
+            color: rgba(0, 217, 255, 0.7);
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.2s;
+        }
+
+        .mini-track-btn:hover {
+            background: rgba(0, 217, 255, 0.15);
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .mini-track-btn.active {
+            background: rgba(0, 217, 255, 0.2);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .mini-track-btn .t-icon {
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -2056,11 +2197,30 @@
 
             const trackIds = [concert.track_id, concert.track_id1].filter(Boolean);
             const hasPreview = trackIds.length > 0;
+            const trackButtonsHtml = trackIds.map((id, i) =>
+                `<button class="mini-track-btn" data-track-id="${id}" data-track-index="${i}">
+                    <span class="t-icon">▶</span> Extrait ${trackIds.length > 1 ? i + 1 : ''}
+                </button>`).join('');
             const previewHtml = hasPreview
-                ? `<div class="preview-buttons">${trackIds.map((id, i) =>
-                    `<button class="preview-btn" data-track-id="${id}" data-label="${i + 1}">
-                        <span class="icon">▶</span> ${t('preview_extract')}${trackIds.length > 1 ? ' ' + (i + 1) : ''}
-                    </button>`).join('')}</div>`
+                ? `<div class="preview-buttons">
+                       <button class="preview-btn" data-action="toggle-player">
+                           <span class="icon">▶</span> ${t('preview_extract')}
+                       </button>
+                       <div class="mini-player">
+                           <div class="mini-player-progress">
+                               <div class="mini-player-bar-wrap">
+                                   <div class="mini-player-bar"></div>
+                               </div>
+                               <button class="mini-ctrl-btn mini-playpause-btn" title="Play / Pause">⏸</button>
+                               <div class="mini-volume-wrap">
+                                   <button class="mini-ctrl-btn mini-mute-btn" title="Mute / Unmute">🔊</button>
+                                   <input type="range" class="mini-volume-slider" min="0" max="1" step="0.05" value="1">
+                               </div>
+                               <span class="mini-player-time">0:00</span>
+                           </div>
+                           ${trackIds.length > 1 ? `<div class="mini-player-tracks">${trackButtonsHtml}</div>` : `<div style="display:none">${trackButtonsHtml}</div>`}
+                       </div>
+                   </div>`
                 : '';
 
             return `
@@ -2518,17 +2678,31 @@
         // Cache trackId → preview URL
         const previewCache = {};
 
+        let currentPlayer = null; // { audio, triggerBtn, player, trackBtn }
+
         function stopCurrent() {
             if (currentAudio) {
                 currentAudio.pause();
                 currentAudio.src = '';
                 currentAudio = null;
             }
-            if (currentBtn) {
-                currentBtn.classList.remove('playing');
-                currentBtn.querySelector('.icon').textContent = '▶';
-                currentBtn = null;
+            if (currentPlayer) {
+                const { triggerBtn, player, trackBtn } = currentPlayer;
+                triggerBtn.classList.remove('playing');
+                triggerBtn.querySelector('.icon').textContent = '▶';
+                const ppBtn = player.querySelector('.mini-playpause-btn');
+                if (ppBtn) ppBtn.textContent = '⏸';
+                const barEl = player.querySelector('.mini-player-bar');
+                if (barEl) barEl.style.width = '0%';
+                const timeEl = player.querySelector('.mini-player-time');
+                if (timeEl) timeEl.textContent = '0:00';
+                if (trackBtn) {
+                    trackBtn.querySelector('.t-icon').textContent = '▶';
+                    trackBtn.classList.remove('active');
+                }
+                currentPlayer = null;
             }
+            currentBtn = null;
         }
 
         function fetchPreviewByTrackId(trackId, callback) {
@@ -2555,60 +2729,182 @@
             document.head.appendChild(script);
         }
 
-        function playUrl(btn, url) {
-            const audio = new Audio(url);
-            audio.addEventListener('ended', function() {
-                if (currentBtn === btn) {
-                    btn.classList.remove('playing');
-                    btn.querySelector('.icon').textContent = '▶';
-                    currentAudio = null;
-                    currentBtn   = null;
-                }
+        function formatTime(sec) {
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60);
+            return m + ':' + (s < 10 ? '0' : '') + s;
+        }
+
+        function playUrl(triggerBtn, url, trackBtn) {
+            const player      = triggerBtn.closest('.preview-buttons').querySelector('.mini-player');
+            const bar         = player.querySelector('.mini-player-bar');
+            const timeEl      = player.querySelector('.mini-player-time');
+            const playPauseBtn = player.querySelector('.mini-playpause-btn');
+            const muteBtn     = player.querySelector('.mini-mute-btn');
+            const volSlider   = player.querySelector('.mini-volume-slider');
+            const audio       = new Audio(url);
+
+            // Restaurer le volume mémorisé
+            audio.volume = volSlider ? parseFloat(volSlider.value) : 1;
+
+            // Progression
+            audio.addEventListener('timeupdate', function() {
+                if (!audio.duration) return;
+                const pct = (audio.currentTime / audio.duration) * 100;
+                bar.style.width = pct + '%';
+                timeEl.textContent = formatTime(audio.currentTime);
             });
-            currentAudio = audio;
-            currentBtn   = btn;
-            btn.classList.add('playing');
-            btn.querySelector('.icon').textContent = '■';
+
+            // Fin de piste → passer à l'extrait suivant si disponible
+            audio.addEventListener('ended', function() {
+                const allTrackBtns = Array.from(player.querySelectorAll('.mini-track-btn'));
+                if (allTrackBtns.length > 1 && trackBtn) {
+                    const idx = allTrackBtns.indexOf(trackBtn);
+                    const nextBtn = allTrackBtns[idx + 1];
+                    if (nextBtn) {
+                        stopCurrent();
+                        const nextId = nextBtn.dataset.trackId;
+                        triggerBtn.querySelector('.icon').textContent = '⏳';
+                        fetchPreviewByTrackId(nextId, function(nextUrl) {
+                            if (!nextUrl) { stopCurrent(); return; }
+                            playUrl(triggerBtn, nextUrl, nextBtn);
+                        });
+                        return;
+                    }
+                }
+                stopCurrent();
+            });
+
+            currentAudio  = audio;
+            currentBtn    = triggerBtn;
+            currentPlayer = { triggerBtn, player, trackBtn };
+
+            triggerBtn.classList.add('playing');
+            triggerBtn.querySelector('.icon').textContent = '■';
+            if (playPauseBtn) playPauseBtn.textContent = '⏸';
+
+            if (trackBtn) {
+                trackBtn.querySelector('.t-icon').textContent = '■';
+                trackBtn.classList.add('active');
+            }
+
+            // Scrub sur la barre de progression
+            player.querySelector('.mini-player-bar-wrap').onclick = function(ev) {
+                if (!audio.duration) return;
+                const rect = this.getBoundingClientRect();
+                audio.currentTime = ((ev.clientX - rect.left) / rect.width) * audio.duration;
+            };
+
+            // Bouton play/pause
+            if (playPauseBtn) {
+                playPauseBtn.onclick = function(ev) {
+                    ev.stopPropagation();
+                    if (audio.paused) {
+                        audio.play();
+                        playPauseBtn.textContent = '⏸';
+                        triggerBtn.querySelector('.icon').textContent = '■';
+                    } else {
+                        audio.pause();
+                        playPauseBtn.textContent = '▶';
+                        triggerBtn.querySelector('.icon').textContent = '▶';
+                    }
+                };
+            }
+
+            // Bouton mute
+            if (muteBtn) {
+                muteBtn.onclick = function(ev) {
+                    ev.stopPropagation();
+                    audio.muted = !audio.muted;
+                    muteBtn.textContent = audio.muted ? '🔇' : '🔊';
+                };
+            }
+
+            // Slider volume
+            if (volSlider) {
+                volSlider.oninput = function(ev) {
+                    ev.stopPropagation();
+                    audio.volume = parseFloat(volSlider.value);
+                    if (audio.muted && audio.volume > 0) {
+                        audio.muted = false;
+                        muteBtn.textContent = '🔊';
+                    }
+                    muteBtn.textContent = audio.volume === 0 ? '🔇' : '🔊';
+                };
+            }
+
             audio.play().catch(function() {
                 stopCurrent();
-                btn.title = 'Lecture impossible';
+                triggerBtn.title = 'Lecture impossible';
             });
         }
 
         // Listener délégué unique
         document.getElementById('concerts-grid').addEventListener('click', function(e) {
-            const btn = e.target.closest('.preview-btn');
-            if (!btn) {
-                // Clic sur la carte → ouvrir l'URL du concert si pas sur un élément interactif
-                if (!e.target.closest('a, button, .price-info-icon')) {
-                    const card = e.target.closest('.concert-card');
-                    const url = card && card.dataset.url;
-                    if (url && url !== '#') window.open(url, '_blank', 'noopener');
+
+            // ── Clic sur le bouton trigger "▶ Extrait" ──────────────────────
+            const triggerBtn = e.target.closest('.preview-btn[data-action="toggle-player"]');
+            if (triggerBtn) {
+                e.stopPropagation();
+                const player = triggerBtn.closest('.preview-buttons').querySelector('.mini-player');
+
+                // Si déjà en lecture sur ce bouton → stop
+                if (currentBtn === triggerBtn) { stopCurrent(); player.classList.remove('open'); return; }
+
+                stopCurrent();
+                player.classList.add('open');
+
+                // Chercher le premier track button (ou jouer directement si 1 seul extrait)
+                const firstTrackBtn = player.querySelector('.mini-track-btn');
+                if (firstTrackBtn) {
+                    // 1 ou plusieurs extraits : jouer le 1er automatiquement
+                    const trackId = firstTrackBtn.dataset.trackId;
+                    triggerBtn.querySelector('.icon').textContent = '⏳';
+                    fetchPreviewByTrackId(trackId, function(url) {
+                        if (!url) {
+                            triggerBtn.querySelector('.icon').textContent = '✕';
+                            setTimeout(() => { triggerBtn.querySelector('.icon').textContent = '▶'; }, 2000);
+                            return;
+                        }
+                        playUrl(triggerBtn, url, firstTrackBtn);
+                    });
                 }
                 return;
             }
 
-            if (currentBtn === btn) { stopCurrent(); return; }
+            // ── Clic sur un bouton de piste dans le mini player ─────────────
+            const trackBtn = e.target.closest('.mini-track-btn');
+            if (trackBtn) {
+                e.stopPropagation();
+                const previewButtons = trackBtn.closest('.preview-buttons');
+                const trigBtn = previewButtons.querySelector('.preview-btn[data-action="toggle-player"]');
 
-            stopCurrent();
-
-            const trackId = btn.dataset.trackId;
-            if (!trackId) return;
-
-            btn.classList.add('playing');
-            btn.querySelector('.icon').textContent = '⏳';
-
-            fetchPreviewByTrackId(trackId, function(url) {
-                if (!url) {
-                    btn.classList.remove('playing');
-                    btn.querySelector('.icon').textContent = '✕';
-                    setTimeout(function() { btn.querySelector('.icon').textContent = '▶'; }, 2000);
+                // Même piste déjà en lecture → stop
+                if (currentPlayer && currentPlayer.trackBtn === trackBtn) {
+                    stopCurrent();
                     return;
                 }
-                if (currentBtn && currentBtn !== btn) return; // annulé entre-temps
-                currentBtn = null;
-                playUrl(btn, url);
-            });
+
+                stopCurrent();
+                const trackId = trackBtn.dataset.trackId;
+                trigBtn.querySelector('.icon').textContent = '⏳';
+                fetchPreviewByTrackId(trackId, function(url) {
+                    if (!url) {
+                        trigBtn.querySelector('.icon').textContent = '✕';
+                        setTimeout(() => { trigBtn.querySelector('.icon').textContent = '▶'; }, 2000);
+                        return;
+                    }
+                    playUrl(trigBtn, url, trackBtn);
+                });
+                return;
+            }
+
+            // ── Clic sur la carte → ouvrir l'URL du concert ─────────────────
+            if (!e.target.closest('a, button, .price-info-icon, .mini-player')) {
+                const card = e.target.closest('.concert-card');
+                const url = card && card.dataset.url;
+                if (url && url !== '#') window.open(url, '_blank', 'noopener');
+            }
         });
 
         // ── Quick artist search ───────────────────────────────────────────────
