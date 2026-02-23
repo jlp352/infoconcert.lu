@@ -3,7 +3,7 @@ import glob
 
 def purge_logs():
     # Chemin du dossier 'log' à côté de ce script
-    log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "log")
+    log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Log")
 
     # Vérifie si le dossier existe
     if not os.path.exists(log_dir):

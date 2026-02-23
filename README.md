@@ -160,13 +160,13 @@ Pour automatiser l'exécution sur un serveur Linux, configurer les tâches suiva
 0 * * * * /home/user/infoconcert.lu/run_scripts.sh
 
 # Serveur web au démarrage
-@reboot cd /home/user/infoconcert.lu/ && /usr/bin/python3 -m http.server 8000 --bind 0.0.0.0
+@reboot cd /home/user/infoconcert.lu/Web && /usr/bin/python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
 Appliquer les permissions d'exécution au préalable :
 
 ```bash
-chmod +x /home/user/infoconcert.lu/run_scripts.sh
+chmod +x $HOME/infoconcert.lu/run_scripts.sh
 ```
 
 ### Contenu de `run_scripts.sh`
@@ -178,13 +178,13 @@ Script à placer à la racine du projet (`/home/user/infoconcert.lu/run_scripts.
 # Lancer les scripts Python pour le scraping et la fusion en séquence
 
 # Chemin vers le dossier contenant les scripts Python
-SCRIPTS_PATH="/home/user/infoconcert.lu/python"
+SCRIPTS_PATH="$HOME/infoconcert.lu/python"
 
 # Chemin vers le dossier d'entrée du site Web
-SCRIPTS_PATH_WEB="/home/user/infoconcert.lu/Web/IN"
+SCRIPTS_PATH_WEB="$HOME/infoconcert.lu/Web/IN"
 
-# Chemin vers Python
-PYTHON="/usr/bin/python3"
+# Chemin vers Python (environnement virtuel)
+PYTHON="$HOME/infoconcert.lu/python/.venv/bin/python3"
 
 # Atelier.lu — exclure les genres Party/Film et les concerts annulés
 $PYTHON "$SCRIPTS_PATH/scrape_atelier_concerts.py" -g "Party; Film" -s "cancelled"
