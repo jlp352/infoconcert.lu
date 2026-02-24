@@ -18,15 +18,15 @@ L’objectif d’InfoConcert.lu est donc clair :
 
 Ce projet est entièrement **open source**, sous licence **MIT**, et disponible sur mon  [Github](https://github.com/jlp352/)
 
-Si vous trouvez ce site utile ou que vous appréciez l’initiative, n’hésitez pas à soutenir le projet en cliquant sur **⭐ Star** sur le dépôt GitHub. C’est un excellent moyen de montrer votre intérêt et d’encourager son développement.
+Si vous trouvez ce site utile ou que vous appréciez l’initiative, n’hésitez pas à soutenir ce projet. C’est un excellent moyen de montrer votre intérêt et d’encourager son développement.
 
 ---
 
 ### 🛠️ Bugs, suggestions & améliorations
 
-Une anomalie ? Une idée d’amélioration ? Une suggestion pour une **version Android ou Iphone** , de nouvelles fonctionnalités ou une meilleure ergonomie ?
+Une anomalie ? Une idée d’amélioration ? Une **version Android ou Iphone** pour avoir les notifications lorsqu'un nouveau concert est programmé, de nouvelles fonctionnalités ou une meilleure ergonomie ?
 
-👉 Vous pouvez proposer des améliorations ou signaler un bug directement via l’onglet **Issues** sur GitHub en créant une **New Issue**.
+👉 Vous pouvez proposer des améliorations ou signaler un bug directement via l’onglet **Issues** sur GitHub.
 
 Votre retour est précieux pour faire évoluer le projet.
 

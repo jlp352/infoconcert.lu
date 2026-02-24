@@ -72,3 +72,9 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- Test en détail
 			- [x] Partie Python
 			- [x] Partie Web
+		
+#### Mise en Prod
+		- [ ] Prendre abonnement Web + DNS chez OVH
+		- [ ] Regarder comment upload en auto json du serveur local vers WebServer
+		- [ ] Mettre en place Google Analytics pour les statistiques
+		- [ ] Live
