@@ -59,9 +59,9 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 
 #### Serveur en local
 		- [x] Faire la doc générale et technique
-		- [ ] Installer sur un serveur local (Python + Web)
-		- [ ] Mettre le crom pour les mise à jour
-		- [ ] Ouvrir les ports pour qu'il soit accessible depuis exterieur
+		- [x] Installer sur un serveur local (Python + Web)
+		- [x] Mettre le crom pour les mise à jour
+		- [x] Ouvrir les ports pour qu'il soit accessible depuis exterieur
 
 #### Scrapper
 		- [ ] Casino 2000

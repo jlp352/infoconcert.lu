@@ -52,3 +52,43 @@
 2026-02-22 17:01:09,756 [INFO] Filtre statuts exclus {'cancelled'} : 115 → 115 concerts
 2026-02-22 17:01:09,759 [INFO] ✅ 115 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_rockhal_concerts.json
 2026-02-22 17:01:09,759 [INFO] Fin du scraper
+2026-02-24 15:23:34,243 [INFO] ============================================================
+2026-02-24 15:23:34,244 [INFO] Démarrage du scraper (format=json, exclude_genres=Kids/Young Audience, exclude_statuses=cancelled)
+2026-02-24 15:23:34,244 [INFO] Récupération de la liste des concerts…
+2026-02-24 15:23:47,571 [INFO] 118 concerts trouvés via l'API
+2026-02-24 15:23:47,571 [INFO] Scraping de 118 pages pour horaires…
+2026-02-24 15:24:04,670 [INFO] Scraping terminé : 118/118 pages OK
+2026-02-24 15:24:04,686 [INFO] Filtre genres exclus {'kids/young audience'} : 118 → 114 concerts
+2026-02-24 15:24:04,686 [INFO] Filtre statuts exclus {'cancelled'} : 114 → 114 concerts
+2026-02-24 15:24:04,689 [INFO] ✅ 114 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_rockhal_concerts.json
+2026-02-24 15:24:04,689 [INFO] Fin du scraper
+2026-02-24 15:24:47,169 [INFO] ============================================================
+2026-02-24 15:24:47,169 [INFO] Démarrage du scraper (format=csv, exclude_genres=Kids/Young Audience, exclude_statuses=cancelled)
+2026-02-24 15:24:47,169 [INFO] Récupération de la liste des concerts…
+2026-02-24 15:24:59,553 [INFO] 118 concerts trouvés via l'API
+2026-02-24 15:24:59,553 [INFO] Scraping de 118 pages pour horaires…
+2026-02-24 15:25:07,355 [INFO] Scraping terminé : 118/118 pages OK
+2026-02-24 15:25:07,361 [INFO] Filtre genres exclus {'kids/young audience'} : 118 → 114 concerts
+2026-02-24 15:25:07,362 [INFO] Filtre statuts exclus {'cancelled'} : 114 → 114 concerts
+2026-02-24 15:25:07,365 [INFO] ✅ 114 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_rockhal_concerts.csv
+2026-02-24 15:25:07,365 [INFO] Fin du scraper
+2026-02-24 15:36:13,154 [INFO] ============================================================
+2026-02-24 15:36:13,155 [INFO] Démarrage du scraper (format=csv, exclude_genres=Kids/Young Audience, exclude_statuses=cancelled)
+2026-02-24 15:36:13,155 [INFO] Récupération de la liste des concerts…
+2026-02-24 15:36:26,094 [INFO] 118 concerts trouvés via l'API
+2026-02-24 15:36:26,095 [INFO] Scraping de 118 pages pour horaires…
+2026-02-24 15:36:36,166 [INFO] Scraping terminé : 118/118 pages OK
+2026-02-24 15:36:36,174 [INFO] Filtre genres exclus {'kids/young audience'} : 118 → 114 concerts
+2026-02-24 15:36:36,175 [INFO] Filtre statuts exclus {'cancelled'} : 114 → 114 concerts
+2026-02-24 15:36:36,178 [INFO] ✅ 114 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_rockhal_concerts.csv
+2026-02-24 15:36:36,178 [INFO] Fin du scraper
+2026-02-24 15:42:56,179 [INFO] ============================================================
+2026-02-24 15:42:56,179 [INFO] Démarrage du scraper (format=csv, exclude_genres=Kids/Young Audience, exclude_statuses=cancelled)
+2026-02-24 15:42:56,180 [INFO] Récupération de la liste des concerts…
+2026-02-24 15:43:10,957 [INFO] 118 concerts trouvés via l'API
+2026-02-24 15:43:10,958 [INFO] Scraping de 118 pages pour horaires…
+2026-02-24 15:43:23,815 [INFO] Scraping terminé : 118/118 pages OK
+2026-02-24 15:43:23,823 [INFO] Filtre genres exclus {'kids/young audience'} : 118 → 114 concerts
+2026-02-24 15:43:23,824 [INFO] Filtre statuts exclus {'cancelled'} : 114 → 114 concerts
+2026-02-24 15:43:23,827 [INFO] ✅ 114 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_rockhal_concerts.csv
+2026-02-24 15:43:23,827 [INFO] Fin du scraper

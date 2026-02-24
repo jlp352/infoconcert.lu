@@ -52,3 +52,11 @@
 2026-02-22 17:01:28,825 [INFO] Filtre statuts exclus {'cancelled'} : 96 → 96 concerts
 2026-02-22 17:01:28,828 [INFO] ✅ 96 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_atelier_concerts.json
 2026-02-22 17:01:28,828 [INFO] Fin du scraper
+2026-02-24 15:45:28,879 [INFO] ============================================================
+2026-02-24 15:45:28,879 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-24 15:45:28,880 [INFO] Récupération de la liste des concerts…
+2026-02-24 15:45:29,002 [INFO] 97 concerts trouvés via l'API
+2026-02-24 15:45:29,003 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-24 15:45:32,737 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-24 15:45:32,758 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
+2026-02-24 15:45:32,758 [INFO] Fin du scraper

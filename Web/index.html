@@ -319,7 +319,7 @@
             overflow: hidden;
         }
 
-        .concert-image::after {
+        .concert-image:not(:has(img))::after {
             content: '♫';
             position: absolute;
             font-size: 8rem;

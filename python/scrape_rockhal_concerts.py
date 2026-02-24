@@ -253,11 +253,13 @@ def _fetch_rockhal_price(buy_url: str) -> str:
         return "Price Unavailable"
 
 
-def _fetch_atelier_price(atelier_url: str) -> str:
+def _fetch_atelier_info(atelier_url: str) -> dict:
     """
-    Récupère le prix depuis une page atelier.lu via le widget Ticketmatic.
-    Utilisé en fallback quand le JSON-LD Rockhal ne contient pas de prix.
+    Récupère le prix ET l'URL d'achat directe depuis une page atelier.lu.
+    Retourne {"price": str, "buy_url": str | None}.
+    Un seul appel HTTP vers la page Atelier, puis un second vers le widget Ticketmatic.
     """
+    result: dict = {"price": "Price Unavailable", "buy_url": None}
     try:
         html = _request(atelier_url, retries=2)
         # Trouver le lien buy principal via data-label="cta_buy_now"
@@ -265,15 +267,16 @@ def _fetch_atelier_price(atelier_url: str) -> str:
         if not m:
             m = re.search(r'href="([^"]+)"[^>]*data-label="cta_buy_now', html)
         if not m:
-            return "Price Unavailable"
+            return result
         buy_link = m.group(1)
-        # Appeler le widget Ticketmatic Atelier (même logique que scrape_atelier_concerts.py)
+        result["buy_url"] = buy_link  # URL directe pour l'achat (lien Ticketmatic Atelier)
+        # Appeler le widget Ticketmatic Atelier pour extraire le prix
         url = re.sub(r"/flow/[^?#]+", "/flow/web", buy_link).split("#")[0]
         url += "&l=en" if "?" in url else "?l=en"
         html2 = _request(url, retries=2)
         m2 = re.search(r'constant\("TM",\s*(\{.+?\})\s*\);', html2, re.DOTALL)
         if not m2:
-            return "Price Unavailable"
+            return result
         tm = json.loads(m2.group(1))
         events = tm.get("configs", {}).get("addtickets", {}).get("events", [])
         prices = []
@@ -291,12 +294,11 @@ def _fetch_atelier_price(atelier_url: str) -> str:
                     ]
                     if not any(t in ("orderticketlimit", "ticketlimit") for t in cond_types):
                         prices.append(p)
-        if not prices:
-            return "Price Unavailable"
-        return f"{min(prices):.2f} EUR"
+        if prices:
+            result["price"] = f"{min(prices):.2f} EUR"
     except Exception as exc:
-        logger.debug("Prix Atelier non récupéré pour %s : %s", atelier_url, exc)
-        return "Price Unavailable"
+        logger.debug("Info Atelier non récupérée pour %s : %s", atelier_url, exc)
+    return result
 
 
 def _fetch_show_details(url: str, custom_event_link: str | None = None) -> dict:
@@ -307,23 +309,34 @@ def _fetch_show_details(url: str, custom_event_link: str | None = None) -> dict:
         if info["doors_time"] is None:
             logger.warning("Structure inattendue (show-detail__practical absent ou Doors manquant) : %s", url)
 
-        buy_url = info.pop("buy_url")  # retirer buy_url du dict final
+        buy_url = info.pop("buy_url")  # retirer buy_url du dict info temporaire
 
         if buy_url and "ticketmatic" in buy_url:
             # Prix via le widget Ticketmatic Rockhal (vrai prix minimum sans presale fee)
             info["price"] = _fetch_rockhal_price(buy_url)
             # Si le widget Rockhal ne renvoie rien, tenter l'Atelier en fallback
             if info["price"] == "Price Unavailable" and custom_event_link and "atelier.lu" in custom_event_link:
-                info["price"] = _fetch_atelier_price(custom_event_link)
+                atelier_info = _fetch_atelier_info(custom_event_link)
+                info["price"] = atelier_info["price"]
+                if atelier_info["buy_url"]:
+                    buy_url = atelier_info["buy_url"]
         elif custom_event_link and "atelier.lu" in custom_event_link:
-            # Concert co-organisé : utiliser le custom_event_link de l'API (édition à jour)
-            info["price"] = _fetch_atelier_price(custom_event_link)
+            # Concert co-organisé : récupérer prix ET URL d'achat directe depuis la page Atelier
+            atelier_info = _fetch_atelier_info(custom_event_link)
+            info["price"] = atelier_info["price"]
+            if atelier_info["buy_url"]:
+                buy_url = atelier_info["buy_url"]
         elif buy_url and "atelier.lu" in buy_url:
             # Fallback : buy_url de la page pointe vers l'Atelier (si pas de custom_event_link)
-            info["price"] = _fetch_atelier_price(buy_url)
+            atelier_info = _fetch_atelier_info(buy_url)
+            info["price"] = atelier_info["price"]
+            if atelier_info["buy_url"]:
+                buy_url = atelier_info["buy_url"]
         else:
             info["price"] = "Price Unavailable"
 
+        # Conserver le buy_url scrapé pour l'utiliser comme buy_link dans le résultat final
+        info["buy_url"] = buy_url
         return info
     except Exception as exc:
         logger.warning("Impossible de scraper %s : %s", url, exc)
@@ -465,7 +478,8 @@ def fetch_concerts(
             "status": show.get("status_string"),
             "url": permalink,
             "buy_link": (
-                show.get("custom_event_link")
+                details.get("buy_url")
+                or show.get("custom_event_link")
                 or (
                     f"https://apps.ticketmatic.com/widgets/rockhal/addtickets?event={show['tm_id']}"
                     if show.get("tm_id")
