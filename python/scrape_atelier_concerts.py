@@ -218,6 +218,23 @@ def _fetch_show_details(url: str, buy_link: str | None = None) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Normalisation de la location
+# ---------------------------------------------------------------------------
+
+def _normalize_location(raw: str | None) -> str | None:
+    """
+    Normalise le nom de la salle :
+      - Contient 'Rockhal' (toute salle) → 'Rockhal'
+      - Autre valeur → inchangée
+    """
+    if not raw:
+        return raw
+    if "ROCKHAL" in raw.upper():
+        return "Rockhal"
+    return raw
+
+
+# ---------------------------------------------------------------------------
 # Parsing de la date
 # ---------------------------------------------------------------------------
 
@@ -351,7 +368,7 @@ def fetch_concerts(
             "artist": show.get("title"),
             "date_live": date_live,
             "doors_time": details.get("doors_time"),
-            "location": show.get("location"),
+            "location": _normalize_location(show.get("location")),
             "address": details.get("address"),
             "genres": [unescape(g.get("name") or "Unknown") for g in show.get("genres", [])] or ["Unknown"],
             "status": show.get("button_type"),

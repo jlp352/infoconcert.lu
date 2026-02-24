@@ -56,6 +56,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] Trouver un nom de domaine: libre pour lu
 		- [x] créer logo
 		- [x] Mettre GitHub pour la sauvegarde
+		- [x] Version Mobile
 
 #### Serveur en local
 		- [x] Faire la doc générale et technique
@@ -66,8 +67,8 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 #### Scrapper
 		- [ ] Casino 2000
 		- [ ] Kulturfabrik
-		- [ ] Rockhall regroupé tous le salles sous Rockhal dans location
+		- [x] Rockhall regroupé tous le salles sous Rockhal dans location
 #### Test
 		- Test en détail
-			- [ ] Partie Python
-			- [ ] Partie Web
+			- [x] Partie Python
+			- [x] Partie Web

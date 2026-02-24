@@ -60,3 +60,35 @@
 2026-02-24 15:45:32,737 [INFO] Scraping terminé : 97/97 pages OK
 2026-02-24 15:45:32,758 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
 2026-02-24 15:45:32,758 [INFO] Fin du scraper
+2026-02-24 16:07:54,523 [INFO] ============================================================
+2026-02-24 16:07:54,523 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-24 16:07:54,523 [INFO] Récupération de la liste des concerts…
+2026-02-24 16:07:54,670 [INFO] 97 concerts trouvés via l'API
+2026-02-24 16:07:54,670 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-24 16:07:59,001 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-24 16:07:59,009 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
+2026-02-24 16:07:59,009 [INFO] Fin du scraper
+2026-02-24 16:12:31,845 [INFO] ============================================================
+2026-02-24 16:12:31,846 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-24 16:12:31,846 [INFO] Récupération de la liste des concerts…
+2026-02-24 16:12:31,961 [INFO] 97 concerts trouvés via l'API
+2026-02-24 16:12:31,961 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-24 16:12:35,703 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-24 16:12:35,714 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
+2026-02-24 16:12:35,715 [INFO] Fin du scraper
+2026-02-24 16:13:29,532 [INFO] ============================================================
+2026-02-24 16:13:29,532 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-24 16:13:29,533 [INFO] Récupération de la liste des concerts…
+2026-02-24 16:13:29,665 [INFO] 97 concerts trouvés via l'API
+2026-02-24 16:13:29,665 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-24 16:13:34,112 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-24 16:13:34,120 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
+2026-02-24 16:13:34,120 [INFO] Fin du scraper
+2026-02-24 16:18:47,062 [INFO] ============================================================
+2026-02-24 16:18:47,062 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-24 16:18:47,062 [INFO] Récupération de la liste des concerts…
+2026-02-24 16:18:47,221 [INFO] 97 concerts trouvés via l'API
+2026-02-24 16:18:47,222 [INFO] Scraping de 97 pages pour adresse et horaires…
+2026-02-24 16:18:51,157 [INFO] Scraping terminé : 97/97 pages OK
+2026-02-24 16:18:51,169 [INFO] ✅ 97 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_atelier_concerts.csv
+2026-02-24 16:18:51,169 [INFO] Fin du scraper
