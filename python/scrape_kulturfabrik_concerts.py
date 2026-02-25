@@ -539,34 +539,15 @@ def _fetch_show_details(url: str, buy_link: str | None = None) -> dict:
         if m_time_tag:
             result["date_str"] = m_time_tag.group(1)
         else:
-            # Priorité 2 : DD.MM.YYYY dans le texte (hors attributs HTML)
+            # Priorité 2 : DD.MM.YYYY dans le texte
             m_date = re.search(r'\b(\d{2}\.\d{2}\.\d{4})\b', html)
             if m_date:
                 result["date_str"] = m_date.group(1)
             else:
-                # Priorité 3 : forme française "28 février 2026"
-                fr_pat = (
-                    r'\b(\d{1,2})\s+('
-                    + "|".join(_FR_MONTHS.keys())
-                    + r')\s+(\d{4})\b'
-                )
-                m_fr = re.search(fr_pat, html, re.IGNORECASE)
-                if m_fr:
-                    result["date_str"] = (
-                        f"{m_fr.group(1)} {m_fr.group(2).lower()} {m_fr.group(3)}"
-                    )
-                else:
-                    # Priorité 4 : forme anglaise "February 28, 2026" ou "28 February 2026"
-                    en_pat = (
-                        r'\b('
-                        + "|".join(_EN_MONTHS.keys())
-                        + r')\s+(\d{1,2}),?\s+(\d{4})\b'
-                    )
-                    m_en = re.search(en_pat, html, re.IGNORECASE)
-                    if m_en:
-                        result["date_str"] = (
-                            f"{m_en.group(2)} {m_en.group(1).lower()} {m_en.group(3)}"
-                        )
+                # Priorité 3 : DD.MM.YY (format Kulturfabrik, ex : "01.04.26")
+                m_date2 = re.search(r'\b(\d{2}\.\d{2}\.\d{2})\b', html)
+                if m_date2:
+                    result["date_str"] = m_date2.group(1)
 
         # --- Heure des portes ---
         for pattern in [
@@ -723,8 +704,9 @@ def fetch_concerts(
         # Titre : og:title de la page individuelle souvent plus propre (sans caractères parasites)
         title = details.get("title") or ev.get("title") or ""
 
-        # Date : préférer la page individuelle (plus fiable), sinon la liste
-        raw_date = details.get("date_str") or ev.get("date_str") or ""
+        # Date : préférer la liste (toujours la date de l'événement),
+        # la page individuelle peut contenir des dates dans les biographies/descriptions
+        raw_date = ev.get("date_str") or details.get("date_str") or ""
         date_live = _parse_date(raw_date)
         if date_live is None:
             logger.debug("Date non parsable pour '%s' : '%s'", title, raw_date)
