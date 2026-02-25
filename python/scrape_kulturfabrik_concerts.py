@@ -42,7 +42,7 @@ DIR_JSON = SCRIPT_DIR / "JSON"
 DIR_CSV = SCRIPT_DIR / "CSV"
 DIR_LOG = SCRIPT_DIR / "Log"
 
-EVENTS_URL = "https://www.kulturfabrik.lu/events?category=musique"
+EVENTS_URL = "https://www.kulturfabrik.lu/events"
 BASE_URL = "https://www.kulturfabrik.lu"
 USER_AGENT = "KulturfabrikConcertScraper/1.0"
 MAX_WORKERS = 10
@@ -139,103 +139,173 @@ def _request(url: str, *, as_json: bool = False, retries: int = MAX_RETRIES,
 
 class _EventListParser(HTMLParser):
     """
-    Parse la page liste de la Kulturfabrik (?category=musique).
+    Parse la page liste de la Kulturfabrik (Bunker Palace CMS).
 
-    Structure HTML observée (Bunker Palace CMS) :
-        Date/heure texte : "jeu. 26.02.26 — 19h30" (avant le lien événement)
-        <a href="/event/[slug]">
-          <img src="[url]" alt="[titre]">
-          <div>[titre artiste]</div>
-          <div>[artistes support / sous-titre]</div>
-        </a>
+    Structure HTML réelle :
+        <div class="list-item">
+          <a href="/event/[slug]" class="... item--[ID]">
+            <div class="item-infos">
+              <div class="item-category-date">
+                <div class="item-date">jeu. 26.02.26 — 19h30</div>
+                <div class="item-category">Musique / Noise / rock experimental</div>
+              </div>
+            </div>
+            <div class="item-media position-relative">
+              <div class="bg-img">
+                <img class="lazy" src="[placeholder]"
+                     data-src="[vraie-image]" alt="[titre]">
+              </div>
+              <div class="item-title-subtitle">
+                <div class="item-title">Titre artiste</div>
+                <div class="item-subtitle">Support / sous-titre</div>
+              </div>
+            </div>
+          </a>
+          <div class="item-tickets">
+            <a href="https://apps.ticketmatic.com/widgets/kulturfabrik/...">Tickets</a>
+          </div>
+        </div>
 
-    Le parser collecte :
-      - L'URL de chaque événement (href)
-      - Le titre (premier texte significatif dans le lien)
-      - Le sous-titre/support (deuxième texte significatif)
-      - L'image (balise <img> dans le lien)
-      - La date/heure (texte avant le lien, format DD.MM.YY — HHhMM)
+    Filtre : seuls les événements dont la catégorie principale est "Musique"
+    sont conservés (appliqué dans fetch_concerts).
     """
 
     def __init__(self):
         super().__init__()
-        self._in_event_link = False
-        self._text_count = 0        # nombre de textes non-vides collectés dans le lien
+        self._depth = 0             # profondeur à l'intérieur du list-item actif (0 = dehors)
+        self._in_item_date = False
+        self._in_item_category = False
+        self._in_item_title = False
+        self._in_item_subtitle = False
+        self._in_item_tickets = False
+        self._in_tickets_link = False
+        self._category_seen_first = False  # True dès que le 1er texte de catégorie est collecté
         self._current: dict = {}
-        self._pending_date: str | None = None  # date collectée avant le lien
-        self._pending_time: str | None = None  # heure collectée avant le lien
         self.events: list[dict] = []
 
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
+        cls = attrs_dict.get("class", "")
+        cls_parts = cls.split()
 
-        if tag == "a":
+        # --- Entrée dans un list-item ---
+        if tag == "div" and "list-item" in cls_parts and self._depth == 0:
+            self._depth = 1
+            self._current = {
+                "title": None, "subtitle": None, "url": None,
+                "image": None, "date_str": None, "time_str": None,
+                "category": None, "buy_link": None, "status": None,
+            }
+            self._category_seen_first = False
+            return
+
+        if self._depth == 0:
+            return
+
+        # --- Comptage de profondeur et détection des divs internes ---
+        if tag == "div":
+            self._depth += 1
+            if "item-date" in cls_parts:
+                self._in_item_date = True
+            elif "item-category" in cls_parts and "item-category-date" not in cls_parts:
+                self._in_item_category = True
+                self._category_seen_first = False
+            elif "item-title" in cls_parts and "item-title-subtitle" not in cls_parts:
+                self._in_item_title = True
+            elif "item-subtitle" in cls_parts:
+                self._in_item_subtitle = True
+            elif "item-tickets" in cls_parts:
+                self._in_item_tickets = True
+
+        # --- Lien principal vers l'événement (hors item-tickets) ---
+        elif tag == "a" and not self._in_item_tickets:
             href = attrs_dict.get("href", "")
-            # Liens de la forme /event/slug ou URL complète kulturfabrik.lu/event/slug
             if re.search(r"/event/[^/?#]+", href):
-                self._in_event_link = True
-                full_url = href if href.startswith("http") else BASE_URL + href
-                self._current = {
-                    "title": None,
-                    "subtitle": None,
-                    "url": full_url,
-                    "image": None,
-                    "date_str": self._pending_date,
-                    "time_str": self._pending_time,
-                }
-                self._text_count = 0
-                self._pending_date = None
-                self._pending_time = None
-            return
+                self._current["url"] = href if href.startswith("http") else BASE_URL + href
 
-        if not self._in_event_link:
-            return
+        # --- Lien de billetterie (dans item-tickets) ---
+        elif tag == "a" and self._in_item_tickets:
+            href = attrs_dict.get("href", "")
+            if href:
+                self._current["buy_link"] = href.split("#!/")[0].rstrip("?&")
+            self._in_tickets_link = True
 
-        if tag == "img":
-            src = (
-                attrs_dict.get("data-src")
-                or attrs_dict.get("data-lazy-src")
-                or attrs_dict.get("data-original")
-                or attrs_dict.get("src")
-            )
+        # --- Image (lazy-load : vraie URL dans data-src) ---
+        elif tag == "img" and "lazy" in cls_parts:
+            src = attrs_dict.get("data-src") or attrs_dict.get("src")
             if src and not src.startswith("data:"):
                 self._current["image"] = src if src.startswith("http") else BASE_URL + src
 
     def handle_endtag(self, tag):
-        if tag == "a" and self._in_event_link:
-            self._in_event_link = False
-            if self._current.get("url"):
-                self.events.append(dict(self._current))
-            self._current = {}
+        if self._depth == 0:
+            return
+
+        if tag == "div":
+            # Fermeture du list-item lui-même (retour à depth 0)
+            if self._depth == 1:
+                self._depth = 0
+                self._in_item_date = False
+                self._in_item_category = False
+                self._in_item_title = False
+                self._in_item_subtitle = False
+                self._in_item_tickets = False
+                self._in_tickets_link = False
+                if self._current.get("url"):
+                    self.events.append(dict(self._current))
+                self._current = {}
+            else:
+                self._depth -= 1
+                # Réinitialiser le flag du div qui vient de se fermer
+                if self._in_item_date:
+                    self._in_item_date = False
+                elif self._in_item_category:
+                    self._in_item_category = False
+                elif self._in_item_title:
+                    self._in_item_title = False
+                elif self._in_item_subtitle:
+                    self._in_item_subtitle = False
+
+        elif tag == "a":
+            self._in_tickets_link = False
 
     def handle_data(self, data):
         text = data.strip()
-        if not text:
+        if not text or self._depth == 0:
             return
 
-        if self._in_event_link:
-            # Ignorer les fragments date/heure purs qui peuvent apparaître dans la card
-            if re.match(r"^\d{2}\.\d{2}\.\d{2,4}$", text):
-                if not self._current.get("date_str"):
-                    self._current["date_str"] = text
-                return
-            if re.match(r"^\d{1,2}[h:]\d{2}$", text):
-                return
-
-            self._text_count += 1
-            if self._text_count == 1:
-                self._current["title"] = unescape(text)
-            elif self._text_count == 2 and text != self._current.get("title"):
-                self._current["subtitle"] = unescape(text)
-        else:
-            # Capturer date et heure avant le prochain lien événement
-            # Format liste : "jeu. 26.02.26 — 19h30" ou variations
+        if self._in_item_date:
+            # Format : "jeu. 26.02.26 — 19h30" ou "mer. 25.02.26 — 19h00"
             m_date = re.search(r"\b(\d{2}\.\d{2}\.\d{2,4})\b", text)
             if m_date:
-                self._pending_date = m_date.group(1)
+                self._current["date_str"] = m_date.group(1)
             m_time = re.search(r"\b(\d{1,2}[h:]\d{2})\b", text)
             if m_time:
-                self._pending_time = m_time.group(1)
+                self._current["time_str"] = m_time.group(1)
+
+        elif self._in_item_category:
+            # Le contenu du div est un seul bloc de texte :
+            #   "Musique\n\n  / Noise\n  / rock experimental\n  / punk"
+            # On extrait uniquement la catégorie principale = texte avant le premier " / "
+            if not self._category_seen_first:
+                primary = re.split(r"\s*/\s*", data)[0].strip()
+                if primary:
+                    self._current["category"] = unescape(primary)
+                self._category_seen_first = True
+
+        elif self._in_item_title:
+            if self._current.get("title") is None:
+                self._current["title"] = unescape(text)
+
+        elif self._in_item_subtitle:
+            if self._current.get("subtitle") is None:
+                self._current["subtitle"] = unescape(text)
+
+        elif self._in_tickets_link:
+            text_lower = text.lower()
+            if "sold out" in text_lower or "complet" in text_lower or "épuisé" in text_lower:
+                self._current["status"] = "sold_out"
+            elif text_lower not in ("", "tickets", "billets"):
+                self._current["status"] = text_lower
 
 
 def _parse_event_list(html: str) -> list[dict]:
@@ -412,11 +482,13 @@ def _fetch_kulturfabrik_price(buy_link: str) -> str:
 # Récupération des détails par page de concert
 # ---------------------------------------------------------------------------
 
-def _fetch_show_details(url: str) -> dict:
+def _fetch_show_details(url: str, buy_link: str | None = None) -> dict:
     """
     Scrape une page individuelle de concert Kulturfabrik.
-    Extrait : titre (og:title), image (og:image), date, doors_time,
-              buy_link (Ticketmatic), status et price.
+    Extrait : titre (og:title), image (og:image), date, doors_time, status et price.
+
+    buy_link : URL Ticketmatic déjà connue depuis la page liste (évite une re-recherche).
+               Si None, le lien est cherché dans le HTML de la page.
     """
     result: dict = {
         "title": None,
@@ -424,7 +496,7 @@ def _fetch_show_details(url: str) -> dict:
         "date_str": None,
         "doors_time": None,
         "start_time": None,
-        "buy_link": None,
+        "buy_link": buy_link,
         "status": None,
         "price": "Price Unavailable",
     }
@@ -453,14 +525,13 @@ def _fetch_show_details(url: str) -> dict:
         if m_title:
             result["title"] = unescape(m_title.group(1).strip())
 
-        # --- Lien Ticketmatic (buy link) ---
-        # Format : https://apps.ticketmatic.com/widgets/kulturfabrik/addtickets?...event=ID...
-        m_buy = re.search(
-            r'https://apps\.ticketmatic\.com/widgets/kulturfabrik/[^\s"\'<>#]+', html
-        )
-        if m_buy:
-            # Retirer le fragment éventuel (#!/addtickets)
-            result["buy_link"] = m_buy.group(0).split("#!/")[0].rstrip("?&")
+        # --- Lien Ticketmatic (buy link) — fallback si non fourni ---
+        if not result["buy_link"]:
+            m_buy = re.search(
+                r'https://apps\.ticketmatic\.com/widgets/kulturfabrik/[^\s"\'<>#]+', html
+            )
+            if m_buy:
+                result["buy_link"] = m_buy.group(0).split("#!/")[0].rstrip("?&")
 
         # --- Date ---
         # Priorité 1 : balise <time datetime="YYYY-MM-DD">
@@ -556,23 +627,28 @@ def fetch_concerts(
     exclude_statuses: str | None = None,
 ) -> dict:
     """
-    Récupère la liste complète des concerts avec toutes les métadonnées.
+    Récupère la liste des concerts Musique avec toutes les métadonnées.
 
     Étapes :
-      1. Scraping de la page ?category=musique → liste des événements
-      2. Scraping des pages individuelles → date, horaires, image, prix (parallélisé)
-      3. Enrichissement des genres via l'API Deezer (séquentiel, avec cache)
+      1. Scraping de la page /events (tous événements) → liste brute
+      2. Filtre : ne conserver que les événements dont la catégorie principale est "Musique"
+      3. Scraping des pages individuelles → date, horaires, image, prix (parallélisé)
+      4. Enrichissement des genres via l'API Deezer (séquentiel, avec cache)
+
+    Note : le paramètre ?category=musique de l'URL du site est traité côté client (JS)
+    et n'a aucun effet sur la réponse HTTP. Le filtre est donc appliqué en Python
+    sur le champ `category` extrait du div.item-category de chaque carte événement.
     """
     run_timestamp = datetime.now(timezone.utc).isoformat()
 
-    # --- 1. Page liste ---
-    logger.info("Récupération de la liste des concerts Kulturfabrik…")
+    # --- 1. Page liste (tous événements) ---
+    logger.info("Récupération de la liste des événements Kulturfabrik…")
     html = _request(EVENTS_URL)
     events_raw = _parse_event_list(html)
 
     if not events_raw:
         logger.warning(
-            "Aucun concert trouvé — vérifier si le site est en maintenance "
+            "Aucun événement trouvé — vérifier si le site est en maintenance "
             "ou si la structure HTML a changé"
         )
         return {
@@ -582,17 +658,37 @@ def fetch_concerts(
             "concerts": [],
         }
 
-    logger.info("%d concerts trouvés sur la page liste", len(events_raw))
+    logger.info("%d événements trouvés au total", len(events_raw))
 
-    # --- 2. Scraping des pages individuelles (parallélisé) ---
-    logger.info("Scraping de %d pages pour horaires, images et prix…", len(events_raw))
+    # --- 2. Filtre catégorie "Musique" ---
+    # La catégorie principale (premier texte du div.item-category) doit être "Musique"
+    events_musique = [
+        ev for ev in events_raw
+        if (ev.get("category") or "").strip().lower() == "musique"
+    ]
+    logger.info(
+        "Filtre catégorie Musique : %d/%d événements conservés",
+        len(events_musique), len(events_raw),
+    )
+
+    if not events_musique:
+        logger.warning("Aucun concert Musique trouvé après filtrage")
+        return {
+            "scraped_at": run_timestamp,
+            "source": EVENTS_URL,
+            "total": 0,
+            "concerts": [],
+        }
+
+    # --- 3. Scraping des pages individuelles (parallélisé) ---
+    logger.info("Scraping de %d pages pour horaires, images et prix…", len(events_musique))
 
     show_details: dict[str, dict] = {}
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {
-            executor.submit(_fetch_show_details, ev["url"]): ev["url"]
-            for ev in events_raw
+            executor.submit(_fetch_show_details, ev["url"], ev.get("buy_link")): ev["url"]
+            for ev in events_musique
             if ev.get("url")
         }
         done_count = 0
@@ -612,15 +708,15 @@ def fetch_concerts(
         )
     logger.info("Scraping terminé : %d/%d pages OK", done_count - fail_count, done_count)
 
-    # --- 3. Enrichissement des genres via Deezer (séquentiel + cache) ---
-    logger.info("Récupération des genres musicaux via Deezer pour %d artistes…", len(events_raw))
-    for ev in events_raw:
+    # --- 4. Enrichissement des genres via Deezer (séquentiel + cache) ---
+    logger.info("Récupération des genres musicaux via Deezer pour %d artistes…", len(events_musique))
+    for ev in events_musique:
         ev["deezer_genres"] = _fetch_deezer_genres(ev.get("title") or "")
     logger.info("Genres Deezer récupérés.")
 
     # --- Assemblage final ---
     concerts = []
-    for ev in events_raw:
+    for ev in events_musique:
         url = ev.get("url", "")
         details = show_details.get(url, {})
 
