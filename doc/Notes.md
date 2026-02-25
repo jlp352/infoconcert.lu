@@ -4,18 +4,18 @@ Salles de concert Luxembourg
 https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.html
 
 
-| Salle de concert | Lieu       | Site                         | Scrapper                                                       |
-| ---------------- | ---------- | ---------------------------- | -------------------------------------------------------------- |
-| Den Atelier      | Lux Ville  | https://www.atelier.lu/**    | Ok                                                             |
-| Rockhal          | Esch       | https://rockhal.lu/          | Ok                                                             |
-| Trifolion        | Echternach | https://trifolion.lu/        | Non ajouté	Pas assez de concerts                               |
-| Cube 521         | Marnach    | https://www.cube521.lu/      | Non Ajouté	Plutôt musique classique, du jazz  musique du monde |
-| Kulturfabrik     | Esch       | https://www.kulturfabrik.lu/ |                                                                |
-| Neimënster       | Lux Ville  | https://www.neimenster.lu/   | Déjà sur le site de l'atelier                                  |
-| Philharmonie     | Lux Ville  | https://www.philharmonie.lu/ | Beaucoup de musique Classique. Voir comment filtrer            |
-| Opderschmelz     | Dudelange  | (https://opderschmelz.lu/)   | Non Ajouté	Pas assez de concerts                               |
-| Rotondes         | Lux Ville  | https://www.rotondes.lu/     | Déjà sur le site de l'atelier                                  |
-| Casino 2000      | Mondorf    | https://casino2000.lu/	      |                                                                |
+| Salle de concert | Lieu       | Site                         | Scrapper                      |
+| ---------------- | ---------- | ---------------------------- | ----------------------------- |
+| Den Atelier      | Lux Ville  | https://www.atelier.lu/**    | Ok                            |
+| Rockhal          | Esch       | https://rockhal.lu/          | Ok                            |
+| Trifolion        | Echternach | https://trifolion.lu/        | Déjà sur le site de l'atelier |
+| Cube 521         | Marnach    | https://www.cube521.lu/      | Non Ajouté                    |
+| Kulturfabrik     | Esch       | https://www.kulturfabrik.lu/ |                               |
+| Neimënster       | Lux Ville  | https://www.neimenster.lu/   | Déjà sur le site de l'atelier |
+| Philharmonie     | Lux Ville  | https://www.philharmonie.lu/ | Déjà sur le site de l'atelier |
+| Opderschmelz     | Dudelange  | (https://opderschmelz.lu/)   | Déjà sur le site de l'atelier |
+| Rotondes         | Lux Ville  | https://www.rotondes.lu/     | Déjà sur le site de l'atelier |
+| Casino 2000      | Mondorf    | https://casino2000.lu/       | Ok                            |
 
 ## Reste à faire
 
@@ -48,7 +48,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] Page Salle de concerts
 		- [x] Ajouter a quick search pour artiste
 		- [x] Page contacts	
-			- [ ] Relire si pas trop geek
+			- [x] Relire si pas trop geek
 				
 	
 #### General
@@ -68,7 +68,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- Casino 2000
 			- [x] Script 
 			- [x] Doc
-		- [ ] Kulturfabrik
+		- [x] Kulturfabrik
 		- [x] Rockhall regroupé tous le salles sous Rockhal dans location
 #### Test
 		- Test en détail
