@@ -1,0 +1,191 @@
+2026-02-24 17:17:52,687 [INFO] ============================================================
+2026-02-24 17:17:52,687 [INFO] Démarrage du scraper (format=json, exclude_genres=None, exclude_statuses=None)
+2026-02-24 17:17:52,687 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-24 17:17:54,767 [INFO] 24 concerts trouvés sur la page liste
+2026-02-24 17:17:54,767 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-24 17:17:55,122 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=212732996028&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:55,123 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=512622241962&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:55,123 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=189633208225&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:55,209 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=780545770133&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:55,401 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=160110961679&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:56,378 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=131746457716&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:56,397 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=234280480756&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:57,580 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=408183999956&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:57,840 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=457236870690&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:17:59,109 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=559062622202&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:18:00,246 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=189633208225&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:00,247 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=189633208225&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:00,250 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=212732996028&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:00,251 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=212732996028&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:00,253 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=512622241962&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:00,253 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/new?event=512622241962&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:00,326 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=780545770133&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:00,327 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=780545770133&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:00,522 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=160110961679&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:00,523 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=160110961679&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:01,514 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=234280480756&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:01,515 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=234280480756&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:01,534 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=131746457716&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:01,534 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=131746457716&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:01,892 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=151787527507&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:18:02,021 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=184600790570&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:18:02,162 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=132622101504&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:18:02,440 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=260727885747&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:18:02,716 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=408183999956&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:02,716 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=408183999956&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:02,955 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=457236870690&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:02,955 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=457236870690&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:02,957 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=754043914655&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:18:03,004 [WARNING] Tentative 1/2 échouée pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=476019419898&l=fr&l=en : HTTP Error 404: Not Found — retry dans 5s
+2026-02-24 17:18:04,239 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=559062622202&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:04,239 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=559062622202&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:06,999 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=151787527507&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:06,999 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=151787527507&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:07,147 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=184600790570&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:07,148 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=184600790570&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:07,267 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=132622101504&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:07,267 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=132622101504&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:07,572 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=260727885747&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:07,572 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/new?event=260727885747&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:08,084 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=754043914655&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:08,085 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=754043914655&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:08,132 [ERROR] Échec définitif après 2 tentatives pour https://apps.ticketmatic.com/widgets/casino2000/flow/web?event=476019419898&l=fr&l=en : HTTP Error 404: Not Found
+2026-02-24 17:18:08,133 [DEBUG] Prix Casino 2000 non récupéré pour https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=476019419898&l=fr#!/addtickets : HTTP Error 404: Not Found
+2026-02-24 17:18:08,134 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-24 17:18:08,143 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_casino2000_concerts.json
+2026-02-24 17:18:08,143 [INFO] Fin du scraper
+2026-02-24 17:19:38,245 [INFO] ============================================================
+2026-02-24 17:19:38,245 [INFO] Démarrage du scraper (format=json, exclude_genres=None, exclude_statuses=None)
+2026-02-24 17:19:38,245 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-24 17:19:40,444 [INFO] 24 concerts trouvés sur la page liste
+2026-02-24 17:19:40,445 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-24 17:19:42,002 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-24 17:19:42,009 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_casino2000_concerts.json
+2026-02-24 17:19:42,009 [INFO] Fin du scraper
+2026-02-24 17:19:55,998 [INFO] ============================================================
+2026-02-24 17:19:55,998 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-24 17:19:55,998 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-24 17:19:58,069 [INFO] 24 concerts trouvés sur la page liste
+2026-02-24 17:19:58,069 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-24 17:19:59,638 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-24 17:19:59,644 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_casino2000_concerts.csv
+2026-02-24 17:19:59,644 [INFO] Fin du scraper
+2026-02-24 17:21:15,227 [INFO] ============================================================
+2026-02-24 17:21:15,227 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-24 17:21:15,228 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-24 17:21:17,275 [INFO] 24 concerts trouvés sur la page liste
+2026-02-24 17:21:17,275 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-24 17:21:18,460 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-24 17:21:18,468 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_casino2000_concerts.csv
+2026-02-24 17:21:18,469 [INFO] Fin du scraper
+2026-02-24 17:32:11,642 [INFO] ============================================================
+2026-02-24 17:32:11,642 [INFO] Démarrage du scraper (format=json, exclude_genres=None, exclude_statuses=None)
+2026-02-24 17:32:11,642 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-24 17:32:13,750 [INFO] 24 concerts trouvés sur la page liste
+2026-02-24 17:32:13,750 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-24 17:32:15,092 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-24 17:32:15,098 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_casino2000_concerts.json
+2026-02-24 17:32:15,098 [INFO] Fin du scraper
+2026-02-25 08:32:05,943 [INFO] ============================================================
+2026-02-25 08:32:05,944 [INFO] Démarrage du scraper (format=csv, exclude_genres=None, exclude_statuses=None)
+2026-02-25 08:32:05,944 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-25 08:32:08,291 [INFO] 24 concerts trouvés sur la page liste
+2026-02-25 08:32:08,292 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-25 08:32:13,534 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-25 08:32:13,541 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\CSV\scrape_casino2000_concerts.csv
+2026-02-25 08:32:13,542 [INFO] Fin du scraper
+2026-02-25 08:32:22,324 [INFO] ============================================================
+2026-02-25 08:32:22,324 [INFO] Démarrage du scraper (format=json, exclude_genres=None, exclude_statuses=None)
+2026-02-25 08:32:22,324 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-25 08:32:24,409 [INFO] 24 concerts trouvés sur la page liste
+2026-02-25 08:32:24,409 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-25 08:32:26,697 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-25 08:32:26,710 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_casino2000_concerts.json
+2026-02-25 08:32:26,710 [INFO] Fin du scraper
+2026-02-25 08:47:20,303 [INFO] ============================================================
+2026-02-25 08:47:20,304 [INFO] Démarrage du scraper (format=json, exclude_genres=None, exclude_statuses=None)
+2026-02-25 08:47:20,304 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-25 08:47:22,562 [INFO] 24 concerts trouvés sur la page liste
+2026-02-25 08:47:22,562 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-25 08:47:23,687 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-25 08:47:23,687 [INFO] Récupération des genres musicaux via Deezer pour 24 artistes…
+2026-02-25 08:47:24,114 [DEBUG] Genres Deezer pour 'Dany Brillant' : ['Pop']
+2026-02-25 08:47:24,484 [DEBUG] Genres Deezer pour 'Charlie Winston' : ['Pop']
+2026-02-25 08:47:24,858 [DEBUG] Genres Deezer pour 'Barbara Pravi' : ['Pop']
+2026-02-25 08:47:25,343 [DEBUG] Genres Deezer pour 'Garou' : ['Concerts']
+2026-02-25 08:47:25,706 [DEBUG] Genres Deezer pour 'Ycare' : ['Französische Chansons', 'Pop']
+2026-02-25 08:47:26,037 [DEBUG] Genres Deezer pour 'Yannick Noah' : ['Französische Chansons']
+2026-02-25 08:47:26,416 [DEBUG] Genres Deezer pour 'Imany' : ['Dance', 'Pop']
+2026-02-25 08:47:26,766 [DEBUG] Genres Deezer pour 'Nino d'Angelo' : ['Pop']
+2026-02-25 08:47:27,334 [DEBUG] Genres Deezer pour 'Julien Clerc' : ['Pop']
+2026-02-25 08:47:27,720 [DEBUG] Genres Deezer pour 'Jimmy Sax' : ['Pop']
+2026-02-25 08:47:28,102 [DEBUG] Genres Deezer pour 'Laurent Voulzy' : ['Concerts']
+2026-02-25 08:47:28,445 [DEBUG] Genres Deezer pour 'Lilly Wood and The Prick' : ['Alternative', 'International Pop', 'Folk']
+2026-02-25 08:47:28,816 [DEBUG] Genres Deezer pour 'Pupo' : ['Pop']
+2026-02-25 08:47:29,172 [DEBUG] Genres Deezer pour 'Salif Keita' : ['Concerts']
+2026-02-25 08:47:29,517 [DEBUG] Genres Deezer pour 'Belinda Davids' : ['Concerts']
+2026-02-25 08:47:29,841 [DEBUG] Genres Deezer pour 'I Muvrini' : ['Französische Chansons']
+2026-02-25 08:47:30,268 [DEBUG] Genres Deezer pour 'Calogero' : ['Pop']
+2026-02-25 08:47:30,581 [DEBUG] Genres Deezer pour 'Coeur de Pirate' : ['Pop']
+2026-02-25 08:47:31,023 [DEBUG] Genres Deezer pour 'Skip The Use' : ['Electro']
+2026-02-25 08:47:31,023 [INFO] Genres Deezer récupérés.
+2026-02-25 08:47:31,032 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_casino2000_concerts.json
+2026-02-25 08:47:31,032 [INFO] Fin du scraper
+2026-02-25 08:51:39,263 [INFO] ============================================================
+2026-02-25 08:51:39,263 [INFO] Démarrage du scraper (format=json, exclude_genres=None, exclude_statuses=None)
+2026-02-25 08:51:39,263 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-25 08:51:41,360 [INFO] 24 concerts trouvés sur la page liste
+2026-02-25 08:51:41,360 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-25 08:51:43,844 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-25 08:51:43,844 [INFO] Récupération des genres musicaux via Deezer pour 24 artistes…
+2026-02-25 08:51:44,318 [DEBUG] Genres Deezer pour 'Dany Brillant' : ['Pop']
+2026-02-25 08:51:44,636 [DEBUG] Genres Deezer pour 'Charlie Winston' : ['Pop']
+2026-02-25 08:51:44,907 [DEBUG] Genres Deezer pour 'Barbara Pravi' : ['Pop']
+2026-02-25 08:51:45,455 [DEBUG] Genres Deezer pour 'Garou' : ['Concerts']
+2026-02-25 08:51:45,824 [DEBUG] Genres Deezer pour 'Ycare' : ['French Chanson', 'Pop']
+2026-02-25 08:51:46,160 [DEBUG] Genres Deezer pour 'Yannick Noah' : ['French Chanson']
+2026-02-25 08:51:46,521 [DEBUG] Genres Deezer pour 'Imany' : ['Dance', 'Pop']
+2026-02-25 08:51:46,802 [DEBUG] Genres Deezer pour 'Nino d'Angelo' : ['Pop']
+2026-02-25 08:51:47,294 [DEBUG] Genres Deezer pour 'Julien Clerc' : ['Pop']
+2026-02-25 08:51:47,579 [DEBUG] Genres Deezer pour 'Jimmy Sax' : ['Pop']
+2026-02-25 08:51:47,979 [DEBUG] Genres Deezer pour 'Laurent Voulzy' : ['Concerts']
+2026-02-25 08:51:48,277 [DEBUG] Genres Deezer pour 'Lilly Wood and The Prick' : ['Alternative', 'International Pop', 'Folk']
+2026-02-25 08:51:48,621 [DEBUG] Genres Deezer pour 'Pupo' : ['Pop']
+2026-02-25 08:51:49,000 [DEBUG] Genres Deezer pour 'Salif Keita' : ['Concerts']
+2026-02-25 08:51:49,292 [DEBUG] Genres Deezer pour 'Belinda Davids' : ['Concerts']
+2026-02-25 08:51:49,548 [DEBUG] Genres Deezer pour 'I Muvrini' : ['French Chanson']
+2026-02-25 08:51:49,913 [DEBUG] Genres Deezer pour 'Calogero' : ['Pop']
+2026-02-25 08:51:50,264 [DEBUG] Genres Deezer pour 'Coeur de Pirate' : ['Pop']
+2026-02-25 08:51:50,638 [DEBUG] Genres Deezer pour 'Skip The Use' : ['Electro']
+2026-02-25 08:51:50,638 [INFO] Genres Deezer récupérés.
+2026-02-25 08:51:50,651 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_casino2000_concerts.json
+2026-02-25 08:51:50,651 [INFO] Fin du scraper
+2026-02-25 08:52:24,276 [INFO] ============================================================
+2026-02-25 08:52:24,276 [INFO] Démarrage du scraper (format=json, exclude_genres=None, exclude_statuses=None)
+2026-02-25 08:52:24,276 [INFO] Récupération de la liste des concerts Casino 2000…
+2026-02-25 08:52:26,622 [INFO] 24 concerts trouvés sur la page liste
+2026-02-25 08:52:26,623 [INFO] Scraping de 24 pages pour horaires et prix…
+2026-02-25 08:52:28,241 [INFO] Scraping terminé : 24/24 pages OK
+2026-02-25 08:52:28,241 [INFO] Récupération des genres musicaux via Deezer pour 24 artistes…
+2026-02-25 08:52:28,584 [DEBUG] Genres Deezer pour 'Dany Brillant' : ['Pop']
+2026-02-25 08:52:28,897 [DEBUG] Genres Deezer pour 'Charlie Winston' : ['Pop']
+2026-02-25 08:52:29,203 [DEBUG] Genres Deezer pour 'Barbara Pravi' : ['Pop']
+2026-02-25 08:52:29,748 [DEBUG] Genres Deezer pour 'Garou' : ['Concerts']
+2026-02-25 08:52:30,153 [DEBUG] Genres Deezer pour 'Ycare' : ['French Chanson', 'Pop']
+2026-02-25 08:52:30,468 [DEBUG] Genres Deezer pour 'Yannick Noah' : ['French Chanson']
+2026-02-25 08:52:30,789 [DEBUG] Genres Deezer pour 'Imany' : ['Dance', 'Pop']
+2026-02-25 08:52:31,117 [DEBUG] Genres Deezer pour 'Nino d'Angelo' : ['Pop']
+2026-02-25 08:52:31,653 [DEBUG] Genres Deezer pour 'Julien Clerc' : ['Pop']
+2026-02-25 08:52:31,971 [DEBUG] Genres Deezer pour 'Jimmy Sax' : ['Pop']
+2026-02-25 08:52:32,308 [DEBUG] Genres Deezer pour 'Laurent Voulzy' : ['Concerts']
+2026-02-25 08:52:32,659 [DEBUG] Genres Deezer pour 'Lilly Wood and The Prick' : ['Alternative', 'International Pop', 'Folk']
+2026-02-25 08:52:33,006 [DEBUG] Genres Deezer pour 'Pupo' : ['Pop']
+2026-02-25 08:52:33,385 [DEBUG] Genres Deezer pour 'Salif Keita' : ['Concerts']
+2026-02-25 08:52:33,674 [DEBUG] Genres Deezer pour 'Belinda Davids' : ['Concerts']
+2026-02-25 08:52:33,970 [DEBUG] Genres Deezer pour 'I Muvrini' : ['French Chanson']
+2026-02-25 08:52:34,266 [DEBUG] Genres Deezer pour 'Calogero' : ['Pop']
+2026-02-25 08:52:34,584 [DEBUG] Genres Deezer pour 'Coeur de Pirate' : ['Pop']
+2026-02-25 08:52:34,986 [DEBUG] Genres Deezer pour 'Skip The Use' : ['Electro']
+2026-02-25 08:52:34,986 [INFO] Genres Deezer récupérés.
+2026-02-25 08:52:34,996 [INFO] ✅ 24 concerts sauvegardés → C:\Users\jlp\Documents\Dev\infoconcert.lu\python\JSON\scrape_casino2000_concerts.json
+2026-02-25 08:52:34,996 [INFO] Fin du scraper

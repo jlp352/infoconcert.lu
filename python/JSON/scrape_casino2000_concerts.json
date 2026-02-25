@@ -1,0 +1,419 @@
+{
+  "scraped_at": "2026-02-25T07:52:24.276567+00:00",
+  "source": "https://casino2000.lu/fr/agenda-du-casino-2000/?type=concerts",
+  "total": 24,
+  "concerts": [
+    {
+      "id": "dany-brillant",
+      "artist": "Dany Brillant",
+      "date_live": "2026-02-27",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/dany-brillant/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/new?event=512622241962&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/04/dany-brillant-photo-affiche-seule-cthomas-braut-scaled.jpg",
+      "price": "42.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "charlie-winston",
+      "artist": "Charlie Winston",
+      "date_live": "2026-02-28",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/charlie-winston/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=234280480756&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/02/charlie-winston-carre.jpg",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "barbara-pravi",
+      "artist": "Barbara Pravi",
+      "date_live": "2026-03-05",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/barbara-pravi/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=189633208225&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/07/barbara-pravi-carre.jpg",
+      "price": "42.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "sinclair",
+      "artist": "Sinclair",
+      "date_live": "2026-03-07",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/sinclair/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=212732996028&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/03/sinclair-2026-carre-neutre.jpg",
+      "price": "32.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "garou",
+      "artist": "Garou",
+      "date_live": "2026-03-11",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/garou/",
+      "buy_link": "https://label-ln.trium.fr/fr/t/-/event/60607",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/04/garou-1080x1080-1.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "garou-2",
+      "artist": "Garou",
+      "date_live": "2026-03-12",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/garou-2/",
+      "buy_link": "https://label-ln.trium.fr/fr/t/-/event/60607",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/04/garou-1080x1080-1.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "ycare",
+      "artist": "Ycare",
+      "date_live": "2026-04-04",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "French Chanson",
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/ycare/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=131746457716&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/06/ycare-carre.jpg",
+      "price": "32.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "yannick-noah",
+      "artist": "Yannick Noah",
+      "date_live": "2026-04-11",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "French Chanson"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/yannick-noah/",
+      "buy_link": "https://label-ln.trium.fr/fr/t/-/event/61028",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/03/carre.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "imany-17-avril-2026",
+      "artist": "Imany",
+      "date_live": "2026-04-17",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Dance",
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/imany-17-avril-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=160110961679&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/12/imany.jpg",
+      "price": "47.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "nino-dangelo",
+      "artist": "Nino d'Angelo",
+      "date_live": "2026-04-25",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/nino-dangelo/",
+      "buy_link": "https://www.ticket-regional.de/events_info.php?eventID=249158",
+      "image": "https://casino2000.lu/wp-content/uploads/2026/01/nino26-social-1080x1080-1.png",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "dj-mast-08-mai-2026",
+      "artist": "Génération 90-2000 avec DJ Mast",
+      "date_live": "2026-05-08",
+      "doors_time": "21h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/dj-mast-08-mai-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=780545770133&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2024/06/generation90-2000-carre-2025-public-1024x1024.jpg",
+      "price": "10.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "una-roberta-debarque-au-luxembourg-27-septembre-2026",
+      "artist": "Una Roberta débarque au Luxembourg",
+      "date_live": "2026-09-27",
+      "doors_time": "16h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/una-roberta-debarque-au-luxembourg-27-septembre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=408183999956&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2026/01/una-roberta-carre.jpg",
+      "price": "22.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "julien-clerc-29-octobre-2026",
+      "artist": "Julien Clerc",
+      "date_live": "2026-10-09",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/julien-clerc-29-octobre-2026/",
+      "buy_link": "https://label-ln.trium.fr/fr/t/-/event/62951",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/09/julien-clerc-1080x1080-1.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "jimmy-sax-10-octobre-2026",
+      "artist": "Jimmy Sax",
+      "date_live": "2026-10-10",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/jimmy-sax-10-octobre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=457236870690&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2026/01/jimmy-sax-carre.jpg",
+      "price": "55.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "laurent-voulzy-23-octobre-2026",
+      "artist": "Laurent Voulzy",
+      "date_live": "2026-10-23",
+      "doors_time": "20h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/laurent-voulzy-23-octobre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=559062622202&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/12/laurent-voulzy-01-philippe-abergel-bis.jpg",
+      "price": "49.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "lilly-wood-the-prick-24-octobre-2026",
+      "artist": "Lilly Wood and The Prick",
+      "date_live": "2026-10-24",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Alternative",
+        "International Pop",
+        "Folk"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/lilly-wood-the-prick-24-octobre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=184600790570&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2026/02/lilly-wood-carre.jpg",
+      "price": "29.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "pupo-25-octobre-2026",
+      "artist": "Pupo",
+      "date_live": "2026-10-25",
+      "doors_time": "17h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/pupo-25-octobre-2026/",
+      "buy_link": "https://www.ticketmaster.de/event/pupo-pupo-50-world-tour-2025-2026-tickets/337880048",
+      "image": "https://casino2000.lu/wp-content/uploads/2026/01/pupo26-social-1080x1080-1.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "salif-keita-29-octobre-2026",
+      "artist": "Salif Keita",
+      "date_live": "2026-10-29",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/salif-keita-29-octobre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=151787527507&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2026/02/salif-keita-v2-carre.jpg",
+      "price": "38.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "belinda-davids-13-novembre-2026",
+      "artist": "Belinda Davids",
+      "date_live": "2026-11-13",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/belinda-davids-13-novembre-2026/",
+      "buy_link": "https://label-ln.trium.fr/fr/t/-/event/63177",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/10/belinda-davids-1080x1080-1.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "i-muvrini-15-novembre-2026",
+      "artist": "I Muvrini",
+      "date_live": "2026-11-15",
+      "doors_time": "16h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "French Chanson"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/i-muvrini-15-novembre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=132622101504&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/12/i-muvrini-15112025.jpg",
+      "price": "49.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "calogero-nov-2026",
+      "artist": "Calogero",
+      "date_live": "2026-11-27",
+      "doors_time": "19h00",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/calogero-nov-2026/",
+      "buy_link": "https://label-ln.trium.fr/fr/t/-/event/62380",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/07/calogero-web.jpg",
+      "price": "Price Unavailable",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "coeur-de-pirate-28-novembre-2026",
+      "artist": "Coeur de Pirate",
+      "date_live": "2026-11-28",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Pop"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/coeur-de-pirate-28-novembre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/new?event=260727885747&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/11/cdp-3-maxime-g-delisle-scaled.jpg",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "jeremy-charbonnel-19-decembre-2026",
+      "artist": "Jeremy Charbonnel",
+      "date_live": "2026-12-19",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Concerts"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/jeremy-charbonnel-19-decembre-2026/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=476019419898&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2025/12/jeremy-charbonnel-presse-5-studio-lisa-levy-petit-web.jpg",
+      "price": "22.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    },
+    {
+      "id": "skip-the-use-13-fevrier-2027",
+      "artist": "Skip The Use",
+      "date_live": "2027-02-13",
+      "doors_time": "19h30",
+      "location": "Casino 2000",
+      "address": "Route de Mondorf, L-5618 Mondorf-les-Bains",
+      "genres": [
+        "Electro"
+      ],
+      "status": "buy_now",
+      "url": "https://casino2000.lu/fr/events/skip-the-use-13-fevrier-2027/",
+      "buy_link": "https://apps.ticketmatic.com/widgets/casino2000/flow/tickets?event=754043914655&l=fr#!/addtickets",
+      "image": "https://casino2000.lu/wp-content/uploads/2026/02/skip-the-use-carre.jpg",
+      "price": "39.00 EUR",
+      "date_created": "2026-02-25T07:52:24.276567+00:00"
+    }
+  ]
+}

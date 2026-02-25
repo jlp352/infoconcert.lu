@@ -66,6 +66,8 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 
 #### Scrapper
 		- [ ] Casino 2000
+			- [ ] Script 
+			- [ ] Doc
 		- [ ] Kulturfabrik
 		- [x] Rockhall regroupé tous le salles sous Rockhal dans location
 #### Test

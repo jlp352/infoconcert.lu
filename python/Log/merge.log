@@ -1915,3 +1915,1775 @@
 2026-02-22 17:02:26 [INFO] Résultat : 187 concerts (24 doublons supprimés)
 2026-02-22 17:02:26 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json
 2026-02-22 17:02:26 [INFO] Merge terminé avec succès
+2026-02-24 17:30:45 [INFO] ============================================================
+2026-02-24 17:30:45 [INFO] Démarrage du merge (format=csv)
+2026-02-24 17:30:45 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.csv.bak
+2026-02-24 17:30:45 [INFO] Cache Deezer pré-chargé depuis .bak : 156 artiste(s)
+2026-02-24 17:30:45 [INFO] Cache date_created pré-chargé depuis .bak : 186 concert(s)
+2026-02-24 17:30:45 [INFO] Traitement : scrape_atelier_concerts.csv
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Jason Derulo → 5420471
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Jason Derulo le 2026-02-24
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Coeur de Pirate le 2026-02-25
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : MIKA → 60741780
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : MIKA le 2026-02-25
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : David Byrne → 3622778352
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : David Byrne le 2026-02-26
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Moulinex - Atelier Afterwork → introuvable
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Sean Paul → 3957322
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Sean Paul le 2026-02-27
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : The Divine Comedy → 3438162031
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : The Divine Comedy le 2026-02-28
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Lalou → 3173280991
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Lalou le 2026-02-28
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-01
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-02
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Taïro → 1449437552
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Taïro le 2026-03-04
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : OZARK HENRY → 1884540237
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : OZARK HENRY le 2026-03-05
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Grandbrothers → 3665882992
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Grandbrothers le 2026-03-06
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Grossstadtgeflüster → 3782845982
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Grossstadtgeflüster le 2026-03-07
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Maro → 3092383971
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Maro le 2026-03-08
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Tom Smith → 3434173831
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Tom Smith le 2026-03-12
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Kraftklub → 3551861321
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Kraftklub le 2026-03-13
+2026-02-24 17:30:45 [DEBUG] Deezer track_id : Alice Merton → 140182699
+2026-02-24 17:30:45 [DEBUG] date_created conservé depuis .bak : Alice Merton le 2026-03-14
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Stop Making Sense → introuvable
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Helge Schneider → 69405472
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Helge Schneider le 2026-03-15
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Les Négresses Vertes → 355628701
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Les Négresses Vertes le 2026-03-19
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Ão → 3604207892
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Ão le 2026-03-19
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : L.E.J → 3751803362
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : L.E.J le 2026-03-20
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Hooverphonic → 850423
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Hooverphonic le 2026-03-21
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : CLAIR OBSCUR : EXPEDITION 33 → 3315246271
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Charles Doré → 3546543301
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Charles Doré le 2026-03-27
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Protoje → 3365737181
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Protoje le 2026-03-28
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Sprints → 3725078372
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Sprints le 2026-03-29
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Poppy → 3541168831
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Poppy le 2026-04-01
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Mobb Deep → 1044157
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Mobb Deep le 2026-04-08
+2026-02-24 17:30:47 [DEBUG] Deezer track_id : Franz Ferdinand → 4315684
+2026-02-24 17:30:47 [DEBUG] date_created conservé depuis .bak : Franz Ferdinand le 2026-04-10
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Dirty Dancing → introuvable
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Kiefer Sutherland → 3788336172
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Kiefer Sutherland le 2026-04-14
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Dekker → 3805275482
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Dekker le 2026-04-23
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Bénabar → 583033
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Bénabar le 2026-04-24
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Alvaro Soler → 1096588622
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Alvaro Soler le 2026-04-26
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Jools Holland and his Rhythm & Blues Orchestra → 3029916881
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Jools Holland and his Rhythm & Blues Orchestra le 2026-04-26
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Joe Bonamassa → 7731922
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Joe Bonamassa le 2026-04-27
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Michael Patrick Kelly → 1977980357
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Michael Patrick Kelly le 2026-04-30
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Kasalla → 94654714
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Kasalla le 2026-05-05
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Sarah Connor → 98348314
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Sarah Connor le 2026-05-07
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Sofia Isella → 2387083665
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Sofia Isella le 2026-05-08
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Jalen Ngonda → 3456173171
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Jalen Ngonda le 2026-05-12
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Blue → 3097538
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Blue le 2026-05-15
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Dermot Kennedy → 3841861141
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Dermot Kennedy le 2026-05-20
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Rodrigo y Gabriela - 20th Anniversary Tour → introuvable
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Rodrigo y Gabriela - 20th Anniversary Tour le 2026-05-20
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Beth Hart → 1587111862
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Beth Hart le 2026-05-26
+2026-02-24 17:30:48 [DEBUG] Deezer track_id : Antony Szmierek → 2895683491
+2026-02-24 17:30:48 [DEBUG] date_created conservé depuis .bak : Antony Szmierek le 2026-05-28
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : XZIBIT (US) feat. Furnace Band → introuvable
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : XZIBIT (US) feat. Furnace Band le 2026-06-02
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : MEGADETH → 61382107
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : MEGADETH le 2026-06-11
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Ethel Cain → 1875510297
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Ethel Cain le 2026-06-13
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Big Thief → 2300028585
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Big Thief le 2026-06-18
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : ANTHRAX → 1104106
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : ANTHRAX le 2026-06-21
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Rise Against → 7419123
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Rise Against → 7419123
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Rise Against le 2026-06-23
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Absolut Bartreng → introuvable
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Absolut Bartreng le 2026-06-27
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Chris Isaak → 788457
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Chris Isaak le 2026-06-30
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : The Offspring → 137233986
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : The Offspring le 2026-07-01
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : AnnenMayKantereit → 700711312
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : AnnenMayKantereit le 2026-07-02
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Dogstar → 2369141585
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Dogstar le 2026-07-02
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Moby → 3785448172
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Moby le 2026-07-03
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Gorillaz → 3129407
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Gorillaz le 2026-07-05
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Robbie Williams → 3098217
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Robbie Williams le 2026-07-06
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Jamiroquai → 1884719637
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Jamiroquai le 2026-07-07
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Lenny Kravitz → 3107395
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Lenny Kravitz le 2026-07-08
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Zaz → 65220769
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Zaz le 2026-07-08
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Beirut → 426572052
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Beirut le 2026-07-09
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Clueso → 1727984087
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Clueso le 2026-07-12
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Katy Perry → 3160142
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Katy Perry le 2026-07-14
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Jovanotti → 922477
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Jovanotti le 2026-07-15
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Paul Kalkbrenner → 3502053411
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Paul Kalkbrenner le 2026-07-17
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Beatsteaks → 106828470
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Beatsteaks le 2026-08-13
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Lorde → 70403437
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Lorde le 2026-09-01
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : 1986zig → 3817588512
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : 1986zig le 2026-09-23
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Sportfreunde Stiller → 1791078487
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Sportfreunde Stiller le 2026-10-07
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Lake Street Dive → 1234765842
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Lake Street Dive le 2026-10-14
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Samu Haber → 2792718522
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Samu Haber le 2026-10-15
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : LOI → 2086818497
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : LOI le 2026-10-18
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Sofia Belabbes → introuvable
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Sofia Belabbes le 2026-10-23
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Kneecap → 2643667232
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Kneecap le 2026-11-06
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Heavysaurus → 4007319
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Heavysaurus le 2026-11-15
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Martin Kohlstedt → 1153140972
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Martin Kohlstedt le 2026-11-17
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Tokio Hotel → 7718640
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Tokio Hotel le 2026-11-18
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Joe Jackson + Band → 3864069
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Joe Jackson + Band le 2026-11-18
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Zebrahead → 2299895755
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Zebrahead le 2026-11-19
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : The Witcher → 839641662
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : The Witcher le 2026-11-20
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : Beast in Black → 597403752
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : Beast in Black le 2026-11-21
+2026-02-24 17:30:49 [DEBUG] Deezer track_id : NeS → 3720068242
+2026-02-24 17:30:49 [DEBUG] date_created conservé depuis .bak : NeS le 2026-11-21
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Conni - Das Musical! → introuvable
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Conni - Das Musical! le 2026-11-22
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Lichterkinder → 1209436532
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Lichterkinder le 2026-11-29
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Zimmer90 → 2968007141
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Zimmer90 le 2026-11-30
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : PORTUGAL. THE MAN → 371593461
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : PORTUGAL. THE MAN le 2026-12-03
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Philipp Poisel → 1754267497
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Philipp Poisel le 2026-12-15
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Das Lumpenpack → 3515466971
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Das Lumpenpack le 2027-02-27
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Jessé → 954317022
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Jessé le 2027-04-17
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Ana Godefroy → 1876217737
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Ana Godefroy le 2027-04-23
+2026-02-24 17:30:50 [DEBUG] Deezer track_id : Cédric Salaun → 2539237531
+2026-02-24 17:30:50 [DEBUG] date_created conservé depuis .bak : Cédric Salaun le 2027-04-29
+2026-02-24 17:30:50 [INFO] Traitement : scrape_casino2000_concerts.csv
+2026-02-24 17:30:51 [DEBUG] Deezer track_id : Dany Brillant → 701967
+2026-02-24 17:30:52 [DEBUG] Deezer track_id : Charlie Winston → 1794958997
+2026-02-24 17:30:53 [DEBUG] Deezer track_id : Barbara Pravi → 1125778602
+2026-02-24 17:30:54 [DEBUG] Deezer track_id : Sinclair → introuvable
+2026-02-24 17:30:55 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-24 17:30:55 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-24 17:30:56 [DEBUG] Deezer track_id : Ycare → 1745815157
+2026-02-24 17:30:57 [DEBUG] Deezer track_id : Yannick Noah → 858943
+2026-02-24 17:30:58 [DEBUG] Deezer track_id : Imany → 444887352
+2026-02-24 17:30:59 [DEBUG] Deezer track_id : Nino d'Angelo → 15782978
+2026-02-24 17:31:00 [DEBUG] Deezer track_id : Génération 90-2000 avec DJ Mast → introuvable
+2026-02-24 17:31:00 [DEBUG] Deezer track_id : Una Roberta débarque au Luxembourg → introuvable
+2026-02-24 17:31:01 [DEBUG] Deezer track_id : Julien Clerc → 3105622
+2026-02-24 17:31:02 [DEBUG] Deezer track_id : Jimmy Sax → 814814372
+2026-02-24 17:31:03 [DEBUG] Deezer track_id : Laurent Voulzy → 632222
+2026-02-24 17:31:04 [DEBUG] Deezer track_id : Lilly Wood and The Prick → 7155162
+2026-02-24 17:31:05 [DEBUG] Deezer track_id : Pupo → 3030396791
+2026-02-24 17:31:06 [DEBUG] Deezer track_id : Salif Keita → 2826343892
+2026-02-24 17:31:07 [DEBUG] Deezer track_id : Belinda Davids → 954043112
+2026-02-24 17:31:08 [DEBUG] Deezer track_id : I Muvrini → 114291724
+2026-02-24 17:31:09 [DEBUG] Deezer track_id : Calogero → 132629150
+2026-02-24 17:31:09 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-24 17:31:09 [DEBUG] Deezer track_id : Jeremy Charbonnel → introuvable
+2026-02-24 17:31:10 [DEBUG] Deezer track_id : Skip The Use → 3784998222
+2026-02-24 17:31:10 [INFO] Traitement : scrape_rockhal_concerts.csv
+2026-02-24 17:31:10 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-24 17:31:10 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-24 17:31:10 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-24 17:31:10 [DEBUG] Deezer track_id : AUPINARD → 3640132372
+2026-02-24 17:31:10 [DEBUG] date_created conservé depuis .bak : AUPINARD le 2026-02-26
+2026-02-24 17:31:10 [DEBUG] Deezer track_id : BETWEEN THE BURIED AND ME → 3547183121
+2026-02-24 17:31:10 [DEBUG] date_created conservé depuis .bak : BETWEEN THE BURIED AND ME le 2026-02-27
+2026-02-24 17:31:10 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-24 17:31:10 [DEBUG] Deezer track_id : D'JAL → 3544460971
+2026-02-24 17:31:10 [DEBUG] date_created conservé depuis .bak : D'JAL le 2026-02-28
+2026-02-24 17:31:10 [DEBUG] Deezer track_id : TONY CARREIRA → 1091896092
+2026-02-24 17:31:10 [DEBUG] date_created conservé depuis .bak : TONY CARREIRA le 2026-03-01
+2026-02-24 17:31:11 [DEBUG] Deezer track_id : OMNIUM GATHERUM + Fallujah + In Mourning → introuvable
+2026-02-24 17:31:11 [DEBUG] date_created conservé depuis .bak : OMNIUM GATHERUM + Fallujah + In Mourning le 2026-03-01
+2026-02-24 17:31:11 [DEBUG] Deezer track_id : THE CLASSIC ROCK SHOW → introuvable
+2026-02-24 17:31:11 [DEBUG] date_created conservé depuis .bak : THE CLASSIC ROCK SHOW le 2026-03-02
+2026-02-24 17:31:11 [DEBUG] Deezer track_id : SUPERBUS → 3386759271
+2026-02-24 17:31:11 [DEBUG] date_created conservé depuis .bak : SUPERBUS le 2026-03-05
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-06
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-24 17:31:12 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : JOSH ISLAND → 3353729921
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : JOSH ISLAND le 2026-03-07
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul → introuvable
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul le 2026-03-11
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : CARPENTER BRUT → 3689743052
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : CARPENTER BRUT le 2026-03-12
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : LUXEMBOURG MUSIC VIDEO NIGHT 2026 → introuvable
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG MUSIC VIDEO NIGHT 2026 le 2026-03-13
+2026-02-24 17:31:12 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : LEVI.SCT → 2437376535
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : LEVI.SCT le 2026-03-15
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : CAPITÃO FAUSTO → 2698280712
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : CAPITÃO FAUSTO le 2026-03-17
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : DUB INC → 93916028
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : DUB INC le 2026-03-19
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : GOOD NEIGHBOURS → 3189524911
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : GOOD NEIGHBOURS le 2026-03-19
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : DISIZ → 3558373981
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : DISIZ le 2026-03-21
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : ANDY TIMMONS → 109186640
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : ANDY TIMMONS le 2026-03-22
+2026-02-24 17:31:12 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : LUK. + LUC SPADA → 3817636891
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : LUK. + LUC SPADA le 2026-03-25
+2026-02-24 17:31:12 [DEBUG] Deezer track_id : DO YOU RAVE? → 2456145305
+2026-02-24 17:31:12 [DEBUG] date_created conservé depuis .bak : DO YOU RAVE? le 2026-03-28
+2026-02-24 17:31:13 [DEBUG] Deezer track_id : PAT PATROUILLE LE SPECTACLE ! → introuvable
+2026-02-24 17:31:13 [DEBUG] date_created conservé depuis .bak : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-24 17:31:13 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-24 17:31:13 [DEBUG] Deezer track_id : KREATOR + Carcass + Exodus + Nails → introuvable
+2026-02-24 17:31:13 [DEBUG] date_created conservé depuis .bak : KREATOR + Carcass + Exodus + Nails le 2026-03-31
+2026-02-24 17:31:13 [DEBUG] Deezer track_id : JOSMAN → 1684004267
+2026-02-24 17:31:13 [DEBUG] date_created conservé depuis .bak : JOSMAN le 2026-04-03
+2026-02-24 17:31:13 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-24 17:31:13 [DEBUG] Deezer track_id : ZAMDANE → 3574546951
+2026-02-24 17:31:13 [DEBUG] date_created conservé depuis .bak : ZAMDANE le 2026-04-11
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : LE LAC DES CYGNES → introuvable
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : LE LAC DES CYGNES le 2026-04-12
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : NEK → 683846
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : NEK le 2026-04-14
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : ISE → 654839522
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : ISE le 2026-04-15
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : MOOFEST → 581923
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : MOOFEST le 2026-04-18
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : HAEVN → 2814422652
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : HAEVN le 2026-04-19
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : CARISA DIAS + NAOMI AYÉ → introuvable
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : CARISA DIAS + NAOMI AYÉ le 2026-04-23
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : NEXT DEED → 2099986987
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : NEXT DEED le 2026-04-25
+2026-02-24 17:31:14 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-24 17:31:14 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : MATTEO MANCUSO → 3728637832
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : MATTEO MANCUSO le 2026-05-03
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : SCOTT BRADLEE'S POSTMODERN JUKEBOX → 133034462
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : SCOTT BRADLEE'S POSTMODERN JUKEBOX le 2026-05-05
+2026-02-24 17:31:14 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : TALI → 2703400752
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : TALI le 2026-05-08
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : METAL BATTLE → 2257039497
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : METAL BATTLE le 2026-05-09
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : PINK FLOYD'S THE WALL → 116914042
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S THE WALL le 2026-05-10
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : PINK FLOYD'S DARK SIDE OF THE MOON → introuvable
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S DARK SIDE OF THE MOON le 2026-05-10
+2026-02-24 17:31:14 [DEBUG] Deezer track_id : CHRISTOPHER CROSS → 4828150
+2026-02-24 17:31:14 [DEBUG] date_created conservé depuis .bak : CHRISTOPHER CROSS le 2026-05-10
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : MAYA + THALAMUSPROJECT → introuvable
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : MAYA + THALAMUSPROJECT le 2026-05-13
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : LIGABUE → 6633023
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : LIGABUE le 2026-05-14
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : HOUDI → 3769651932
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : HOUDI le 2026-05-16
+2026-02-24 17:31:15 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : HIMRA → 3803817212
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : HIMRA le 2026-05-22
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) → introuvable
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) le 2026-05-23
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : THE GATHERING → 108655132
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : THE GATHERING le 2026-05-25
+2026-02-24 17:31:15 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : PLINI + SUNGAZER → 3847510081
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : PLINI + SUNGAZER le 2026-05-27
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : PUGGY → 2522139891
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : PUGGY le 2026-05-28
+2026-02-24 17:31:15 [DEBUG] Deezer track_id : THE ARISTOCRATS → 13645471
+2026-02-24 17:31:15 [DEBUG] date_created conservé depuis .bak : THE ARISTOCRATS le 2026-05-29
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : LUXEMBOURG  DU RIRE → introuvable
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-24 17:31:16 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : MARI FROES → 3346909081
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : MARI FROES le 2026-05-31
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : ZUCCHERO → 1565238
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : ZUCCHERO le 2026-06-03
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-07
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-08
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : GHINZU → 4303580
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : GHINZU le 2026-06-09
+2026-02-24 17:31:16 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : TRIVIUM → 395723882
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : TRIVIUM le 2026-06-15
+2026-02-24 17:31:16 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : A PERFECT CIRCLE → 3092700
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : A PERFECT CIRCLE le 2026-07-04
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : EMPIRE OF THE SUN → 4286051
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : EMPIRE OF THE SUN le 2026-07-05
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : ALICE COOPER → 1015071
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : ALICE COOPER le 2026-07-08
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : ZZ TOP → 3667326
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : ZZ TOP le 2026-07-10
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : JAZEEK → 3244582061
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : JAZEEK le 2026-07-16
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-17
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-19
+2026-02-24 17:31:16 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION → introuvable
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION le 2026-09-20
+2026-02-24 17:31:16 [DEBUG] Deezer track_id : FISCHER Z → 3460932
+2026-02-24 17:31:16 [DEBUG] date_created conservé depuis .bak : FISCHER Z le 2026-09-25
+2026-02-24 17:31:17 [DEBUG] Deezer track_id : LEGENDS OF ROCK TRIBUTE FESTIVAL → introuvable
+2026-02-24 17:31:17 [DEBUG] date_created conservé depuis .bak : LEGENDS OF ROCK TRIBUTE FESTIVAL le 2026-09-26
+2026-02-24 17:31:17 [DEBUG] Deezer track_id : SPIRITBOX + JINJER + DYING WISH → introuvable
+2026-02-24 17:31:17 [DEBUG] Deezer track_id : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL → introuvable
+2026-02-24 17:31:17 [DEBUG] date_created conservé depuis .bak : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL le 2026-10-11
+2026-02-24 17:31:17 [DEBUG] Deezer track_id : PHILIP SAYCE → 61032651
+2026-02-24 17:31:17 [DEBUG] date_created conservé depuis .bak : PHILIP SAYCE le 2026-10-12
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : AMON AMARTH + ORBIT CULTURE + SOILWORK → introuvable
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : AMON AMARTH + ORBIT CULTURE + SOILWORK le 2026-10-14
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : PHILIPPE KATERINE SYMPHONIQUE → introuvable
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : PHILIPPE KATERINE SYMPHONIQUE le 2026-10-14
+2026-02-24 17:31:18 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : LARA FABIAN → 80920774
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : LARA FABIAN le 2026-10-18
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : THE FRONTM3N → 3788341242
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : THE FRONTM3N le 2026-10-23
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : GUY2BEZBAR → 3329681251
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : GUY2BEZBAR le 2026-10-24
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : LAURA PAUSINI → 760199
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : LAURA PAUSINI le 2026-10-27
+2026-02-24 17:31:18 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : VANESSA PARADIS → 13621853
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : VANESSA PARADIS le 2026-11-07
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : THE SISTERS OF MERCY → 70212122
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : THE SISTERS OF MERCY le 2026-11-08
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : SKY FULL OF STARS → 80849496
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : SKY FULL OF STARS le 2026-11-13
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : CALEMA → 1802220957
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : CALEMA le 2026-11-14
+2026-02-24 17:31:18 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-24 17:31:18 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : MENTISSA → 1534970092
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : MENTISSA le 2026-11-20
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : CASSE-NOISETTE → 1009294272
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : CASSE-NOISETTE le 2026-11-21
+2026-02-24 17:31:18 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : MAMMOTH → 3805773112
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : MAMMOTH le 2026-12-01
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : TYPH BARROW → 143420876
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : TYPH BARROW le 2026-12-05
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : TRIBUTE TO THE BEATLES → 76979311
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : TRIBUTE TO THE BEATLES le 2026-12-11
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : DORO → 3409651331
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : DORO le 2026-12-16
+2026-02-24 17:31:18 [DEBUG] Deezer track_id : SUZANE → 3480520401
+2026-02-24 17:31:18 [DEBUG] date_created conservé depuis .bak : SUZANE le 2027-01-15
+2026-02-24 17:31:19 [DEBUG] Deezer track_id : ONE VISION OF QUEEN → introuvable
+2026-02-24 17:31:19 [DEBUG] date_created conservé depuis .bak : ONE VISION OF QUEEN le 2027-02-14
+2026-02-24 17:31:19 [DEBUG] Deezer track_id : IBRAHIM MAALOUF → 3810795232
+2026-02-24 17:31:19 [DEBUG] date_created conservé depuis .bak : IBRAHIM MAALOUF le 2027-03-30
+2026-02-24 17:31:19 [DEBUG] Deezer track_id : EROS RAMAZZOTTI → 604845
+2026-02-24 17:31:19 [DEBUG] date_created conservé depuis .bak : EROS RAMAZZOTTI le 2027-04-01
+2026-02-24 17:31:19 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-24 17:31:19 [DEBUG] Deezer track_id : RALF SCHMITZ → introuvable
+2026-02-24 17:31:19 [DEBUG] date_created conservé depuis .bak : RALF SCHMITZ le 2027-12-02
+2026-02-24 17:31:19 [DEBUG] Deezer track_id : GRAND CORPS MALADE → 991348192
+2026-02-24 17:31:19 [DEBUG] date_created conservé depuis .bak : GRAND CORPS MALADE le 2027-12-09
+2026-02-24 17:31:19 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.csv.bak
+2026-02-24 17:31:19 [INFO] Résultat : 211 concerts (24 doublons supprimés)
+2026-02-24 17:31:19 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.csv
+2026-02-24 17:31:19 [INFO] Merge terminé avec succès
+2026-02-24 17:32:23 [INFO] ============================================================
+2026-02-24 17:32:23 [INFO] Démarrage du merge (format=json)
+2026-02-24 17:32:23 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-24 17:32:23 [INFO] Cache Deezer pré-chargé depuis .bak : 156 artiste(s)
+2026-02-24 17:32:23 [INFO] Cache date_created pré-chargé depuis .bak : 187 concert(s)
+2026-02-24 17:32:23 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-24 17:32:23 [DEBUG] Deezer track_id : Jason Derulo → 5420471
+2026-02-24 17:32:23 [DEBUG] date_created conservé depuis .bak : Jason Derulo le 2026-02-24
+2026-02-24 17:32:23 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-24 17:32:23 [DEBUG] date_created conservé depuis .bak : Coeur de Pirate le 2026-02-25
+2026-02-24 17:32:23 [DEBUG] Deezer track_id : MIKA → 953606
+2026-02-24 17:32:23 [DEBUG] date_created conservé depuis .bak : MIKA le 2026-02-25
+2026-02-24 17:32:23 [DEBUG] Deezer track_id : David Byrne → 3622778352
+2026-02-24 17:32:23 [DEBUG] date_created conservé depuis .bak : David Byrne le 2026-02-26
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Moulinex - Atelier Afterwork → introuvable
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Moulinex - Atelier Afterwork le 2026-02-27
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Sean Paul → 3401876061
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Sean Paul le 2026-02-27
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : The Divine Comedy → 3438162031
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : The Divine Comedy le 2026-02-28
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Lalou → 3173280991
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Lalou le 2026-02-28
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-01
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-02
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Taïro → 1449437502
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Taïro le 2026-03-04
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : OZARK HENRY → 3274346861
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : OZARK HENRY le 2026-03-05
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Grandbrothers → 3665882992
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Grandbrothers le 2026-03-06
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Grossstadtgeflüster → 3782845982
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Grossstadtgeflüster le 2026-03-07
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Maro → 3092383971
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Maro le 2026-03-08
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Tom Smith → 3434173851
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Tom Smith le 2026-03-12
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Kraftklub → 3551861331
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Kraftklub le 2026-03-13
+2026-02-24 17:32:24 [DEBUG] Deezer track_id : Alice Merton → 140182699
+2026-02-24 17:32:24 [DEBUG] date_created conservé depuis .bak : Alice Merton le 2026-03-14
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Stop Making Sense → introuvable
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Stop Making Sense le 2026-03-14
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Helge Schneider → 69405472
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Helge Schneider le 2026-03-15
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Les Négresses Vertes → 355628701
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Les Négresses Vertes le 2026-03-19
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Ão → 2589355202
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Ão le 2026-03-19
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : L.E.J → 3751803362
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : L.E.J le 2026-03-20
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Hooverphonic → 850423
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Hooverphonic le 2026-03-21
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : CLAIR OBSCUR : EXPEDITION 33 → 3315246271
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Charles Doré → 3546543301
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Charles Doré le 2026-03-27
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Protoje → 3365737181
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Protoje le 2026-03-28
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Sprints → 3725078372
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Sprints le 2026-03-29
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Poppy → 3541168831
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Poppy le 2026-04-01
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Mobb Deep → 1044131
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Mobb Deep le 2026-04-08
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Franz Ferdinand → 4315684
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Franz Ferdinand le 2026-04-10
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Dirty Dancing → 127471883
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Dirty Dancing le 2026-04-10
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Kiefer Sutherland → 3788336172
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Kiefer Sutherland le 2026-04-14
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Dekker → 3807173122
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Dekker le 2026-04-23
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Bénabar → 583033
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Bénabar le 2026-04-24
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Alvaro Soler → 1512096542
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Alvaro Soler le 2026-04-26
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Jools Holland and his Rhythm & Blues Orchestra → 3029916881
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Jools Holland and his Rhythm & Blues Orchestra le 2026-04-26
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Joe Bonamassa → 7731922
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Joe Bonamassa le 2026-04-27
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Michael Patrick Kelly → 1977980357
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Michael Patrick Kelly le 2026-04-30
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Kasalla → 94654714
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Kasalla le 2026-05-05
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Sarah Connor → 98348314
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Sarah Connor le 2026-05-07
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Sofia Isella → 3650500662
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Sofia Isella le 2026-05-08
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Jalen Ngonda → 3456173171
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Jalen Ngonda le 2026-05-12
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Blue → 3097538
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Blue le 2026-05-15
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Dermot Kennedy → 610861462
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Dermot Kennedy le 2026-05-20
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Rodrigo y Gabriela - 20th Anniversary Tour → introuvable
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Rodrigo y Gabriela - 20th Anniversary Tour le 2026-05-20
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Beth Hart → 1587111862
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Beth Hart le 2026-05-26
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Antony Szmierek → 3247931101
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Antony Szmierek le 2026-05-28
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : XZIBIT (US) feat. Furnace Band → introuvable
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : XZIBIT (US) feat. Furnace Band le 2026-06-02
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : MEGADETH → 61382107
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : MEGADETH le 2026-06-11
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Ethel Cain → 1875510297
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Ethel Cain le 2026-06-13
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Big Thief → 2300028585
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Big Thief le 2026-06-18
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : ANTHRAX → 1176687
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : ANTHRAX le 2026-06-21
+2026-02-24 17:32:25 [DEBUG] Deezer track_id : Rise Against → 7472037
+2026-02-24 17:32:25 [DEBUG] date_created conservé depuis .bak : Rise Against le 2026-06-23
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Absolut Bartreng → introuvable
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Absolut Bartreng le 2026-06-27
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Chris Isaak → 788457
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Chris Isaak le 2026-06-30
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : The Offspring → 137233986
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : The Offspring le 2026-07-01
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : AnnenMayKantereit → 700711312
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : AnnenMayKantereit le 2026-07-02
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Dogstar → 2369141675
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Dogstar le 2026-07-02
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Moby → 134817088
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Moby le 2026-07-03
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Gorillaz → 3129407
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Gorillaz le 2026-07-05
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Robbie Williams → 3098217
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Robbie Williams le 2026-07-06
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Jamiroquai → 1884719637
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Jamiroquai le 2026-07-07
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Lenny Kravitz → 3107395
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Lenny Kravitz le 2026-07-08
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Zaz → 65220769
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Zaz le 2026-07-08
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Beirut → 426572052
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Beirut le 2026-07-09
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Clueso → 1727984087
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Clueso le 2026-07-12
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Katy Perry → 3160142
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Katy Perry le 2026-07-14
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Jovanotti → 922477
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Jovanotti le 2026-07-15
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Paul Kalkbrenner → 3502053411
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Paul Kalkbrenner le 2026-07-17
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Beatsteaks → 106828470
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Beatsteaks le 2026-08-13
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Lorde → 70403437
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Lorde le 2026-09-01
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : 1986zig → 3817588512
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : 1986zig le 2026-09-23
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Sportfreunde Stiller → 1791078487
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Sportfreunde Stiller le 2026-10-07
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Lake Street Dive → 74689498
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Lake Street Dive le 2026-10-14
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Samu Haber → 2664911172
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : Samu Haber le 2026-10-15
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : LOI → 2086818497
+2026-02-24 17:32:26 [DEBUG] date_created conservé depuis .bak : LOI le 2026-10-18
+2026-02-24 17:32:26 [DEBUG] Deezer track_id : Sofia Belabbes → introuvable
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Sofia Belabbes le 2026-10-23
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Kneecap → 2643667232
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Kneecap le 2026-11-06
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Heavysaurus → 13784094
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Heavysaurus le 2026-11-15
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Martin Kohlstedt → 672944332
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Martin Kohlstedt le 2026-11-17
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Tokio Hotel → 7718640
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Tokio Hotel le 2026-11-18
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Joe Jackson + Band → 3864069
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Joe Jackson + Band le 2026-11-18
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Zebrahead → 2299895755
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Zebrahead le 2026-11-19
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : The Witcher → 2826779992
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : The Witcher le 2026-11-20
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Beast in Black → 659569532
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Beast in Black le 2026-11-21
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : NeS → 2876956142
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : NeS le 2026-11-21
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Conni - Das Musical! → introuvable
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Conni - Das Musical! le 2026-11-22
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Lichterkinder → 1209436532
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Lichterkinder le 2026-11-29
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Zimmer90 → 2968007141
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Zimmer90 le 2026-11-30
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : PORTUGAL. THE MAN → 371593461
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : PORTUGAL. THE MAN le 2026-12-03
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Philipp Poisel → 1721562237
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Philipp Poisel le 2026-12-15
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Das Lumpenpack → 1951178967
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Das Lumpenpack le 2027-02-27
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Jessé → 424970262
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Jessé le 2027-04-17
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Ana Godefroy → 1876217737
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Ana Godefroy le 2027-04-23
+2026-02-24 17:32:27 [DEBUG] Deezer track_id : Cédric Salaun → 2539237531
+2026-02-24 17:32:27 [DEBUG] date_created conservé depuis .bak : Cédric Salaun le 2027-04-29
+2026-02-24 17:32:27 [INFO] Traitement : scrape_casino2000_concerts.json
+2026-02-24 17:32:28 [DEBUG] Deezer track_id : Dany Brillant → 701967
+2026-02-24 17:32:29 [DEBUG] Deezer track_id : Charlie Winston → 1794958997
+2026-02-24 17:32:30 [DEBUG] Deezer track_id : Barbara Pravi → 1125778602
+2026-02-24 17:32:31 [DEBUG] Deezer track_id : Sinclair → introuvable
+2026-02-24 17:32:32 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-24 17:32:32 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-24 17:32:33 [DEBUG] Deezer track_id : Ycare → 1745815157
+2026-02-24 17:32:34 [DEBUG] Deezer track_id : Yannick Noah → 858943
+2026-02-24 17:32:35 [DEBUG] Deezer track_id : Imany → 444887352
+2026-02-24 17:32:35 [DEBUG] Deezer track_id : Nino d'Angelo → 15782978
+2026-02-24 17:32:36 [DEBUG] Deezer track_id : Génération 90-2000 avec DJ Mast → introuvable
+2026-02-24 17:32:36 [DEBUG] Deezer track_id : Una Roberta débarque au Luxembourg → introuvable
+2026-02-24 17:32:37 [DEBUG] Deezer track_id : Julien Clerc → 3105622
+2026-02-24 17:32:38 [DEBUG] Deezer track_id : Jimmy Sax → 814814372
+2026-02-24 17:32:39 [DEBUG] Deezer track_id : Laurent Voulzy → 632222
+2026-02-24 17:32:40 [DEBUG] Deezer track_id : Lilly Wood and The Prick → 7155162
+2026-02-24 17:32:41 [DEBUG] Deezer track_id : Pupo → 3030396791
+2026-02-24 17:32:42 [DEBUG] Deezer track_id : Salif Keita → 2826343892
+2026-02-24 17:32:43 [DEBUG] Deezer track_id : Belinda Davids → 954043112
+2026-02-24 17:32:43 [DEBUG] Deezer track_id : I Muvrini → 114291724
+2026-02-24 17:32:44 [DEBUG] Deezer track_id : Calogero → 132629150
+2026-02-24 17:32:44 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-24 17:32:45 [DEBUG] Deezer track_id : Jeremy Charbonnel → introuvable
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : Skip The Use → 3784998222
+2026-02-24 17:32:46 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-24 17:32:46 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-24 17:32:46 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-24 17:32:46 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : AUPINARD → 3640132372
+2026-02-24 17:32:46 [DEBUG] date_created conservé depuis .bak : AUPINARD le 2026-02-26
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : BETWEEN THE BURIED AND ME → 3547183121
+2026-02-24 17:32:46 [DEBUG] date_created conservé depuis .bak : BETWEEN THE BURIED AND ME le 2026-02-27
+2026-02-24 17:32:46 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : D'JAL → 924897842
+2026-02-24 17:32:46 [DEBUG] date_created conservé depuis .bak : D'JAL le 2026-02-28
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : TONY CARREIRA → 1091896092
+2026-02-24 17:32:46 [DEBUG] date_created conservé depuis .bak : TONY CARREIRA le 2026-03-01
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : OMNIUM GATHERUM + Fallujah + In Mourning → introuvable
+2026-02-24 17:32:46 [DEBUG] date_created conservé depuis .bak : OMNIUM GATHERUM + Fallujah + In Mourning le 2026-03-01
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : THE CLASSIC ROCK SHOW → introuvable
+2026-02-24 17:32:46 [DEBUG] date_created conservé depuis .bak : THE CLASSIC ROCK SHOW le 2026-03-02
+2026-02-24 17:32:46 [DEBUG] Deezer track_id : SUPERBUS → 3198384621
+2026-02-24 17:32:46 [DEBUG] date_created conservé depuis .bak : SUPERBUS le 2026-03-05
+2026-02-24 17:32:47 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-24 17:32:47 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-06
+2026-02-24 17:32:47 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-24 17:32:47 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-24 17:32:47 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-24 17:32:47 [DEBUG] Deezer track_id : JOSH ISLAND → 1347656192
+2026-02-24 17:32:47 [DEBUG] date_created conservé depuis .bak : JOSH ISLAND le 2026-03-07
+2026-02-24 17:32:47 [DEBUG] Deezer track_id : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul → introuvable
+2026-02-24 17:32:47 [DEBUG] date_created conservé depuis .bak : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul le 2026-03-11
+2026-02-24 17:32:47 [DEBUG] Deezer track_id : CARPENTER BRUT → 3689743052
+2026-02-24 17:32:47 [DEBUG] date_created conservé depuis .bak : CARPENTER BRUT le 2026-03-12
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : LUXEMBOURG MUSIC VIDEO NIGHT 2026 → introuvable
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG MUSIC VIDEO NIGHT 2026 le 2026-03-13
+2026-02-24 17:32:48 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : LEVI.SCT → 2437376535
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : LEVI.SCT le 2026-03-15
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : CAPITÃO FAUSTO → 2698280712
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : CAPITÃO FAUSTO le 2026-03-17
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : DUB INC → 93916028
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : DUB INC le 2026-03-19
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : GOOD NEIGHBOURS → 2622232942
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : GOOD NEIGHBOURS le 2026-03-19
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : DISIZ → 3558373981
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : DISIZ le 2026-03-21
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : ANDY TIMMONS → 109186636
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : ANDY TIMMONS le 2026-03-22
+2026-02-24 17:32:48 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : LUK. + LUC SPADA → 3817636891
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : LUK. + LUC SPADA le 2026-03-25
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : DO YOU RAVE? → 2456145305
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : DO YOU RAVE? le 2026-03-28
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : PAT PATROUILLE LE SPECTACLE ! → introuvable
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-24 17:32:48 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : KREATOR + Carcass + Exodus + Nails → introuvable
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : KREATOR + Carcass + Exodus + Nails le 2026-03-31
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : JOSMAN → 1684004267
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : JOSMAN le 2026-04-03
+2026-02-24 17:32:48 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-24 17:32:48 [DEBUG] Deezer track_id : ZAMDANE → 3574546951
+2026-02-24 17:32:48 [DEBUG] date_created conservé depuis .bak : ZAMDANE le 2026-04-11
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : LE LAC DES CYGNES → introuvable
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : LE LAC DES CYGNES le 2026-04-12
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : NEK → 683846
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : NEK le 2026-04-14
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : ISE → 3579448581
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : ISE le 2026-04-15
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : MOOFEST → 2294072085
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : MOOFEST le 2026-04-18
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : HAEVN → 3067264031
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : HAEVN le 2026-04-19
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : CARISA DIAS + NAOMI AYÉ → introuvable
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : CARISA DIAS + NAOMI AYÉ le 2026-04-23
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : NEXT DEED → 2099986987
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : NEXT DEED le 2026-04-25
+2026-02-24 17:32:49 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-24 17:32:49 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : MATTEO MANCUSO → 3728637832
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : MATTEO MANCUSO le 2026-05-03
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : SCOTT BRADLEE'S POSTMODERN JUKEBOX → 133034462
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : SCOTT BRADLEE'S POSTMODERN JUKEBOX le 2026-05-05
+2026-02-24 17:32:49 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : TALI → 2703400752
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : TALI le 2026-05-08
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : METAL BATTLE → 414750102
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : METAL BATTLE le 2026-05-09
+2026-02-24 17:32:49 [DEBUG] Deezer track_id : PINK FLOYD'S THE WALL → 116914042
+2026-02-24 17:32:49 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S THE WALL le 2026-05-10
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : PINK FLOYD'S DARK SIDE OF THE MOON → introuvable
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S DARK SIDE OF THE MOON le 2026-05-10
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : CHRISTOPHER CROSS → 4828150
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : CHRISTOPHER CROSS le 2026-05-10
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : MAYA + THALAMUSPROJECT → introuvable
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : MAYA + THALAMUSPROJECT le 2026-05-13
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : LIGABUE → 6633023
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : LIGABUE le 2026-05-14
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : HOUDI → 2554977372
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : HOUDI le 2026-05-16
+2026-02-24 17:32:50 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : HIMRA → 3803817212
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : HIMRA le 2026-05-22
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) → introuvable
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) le 2026-05-23
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : THE GATHERING → 108645480
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : THE GATHERING le 2026-05-25
+2026-02-24 17:32:50 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : PLINI + SUNGAZER → 1333998522
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : PLINI + SUNGAZER le 2026-05-27
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : PUGGY → 2522139891
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : PUGGY le 2026-05-28
+2026-02-24 17:32:50 [DEBUG] Deezer track_id : THE ARISTOCRATS → 13645471
+2026-02-24 17:32:50 [DEBUG] date_created conservé depuis .bak : THE ARISTOCRATS le 2026-05-29
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : LUXEMBOURG  DU RIRE → introuvable
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-24 17:32:51 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : MARI FROES → 3336883571
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : MARI FROES le 2026-05-31
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : ZUCCHERO → 1565238
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : ZUCCHERO le 2026-06-03
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-07
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-08
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : GHINZU → 4303580
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : GHINZU le 2026-06-09
+2026-02-24 17:32:51 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : TRIVIUM → 395723882
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : TRIVIUM le 2026-06-15
+2026-02-24 17:32:51 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : A PERFECT CIRCLE → 3092700
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : A PERFECT CIRCLE le 2026-07-04
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : EMPIRE OF THE SUN → 4286053
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : EMPIRE OF THE SUN le 2026-07-05
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : ALICE COOPER → 730866
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : ALICE COOPER le 2026-07-08
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : ZZ TOP → 3667326
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : ZZ TOP le 2026-07-10
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : JAZEEK → 3244582061
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : JAZEEK le 2026-07-16
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-17
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-19
+2026-02-24 17:32:51 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION → introuvable
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION le 2026-09-20
+2026-02-24 17:32:51 [DEBUG] Deezer track_id : FISCHER Z → 3460908
+2026-02-24 17:32:51 [DEBUG] date_created conservé depuis .bak : FISCHER Z le 2026-09-25
+2026-02-24 17:32:52 [DEBUG] Deezer track_id : LEGENDS OF ROCK TRIBUTE FESTIVAL → introuvable
+2026-02-24 17:32:52 [DEBUG] date_created conservé depuis .bak : LEGENDS OF ROCK TRIBUTE FESTIVAL le 2026-09-26
+2026-02-24 17:32:52 [DEBUG] Deezer track_id : SPIRITBOX + JINJER + DYING WISH → introuvable
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL → introuvable
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL le 2026-10-11
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : PHILIP SAYCE → 61032651
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : PHILIP SAYCE le 2026-10-12
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : AMON AMARTH + ORBIT CULTURE + SOILWORK → introuvable
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : AMON AMARTH + ORBIT CULTURE + SOILWORK le 2026-10-14
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : PHILIPPE KATERINE SYMPHONIQUE → introuvable
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : PHILIPPE KATERINE SYMPHONIQUE le 2026-10-14
+2026-02-24 17:32:53 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : LARA FABIAN → 80920774
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : LARA FABIAN le 2026-10-18
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : THE FRONTM3N → 579940692
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : THE FRONTM3N le 2026-10-23
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : GUY2BEZBAR → 3329681251
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : GUY2BEZBAR le 2026-10-24
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : LAURA PAUSINI → 760199
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : LAURA PAUSINI le 2026-10-27
+2026-02-24 17:32:53 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : VANESSA PARADIS → 13621853
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : VANESSA PARADIS le 2026-11-07
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : THE SISTERS OF MERCY → 70212122
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : THE SISTERS OF MERCY le 2026-11-08
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : SKY FULL OF STARS → 80849496
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : SKY FULL OF STARS le 2026-11-13
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : CALEMA → 1802220957
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : CALEMA le 2026-11-14
+2026-02-24 17:32:53 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-24 17:32:53 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : MENTISSA → 1534970092
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : MENTISSA le 2026-11-20
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : CASSE-NOISETTE → 1009294272
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : CASSE-NOISETTE le 2026-11-21
+2026-02-24 17:32:53 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : MAMMOTH → 3805773112
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : MAMMOTH le 2026-12-01
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : TYPH BARROW → 143420876
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : TYPH BARROW le 2026-12-05
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : TRIBUTE TO THE BEATLES → 76979311
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : TRIBUTE TO THE BEATLES le 2026-12-11
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : DORO → 3572450371
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : DORO le 2026-12-16
+2026-02-24 17:32:53 [DEBUG] Deezer track_id : SUZANE → 3480520401
+2026-02-24 17:32:53 [DEBUG] date_created conservé depuis .bak : SUZANE le 2027-01-15
+2026-02-24 17:32:54 [DEBUG] Deezer track_id : ONE VISION OF QUEEN → introuvable
+2026-02-24 17:32:54 [DEBUG] date_created conservé depuis .bak : ONE VISION OF QUEEN le 2027-02-14
+2026-02-24 17:32:54 [DEBUG] Deezer track_id : IBRAHIM MAALOUF → 3810795232
+2026-02-24 17:32:54 [DEBUG] date_created conservé depuis .bak : IBRAHIM MAALOUF le 2027-03-30
+2026-02-24 17:32:54 [DEBUG] Deezer track_id : EROS RAMAZZOTTI → 604845
+2026-02-24 17:32:54 [DEBUG] date_created conservé depuis .bak : EROS RAMAZZOTTI le 2027-04-01
+2026-02-24 17:32:54 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-24 17:32:55 [DEBUG] Deezer track_id : RALF SCHMITZ → introuvable
+2026-02-24 17:32:55 [DEBUG] date_created conservé depuis .bak : RALF SCHMITZ le 2027-12-02
+2026-02-24 17:32:55 [DEBUG] Deezer track_id : GRAND CORPS MALADE → 991348192
+2026-02-24 17:32:55 [DEBUG] date_created conservé depuis .bak : GRAND CORPS MALADE le 2027-12-09
+2026-02-24 17:32:55 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-24 17:32:55 [INFO] Résultat : 210 concerts (24 doublons supprimés)
+2026-02-24 17:32:55 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json
+2026-02-24 17:32:55 [INFO] Merge terminé avec succès
+2026-02-25 08:32:50 [INFO] ============================================================
+2026-02-25 08:32:50 [INFO] Démarrage du merge (format=json)
+2026-02-25 08:32:50 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-25 08:32:51 [INFO] Cache Deezer pré-chargé depuis .bak : 172 artiste(s)
+2026-02-25 08:32:51 [INFO] Cache date_created pré-chargé depuis .bak : 210 concert(s)
+2026-02-25 08:32:51 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Jason Derulo → 5420471
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Jason Derulo le 2026-02-24
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Coeur de Pirate le 2026-02-25
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : MIKA → 953606
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : MIKA le 2026-02-25
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : David Byrne → 3622778352
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : David Byrne le 2026-02-26
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Moulinex - Atelier Afterwork → introuvable
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Moulinex - Atelier Afterwork le 2026-02-27
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Sean Paul → 3401876061
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Sean Paul le 2026-02-27
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : The Divine Comedy → 3438162031
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : The Divine Comedy le 2026-02-28
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Lalou → 3173280991
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Lalou le 2026-02-28
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-01
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-02
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Taïro → 1449437502
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Taïro le 2026-03-04
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : OZARK HENRY → 3274346861
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : OZARK HENRY le 2026-03-05
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Grandbrothers → 3665882992
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Grandbrothers le 2026-03-06
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Grossstadtgeflüster → 3782845982
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Grossstadtgeflüster le 2026-03-07
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Maro → 3092383971
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Maro le 2026-03-08
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Tom Smith → 3434173851
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Tom Smith le 2026-03-12
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Kraftklub → 3551861331
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Kraftklub le 2026-03-13
+2026-02-25 08:32:51 [DEBUG] Deezer track_id : Alice Merton → 140182699
+2026-02-25 08:32:51 [DEBUG] date_created conservé depuis .bak : Alice Merton le 2026-03-14
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Stop Making Sense → introuvable
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Stop Making Sense le 2026-03-14
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Helge Schneider → 69405472
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Helge Schneider le 2026-03-15
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Les Négresses Vertes → 355628701
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Les Négresses Vertes le 2026-03-19
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Ão → 2589355202
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Ão le 2026-03-19
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : L.E.J → 3751803362
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : L.E.J le 2026-03-20
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Hooverphonic → 850423
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Hooverphonic le 2026-03-21
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : CLAIR OBSCUR : EXPEDITION 33 → 3315246271
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Charles Doré → 3546543301
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Charles Doré le 2026-03-27
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Protoje → 3365737181
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Protoje le 2026-03-28
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Sprints → 3725078372
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Sprints le 2026-03-29
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Poppy → 3541168831
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Poppy le 2026-04-01
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Mobb Deep → 1044131
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Mobb Deep le 2026-04-08
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Franz Ferdinand → 4315684
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Franz Ferdinand le 2026-04-10
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Dirty Dancing → 127471883
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Dirty Dancing le 2026-04-10
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Kiefer Sutherland → 3788336172
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Kiefer Sutherland le 2026-04-14
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Dekker → 3807173122
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Dekker le 2026-04-23
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Bénabar → 583033
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Bénabar le 2026-04-24
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Alvaro Soler → 1512096542
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Alvaro Soler le 2026-04-26
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Jools Holland and his Rhythm & Blues Orchestra → 3029916881
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Jools Holland and his Rhythm & Blues Orchestra le 2026-04-26
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Joe Bonamassa → 7731922
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Joe Bonamassa le 2026-04-27
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Michael Patrick Kelly → 1977980357
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Michael Patrick Kelly le 2026-04-30
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Kasalla → 94654714
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Kasalla le 2026-05-05
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Sarah Connor → 98348314
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Sarah Connor le 2026-05-07
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Sofia Isella → 3650500662
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Sofia Isella le 2026-05-08
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Jalen Ngonda → 3456173171
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Jalen Ngonda le 2026-05-12
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Blue → 3097538
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Blue le 2026-05-15
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Dermot Kennedy → 610861462
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Dermot Kennedy le 2026-05-20
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Rodrigo y Gabriela - 20th Anniversary Tour → introuvable
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Rodrigo y Gabriela - 20th Anniversary Tour le 2026-05-20
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Beth Hart → 1587111862
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Beth Hart le 2026-05-26
+2026-02-25 08:32:52 [DEBUG] Deezer track_id : Antony Szmierek → 3247931101
+2026-02-25 08:32:52 [DEBUG] date_created conservé depuis .bak : Antony Szmierek le 2026-05-28
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : XZIBIT (US) feat. Furnace Band → introuvable
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : XZIBIT (US) feat. Furnace Band le 2026-06-02
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : MEGADETH → 61382107
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : MEGADETH le 2026-06-11
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Ethel Cain → 1875510297
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Ethel Cain le 2026-06-13
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Big Thief → 2300028585
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Big Thief le 2026-06-18
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : ANTHRAX → 1176687
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : ANTHRAX le 2026-06-21
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Rise Against → 7472037
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Rise Against le 2026-06-23
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Absolut Bartreng → introuvable
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Absolut Bartreng le 2026-06-27
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Chris Isaak → 788457
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Chris Isaak le 2026-06-30
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : The Offspring → 137233986
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : The Offspring le 2026-07-01
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : AnnenMayKantereit → 700711312
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : AnnenMayKantereit le 2026-07-02
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Dogstar → 2369141675
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Dogstar le 2026-07-02
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Moby → 134817088
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Moby le 2026-07-03
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Gorillaz → 3129407
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Gorillaz le 2026-07-05
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Robbie Williams → 3098217
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Robbie Williams le 2026-07-06
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Jamiroquai → 1884719637
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Jamiroquai le 2026-07-07
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Lenny Kravitz → 3107395
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Lenny Kravitz le 2026-07-08
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Zaz → 65220769
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Zaz le 2026-07-08
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Beirut → 426572052
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Beirut le 2026-07-09
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Clueso → 1727984087
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Clueso le 2026-07-12
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Katy Perry → 3160142
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Katy Perry le 2026-07-14
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Jovanotti → 922477
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Jovanotti le 2026-07-15
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Paul Kalkbrenner → 3502053411
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Paul Kalkbrenner le 2026-07-17
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Beatsteaks → 106828470
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Beatsteaks le 2026-08-13
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Lorde → 70403437
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Lorde le 2026-09-01
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : 1986zig → 3817588512
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : 1986zig le 2026-09-23
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Sportfreunde Stiller → 1791078487
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Sportfreunde Stiller le 2026-10-07
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Lake Street Dive → 74689498
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Lake Street Dive le 2026-10-14
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Samu Haber → 2664911172
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Samu Haber le 2026-10-15
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : LOI → 2086818497
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : LOI le 2026-10-18
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Sofia Belabbes → introuvable
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Sofia Belabbes le 2026-10-23
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Kneecap → 2643667232
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Kneecap le 2026-11-06
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Heavysaurus → 13784094
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Heavysaurus le 2026-11-15
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Martin Kohlstedt → 672944332
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Martin Kohlstedt le 2026-11-17
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Tokio Hotel → 7718640
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Tokio Hotel le 2026-11-18
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Joe Jackson + Band → 3864069
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Joe Jackson + Band le 2026-11-18
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Zebrahead → 2299895755
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Zebrahead le 2026-11-19
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : The Witcher → 2826779992
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : The Witcher le 2026-11-20
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : Beast in Black → 659569532
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : Beast in Black le 2026-11-21
+2026-02-25 08:32:53 [DEBUG] Deezer track_id : NeS → 2876956142
+2026-02-25 08:32:53 [DEBUG] date_created conservé depuis .bak : NeS le 2026-11-21
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Conni - Das Musical! → introuvable
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Conni - Das Musical! le 2026-11-22
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Lichterkinder → 1209436532
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Lichterkinder le 2026-11-29
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Zimmer90 → 2968007141
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Zimmer90 le 2026-11-30
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : PORTUGAL. THE MAN → 371593461
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : PORTUGAL. THE MAN le 2026-12-03
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Philipp Poisel → 1721562237
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Philipp Poisel le 2026-12-15
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Das Lumpenpack → 1951178967
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Das Lumpenpack le 2027-02-27
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Jessé → 424970262
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Jessé le 2027-04-17
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Ana Godefroy → 1876217737
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Ana Godefroy le 2027-04-23
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Cédric Salaun → 2539237531
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Cédric Salaun le 2027-04-29
+2026-02-25 08:32:54 [INFO] Traitement : scrape_casino2000_concerts.json
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Dany Brillant → 701967
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Dany Brillant le 2026-02-27
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Charlie Winston → 1794958997
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Charlie Winston le 2026-02-28
+2026-02-25 08:32:54 [DEBUG] Deezer track_id : Barbara Pravi → 1125778602
+2026-02-25 08:32:54 [DEBUG] date_created conservé depuis .bak : Barbara Pravi le 2026-03-05
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Sinclair → introuvable
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Sinclair le 2026-03-07
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Garou le 2026-03-11
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Garou le 2026-03-12
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Ycare → 1745815157
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Ycare le 2026-04-04
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Yannick Noah → 858943
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Yannick Noah le 2026-04-11
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Imany → 444887352
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Imany le 2026-04-17
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Nino d'Angelo → 15782978
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Nino d'Angelo le 2026-04-25
+2026-02-25 08:32:55 [DEBUG] Deezer track_id : Génération 90-2000 avec DJ Mast → introuvable
+2026-02-25 08:32:55 [DEBUG] date_created conservé depuis .bak : Génération 90-2000 avec DJ Mast le 2026-05-08
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Una Roberta débarque au Luxembourg → introuvable
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Una Roberta débarque au Luxembourg le 2026-09-27
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Julien Clerc → 3105622
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Julien Clerc le 2026-10-09
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Jimmy Sax → 814814372
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Jimmy Sax le 2026-10-10
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Laurent Voulzy → 632222
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Laurent Voulzy le 2026-10-23
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Lilly Wood and The Prick → 7155162
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Lilly Wood and The Prick le 2026-10-24
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Pupo → 3030396791
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Pupo le 2026-10-25
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Salif Keita → 2826343892
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Salif Keita le 2026-10-29
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Belinda Davids → 954043112
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Belinda Davids le 2026-11-13
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : I Muvrini → 114291724
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : I Muvrini le 2026-11-15
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Calogero → 132629150
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Calogero le 2026-11-27
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Coeur de Pirate le 2026-11-28
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Jeremy Charbonnel → introuvable
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Jeremy Charbonnel le 2026-12-19
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : Skip The Use → 3784998222
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : Skip The Use le 2027-02-13
+2026-02-25 08:32:56 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-25 08:32:56 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-25 08:32:56 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-25 08:32:56 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : AUPINARD → 3640132372
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : AUPINARD le 2026-02-26
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : BETWEEN THE BURIED AND ME → 3547183121
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : BETWEEN THE BURIED AND ME le 2026-02-27
+2026-02-25 08:32:56 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : D'JAL → 924897842
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : D'JAL le 2026-02-28
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : TONY CARREIRA → 1091896092
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : TONY CARREIRA le 2026-03-01
+2026-02-25 08:32:56 [DEBUG] Deezer track_id : OMNIUM GATHERUM + Fallujah + In Mourning → introuvable
+2026-02-25 08:32:56 [DEBUG] date_created conservé depuis .bak : OMNIUM GATHERUM + Fallujah + In Mourning le 2026-03-01
+2026-02-25 08:32:57 [DEBUG] Deezer track_id : THE CLASSIC ROCK SHOW → introuvable
+2026-02-25 08:32:57 [DEBUG] date_created conservé depuis .bak : THE CLASSIC ROCK SHOW le 2026-03-02
+2026-02-25 08:32:57 [DEBUG] Deezer track_id : SUPERBUS → 3198384621
+2026-02-25 08:32:57 [DEBUG] date_created conservé depuis .bak : SUPERBUS le 2026-03-05
+2026-02-25 08:32:57 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-25 08:32:57 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-06
+2026-02-25 08:32:57 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-25 08:32:57 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-25 08:32:57 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-25 08:32:57 [DEBUG] Deezer track_id : JOSH ISLAND → 1347656192
+2026-02-25 08:32:57 [DEBUG] date_created conservé depuis .bak : JOSH ISLAND le 2026-03-07
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul → introuvable
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul le 2026-03-11
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : CARPENTER BRUT → 3689743052
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : CARPENTER BRUT le 2026-03-12
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : LUXEMBOURG MUSIC VIDEO NIGHT 2026 → introuvable
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG MUSIC VIDEO NIGHT 2026 le 2026-03-13
+2026-02-25 08:32:58 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : LEVI.SCT → 2437376535
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : LEVI.SCT le 2026-03-15
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : CAPITÃO FAUSTO → 2698280712
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : CAPITÃO FAUSTO le 2026-03-17
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : DUB INC → 93916028
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : DUB INC le 2026-03-19
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : GOOD NEIGHBOURS → 2622232942
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : GOOD NEIGHBOURS le 2026-03-19
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : DISIZ → 3558373981
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : DISIZ le 2026-03-21
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : ANDY TIMMONS → 109186636
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : ANDY TIMMONS le 2026-03-22
+2026-02-25 08:32:58 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : LUK. + LUC SPADA → 3817636891
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : LUK. + LUC SPADA le 2026-03-25
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : DO YOU RAVE? → 2456145305
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : DO YOU RAVE? le 2026-03-28
+2026-02-25 08:32:58 [DEBUG] Deezer track_id : PAT PATROUILLE LE SPECTACLE ! → introuvable
+2026-02-25 08:32:58 [DEBUG] date_created conservé depuis .bak : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-25 08:32:58 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : KREATOR + Carcass + Exodus + Nails → introuvable
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : KREATOR + Carcass + Exodus + Nails le 2026-03-31
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : JOSMAN → 1684004267
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : JOSMAN le 2026-04-03
+2026-02-25 08:32:59 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : ZAMDANE → 3574546951
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : ZAMDANE le 2026-04-11
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : LE LAC DES CYGNES → introuvable
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : LE LAC DES CYGNES le 2026-04-12
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : NEK → 683846
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : NEK le 2026-04-14
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : ISE → 3579448581
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : ISE le 2026-04-15
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : MOOFEST → 2294072085
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : MOOFEST le 2026-04-18
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : HAEVN → 3067264031
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : HAEVN le 2026-04-19
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : CARISA DIAS + NAOMI AYÉ → introuvable
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : CARISA DIAS + NAOMI AYÉ le 2026-04-23
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : NEXT DEED → 2099986987
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : NEXT DEED le 2026-04-25
+2026-02-25 08:32:59 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-25 08:32:59 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : MATTEO MANCUSO → 3728637832
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : MATTEO MANCUSO le 2026-05-03
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : SCOTT BRADLEE'S POSTMODERN JUKEBOX → 133034462
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : SCOTT BRADLEE'S POSTMODERN JUKEBOX le 2026-05-05
+2026-02-25 08:32:59 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : TALI → 2703400752
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : TALI le 2026-05-08
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : METAL BATTLE → 414750102
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : METAL BATTLE le 2026-05-09
+2026-02-25 08:32:59 [DEBUG] Deezer track_id : PINK FLOYD'S THE WALL → 116914042
+2026-02-25 08:32:59 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S THE WALL le 2026-05-10
+2026-02-25 08:33:00 [DEBUG] Deezer track_id : PINK FLOYD'S DARK SIDE OF THE MOON → introuvable
+2026-02-25 08:33:00 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S DARK SIDE OF THE MOON le 2026-05-10
+2026-02-25 08:33:00 [DEBUG] Deezer track_id : CHRISTOPHER CROSS → 4828150
+2026-02-25 08:33:00 [DEBUG] date_created conservé depuis .bak : CHRISTOPHER CROSS le 2026-05-10
+2026-02-25 08:33:00 [DEBUG] Deezer track_id : MAYA + THALAMUSPROJECT → introuvable
+2026-02-25 08:33:00 [DEBUG] date_created conservé depuis .bak : MAYA + THALAMUSPROJECT le 2026-05-13
+2026-02-25 08:33:00 [DEBUG] Deezer track_id : LIGABUE → 6633023
+2026-02-25 08:33:00 [DEBUG] date_created conservé depuis .bak : LIGABUE le 2026-05-14
+2026-02-25 08:33:00 [DEBUG] Deezer track_id : HOUDI → 2554977372
+2026-02-25 08:33:00 [DEBUG] date_created conservé depuis .bak : HOUDI le 2026-05-16
+2026-02-25 08:33:00 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-25 08:33:00 [DEBUG] Deezer track_id : HIMRA → 3803817212
+2026-02-25 08:33:00 [DEBUG] date_created conservé depuis .bak : HIMRA le 2026-05-22
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) → introuvable
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) le 2026-05-23
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : THE GATHERING → 108645480
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : THE GATHERING le 2026-05-25
+2026-02-25 08:33:01 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : PLINI + SUNGAZER → 1333998522
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : PLINI + SUNGAZER le 2026-05-27
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : PUGGY → 2522139891
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : PUGGY le 2026-05-28
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : THE ARISTOCRATS → 13645471
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : THE ARISTOCRATS le 2026-05-29
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : LUXEMBOURG  DU RIRE → introuvable
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-25 08:33:01 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : MARI FROES → 3336883571
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : MARI FROES le 2026-05-31
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : ZUCCHERO → 1565238
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : ZUCCHERO le 2026-06-03
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-07
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-08
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : GHINZU → 4303580
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : GHINZU le 2026-06-09
+2026-02-25 08:33:01 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : TRIVIUM → 395723882
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : TRIVIUM le 2026-06-15
+2026-02-25 08:33:01 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : A PERFECT CIRCLE → 3092700
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : A PERFECT CIRCLE le 2026-07-04
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : EMPIRE OF THE SUN → 4286053
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : EMPIRE OF THE SUN le 2026-07-05
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : ALICE COOPER → 730866
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : ALICE COOPER le 2026-07-08
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : ZZ TOP → 3667326
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : ZZ TOP le 2026-07-10
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : JAZEEK → 3244582061
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : JAZEEK le 2026-07-16
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-17
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-19
+2026-02-25 08:33:01 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION → introuvable
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION le 2026-09-20
+2026-02-25 08:33:01 [DEBUG] Deezer track_id : FISCHER Z → 3460908
+2026-02-25 08:33:01 [DEBUG] date_created conservé depuis .bak : FISCHER Z le 2026-09-25
+2026-02-25 08:33:02 [DEBUG] Deezer track_id : LEGENDS OF ROCK TRIBUTE FESTIVAL → introuvable
+2026-02-25 08:33:02 [DEBUG] date_created conservé depuis .bak : LEGENDS OF ROCK TRIBUTE FESTIVAL le 2026-09-26
+2026-02-25 08:33:02 [DEBUG] Deezer track_id : SPIRITBOX + JINJER + DYING WISH → introuvable
+2026-02-25 08:33:02 [DEBUG] date_created conservé depuis .bak : SPIRITBOX + JINJER + DYING WISH le 2026-10-06
+2026-02-25 08:33:02 [DEBUG] Deezer track_id : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL → introuvable
+2026-02-25 08:33:02 [DEBUG] date_created conservé depuis .bak : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL le 2026-10-11
+2026-02-25 08:33:02 [DEBUG] Deezer track_id : PHILIP SAYCE → 61032651
+2026-02-25 08:33:02 [DEBUG] date_created conservé depuis .bak : PHILIP SAYCE le 2026-10-12
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : AMON AMARTH + ORBIT CULTURE + SOILWORK → introuvable
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : AMON AMARTH + ORBIT CULTURE + SOILWORK le 2026-10-14
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : PHILIPPE KATERINE SYMPHONIQUE → introuvable
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : PHILIPPE KATERINE SYMPHONIQUE le 2026-10-14
+2026-02-25 08:33:03 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : LARA FABIAN → 80920774
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : LARA FABIAN le 2026-10-18
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : THE FRONTM3N → 579940692
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : THE FRONTM3N le 2026-10-23
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : GUY2BEZBAR → 3329681251
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : GUY2BEZBAR le 2026-10-24
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : LAURA PAUSINI → 760199
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : LAURA PAUSINI le 2026-10-27
+2026-02-25 08:33:03 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : VANESSA PARADIS → 13621853
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : VANESSA PARADIS le 2026-11-07
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : THE SISTERS OF MERCY → 70212122
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : THE SISTERS OF MERCY le 2026-11-08
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : SKY FULL OF STARS → 80849496
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : SKY FULL OF STARS le 2026-11-13
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : CALEMA → 1802220957
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : CALEMA le 2026-11-14
+2026-02-25 08:33:03 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-25 08:33:03 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : MENTISSA → 1534970092
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : MENTISSA le 2026-11-20
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : CASSE-NOISETTE → 1009294272
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : CASSE-NOISETTE le 2026-11-21
+2026-02-25 08:33:03 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : MAMMOTH → 3805773112
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : MAMMOTH le 2026-12-01
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : TYPH BARROW → 143420876
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : TYPH BARROW le 2026-12-05
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : TRIBUTE TO THE BEATLES → 76979311
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : TRIBUTE TO THE BEATLES le 2026-12-11
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : DORO → 3572450371
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : DORO le 2026-12-16
+2026-02-25 08:33:03 [DEBUG] Deezer track_id : SUZANE → 3480520401
+2026-02-25 08:33:03 [DEBUG] date_created conservé depuis .bak : SUZANE le 2027-01-15
+2026-02-25 08:33:04 [DEBUG] Deezer track_id : ONE VISION OF QUEEN → introuvable
+2026-02-25 08:33:04 [DEBUG] date_created conservé depuis .bak : ONE VISION OF QUEEN le 2027-02-14
+2026-02-25 08:33:04 [DEBUG] Deezer track_id : IBRAHIM MAALOUF → 3810795232
+2026-02-25 08:33:04 [DEBUG] date_created conservé depuis .bak : IBRAHIM MAALOUF le 2027-03-30
+2026-02-25 08:33:04 [DEBUG] Deezer track_id : EROS RAMAZZOTTI → 604845
+2026-02-25 08:33:04 [DEBUG] date_created conservé depuis .bak : EROS RAMAZZOTTI le 2027-04-01
+2026-02-25 08:33:04 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-25 08:33:04 [DEBUG] Deezer track_id : RALF SCHMITZ → introuvable
+2026-02-25 08:33:04 [DEBUG] date_created conservé depuis .bak : RALF SCHMITZ le 2027-12-02
+2026-02-25 08:33:04 [DEBUG] Deezer track_id : GRAND CORPS MALADE → 991348192
+2026-02-25 08:33:04 [DEBUG] date_created conservé depuis .bak : GRAND CORPS MALADE le 2027-12-09
+2026-02-25 08:33:04 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-25 08:33:04 [INFO] Résultat : 210 concerts (24 doublons supprimés)
+2026-02-25 08:33:04 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json
+2026-02-25 08:33:04 [INFO] Merge terminé avec succès
+2026-02-25 08:52:39 [INFO] ============================================================
+2026-02-25 08:52:39 [INFO] Démarrage du merge (format=json)
+2026-02-25 08:52:39 [INFO] Ancien fichier sauvegardé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-25 08:52:39 [INFO] Cache Deezer pré-chargé depuis .bak : 172 artiste(s)
+2026-02-25 08:52:39 [INFO] Cache date_created pré-chargé depuis .bak : 210 concert(s)
+2026-02-25 08:52:39 [INFO] Traitement : scrape_atelier_concerts.json
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Jason Derulo → 5420471
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Jason Derulo le 2026-02-24
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Coeur de Pirate le 2026-02-25
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : MIKA → 953606
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : MIKA le 2026-02-25
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : David Byrne → 3622778352
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : David Byrne le 2026-02-26
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Moulinex - Atelier Afterwork → introuvable
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Moulinex - Atelier Afterwork le 2026-02-27
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Sean Paul → 3401876061
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Sean Paul le 2026-02-27
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : The Divine Comedy → 3438162031
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : The Divine Comedy le 2026-02-28
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Lalou → 3173280991
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Lalou le 2026-02-28
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-01
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Al Di Meola → 1031231
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Al Di Meola le 2026-03-02
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Taïro → 1449437502
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Taïro le 2026-03-04
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : OZARK HENRY → 3274346861
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : OZARK HENRY le 2026-03-05
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Grandbrothers → 3665882992
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Grandbrothers le 2026-03-06
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Grossstadtgeflüster → 3782845982
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Grossstadtgeflüster le 2026-03-07
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Maro → 3092383971
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Maro le 2026-03-08
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Tom Smith → 3434173851
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Tom Smith le 2026-03-12
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Kraftklub → 3551861331
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Kraftklub le 2026-03-13
+2026-02-25 08:52:39 [DEBUG] Deezer track_id : Alice Merton → 140182699
+2026-02-25 08:52:39 [DEBUG] date_created conservé depuis .bak : Alice Merton le 2026-03-14
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Stop Making Sense → introuvable
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Stop Making Sense le 2026-03-14
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Helge Schneider → 69405472
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Helge Schneider le 2026-03-15
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Les Négresses Vertes → 355628701
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Les Négresses Vertes le 2026-03-19
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Ão → 2589355202
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Ão le 2026-03-19
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : L.E.J → 3751803362
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : L.E.J le 2026-03-20
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Hooverphonic → 850423
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Hooverphonic le 2026-03-21
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : CLAIR OBSCUR : EXPEDITION 33 → 3315246271
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Charles Doré → 3546543301
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Charles Doré le 2026-03-27
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Protoje → 3365737181
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Protoje le 2026-03-28
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Sprints → 3725078372
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Sprints le 2026-03-29
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Poppy → 3541168831
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Poppy le 2026-04-01
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Mobb Deep → 1044131
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Mobb Deep le 2026-04-08
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Franz Ferdinand → 4315684
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Franz Ferdinand le 2026-04-10
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Dirty Dancing → 127471883
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Dirty Dancing le 2026-04-10
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Kiefer Sutherland → 3788336172
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Kiefer Sutherland le 2026-04-14
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Dekker → 3807173122
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Dekker le 2026-04-23
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Bénabar → 583033
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Bénabar le 2026-04-24
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Alvaro Soler → 1512096542
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Alvaro Soler le 2026-04-26
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Jools Holland and his Rhythm & Blues Orchestra → 3029916881
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Jools Holland and his Rhythm & Blues Orchestra le 2026-04-26
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Joe Bonamassa → 7731922
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Joe Bonamassa le 2026-04-27
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Michael Patrick Kelly → 1977980357
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Michael Patrick Kelly le 2026-04-30
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Kasalla → 94654714
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Kasalla le 2026-05-05
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Sarah Connor → 98348314
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Sarah Connor le 2026-05-07
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Sofia Isella → 3650500662
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Sofia Isella le 2026-05-08
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Jalen Ngonda → 3456173171
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Jalen Ngonda le 2026-05-12
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Blue → 3097538
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Blue le 2026-05-15
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Dermot Kennedy → 610861462
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Dermot Kennedy le 2026-05-20
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Rodrigo y Gabriela - 20th Anniversary Tour → introuvable
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Rodrigo y Gabriela - 20th Anniversary Tour le 2026-05-20
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Beth Hart → 1587111862
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Beth Hart le 2026-05-26
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Antony Szmierek → 3247931101
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Antony Szmierek le 2026-05-28
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : XZIBIT (US) feat. Furnace Band → introuvable
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : XZIBIT (US) feat. Furnace Band le 2026-06-02
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : MEGADETH → 61382107
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : MEGADETH le 2026-06-11
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Ethel Cain → 1875510297
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Ethel Cain le 2026-06-13
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Big Thief → 2300028585
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Big Thief le 2026-06-18
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : ANTHRAX → 1176687
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : ANTHRAX le 2026-06-21
+2026-02-25 08:52:40 [DEBUG] Deezer track_id : Rise Against → 7472037
+2026-02-25 08:52:40 [DEBUG] date_created conservé depuis .bak : Rise Against le 2026-06-23
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Absolut Bartreng → introuvable
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Absolut Bartreng le 2026-06-27
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Chris Isaak → 788457
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Chris Isaak le 2026-06-30
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : The Offspring → 137233986
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : The Offspring le 2026-07-01
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : AnnenMayKantereit → 700711312
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : AnnenMayKantereit le 2026-07-02
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Dogstar → 2369141675
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Dogstar le 2026-07-02
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Moby → 134817088
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Moby le 2026-07-03
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Gorillaz → 3129407
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Gorillaz le 2026-07-05
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Robbie Williams → 3098217
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Robbie Williams le 2026-07-06
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Jamiroquai → 1884719637
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Jamiroquai le 2026-07-07
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Lenny Kravitz → 3107395
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Lenny Kravitz le 2026-07-08
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Zaz → 65220769
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Zaz le 2026-07-08
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Beirut → 426572052
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Beirut le 2026-07-09
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Clueso → 1727984087
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Clueso le 2026-07-12
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Katy Perry → 3160142
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Katy Perry le 2026-07-14
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Jovanotti → 922477
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Jovanotti le 2026-07-15
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Paul Kalkbrenner → 3502053411
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Paul Kalkbrenner le 2026-07-17
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Beatsteaks → 106828470
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Beatsteaks le 2026-08-13
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Lorde → 70403437
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Lorde le 2026-09-01
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : 1986zig → 3817588512
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : 1986zig le 2026-09-23
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Sportfreunde Stiller → 1791078487
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Sportfreunde Stiller le 2026-10-07
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Lake Street Dive → 74689498
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Lake Street Dive le 2026-10-14
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Samu Haber → 2664911172
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Samu Haber le 2026-10-15
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : LOI → 2086818497
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : LOI le 2026-10-18
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Sofia Belabbes → introuvable
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Sofia Belabbes le 2026-10-23
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Kneecap → 2643667232
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Kneecap le 2026-11-06
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Heavysaurus → 13784094
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Heavysaurus le 2026-11-15
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Martin Kohlstedt → 672944332
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Martin Kohlstedt le 2026-11-17
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Tokio Hotel → 7718640
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Tokio Hotel le 2026-11-18
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Joe Jackson + Band → 3864069
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Joe Jackson + Band le 2026-11-18
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Zebrahead → 2299895755
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Zebrahead le 2026-11-19
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : The Witcher → 2826779992
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : The Witcher le 2026-11-20
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : Beast in Black → 659569532
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : Beast in Black le 2026-11-21
+2026-02-25 08:52:41 [DEBUG] Deezer track_id : NeS → 2876956142
+2026-02-25 08:52:41 [DEBUG] date_created conservé depuis .bak : NeS le 2026-11-21
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Conni - Das Musical! → introuvable
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Conni - Das Musical! le 2026-11-22
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Lichterkinder → 1209436532
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Lichterkinder le 2026-11-29
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Zimmer90 → 2968007141
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Zimmer90 le 2026-11-30
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : PORTUGAL. THE MAN → 371593461
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : PORTUGAL. THE MAN le 2026-12-03
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Philipp Poisel → 1721562237
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Philipp Poisel le 2026-12-15
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Das Lumpenpack → 1951178967
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Das Lumpenpack le 2027-02-27
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Jessé → 424970262
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Jessé le 2027-04-17
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Ana Godefroy → 1876217737
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Ana Godefroy le 2027-04-23
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Cédric Salaun → 2539237531
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Cédric Salaun le 2027-04-29
+2026-02-25 08:52:42 [INFO] Traitement : scrape_casino2000_concerts.json
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Dany Brillant → 701967
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Dany Brillant le 2026-02-27
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Charlie Winston → 1794958997
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Charlie Winston le 2026-02-28
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Barbara Pravi → 1125778602
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Barbara Pravi le 2026-03-05
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Sinclair → introuvable
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Sinclair le 2026-03-07
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Garou le 2026-03-11
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Garou → 871455
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Garou le 2026-03-12
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Ycare → 1745815157
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Ycare le 2026-04-04
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Yannick Noah → 858943
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Yannick Noah le 2026-04-11
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Imany → 444887352
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Imany le 2026-04-17
+2026-02-25 08:52:42 [DEBUG] Deezer track_id : Nino d'Angelo → 15782978
+2026-02-25 08:52:42 [DEBUG] date_created conservé depuis .bak : Nino d'Angelo le 2026-04-25
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Génération 90-2000 avec DJ Mast → introuvable
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Génération 90-2000 avec DJ Mast le 2026-05-08
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Una Roberta débarque au Luxembourg → introuvable
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Una Roberta débarque au Luxembourg le 2026-09-27
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Julien Clerc → 3105622
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Julien Clerc le 2026-10-09
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Jimmy Sax → 814814372
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Jimmy Sax le 2026-10-10
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Laurent Voulzy → 632222
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Laurent Voulzy le 2026-10-23
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Lilly Wood and The Prick → 7155162
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Lilly Wood and The Prick le 2026-10-24
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Pupo → 3030396791
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Pupo le 2026-10-25
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Salif Keita → 2826343892
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Salif Keita le 2026-10-29
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Belinda Davids → 954043112
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Belinda Davids le 2026-11-13
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : I Muvrini → 114291724
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : I Muvrini le 2026-11-15
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Calogero → 132629150
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Calogero le 2026-11-27
+2026-02-25 08:52:43 [DEBUG] Deezer track_id : Coeur de Pirate → 2517277181
+2026-02-25 08:52:43 [DEBUG] date_created conservé depuis .bak : Coeur de Pirate le 2026-11-28
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : Jeremy Charbonnel → introuvable
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : Jeremy Charbonnel le 2026-12-19
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : Skip The Use → 3784998222
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : Skip The Use le 2027-02-13
+2026-02-25 08:52:44 [INFO] Traitement : scrape_rockhal_concerts.json
+2026-02-25 08:52:44 [DEBUG] Doublon ignoré : JASON DERULO le 2026-02-24
+2026-02-25 08:52:44 [DEBUG] Doublon ignoré : MIKA le 2026-02-25
+2026-02-25 08:52:44 [DEBUG] Doublon ignoré : DAVID BYRNE le 2026-02-26
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : AUPINARD → 3640132372
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : AUPINARD le 2026-02-26
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : BETWEEN THE BURIED AND ME → 3547183121
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : BETWEEN THE BURIED AND ME le 2026-02-27
+2026-02-25 08:52:44 [DEBUG] Doublon ignoré : SEAN PAUL le 2026-02-27
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : D'JAL → 924897842
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : D'JAL le 2026-02-28
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : TONY CARREIRA → 1091896092
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : TONY CARREIRA le 2026-03-01
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : OMNIUM GATHERUM + Fallujah + In Mourning → introuvable
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : OMNIUM GATHERUM + Fallujah + In Mourning le 2026-03-01
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : THE CLASSIC ROCK SHOW → introuvable
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : THE CLASSIC ROCK SHOW le 2026-03-02
+2026-02-25 08:52:44 [DEBUG] Deezer track_id : SUPERBUS → 3198384621
+2026-02-25 08:52:44 [DEBUG] date_created conservé depuis .bak : SUPERBUS le 2026-03-05
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-06
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : THE WORLD OF HANS ZIMMER → introuvable
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-25 08:52:45 [DEBUG] Doublon ignoré : THE WORLD OF HANS ZIMMER le 2026-03-07
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : JOSH ISLAND → 1347656192
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : JOSH ISLAND le 2026-03-07
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul → introuvable
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : HEAVEN SHALL BURN + The Halo Effect + The Black Dahlia Murder + Frozen Soul le 2026-03-11
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : CARPENTER BRUT → 3689743052
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : CARPENTER BRUT le 2026-03-12
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : LUXEMBOURG MUSIC VIDEO NIGHT 2026 → introuvable
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG MUSIC VIDEO NIGHT 2026 le 2026-03-13
+2026-02-25 08:52:45 [DEBUG] Doublon ignoré : KRAFTKLUB le 2026-03-13
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : LEVI.SCT → 2437376535
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : LEVI.SCT le 2026-03-15
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : CAPITÃO FAUSTO → 2698280712
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : CAPITÃO FAUSTO le 2026-03-17
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : DUB INC → 93916028
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : DUB INC le 2026-03-19
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : GOOD NEIGHBOURS → 2622232942
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : GOOD NEIGHBOURS le 2026-03-19
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : DISIZ → 3558373981
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : DISIZ le 2026-03-21
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : ANDY TIMMONS → 109186636
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : ANDY TIMMONS le 2026-03-22
+2026-02-25 08:52:45 [DEBUG] Doublon ignoré : CLAIR OBSCUR : EXPEDITION 33 le 2026-03-25
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : LUK. + LUC SPADA → 3817636891
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : LUK. + LUC SPADA le 2026-03-25
+2026-02-25 08:52:45 [DEBUG] Deezer track_id : DO YOU RAVE? → 2456145305
+2026-02-25 08:52:45 [DEBUG] date_created conservé depuis .bak : DO YOU RAVE? le 2026-03-28
+2026-02-25 08:52:46 [DEBUG] Deezer track_id : PAT PATROUILLE LE SPECTACLE ! → introuvable
+2026-02-25 08:52:46 [DEBUG] date_created conservé depuis .bak : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-25 08:52:46 [DEBUG] Doublon ignoré : PAT PATROUILLE LE SPECTACLE ! le 2026-03-29
+2026-02-25 08:52:46 [DEBUG] Deezer track_id : KREATOR + Carcass + Exodus + Nails → introuvable
+2026-02-25 08:52:46 [DEBUG] date_created conservé depuis .bak : KREATOR + Carcass + Exodus + Nails le 2026-03-31
+2026-02-25 08:52:46 [DEBUG] Deezer track_id : JOSMAN → 1684004267
+2026-02-25 08:52:46 [DEBUG] date_created conservé depuis .bak : JOSMAN le 2026-04-03
+2026-02-25 08:52:46 [DEBUG] Doublon ignoré : FRANZ FERDINAND le 2026-04-10
+2026-02-25 08:52:46 [DEBUG] Deezer track_id : ZAMDANE → 3574546951
+2026-02-25 08:52:46 [DEBUG] date_created conservé depuis .bak : ZAMDANE le 2026-04-11
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : LE LAC DES CYGNES → introuvable
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : LE LAC DES CYGNES le 2026-04-12
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : NEK → 683846
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : NEK le 2026-04-14
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : ISE → 3579448581
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : ISE le 2026-04-15
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : MOOFEST → 2294072085
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : MOOFEST le 2026-04-18
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : HAEVN → 3067264031
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : HAEVN le 2026-04-19
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : CARISA DIAS + NAOMI AYÉ → introuvable
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : CARISA DIAS + NAOMI AYÉ le 2026-04-23
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : NEXT DEED → 2099986987
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : NEXT DEED le 2026-04-25
+2026-02-25 08:52:47 [DEBUG] Doublon ignoré : JOE BONAMASSA le 2026-04-27
+2026-02-25 08:52:47 [DEBUG] Doublon ignoré : MICHAEL PATRICK KELLY le 2026-04-30
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : MATTEO MANCUSO → 3728637832
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : MATTEO MANCUSO le 2026-05-03
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : SCOTT BRADLEE'S POSTMODERN JUKEBOX → 133034462
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : SCOTT BRADLEE'S POSTMODERN JUKEBOX le 2026-05-05
+2026-02-25 08:52:47 [DEBUG] Doublon ignoré : SARAH CONNOR le 2026-05-07
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : TALI → 2703400752
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : TALI le 2026-05-08
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : METAL BATTLE → 414750102
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : METAL BATTLE le 2026-05-09
+2026-02-25 08:52:47 [DEBUG] Deezer track_id : PINK FLOYD'S THE WALL → 116914042
+2026-02-25 08:52:47 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S THE WALL le 2026-05-10
+2026-02-25 08:52:48 [DEBUG] Deezer track_id : PINK FLOYD'S DARK SIDE OF THE MOON → introuvable
+2026-02-25 08:52:48 [DEBUG] date_created conservé depuis .bak : PINK FLOYD'S DARK SIDE OF THE MOON le 2026-05-10
+2026-02-25 08:52:48 [DEBUG] Deezer track_id : CHRISTOPHER CROSS → 4828150
+2026-02-25 08:52:48 [DEBUG] date_created conservé depuis .bak : CHRISTOPHER CROSS le 2026-05-10
+2026-02-25 08:52:48 [DEBUG] Deezer track_id : MAYA + THALAMUSPROJECT → introuvable
+2026-02-25 08:52:48 [DEBUG] date_created conservé depuis .bak : MAYA + THALAMUSPROJECT le 2026-05-13
+2026-02-25 08:52:48 [DEBUG] Deezer track_id : LIGABUE → 6633023
+2026-02-25 08:52:48 [DEBUG] date_created conservé depuis .bak : LIGABUE le 2026-05-14
+2026-02-25 08:52:48 [DEBUG] Deezer track_id : HOUDI → 2554977372
+2026-02-25 08:52:48 [DEBUG] date_created conservé depuis .bak : HOUDI le 2026-05-16
+2026-02-25 08:52:48 [DEBUG] Doublon ignoré : DERMOT KENNEDY le 2026-05-20
+2026-02-25 08:52:48 [DEBUG] Deezer track_id : HIMRA → 3803817212
+2026-02-25 08:52:48 [DEBUG] date_created conservé depuis .bak : HIMRA le 2026-05-22
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) → introuvable
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : I HATE MODELS + GUESTS (DO YOU RAVE? XXL) le 2026-05-23
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : THE GATHERING → 108645480
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : THE GATHERING le 2026-05-25
+2026-02-25 08:52:49 [DEBUG] Doublon ignoré : BETH HART le 2026-05-26
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : PLINI + SUNGAZER → 1333998522
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : PLINI + SUNGAZER le 2026-05-27
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : PUGGY → 2522139891
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : PUGGY le 2026-05-28
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : THE ARISTOCRATS → 13645471
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : THE ARISTOCRATS le 2026-05-29
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : LUXEMBOURG  DU RIRE → introuvable
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-25 08:52:49 [DEBUG] Doublon ignoré : LUXEMBOURG  DU RIRE le 2026-05-30
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : MARI FROES → 3336883571
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : MARI FROES le 2026-05-31
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : ZUCCHERO → 1565238
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : ZUCCHERO le 2026-06-03
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-07
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : DIE TOTEN HOSEN → 142393383
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : DIE TOTEN HOSEN le 2026-06-08
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : GHINZU → 4303580
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : GHINZU le 2026-06-09
+2026-02-25 08:52:49 [DEBUG] Doublon ignoré : MEGADETH le 2026-06-11
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : TRIVIUM → 395723882
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : TRIVIUM le 2026-06-15
+2026-02-25 08:52:49 [DEBUG] Doublon ignoré : ANNENMAYKANTEREIT le 2026-07-02
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : A PERFECT CIRCLE → 3092700
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : A PERFECT CIRCLE le 2026-07-04
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : EMPIRE OF THE SUN → 4286053
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : EMPIRE OF THE SUN le 2026-07-05
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : ALICE COOPER → 730866
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : ALICE COOPER le 2026-07-08
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : ZZ TOP → 3667326
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : ZZ TOP le 2026-07-10
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : JAZEEK → 3244582061
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : JAZEEK le 2026-07-16
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-17
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : ERIC JOHNSON → 14600400
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : ERIC JOHNSON le 2026-07-19
+2026-02-25 08:52:49 [DEBUG] Doublon ignoré : LORDE le 2026-09-01
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION → introuvable
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : QUEEN THE UNIQUE ROCK SYMPHONIC CELEBRATION le 2026-09-20
+2026-02-25 08:52:49 [DEBUG] Deezer track_id : FISCHER Z → 3460908
+2026-02-25 08:52:49 [DEBUG] date_created conservé depuis .bak : FISCHER Z le 2026-09-25
+2026-02-25 08:52:50 [DEBUG] Deezer track_id : LEGENDS OF ROCK TRIBUTE FESTIVAL → introuvable
+2026-02-25 08:52:50 [DEBUG] date_created conservé depuis .bak : LEGENDS OF ROCK TRIBUTE FESTIVAL le 2026-09-26
+2026-02-25 08:52:50 [DEBUG] Deezer track_id : SPIRITBOX + JINJER + DYING WISH → introuvable
+2026-02-25 08:52:50 [DEBUG] date_created conservé depuis .bak : SPIRITBOX + JINJER + DYING WISH le 2026-10-06
+2026-02-25 08:52:50 [DEBUG] Deezer track_id : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL → introuvable
+2026-02-25 08:52:50 [DEBUG] date_created conservé depuis .bak : BEHEMOTH + DIMMU BORGIR + DARK FUNERAL le 2026-10-11
+2026-02-25 08:52:50 [DEBUG] Deezer track_id : PHILIP SAYCE → 61032651
+2026-02-25 08:52:50 [DEBUG] date_created conservé depuis .bak : PHILIP SAYCE le 2026-10-12
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : AMON AMARTH + ORBIT CULTURE + SOILWORK → introuvable
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : AMON AMARTH + ORBIT CULTURE + SOILWORK le 2026-10-14
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : PHILIPPE KATERINE SYMPHONIQUE → introuvable
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : PHILIPPE KATERINE SYMPHONIQUE le 2026-10-14
+2026-02-25 08:52:51 [DEBUG] Doublon ignoré : SAMU HABER le 2026-10-15
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : LARA FABIAN → 80920774
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : LARA FABIAN le 2026-10-18
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : THE FRONTM3N → 579940692
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : THE FRONTM3N le 2026-10-23
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : GUY2BEZBAR → 3329681251
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : GUY2BEZBAR le 2026-10-24
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : LAURA PAUSINI → 760199
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : LAURA PAUSINI le 2026-10-27
+2026-02-25 08:52:51 [DEBUG] Doublon ignoré : KNEECAP le 2026-11-06
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : VANESSA PARADIS → 13621853
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : VANESSA PARADIS le 2026-11-07
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : THE SISTERS OF MERCY → 70212122
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : THE SISTERS OF MERCY le 2026-11-08
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : SKY FULL OF STARS → 80849496
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : SKY FULL OF STARS le 2026-11-13
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : CALEMA → 1802220957
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : CALEMA le 2026-11-14
+2026-02-25 08:52:51 [DEBUG] Doublon ignoré : TOKIO HOTEL le 2026-11-18
+2026-02-25 08:52:51 [DEBUG] Doublon ignoré : THE WITCHER le 2026-11-20
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : MENTISSA → 1534970092
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : MENTISSA le 2026-11-20
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : CASSE-NOISETTE → 1009294272
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : CASSE-NOISETTE le 2026-11-21
+2026-02-25 08:52:51 [DEBUG] Doublon ignoré : BEAST IN BLACK le 2026-11-21
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : MAMMOTH → 3805773112
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : MAMMOTH le 2026-12-01
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : TYPH BARROW → 143420876
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : TYPH BARROW le 2026-12-05
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : TRIBUTE TO THE BEATLES → 76979311
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : TRIBUTE TO THE BEATLES le 2026-12-11
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : DORO → 3572450371
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : DORO le 2026-12-16
+2026-02-25 08:52:51 [DEBUG] Deezer track_id : SUZANE → 3480520401
+2026-02-25 08:52:51 [DEBUG] date_created conservé depuis .bak : SUZANE le 2027-01-15
+2026-02-25 08:52:52 [DEBUG] Deezer track_id : ONE VISION OF QUEEN → introuvable
+2026-02-25 08:52:52 [DEBUG] date_created conservé depuis .bak : ONE VISION OF QUEEN le 2027-02-14
+2026-02-25 08:52:52 [DEBUG] Deezer track_id : IBRAHIM MAALOUF → 3810795232
+2026-02-25 08:52:52 [DEBUG] date_created conservé depuis .bak : IBRAHIM MAALOUF le 2027-03-30
+2026-02-25 08:52:52 [DEBUG] Deezer track_id : EROS RAMAZZOTTI → 604845
+2026-02-25 08:52:52 [DEBUG] date_created conservé depuis .bak : EROS RAMAZZOTTI le 2027-04-01
+2026-02-25 08:52:52 [DEBUG] Doublon ignoré : ANA GODEFROY le 2027-04-23
+2026-02-25 08:52:52 [DEBUG] Deezer track_id : RALF SCHMITZ → introuvable
+2026-02-25 08:52:52 [DEBUG] date_created conservé depuis .bak : RALF SCHMITZ le 2027-12-02
+2026-02-25 08:52:52 [DEBUG] Deezer track_id : GRAND CORPS MALADE → 991348192
+2026-02-25 08:52:52 [DEBUG] date_created conservé depuis .bak : GRAND CORPS MALADE le 2027-12-09
+2026-02-25 08:52:52 [DEBUG] Backup supprimé : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json.bak
+2026-02-25 08:52:52 [INFO] Résultat : 210 concerts (24 doublons supprimés)
+2026-02-25 08:52:52 [INFO] Fichier généré : C:\Users\jlp\Documents\dev\infoconcert.lu\python\OUT\concerts.json
+2026-02-25 08:52:52 [INFO] Merge terminé avec succès
