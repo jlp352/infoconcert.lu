@@ -57,6 +57,9 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] créer logo
 		- [x] Mettre GitHub pour la sauvegarde
 		- [x] Version Mobile
+		- [ ] Bouton remonter en haut du site
+				regarder Exemple dans Doc et fichier demo-back-to-top.html
+		- [ ] Fonctioner pour marquer un concert comme favori
 
 #### Serveur en local
 		- [x] Faire la doc générale et technique
@@ -70,11 +73,11 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 			- [x] Doc
 		- [x] Kulturfabrik
 		- [x] Rockhall regroupé tous le salles sous Rockhal dans location
-#### Test
-		- Test en détail
-			- [x] Partie Python
-			- [x] Partie Web
-		
+#### Bugs
+		- Partie Web
+			- [x] Fenêtre New Concert mal centré en version Mobile
+		- Partie Scripts
+			
 #### Mise en Prod
 		- [ ] Prendre abonnement Web + DNS chez OVH
 		- [ ] Regarder comment upload en auto json du serveur local vers WebServer

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Démo — Bouton Retour en Haut</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #1a1208;
+      --paper:  #f5f0e8;
+      --accent: #b85c38;
+      --muted:  #7a6a55;
+      --line:   #d6cebe;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* ─── HEADER ─────────────────────────────── */
+    header {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 80px 40px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,.03) 40px,
+        rgba(255,255,255,.03) 41px
+      );
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 6vw, 4rem);
+      letter-spacing: -1px;
+      position: relative;
+    }
+    header p {
+      font-style: italic;
+      color: #b0a090;
+      margin-top: 12px;
+      font-size: 1rem;
+      position: relative;
+    }
+    .scroll-hint {
+      margin-top: 40px;
+      font-size: .85rem;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      position: relative;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(6px); }
+    }
+
+    /* ─── CONTENT ────────────────────────────── */
+    main { max-width: 720px; margin: 0 auto; padding: 60px 24px 120px; }
+
+    section { margin-bottom: 72px; }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    p + p { margin-top: 16px; }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      padding: 16px 24px;
+      margin: 28px 0;
+      background: #ede8de;
+      font-style: italic;
+      color: var(--muted);
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* ─── BACK TO TOP BUTTON ─────────────────── */
+    #backToTop {
+      position: fixed;
+      bottom: 36px;
+      right: 36px;
+      z-index: 9999;
+
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      background: var(--accent);
+      color: #fff;
+      font-size: 22px;
+      font-family: 'Playfair Display', serif;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /* masqué par défaut */
+      opacity: 0;
+      transform: translateY(20px) scale(0.85);
+      pointer-events: none;
+      transition: opacity .35s ease, transform .35s cubic-bezier(.34,1.56,.64,1);
+
+      box-shadow: 0 6px 24px rgba(184,92,56,.45);
+    }
+
+    #backToTop.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    #backToTop:hover {
+      background: #9c4828;
+      transform: translateY(-3px) scale(1.08);
+      box-shadow: 0 10px 30px rgba(184,92,56,.55);
+    }
+
+    #backToTop:active {
+      transform: scale(0.95);
+    }
+
+    /* ─── FOOTER ─────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 32px;
+      color: var(--muted);
+      font-size: .85rem;
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+
+  <header id="top">
+    <h1>Démo : Bouton retour en haut</h1>
+    <p>Scrollez vers le bas pour voir apparaître le bouton flottant →</p>
+    <div class="scroll-hint">↓ Descendez ↓</div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>I. L'art du scroll</h2>
+      <p>Les pages web modernes sont souvent longues, riches en contenu, et l'utilisateur se retrouve rapidement loin du début. Un simple bouton flottant change radicalement l'expérience de navigation : il suffit d'un clic pour revenir en haut, sans effort.</p>
+      <p>Ce bouton n'apparaît que lorsque vous avez scrollé de plus de <strong>300 pixels</strong>. Il est invisible au départ pour ne pas parasiter la lecture.</p>
+      <blockquote>
+        « La bonne UX, c'est celle qu'on ne remarque pas — jusqu'au moment où on en a besoin. »
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>II. Comment ça fonctionne</h2>
+      <p>Techniquement, le bouton est positionné en <code>position: fixed</code>, ce qui le maintient ancré en bas à droite de la fenêtre, quelle que soit la position de la page.</p>
+      <p>Un écouteur d'événement sur <code>window.scroll</code> surveille la position verticale. Dès que <code>window.scrollY</code> dépasse 300px, la classe <code>.visible</code> est ajoutée au bouton, déclenchant l'animation CSS d'apparition.</p>
+      <p>Au clic, <code>window.scrollTo({ top: 0, behavior: 'smooth' })</code> remonte la page en douceur grâce au défilement natif du navigateur.</p>
+    </section>
+
+    <section>
+      <h2>III. Personnalisation</h2>
+      <p>Vous pouvez ajuster : la couleur et la forme du bouton, le seuil de déclenchement (ici 300px), la vitesse et le type d'animation, et bien sûr l'icône (flèche, texte, SVG, Font Awesome…).</p>
+      <blockquote>
+        Le bouton ↑ en bas à droite est prêt à l'action. Essayez-le !
+      </blockquote>
+      <p>La transition utilise un easing <em>cubic-bezier</em> avec un léger rebond pour rendre l'apparition vivante et naturelle. Ce genre de micro-interaction améliore subtilement la perception de qualité d'une interface.</p>
+    </section>
+
+    <section>
+      <h2>IV. Accessibilité</h2>
+      <p>L'attribut <code>title="Retour en haut"</code> fournit un tooltip accessible. Pour aller plus loin, vous pouvez ajouter <code>aria-label="Retour en haut de page"</code> afin que les lecteurs d'écran annoncent correctement l'action du bouton.</p>
+      <p>Penser à l'accessibilité dès le départ, c'est s'assurer que la fonctionnalité profite à tous les utilisateurs, y compris ceux qui naviguent au clavier ou avec des technologies d'assistance.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    Exemple réalisé en HTML / CSS / JS pur — aucune dépendance externe.
+  </footer>
+
+  <!-- ─── BOUTON RETOUR EN HAUT ─── -->
+  <button id="backToTop" title="Retour en haut" aria-label="Retour en haut de page">↑</button>
+
+  <script>
+    const btn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 300);
+    });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>

@@ -972,5 +972,56 @@
         applyTranslations();
         scrollToHash();
     </script>
+
+    <!-- ─── BOUTON RETOUR EN HAUT ─── -->
+    <button id="backToTop" title="Retour en haut" aria-label="Retour en haut de page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <style>
+        #backToTop {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 9999;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            background: var(--primary);
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(16px);
+            pointer-events: none;
+            transition: opacity .3s ease, transform .3s cubic-bezier(.34,1.56,.64,1), background .2s, box-shadow .2s;
+            box-shadow: 0 0 16px rgba(255,51,102,.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #backToTop.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        #backToTop:hover {
+            background: #e6194f;
+            box-shadow: 0 0 28px rgba(255,51,102,.8);
+            transform: translateY(-2px) scale(1.1);
+        }
+        #backToTop:active {
+            transform: scale(0.95);
+        }
+    </style>
+    <script>
+        (function() {
+            var _btt = document.getElementById('backToTop');
+            window.addEventListener('scroll', function() {
+                _btt.classList.toggle('visible', window.scrollY > 300);
+            });
+            _btt.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
 </body>
 </html>
