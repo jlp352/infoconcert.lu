@@ -57,9 +57,8 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] créer logo
 		- [x] Mettre GitHub pour la sauvegarde
 		- [x] Version Mobile
-		- [ ] Bouton remonter en haut du site
-				regarder Exemple dans Doc et fichier demo-back-to-top.html
-		- [ ] Fonctioner pour marquer un concert comme favori
+		- [x] Bouton remonter en haut du site
+		- [ ] Fonction pour marquer un concert comme favori
 
 #### Serveur en local
 		- [x] Faire la doc générale et technique

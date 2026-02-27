@@ -80,7 +80,9 @@
             background-clip: text;
             text-shadow: 0 0 30px rgba(255, 51, 102, 0.5);
             animation: glow 3s ease-in-out infinite;
+            cursor: default;
         }
+        .logo:hover::after { width: 0; }
 
         @keyframes glow {
             0%, 100% { filter: brightness(1); }
@@ -703,7 +705,7 @@
             background: rgba(255, 51, 102, 0.1);
             border: 2px solid var(--primary);
             border-radius: 40px;
-            animation: fadeIn 0.3s ease;
+            animation: fadeIn 0.3s ease forwards;
         }
 
         .artist-filter-banner.visible {
@@ -1058,6 +1060,35 @@
                 gap: 0.75rem;
                 padding: 1.2rem 1rem;
                 text-align: center;
+            }
+
+            /* Toast centré sur mobile */
+            .toast-new {
+                position: fixed;
+                top: 80px;
+                left: 16px;
+                right: 16px;
+                width: auto;
+                max-width: none;
+            }
+            /* Masquer la flèche décorative (ancrée au nav, sans sens sur mobile) */
+            .toast-new::before,
+            .toast-new::after {
+                display: none;
+            }
+
+            /* Banner filtre artiste sur mobile */
+            .artist-filter-banner {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+                border-radius: 16px;
+                padding: 0.85rem 1rem;
+            }
+            .artist-filter-reset {
+                width: 100%;
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
             }
         }
 
@@ -1799,7 +1830,7 @@
         <h2 class="section-title" data-i18n="section_upcoming">Concerts à venir</h2>
 
         <div class="artist-filter-banner" id="artist-filter-banner">
-            <span id="artist-filter-label" data-i18n="search_filter_label">Artiste :</span>
+            <span id="artist-filter-label">Artiste :</span>
             <span class="artist-filter-name" id="artist-filter-name"></span>
             <button class="artist-filter-reset" id="artist-filter-reset" data-i18n="search_filter_reset">Voir tous les concerts</button>
         </div>
@@ -1941,6 +1972,7 @@
                 cookie_decline:       'Refuser',
                 toast_new_concerts:   (n) => `🆕 ${n} nouveau${n > 1 ? 'x' : ''} concert${n > 1 ? 's' : ''} depuis votre dernière visite`,
                 toast_view:           'Voir',
+                new_filter_label:     '🆕 Nouveautés :',
                 filter_new:           (n) => `🆕 Nouveautés (${n})`,
                 legal_cookies:        'Charte des cookies',
                 legal_cgu:            'Conditions d\'utilisation (CGU) du site',
@@ -1999,6 +2031,7 @@
                 cookie_decline:       'Decline',
                 toast_new_concerts:   (n) => `🆕 ${n} new concert${n > 1 ? 's' : ''} since your last visit`,
                 toast_view:           'View',
+                new_filter_label:     '🆕 New :',
                 filter_new:           (n) => `🆕 New (${n})`,
                 legal_cookies:        'Cookie Policy',
                 legal_cgu:            'Terms of Use',
@@ -2057,6 +2090,7 @@
                 cookie_decline:       'Ablehnen',
                 toast_new_concerts:   (n) => `🆕 ${n} neue${n > 1 ? '' : 's'} Konzert${n > 1 ? 'e' : ''} seit Ihrem letzten Besuch`,
                 toast_view:           'Anzeigen',
+                new_filter_label:     '🆕 Neu :',
                 filter_new:           (n) => `🆕 Neu (${n})`,
                 legal_cookies:        'Cookie-Richtlinie',
                 legal_cgu:            'Nutzungsbedingungen',
@@ -3056,24 +3090,35 @@
 
         function filterByArtist(artistName) {
             activeArtistFilter = artistName;
-            // Reset all advanced filters when doing an artist search
-            if (typeof resetAdvFilters === 'function') resetAdvFilters();
-            const banner      = document.getElementById('artist-filter-banner');
-            const bannerName  = document.getElementById('artist-filter-name');
-            bannerName.textContent = artistName;
-            banner.classList.add('visible');
+            activeFilter = 'all';
 
+            // Réinitialiser les filtres avancés SANS déclencher applyAdvFilters
+            // (évite un re-rendu intermédiaire qui entre en conflit avec la propagation
+            //  d'événements depuis le toast et empêche l'affichage du banner)
+            advFilter.quickMode = null;
+            advFilter.months.clear();
+            advFilter.genres.clear();
+            advFilter.venues.clear();
+            document.getElementById('qbtn-this-month').classList.remove('active');
+            document.getElementById('qbtn-next-month').classList.remove('active');
+            updateDropdownBadge('dd-month', 0);
+            updateDropdownBadge('dd-genre', 0);
+            updateDropdownBadge('dd-venue', 0);
+            document.querySelectorAll('.adv-dropdown-panel input[type="checkbox"]').forEach(cb => cb.checked = false);
+            updateResetBtn();
+            updateActivePills();
+
+            // Rendre uniquement les concerts de cet artiste
             const filtered = allConcerts.filter(c =>
                 c.artist.toLowerCase() === artistName.toLowerCase()
             );
             renderConcerts(filtered);
-
-            // Scroll to section
-            document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Le banner et le scroll sont gérés par chaque appelant
         }
 
         function resetArtistFilter() {
             activeArtistFilter = null;
+            activeFilter = 'all';
             document.getElementById('artist-filter-banner').classList.remove('visible');
             applyAdvFilters();
         }
@@ -3115,6 +3160,10 @@
             searchInput.value = '';
             searchClear.style.display = 'none';
             filterByArtist(artistName);
+            document.getElementById('artist-filter-label').textContent = t('search_filter_label');
+            document.getElementById('artist-filter-name').textContent  = artistName;
+            document.getElementById('artist-filter-banner').classList.add('visible');
+            document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
 
         searchClear.addEventListener('click', () => {
@@ -3243,8 +3292,15 @@
                     const id = item.dataset.concertId;
                     const concert = allConcerts.find(c => String(c.id) === String(id));
                     if (concert) {
+                        const artistName = concert.artist;
+                        // Filtrer + montrer le banner en synchrone (même ordre que le chemin recherche)
+                        filterByArtist(artistName);
+                        document.getElementById('artist-filter-label').textContent = t('search_filter_label');
+                        document.getElementById('artist-filter-name').textContent  = artistName;
+                        document.getElementById('artist-filter-banner').classList.add('visible');
+                        document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        // Fermer le toast EN DERNIER (après que le banner soit affiché)
                         hideToast();
-                        filterByArtist(concert.artist);
                     }
                 });
             });
@@ -3263,13 +3319,27 @@
         document.getElementById('toast-new-close').addEventListener('click', hideToast);
 
         document.getElementById('toast-btn-view').addEventListener('click', () => {
-            hideToast();
-            resetAdvFilters();
+            // Réinitialiser l'état sans double rendu (même pattern que filterByArtist)
+            activeArtistFilter = null;
+            advFilter.quickMode = null;
+            advFilter.months.clear(); advFilter.genres.clear(); advFilter.venues.clear();
+            document.getElementById('qbtn-this-month').classList.remove('active');
+            document.getElementById('qbtn-next-month').classList.remove('active');
+            updateDropdownBadge('dd-month', 0); updateDropdownBadge('dd-genre', 0); updateDropdownBadge('dd-venue', 0);
+            document.querySelectorAll('.adv-dropdown-panel input[type="checkbox"]').forEach(cb => cb.checked = false);
+            updateResetBtn(); updateActivePills();
+            // Rendre uniquement les nouveaux concerts
             activeFilter = 'new';
-            renderConcerts(allConcerts.filter(c =>
+            const newConcerts = allConcerts.filter(c =>
                 lastVisitDate && new Date(c.date_created) > new Date(lastVisitDate)
-            ));
+            );
+            renderConcerts(newConcerts);
+            // Montrer le banner en synchrone (avant hideToast)
+            document.getElementById('artist-filter-label').textContent = t('new_filter_label');
+            document.getElementById('artist-filter-name').textContent  = '';
+            document.getElementById('artist-filter-banner').classList.add('visible');
             document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            hideToast();
         });
 
         // Appelé après loadConcerts pour calculer et afficher les nouveautés
@@ -3299,6 +3369,13 @@
             if (toast && toast.style.display !== 'none' && newConcertsCount > 0) {
                 document.getElementById('toast-new-msg').textContent = t('toast_new_concerts')(newConcertsCount);
                 document.getElementById('toast-btn-view').textContent = t('toast_view');
+            }
+            // Mettre à jour le label du banner filtre artiste / nouveautés
+            if (activeArtistFilter) {
+                document.getElementById('artist-filter-label').textContent = t('search_filter_label');
+                document.getElementById('artist-filter-name').textContent  = activeArtistFilter;
+            } else if (activeFilter === 'new') {
+                document.getElementById('artist-filter-label').textContent = t('new_filter_label');
             }
             // Mettre à jour les labels du footer
             const elVer = document.getElementById('footer-version');
