@@ -2,7 +2,7 @@
 
 ## Présentation du site
 
-Le site infoConcert.lu est un site vitrine dédié à l'affichage d'informations sur les concerts au Luxembourg. Il ne propose ni vente en ligne, ni espace personnel utilisateur.
+Le site infoConcert.lu est un site vitrine dédié à l'affichage d'informations sur les concerts au Luxembourg. Il ne propose ni vente en ligne, ni compte utilisateur. Les préférences personnelles (liste de concerts à voir, langue d'affichage) sont enregistrées uniquement dans le navigateur de l'utilisateur via le stockage local (localStorage) et ne sont jamais transmises à un serveur.
 
 ## Éditeur
 

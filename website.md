@@ -49,6 +49,7 @@ Les concerts sont triés chronologiquement et regroupés par mois (`Janvier 2026
 **Chaque carte de concert affiche :**
 - Image de l'événement (ou dégradé coloré en fallback)
 - Badge de statut (`Billets Disponibles` / `Complet` / `Mise en vente prochaine`)
+- Bouton cœur wishlist `🤍 / 🩷` (superposé sur l'image)
 - Date du concert
 - Nom de l'artiste
 - Badges de genres musicaux
@@ -147,7 +148,48 @@ Un bandeau de consentement apparaît à la première visite. Il propose deux opt
 
 ---
 
-#### 7. Toast « Nouveaux concerts »
+#### 7. Wishlist (Ma liste)
+
+L'utilisateur peut ajouter des concerts à une liste personnelle sans nécessiter de compte ni d'acceptation de cookies.
+
+**Bouton cœur sur chaque carte :**
+- Bouton `🤍` superposé en bas à droite de l'image de chaque concert
+- Au survol : tooltip « À voir » (traduit dans les 3 langues), agrandissement et fond légèrement opaque
+- État actif (`🩷`) : fond rose semi-transparent + classe `in-wishlist`
+
+**Bouton « Ma liste » dans la navigation :**
+- Bouton `🩷 Ma liste` permanent dans la barre de navigation
+- Badge numérique indiquant le nombre de concerts dans la liste
+- Clic : ouvre un popup (style identique au toast nouveaux concerts) listant les concerts enregistrés
+- Si la liste est vide, le badge est masqué
+
+**Popup wishlist :**
+- Liste des concerts enregistrés : miniature, artiste, salle, date
+- Bouton `Retirer` (`✕`) sur chaque entrée pour supprimer individuellement
+- Bouton `Voir` : affiche uniquement les concerts de la liste (active `activeFilter = 'wishlist'`)
+- Bouton `Effacer la liste` : supprime toutes les entrées et réinitialise la vue si active
+- Fermeture automatique en cliquant en dehors du popup
+
+**Persistance :**
+- Stockée dans `localStorage` sous la clé `ic_wishlist` (tableau d'IDs, JSON)
+- Fonctionne indépendamment du consentement aux cookies
+- Survit aux rechargements de page
+
+**Traductions wishlist :**
+
+| Clé i18n               | FR                     | EN              | DE                  |
+|------------------------|------------------------|-----------------|---------------------|
+| `wishlist_btn_add`     | 🤍 À voir              | 🤍 To see       | 🤍 Merken           |
+| `wishlist_btn_added`   | 🩷 Dans ma liste       | 🩷 In my list   | 🩷 In meiner Liste  |
+| `wishlist_nav_label`   | Ma liste               | My list         | Meine Liste         |
+| `wishlist_panel_empty` | Votre liste est vide.  | Your list is empty. | Ihre Liste ist leer. |
+| `wishlist_panel_reset` | Effacer la liste       | Clear list      | Liste leeren        |
+| `wishlist_view`        | Voir                   | View            | Anzeigen            |
+| `wishlist_remove`      | Retirer                | Remove          | Entfernen           |
+
+---
+
+#### 8. Toast « Nouveaux concerts »
 
 Lorsque l'utilisateur a accepté les cookies et revient sur le site après une précédente visite, un toast (notification) apparaît automatiquement 800 ms après le chargement des concerts si de nouveaux concerts ont été ajoutés depuis la dernière visite (comparaison via `date_created`).
 
@@ -226,3 +268,13 @@ Cliquer sur un concert dans le toast active le filtre par artiste correspondant.
 | `applyTranslations()`        | Applique la langue active sur tout le DOM                |
 | `detectLang()`               | Détecte la langue depuis `localStorage` ou `navigator`  |
 | `setCookie / getCookie`      | Utilitaires de gestion des cookies RGPD                  |
+| `loadWishlist()`             | Charge la wishlist depuis `localStorage` à l'init        |
+| `saveWishlist()`             | Persiste la wishlist dans `localStorage`                 |
+| `toggleWishlist(id)`         | Ajoute ou retire un concert de la wishlist               |
+| `isInWishlist(id)`           | Vérifie si un concert est dans la wishlist               |
+| `updateWishlistButtons()`    | Synchronise l'état visuel de tous les boutons cœur       |
+| `updateWishlistNavBtn()`     | Met à jour le badge et masque/affiche le bouton nav      |
+| `showWishlistPopup()`        | Ouvre le popup wishlist                                  |
+| `hideWishlistPopup()`        | Ferme le popup wishlist                                  |
+| `renderWishlistPopup()`      | Génère le HTML du popup (liste + boutons d'action)       |
+| `buildWishlistItem(concert)` | Génère le HTML d'un item dans le popup wishlist          |

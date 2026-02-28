@@ -7,7 +7,9 @@ et via email : **[contact@infoconcert.lu]**
 
 ## Données collectées
 
-Ce site est un site vitrine sans formulaire d'inscription ni espace personnel. **Aucune donnée personnelle n'est collectée** auprès des visiteurs, à l'exception des adresses IP partielles enregistrées automatiquement dans les logs du serveur pour des raisons de sécurité technique. Ces données ne permettent pas d'identifier un individu.
+Ce site est un site vitrine sans formulaire d'inscription ni compte utilisateur. **Aucune donnée personnelle n'est collectée** auprès des visiteurs, à l'exception des adresses IP partielles enregistrées automatiquement dans les logs du serveur pour des raisons de sécurité technique. Ces données ne permettent pas d'identifier un individu.
+
+Les préférences de navigation (liste de concerts mémorisés, langue choisie) sont stockées localement dans le navigateur via le localStorage. Ces données ne transitent pas par nos serveurs et ne font l'objet d'aucun traitement de notre part.
 
 Si un formulaire de contact est présent, les données saisies (nom, e-mail, message) sont utilisées uniquement pour répondre à la demande et ne sont pas conservées au-delà du temps nécessaire.
 

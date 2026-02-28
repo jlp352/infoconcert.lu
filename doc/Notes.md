@@ -58,7 +58,7 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- [x] Mettre GitHub pour la sauvegarde
 		- [x] Version Mobile
 		- [x] Bouton remonter en haut du site
-		- [ ] Fonction pour marquer un concert comme favori
+		- [x] Fonction pour marquer un concert comme favori
 
 #### Serveur en local
 		- [x] Faire la doc générale et technique

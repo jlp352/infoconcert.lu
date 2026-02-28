@@ -569,10 +569,19 @@
                     <table class="legal-table">
                         <thead><tr><th>Cookie</th><th>Finalité</th><th>Durée</th></tr></thead>
                         <tbody>
-                            <tr><td><code>session_id</code></td><td>Maintien de la session de navigation</td><td>Supprimé à la fermeture du navigateur</td></tr>
                             <tr><td><code>last_visit</code></td><td>Mémorisation de la date de votre dernière visite afin d'afficher uniquement les nouveaux concerts depuis votre passage</td><td>1 an</td></tr>
                         </tbody>
                     </table>
+                    <p><strong>Stockage local (localStorage)</strong></p>
+                    <p>En complément des cookies, ce site utilise le <strong>stockage local du navigateur</strong> (localStorage) pour mémoriser certaines préférences. Ces données restent exclusivement sur votre appareil et ne sont jamais transmises à un serveur.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Clé</th><th>Finalité</th><th>Persistance</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>ic_wishlist</code></td><td>Mémorisation de votre liste de concerts à voir</td><td>Jusqu'à effacement manuel ou réinitialisation de la liste</td></tr>
+                            <tr><td><code>lang</code></td><td>Mémorisation de la langue d'affichage choisie</td><td>Jusqu'à effacement manuel</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Vous pouvez supprimer ces données depuis les paramètres de votre navigateur (section « Stockage » ou « Données de site »).</p>
                     <p><strong>Cookies statistiques (Google Analytics)</strong></p>
                     <p>Ce site utilise <strong>Google Analytics</strong>, un service d'analyse d'audience fourni par Google LLC. Ces cookies permettent de mesurer le nombre de visiteurs, les pages consultées et le comportement de navigation, afin d'améliorer le site.</p>
                     <p>Les données collectées sont transmises à Google et peuvent être hébergées en dehors de l'Union européenne. Google est soumis aux clauses contractuelles types de la Commission européenne encadrant ces transferts.</p>
@@ -595,7 +604,7 @@
 
                 cgu_content: `
                     <h3>Présentation du site</h3>
-                    <p>Le site infoConcert.lu est un site vitrine dédié à l'affichage d'informations sur les concerts au Luxembourg. Il ne propose ni vente en ligne, ni espace personnel utilisateur.</p>
+                    <p>Le site infoConcert.lu est un site vitrine dédié à l'affichage d'informations sur les concerts au Luxembourg. Il ne propose ni vente en ligne, ni compte utilisateur. Les préférences personnelles (liste de concerts à voir, langue d'affichage) sont enregistrées uniquement dans le navigateur de l'utilisateur via le stockage local (localStorage) et ne sont jamais transmises à un serveur.</p>
 
                     <h3>Éditeur</h3>
                     <p>Le site est édité par jlp352, accessible via son profil <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github</a> et via email : <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
@@ -632,7 +641,8 @@
                     <p>jlp352, accessible via son profil <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github</a> et via email : <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
 
                     <h3>Données collectées</h3>
-                    <p>Ce site est un site vitrine sans formulaire d'inscription ni espace personnel. <strong>Aucune donnée personnelle n'est collectée</strong> auprès des visiteurs, à l'exception des adresses IP partielles enregistrées automatiquement dans les logs du serveur pour des raisons de sécurité technique. Ces données ne permettent pas d'identifier un individu.</p>
+                    <p>Ce site est un site vitrine sans formulaire d'inscription ni compte utilisateur. <strong>Aucune donnée personnelle n'est collectée</strong> auprès des visiteurs, à l'exception des adresses IP partielles enregistrées automatiquement dans les logs du serveur pour des raisons de sécurité technique. Ces données ne permettent pas d'identifier un individu.</p>
+                    <p>Les préférences de navigation (liste de concerts mémorisés, langue choisie) sont stockées localement dans le navigateur via le localStorage. Ces données ne transitent pas par nos serveurs et ne font l'objet d'aucun traitement de notre part.</p>
                     <p>Si un formulaire de contact est présent, les données saisies (nom, e-mail, message) sont utilisées uniquement pour répondre à la demande et ne sont pas conservées au-delà du temps nécessaire.</p>
 
                     <h3>Données issues de sites tiers</h3>
@@ -670,10 +680,19 @@
                     <table class="legal-table">
                         <thead><tr><th>Cookie</th><th>Purpose</th><th>Duration</th></tr></thead>
                         <tbody>
-                            <tr><td><code>session_id</code></td><td>Maintaining the browsing session</td><td>Deleted when the browser is closed</td></tr>
                             <tr><td><code>last_visit</code></td><td>Remembering your last visit date to display only new concerts since your last visit</td><td>1 year</td></tr>
                         </tbody>
                     </table>
+                    <p><strong>Local storage (localStorage)</strong></p>
+                    <p>In addition to cookies, this site uses the browser's <strong>local storage</strong> (localStorage) to remember certain preferences. This data remains exclusively on your device and is never transmitted to a server.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Key</th><th>Purpose</th><th>Persistence</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>ic_wishlist</code></td><td>Saving your list of concerts to see</td><td>Until manual deletion or list reset</td></tr>
+                            <tr><td><code>lang</code></td><td>Remembering your chosen display language</td><td>Until manual deletion</td></tr>
+                        </tbody>
+                    </table>
+                    <p>You can delete this data from your browser settings (under "Storage" or "Site Data").</p>
                     <p><strong>Analytics cookies (Google Analytics)</strong></p>
                     <p>This site uses <strong>Google Analytics</strong>, an audience analysis service provided by Google LLC. These cookies measure the number of visitors, pages viewed and browsing behaviour, in order to improve the site.</p>
                     <p>The data collected is transmitted to Google and may be hosted outside the European Union. Google is subject to the European Commission's standard contractual clauses governing these transfers.</p>
@@ -696,7 +715,7 @@
 
                 cgu_content: `
                     <h3>About the site</h3>
-                    <p>infoConcert.lu is a showcase website dedicated to displaying information about concerts in Luxembourg. It offers neither online sales nor a personal user area.</p>
+                    <p>infoConcert.lu is a showcase website dedicated to displaying information about concerts in Luxembourg. It offers neither online sales nor user accounts. Personal preferences (concert wish list, display language) are stored solely in the user's browser via local storage (localStorage) and are never transmitted to a server.</p>
 
                     <h3>Publisher</h3>
                     <p>The site is published by jlp352, accessible via his <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github profile</a> and by email: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
@@ -733,7 +752,8 @@
                     <p>jlp352, accessible via his <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github profile</a> and by email: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
 
                     <h3>Data collected</h3>
-                    <p>This is a showcase site with no registration form or personal area. <strong>No personal data is collected</strong> from visitors, except for partial IP addresses automatically recorded in server logs for technical security reasons. This data does not allow identification of an individual.</p>
+                    <p>This is a showcase site with no registration form or user account. <strong>No personal data is collected</strong> from visitors, except for partial IP addresses automatically recorded in server logs for technical security reasons. This data does not allow identification of an individual.</p>
+                    <p>Browsing preferences (saved concert list, chosen language) are stored locally in the browser via localStorage. This data does not pass through our servers and is not processed by us in any way.</p>
                     <p>If a contact form is present, the data entered (name, email, message) is used solely to respond to the request and is not kept longer than necessary.</p>
 
                     <h3>Data from third-party sites</h3>
@@ -771,10 +791,19 @@
                     <table class="legal-table">
                         <thead><tr><th>Cookie</th><th>Zweck</th><th>Dauer</th></tr></thead>
                         <tbody>
-                            <tr><td><code>session_id</code></td><td>Aufrechterhaltung der Browsersitzung</td><td>Wird beim Schließen des Browsers gelöscht</td></tr>
                             <tr><td><code>last_visit</code></td><td>Speicherung des Datums Ihres letzten Besuchs, um nur neue Konzerte seit Ihrem letzten Besuch anzuzeigen</td><td>1 Jahr</td></tr>
                         </tbody>
                     </table>
+                    <p><strong>Lokaler Speicher (localStorage)</strong></p>
+                    <p>Zusätzlich zu Cookies verwendet diese Website den <strong>lokalen Speicher des Browsers</strong> (localStorage), um bestimmte Einstellungen zu speichern. Diese Daten verbleiben ausschließlich auf Ihrem Gerät und werden nie an einen Server übertragen.</p>
+                    <table class="legal-table">
+                        <thead><tr><th>Schlüssel</th><th>Zweck</th><th>Persistenz</th></tr></thead>
+                        <tbody>
+                            <tr><td><code>ic_wishlist</code></td><td>Speicherung Ihrer Liste der zu sehenden Konzerte</td><td>Bis zur manuellen Löschung oder Zurücksetzung der Liste</td></tr>
+                            <tr><td><code>lang</code></td><td>Speicherung der gewählten Anzeigesprache</td><td>Bis zur manuellen Löschung</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Sie können diese Daten in den Einstellungen Ihres Browsers löschen (Bereich „Speicher" oder „Website-Daten").</p>
                     <p><strong>Statistik-Cookies (Google Analytics)</strong></p>
                     <p>Diese Website verwendet <strong>Google Analytics</strong>, einen von Google LLC bereitgestellten Besucheranalysedienst. Diese Cookies messen die Anzahl der Besucher, die aufgerufenen Seiten und das Surfverhalten, um die Website zu verbessern.</p>
                     <p>Die erhobenen Daten werden an Google übermittelt und können außerhalb der Europäischen Union gespeichert werden. Google unterliegt den Standardvertragsklauseln der Europäischen Kommission, die diese Übermittlungen regeln.</p>
@@ -797,7 +826,7 @@
 
                 cgu_content: `
                     <h3>Über die Website</h3>
-                    <p>infoConcert.lu ist eine Präsentationswebsite, die Informationen über Konzerte in Luxemburg anzeigt. Sie bietet weder Online-Verkauf noch einen persönlichen Benutzerbereich.</p>
+                    <p>infoConcert.lu ist eine Präsentationswebsite, die Informationen über Konzerte in Luxemburg anzeigt. Sie bietet weder Online-Verkauf noch Benutzerkonten. Persönliche Einstellungen (Konzert-Merkliste, Anzeigesprache) werden ausschließlich im Browser des Nutzers über den lokalen Speicher (localStorage) gespeichert und nie an einen Server übertragen.</p>
 
                     <h3>Herausgeber</h3>
                     <p>Die Website wird von jlp352 herausgegeben, erreichbar über sein <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github-Profil</a> und per E-Mail: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
@@ -834,7 +863,8 @@
                     <p>jlp352, erreichbar über sein <a href="https://github.com/jlp352/" target="_blank" rel="noopener">Github-Profil</a> und per E-Mail: <a href="mailto:contact@infoconcert.lu">contact@infoconcert.lu</a></p>
 
                     <h3>Erhobene Daten</h3>
-                    <p>Dies ist eine Präsentationswebsite ohne Anmeldeformular oder persönlichen Bereich. <strong>Es werden keine personenbezogenen Daten</strong> von Besuchern erhoben, mit Ausnahme von partiellen IP-Adressen, die automatisch in Server-Logs aus technischen Sicherheitsgründen erfasst werden. Diese Daten ermöglichen keine Identifizierung einer Person.</p>
+                    <p>Dies ist eine Präsentationswebsite ohne Anmeldeformular oder Benutzerkonto. <strong>Es werden keine personenbezogenen Daten</strong> von Besuchern erhoben, mit Ausnahme von partiellen IP-Adressen, die automatisch in Server-Logs aus technischen Sicherheitsgründen erfasst werden. Diese Daten ermöglichen keine Identifizierung einer Person.</p>
+                    <p>Browsing-Einstellungen (gespeicherte Konzertliste, gewählte Sprache) werden lokal im Browser über localStorage gespeichert. Diese Daten werden nicht über unsere Server übertragen und von uns in keiner Weise verarbeitet.</p>
                     <p>Wenn ein Kontaktformular vorhanden ist, werden die eingegebenen Daten (Name, E-Mail, Nachricht) ausschließlich zur Beantwortung der Anfrage verwendet und nicht länger als notwendig aufbewahrt.</p>
 
                     <h3>Daten von Drittanbieter-Websites</h3>

@@ -10,8 +10,18 @@ Ces cookies sont indispensables au bon fonctionnement du site. Ils ne collectent
 
 |Cookie|Finalité|Durée|
 |---|---|---|
-|`session_id`|Maintien de la session de navigation|Supprimé à la fermeture du navigateur|
 |`last_visit`|Mémorisation de la date de votre dernière visite afin d'afficher uniquement les nouveaux concerts depuis votre passage|1 an|
+
+### Stockage local (localStorage)
+
+En complément des cookies, ce site utilise le **stockage local du navigateur** (localStorage) pour mémoriser certaines préférences de manière persistante. Ces données restent exclusivement sur votre appareil et ne sont jamais transmises à un serveur.
+
+|Clé|Finalité|Persistance|
+|---|---|---|
+|`ic_wishlist`|Mémorisation de votre liste de concerts à voir|Jusqu'à effacement manuel ou réinitialisation de la liste|
+|`lang`|Mémorisation de la langue d'affichage choisie|Jusqu'à effacement manuel|
+
+Vous pouvez supprimer ces données à tout moment depuis les paramètres de votre navigateur (section « Stockage » ou « Données de site »).
 
 ### Cookies statistiques (Google Analytics)
 
