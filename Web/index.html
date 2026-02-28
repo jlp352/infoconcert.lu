@@ -742,6 +742,218 @@
             color: var(--primary);
         }
 
+        /* ── Wishlist ─────────────────────────────────────────────────────── */
+
+        /* Bouton carte "À voir / Dans ma liste" */
+        /* Cœur wishlist superposé sur l'image */
+        .btn-wishlist {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.45);
+            border: none;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            font-size: 1.25rem;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.55;
+            backdrop-filter: blur(4px);
+            transition: opacity 0.2s, transform 0.2s, background 0.2s;
+        }
+
+        .btn-wishlist:hover {
+            opacity: 1;
+            transform: scale(1.18);
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        .btn-wishlist.in-wishlist {
+            opacity: 1;
+            background: rgba(255, 51, 102, 0.3);
+        }
+
+        /* Tooltip au survol */
+        .btn-wishlist::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: calc(100% + 6px);
+            right: 0;
+            background: rgba(0, 0, 0, 0.82);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            white-space: nowrap;
+            padding: 0.3rem 0.65rem;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(4px);
+            transition: opacity 0.18s, transform 0.18s;
+        }
+
+        .btn-wishlist:hover::after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Bouton nav "Ma liste" */
+        .wishlist-nav-btn {
+            display: none; /* caché quand liste vide */
+            align-items: center;
+            gap: 0.4rem;
+            background: none;
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 20px;
+            color: var(--light);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 0.35rem 1rem;
+            cursor: pointer;
+            transition: all 0.25s;
+            white-space: nowrap;
+        }
+
+        .wishlist-nav-btn.has-items {
+            display: flex;
+            border-color: #ff3366;
+            color: #ff3366;
+        }
+
+        .wishlist-nav-btn:hover {
+            background: rgba(255, 51, 102, 0.1);
+        }
+
+        .wishlist-nav-badge {
+            background: #ff3366;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            border-radius: 10px;
+            padding: 0.05rem 0.45rem;
+            min-width: 1.3rem;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Popup wishlist — même style que le toast nouveaux concerts */
+        .wishlist-popup {
+            display: none;
+            position: fixed;
+            top: 90px;
+            right: 16px;
+            z-index: 1500;
+            background: #1e1e1e;
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            width: 360px;
+            max-width: calc(100vw - 32px);
+            box-shadow: 0 16px 50px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,51,102,0.15);
+            flex-direction: column;
+            overflow: visible;
+        }
+
+        .wishlist-popup.open {
+            display: flex;
+            animation: slideInToast 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Flèche pointant vers le haut */
+        .wishlist-popup::before {
+            content: '';
+            position: absolute;
+            top: -9px;
+            right: var(--arrow-right, 28px);
+            width: 16px;
+            height: 9px;
+            background: var(--primary);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            z-index: 1;
+        }
+        .wishlist-popup::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            right: calc(var(--arrow-right, 28px) + 2px);
+            width: 12px;
+            height: 7px;
+            background: #1e1e1e;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            z-index: 2;
+        }
+
+        .wishlist-popup-inner {
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Footer wishlist : 2 boutons côte à côte */
+        .wishlist-popup-footer {
+            gap: 0.5rem;
+        }
+        .wishlist-popup-footer .toast-btn-view {
+            flex: 1;
+            width: auto;
+        }
+        .wishlist-btn-reset {
+            flex: 1;
+            padding: 0.45rem 1rem;
+            background: none;
+            color: rgba(255,255,255,0.6);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .wishlist-btn-reset:hover {
+            border-color: #ff3366;
+            color: #ff3366;
+        }
+
+        /* Bouton "Retirer" dans chaque item */
+        .wishlist-item-remove {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.45);
+            border-radius: 8px;
+            padding: 0.22rem 0.55rem;
+            font-size: 0.72rem;
+            font-family: 'Outfit', sans-serif;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex-shrink: 0;
+            line-height: 1.4;
+        }
+
+        .wishlist-item-remove:hover {
+            border-color: #ff3366;
+            color: #ff3366;
+        }
+
+        /* Mobile : popup plein largeur */
+        @media (max-width: 768px) {
+            .wishlist-popup {
+                left: 16px;
+                right: 16px;
+                width: auto;
+                max-width: none;
+            }
+            .wishlist-popup::before,
+            .wishlist-popup::after { display: none; }
+        }
+
         /* ── Cookie banner ───────────────────────────────────────────────── */
         .cookie-banner {
             position: fixed;
@@ -1794,6 +2006,26 @@
                 </li>
             </ul>
             <div class="lang-switcher-wrapper">
+                <!-- Bouton Ma liste -->
+                <div id="wishlist-nav-li">
+                    <button class="wishlist-nav-btn" id="wishlist-nav-btn">
+                        🩷 <span id="wishlist-nav-label" data-i18n="wishlist_nav_label">Ma liste</span>
+                        <span class="wishlist-nav-badge" id="wishlist-nav-badge">0</span>
+                    </button>
+                    <div class="wishlist-popup" id="wishlist-popup">
+                        <div class="wishlist-popup-inner">
+                            <div class="toast-new-header">
+                                <span class="toast-new-msg" id="wishlist-popup-title">🩷 Ma liste</span>
+                                <button class="toast-new-close" id="wishlist-popup-close">✕</button>
+                            </div>
+                            <div class="toast-concerts-list" id="wishlist-popup-list"></div>
+                            <div class="toast-new-footer wishlist-popup-footer">
+                                <button class="toast-btn-view" id="wishlist-popup-view"></button>
+                                <button class="wishlist-btn-reset" id="wishlist-popup-reset"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="lang-switcher" id="lang-switcher">
                     <button class="lang-btn" data-lang="fr">FR</button>
                     <button class="lang-btn" data-lang="en">EN</button>
@@ -1973,6 +2205,15 @@
                 toast_new_concerts:   (n) => `🆕 ${n} nouveau${n > 1 ? 'x' : ''} concert${n > 1 ? 's' : ''} depuis votre dernière visite`,
                 toast_view:           'Voir',
                 new_filter_label:     '🆕 Nouveautés :',
+                wishlist_btn_add:     '🤍 À voir',
+                wishlist_btn_added:   '🩷 Dans ma liste',
+                wishlist_nav_label:   'Ma liste',
+                wishlist_panel_title: (n) => `Ma liste (${n} concert${n > 1 ? 's' : ''})`,
+                wishlist_panel_empty: 'Votre liste est vide.',
+                wishlist_panel_reset: 'Effacer la liste',
+                wishlist_filter_label:'🩷 Ma liste :',
+                wishlist_view:        'Voir',
+                wishlist_remove:      'Retirer',
                 filter_new:           (n) => `🆕 Nouveautés (${n})`,
                 legal_cookies:        'Charte des cookies',
                 legal_cgu:            'Conditions d\'utilisation (CGU) du site',
@@ -2032,6 +2273,15 @@
                 toast_new_concerts:   (n) => `🆕 ${n} new concert${n > 1 ? 's' : ''} since your last visit`,
                 toast_view:           'View',
                 new_filter_label:     '🆕 New :',
+                wishlist_btn_add:     '🤍 To see',
+                wishlist_btn_added:   '🩷 In my list',
+                wishlist_nav_label:   'My list',
+                wishlist_panel_title: (n) => `My list (${n} concert${n > 1 ? 's' : ''})`,
+                wishlist_panel_empty: 'Your list is empty.',
+                wishlist_panel_reset: 'Clear list',
+                wishlist_filter_label:'🩷 My list :',
+                wishlist_view:        'View',
+                wishlist_remove:      'Remove',
                 filter_new:           (n) => `🆕 New (${n})`,
                 legal_cookies:        'Cookie Policy',
                 legal_cgu:            'Terms of Use',
@@ -2091,6 +2341,15 @@
                 toast_new_concerts:   (n) => `🆕 ${n} neue${n > 1 ? '' : 's'} Konzert${n > 1 ? 'e' : ''} seit Ihrem letzten Besuch`,
                 toast_view:           'Anzeigen',
                 new_filter_label:     '🆕 Neu :',
+                wishlist_btn_add:     '🤍 Merken',
+                wishlist_btn_added:   '🩷 In meiner Liste',
+                wishlist_nav_label:   'Meine Liste',
+                wishlist_panel_title: (n) => `Meine Liste (${n} Konzert${n > 1 ? 'e' : ''})`,
+                wishlist_panel_empty: 'Ihre Liste ist leer.',
+                wishlist_panel_reset: 'Liste leeren',
+                wishlist_filter_label:'🩷 Meine Liste :',
+                wishlist_view:        'Anzeigen',
+                wishlist_remove:      'Entfernen',
                 filter_new:           (n) => `🆕 Neu (${n})`,
                 legal_cookies:        'Cookie-Richtlinie',
                 legal_cgu:            'Nutzungsbedingungen',
@@ -2345,6 +2604,7 @@
                 <div class="concert-image" style="background:${gradient}">
                     ${imageHtml}
                     ${statusHtml}
+                    <button class="btn-wishlist" data-concert-id="${concert.id}" data-tooltip="À voir">🤍</button>
                 </div>
                 <div class="concert-content">
                     <span class="concert-date">${formatDate(concert.date_live)}</span>
@@ -2441,6 +2701,7 @@
             }).join('');
 
             count.textContent = t('concert_count')(concerts.length);
+            updateWishlistButtons();
         }
 
         // ── Apply all active filters and re-render ────────────────────────────
@@ -3376,6 +3637,8 @@
                 document.getElementById('artist-filter-name').textContent  = activeArtistFilter;
             } else if (activeFilter === 'new') {
                 document.getElementById('artist-filter-label').textContent = t('new_filter_label');
+            } else if (activeFilter === 'wishlist') {
+                document.getElementById('artist-filter-label').textContent = t('wishlist_filter_label');
             }
             // Mettre à jour les labels du footer
             const elVer = document.getElementById('footer-version');
@@ -3384,7 +3647,240 @@
             }
             const elLabel = document.getElementById('footer-lastupdate-label');
             if (elLabel) elLabel.textContent = t('footer_lastupdate');
+            // Mettre à jour les textes wishlist
+            updateWishlistButtons();
+            document.getElementById('wishlist-nav-label').textContent = t('wishlist_nav_label');
+            if (document.getElementById('wishlist-popup').classList.contains('open')) {
+                renderWishlistPopup();
+            }
         };
+
+        // ── Wishlist ──────────────────────────────────────────────────────────
+
+        let wishlist = []; // tableau d'IDs de concerts
+
+        function loadWishlist() {
+            try {
+                const stored = localStorage.getItem('ic_wishlist');
+                wishlist = stored ? JSON.parse(stored) : [];
+            } catch(e) {
+                wishlist = [];
+            }
+            updateWishlistNavBtn();
+        }
+
+        function saveWishlist() {
+            localStorage.setItem('ic_wishlist', JSON.stringify(wishlist));
+        }
+
+        function isInWishlist(id) {
+            return wishlist.includes(String(id));
+        }
+
+        function toggleWishlist(id) {
+            id = String(id);
+            if (isInWishlist(id)) {
+                wishlist = wishlist.filter(x => x !== id);
+            } else {
+                wishlist.push(id);
+            }
+            saveWishlist();
+            updateWishlistNavBtn();
+            updateWishlistButtons();
+            if (document.getElementById('wishlist-popup').classList.contains('open')) {
+                renderWishlistPopup();
+            }
+        }
+
+        function updateWishlistButtons() {
+            document.querySelectorAll('.btn-wishlist').forEach(btn => {
+                const id = String(btn.dataset.concertId);
+                if (isInWishlist(id)) {
+                    btn.textContent = '🩷';
+                    btn.dataset.tooltip = t('wishlist_btn_added');
+                    btn.classList.add('in-wishlist');
+                } else {
+                    btn.textContent = '🤍';
+                    btn.dataset.tooltip = t('wishlist_btn_add');
+                    btn.classList.remove('in-wishlist');
+                }
+            });
+        }
+
+        function updateWishlistNavBtn() {
+            const btn   = document.getElementById('wishlist-nav-btn');
+            const badge = document.getElementById('wishlist-nav-badge');
+            const n = wishlist.length;
+            if (n > 0) {
+                btn.classList.add('has-items');
+                badge.textContent = n;
+            } else {
+                btn.classList.remove('has-items');
+                badge.textContent = '0';
+                hideWishlistPopup();
+            }
+        }
+
+        function showWishlistPopup() {
+            renderWishlistPopup();
+            const popup = document.getElementById('wishlist-popup');
+            popup.classList.add('open');
+            // Positionner la flèche vers le centre du bouton "Ma liste"
+            requestAnimationFrame(function() {
+                const btn      = document.getElementById('wishlist-nav-btn');
+                const btnRect  = btn.getBoundingClientRect();
+                const popRect  = popup.getBoundingClientRect();
+                const btnCenterX   = btnRect.left + btnRect.width / 2;
+                const arrowRight   = Math.round(popRect.right - btnCenterX - 8); // 8 = demi-largeur flèche
+                const clamped      = Math.max(8, Math.min(arrowRight, popRect.width - 24));
+                popup.style.setProperty('--arrow-right', clamped + 'px');
+            });
+        }
+
+        function hideWishlistPopup() {
+            document.getElementById('wishlist-popup').classList.remove('open');
+        }
+
+        function renderWishlistPopup() {
+            const n = wishlist.length;
+            // Titre dans le header
+            document.getElementById('wishlist-popup-title').textContent = t('wishlist_panel_title')(n);
+            // Labels des boutons footer
+            document.getElementById('wishlist-popup-view').textContent  = t('wishlist_view');
+            document.getElementById('wishlist-popup-reset').textContent = t('wishlist_panel_reset');
+
+            const list    = document.getElementById('wishlist-popup-list');
+            const btnView = document.getElementById('wishlist-popup-view');
+            const btnReset= document.getElementById('wishlist-popup-reset');
+
+            if (n === 0) {
+                list.innerHTML = `<p style="text-align:center;opacity:0.45;font-size:0.88rem;padding:1.2rem 1rem;">${t('wishlist_panel_empty')}</p>`;
+                btnView.style.display  = 'none';
+                btnReset.style.display = 'none';
+                return;
+            }
+
+            btnView.style.display  = '';
+            btnReset.style.display = '';
+
+            list.innerHTML = wishlist.map(id => {
+                const concert = allConcerts.find(c => String(c.id) === id);
+                return concert ? buildWishlistItem(concert) : '';
+            }).join('');
+        }
+
+        function buildWishlistItem(concert) {
+            const d = new Date(concert.date_live + 'T00:00:00');
+            const shortDate = d.toLocaleDateString(LOCALE_MAP[currentLang] || 'fr-FR', { day: 'numeric', month: 'short' });
+            const thumb = concert.image
+                ? `<img class="toast-concert-thumb" src="${concert.image}" alt="${concert.artist}"
+                       onerror="this.outerHTML='<div class=\\'toast-concert-thumb-placeholder\\'>♫</div>'">`
+                : `<div class="toast-concert-thumb-placeholder">♫</div>`;
+            return `
+            <div class="toast-concert-item" data-concert-id="${concert.id}">
+                ${thumb}
+                <div class="toast-concert-info">
+                    <div class="toast-concert-artist">${concert.artist}</div>
+                    <div class="toast-concert-meta">${concert.location || ''}</div>
+                </div>
+                <span class="toast-concert-date">${shortDate}</span>
+                <button class="wishlist-item-remove" data-concert-id="${concert.id}">${t('wishlist_remove')}</button>
+            </div>`;
+        }
+
+        // Délégation d'événements : boutons cœur sur les cartes
+        document.getElementById('concerts-grid').addEventListener('click', function(e) {
+            const btn = e.target.closest('.btn-wishlist');
+            if (!btn) return;
+            e.stopPropagation();
+            toggleWishlist(btn.dataset.concertId);
+        });
+
+        // Délégation d'événements : items du popup wishlist
+        document.getElementById('wishlist-popup-list').addEventListener('click', function(e) {
+            // Bouton "Retirer" → supprimer de la liste
+            const removeBtn = e.target.closest('.wishlist-item-remove');
+            if (removeBtn) {
+                e.stopPropagation(); // empêche le click de remonter au document et fermer le popup
+                toggleWishlist(removeBtn.dataset.concertId);
+                return;
+            }
+            // Clic sur l'item → filtrer par artiste (même comportement que le toast)
+            const item = e.target.closest('.toast-concert-item');
+            if (!item) return;
+            const concert = allConcerts.find(c => String(c.id) === String(item.dataset.concertId));
+            if (!concert) return;
+            const artistName = concert.artist;
+            filterByArtist(artistName);
+            document.getElementById('artist-filter-label').textContent = t('search_filter_label');
+            document.getElementById('artist-filter-name').textContent  = artistName;
+            document.getElementById('artist-filter-banner').classList.add('visible');
+            document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            hideWishlistPopup(); // EN DERNIER
+        });
+
+        // Bouton nav → ouvrir/fermer popup
+        document.getElementById('wishlist-nav-btn').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const popup = document.getElementById('wishlist-popup');
+            if (popup.classList.contains('open')) {
+                hideWishlistPopup();
+            } else {
+                showWishlistPopup();
+            }
+        });
+
+        // Bouton fermer (✕)
+        document.getElementById('wishlist-popup-close').addEventListener('click', function(e) {
+            e.stopPropagation();
+            hideWishlistPopup();
+        });
+
+        // Clic en dehors → fermer
+        document.addEventListener('click', function(e) {
+            const popup = document.getElementById('wishlist-popup');
+            if (!popup.classList.contains('open')) return;
+            if (!document.getElementById('wishlist-nav-li').contains(e.target)) {
+                hideWishlistPopup();
+            }
+        });
+
+        // Bouton "Voir" → afficher tous les concerts de la wishlist (même pattern que toast-btn-view)
+        document.getElementById('wishlist-popup-view').addEventListener('click', function(e) {
+            e.stopPropagation();
+            activeArtistFilter = null;
+            advFilter.quickMode = null;
+            advFilter.months.clear(); advFilter.genres.clear(); advFilter.venues.clear();
+            document.getElementById('qbtn-this-month').classList.remove('active');
+            document.getElementById('qbtn-next-month').classList.remove('active');
+            updateDropdownBadge('dd-month', 0); updateDropdownBadge('dd-genre', 0); updateDropdownBadge('dd-venue', 0);
+            document.querySelectorAll('.adv-dropdown-panel input[type="checkbox"]').forEach(cb => cb.checked = false);
+            updateResetBtn(); updateActivePills();
+            activeFilter = 'wishlist';
+            const wishlistConcerts = allConcerts.filter(c => isInWishlist(c.id));
+            renderConcerts(wishlistConcerts);
+            document.getElementById('artist-filter-label').textContent = t('wishlist_filter_label');
+            document.getElementById('artist-filter-name').textContent  = '';
+            document.getElementById('artist-filter-banner').classList.add('visible');
+            document.getElementById('concerts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            hideWishlistPopup(); // EN DERNIER
+        });
+
+        // Bouton "Effacer la liste"
+        document.getElementById('wishlist-popup-reset').addEventListener('click', function(e) {
+            e.stopPropagation();
+            wishlist = [];
+            saveWishlist();
+            updateWishlistNavBtn();
+            updateWishlistButtons();
+            // Si on était en mode wishlist, réinitialiser la vue
+            if (activeFilter === 'wishlist') {
+                resetArtistFilter();
+            }
+        });
+
+        // Init wishlist au chargement
+        loadWishlist();
 
         loadConcerts();
     </script>
