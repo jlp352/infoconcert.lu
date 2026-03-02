@@ -80,7 +80,9 @@
             background-clip: text;
             text-shadow: 0 0 30px rgba(255, 51, 102, 0.5);
             animation: glow 3s ease-in-out infinite;
+            cursor: default;
         }
+        .logo:hover::after { width: 0; }
 
         @keyframes glow {
             0%, 100% { filter: brightness(1); }

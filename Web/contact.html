@@ -83,7 +83,9 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             animation: glow 3s ease-in-out infinite;
+            cursor: default;
         }
+        .logo:hover::after { width: 0; }
 
         @keyframes glow {
             0%, 100% { filter: brightness(1); }

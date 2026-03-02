@@ -78,7 +78,12 @@ https://luxembourg.public.lu/fr/visiter/arts-et-culture/musique-salles-concerts.
 		- Partie Scripts
 			
 #### Mise en Prod
-		- [ ] Prendre abonnement Web + DNS chez OVH
+		- [ ] Prendre abonnement Web + DNS Infomaniak 
+			- [x] Infomaniak Registra DNS .lu 
+			- [x] incluant un serveur Web statique de 10Mo gratuit
+			- [ ] Update via un FTP (Créer un compte FTP)
+			- [ ] Incluant une adresse email avec 15Go d'espace
+				- [ ] Créer contact@infoconcert.lu
 		- [ ] Regarder comment upload en auto json du serveur local vers WebServer
 		- [ ] Mettre en place Google Analytics pour les statistiques
 		- [ ] Live
