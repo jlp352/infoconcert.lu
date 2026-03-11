@@ -1,0 +1,28 @@
+.gitignore
+nul
+.obsidian/
+python/.claude/
+python/__pycache__/
+.claude/
+
+# Fichiers privés (uniquement dans private/google)
+doc/
+Web/ga4.js
+Web/ga4-events.js
+Web/robots.txt
+Web/sitemap.xml
+python/merge.py
+
+# Ignorer tous les fichiers dans ces dossiers
+python/Log/*
+python/OUT/*
+python/CSV/*
+python/JSON/*
+Web/IN/*
+
+# Mais garder les dossiers (via .gitkeep)
+!python/Log/.gitkeep
+!python/OUT/.gitkeep
+!python/CSV/.gitkeep
+!python/JSON/.gitkeep
+!Web/IN/.gitkeep
