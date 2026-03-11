@@ -12,18 +12,21 @@ Le projet se compose de deux parties indépendantes :
 
 ```
 infoconcert.lu/
-├── python/                        # Scripts de scraping et de traitement
-│   ├── scrape_atelier_concerts.py # Scraper Atelier.lu
-│   ├── scrape_rockhal_concerts.py # Scraper Rockhal.lu
-│   ├── merge.py                   # Fusion + enrichissement Deezer
-│   ├── purgelog.py                # Nettoyage des fichiers de log
-│   ├── requirements.txt           # Dépendances Python
-│   ├── install.sh                 # Script d'installation
-│   ├── JSON/                      # Sorties JSON des scrapers
-│   ├── CSV/                       # Sorties CSV des scrapers
-│   ├── OUT/                       # Fichiers fusionnés (json ou csv)
-│   └── Log/                       # Fichiers de log
-└── Web/                           # Interface web
+├── python/                                  # Scripts de scraping et de traitement
+│   ├── scrape_atelier_concerts.py           # Scraper Atelier.lu
+│   ├── scrape_rockhal_concerts.py           # Scraper Rockhal.lu
+│   ├── scrape_casino2000_concerts.py        # Scraper Casino 2000
+│   ├── scrape_kulturfabrik_concerts.py      # Scraper Kulturfabrik
+│   ├── scrape_philharmonie_concerts.py      # Scraper Philharmonie Luxembourg
+│   ├── merge.py                             # Fusion + enrichissement Deezer
+│   ├── purgelog.py                          # Nettoyage des fichiers de log
+│   ├── requirements.txt                     # Dépendances Python
+│   ├── install.sh                           # Script d'installation
+│   ├── JSON/                                # Sorties JSON des scrapers
+│   ├── CSV/                                 # Sorties CSV des scrapers
+│   ├── OUT/                                 # Fichiers fusionnés (json ou csv)
+│   └── Log/                                 # Fichiers de log
+└── Web/                                     # Interface web
 │   ├── index.html                 # Page principale
 │   ├── contact.html               # Page Contact
 │   ├── legalnotice.html           # Page légale pour un site Web
@@ -79,6 +82,15 @@ python scrape_atelier_concerts.py
 
 # Rockhal.lu
 python scrape_rockhal_concerts.py
+
+# Casino 2000
+python scrape_casino2000_concerts.py
+
+# Kulturfabrik
+python scrape_kulturfabrik_concerts.py
+
+# Philharmonie Luxembourg
+python scrape_philharmonie_concerts.py
 ```
 
 ### Fusionner les données
@@ -94,6 +106,9 @@ Le fichier `OUT/concerts.json` contiendra tous les concerts dédupliqués, enric
 ```bash
 python scrape_atelier_concerts.py -f json
 python scrape_rockhal_concerts.py -f json
+python scrape_casino2000_concerts.py -f json
+python scrape_kulturfabrik_concerts.py -f json
+python scrape_philharmonie_concerts.py -f json
 python merge.py -f json
 ```
 
@@ -103,6 +118,9 @@ python merge.py -f json
 |---|---|---|
 | `scrape_atelier_concerts.py` | Scrape les concerts de Atelier.lu (API + pages HTML) | [README](python/README_scrape_atelier_concerts.md) |
 | `scrape_rockhal_concerts.py` | Scrape les concerts de Rockhal.lu (API + pages HTML) | [README](python/README_scrape_rockhal_concerts.md) |
+| `scrape_casino2000_concerts.py` | Scrape les concerts de Casino 2000 (pages HTML) | [README](python/README_scrape_casino2000_concerts.md) |
+| `scrape_kulturfabrik_concerts.py` | Scrape les concerts de la Kulturfabrik (pages HTML) | [README](python/README_scrape_kulturfabrik_concerts.md) |
+| `scrape_philharmonie_concerts.py` | Scrape les concerts de la Philharmonie Luxembourg (pages HTML) | [README](python/README_scrape_philharmonie_concerts.md) |
 | `merge.py` | Fusionne les sorties des scrapers et enrichit avec Deezer | [README](python/README_merge.md) |
 | `purgelog.py` | Nettoie les fichiers de log anciens | — |
 
@@ -192,7 +210,16 @@ $PYTHON "$SCRIPTS_PATH/scrape_atelier_concerts.py" -g "Party; Film" -s "cancelle
 # Rockhal.lu — exclure les concerts jeune public et les concerts annulés
 $PYTHON "$SCRIPTS_PATH/scrape_rockhal_concerts.py" -g "Kids/Young Audience" -s "cancelled"
 
-# Fusion des deux sources
+# Casino 2000
+$PYTHON "$SCRIPTS_PATH/scrape_casino2000_concerts.py"
+
+# Kulturfabrik
+$PYTHON "$SCRIPTS_PATH/scrape_kulturfabrik_concerts.py"
+
+# Philharmonie Luxembourg — exclure les concerts complets si souhaité
+$PYTHON "$SCRIPTS_PATH/scrape_philharmonie_concerts.py"
+
+# Fusion de toutes les sources
 $PYTHON "$SCRIPTS_PATH/merge.py" -f json
 
 # Copie du fichier fusionné vers le dossier du site Web

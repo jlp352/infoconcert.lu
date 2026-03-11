@@ -4,6 +4,7 @@
 # scrape_rockhal_concerts.py      → stdlib uniquement (pas de dépendance externe)
 # scrape_casino2000_concerts.py   → stdlib uniquement (pas de dépendance externe)
 # scrape_kulturfabrik_concerts.py → stdlib uniquement (pas de dépendance externe)
+# scrape_philharmonie_concerts.py → stdlib uniquement (pas de dépendance externe)
 # ftp_upload.py                   → stdlib uniquement (pas de dépendance externe)
 # merge.py                        → requiert requests
 
