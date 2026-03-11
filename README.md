@@ -19,6 +19,7 @@ infoconcert.lu/
 │   ├── scrape_kulturfabrik_concerts.py      # Scraper Kulturfabrik
 │   ├── scrape_philharmonie_concerts.py      # Scraper Philharmonie Luxembourg
 │   ├── scrape_echo_lu_concerts.py           # 9 centres culturels
+│   ├── scrape_entrepot_concerts.py          # Scraper L'Entrepôt Arlon
 │   ├── merge.py                             # Fusion + enrichissement Deezer
 │   ├── purgelog.py                          # Nettoyage des fichiers de log
 │   ├── requirements.txt                     # Dépendances Python
@@ -104,6 +105,9 @@ python scrape_philharmonie_concerts.py
 #     Prabbeli          Wiltz
 #     Maacher           Grevenmacher
 python scrape_echo_lu_concerts.py
+
+# L'Entrepôt Arlon (Belgique)
+python scrape_entrepot_concerts.py
 ```
 
 ### Fusionner les données
@@ -123,6 +127,7 @@ python scrape_casino2000_concerts.py -f json
 python scrape_kulturfabrik_concerts.py -f json
 python scrape_philharmonie_concerts.py -f json
 python scrape_echo_lu_concerts.py -f json
+python scrape_entrepot_concerts.py -f json
 python merge.py -f json
 ```
 
@@ -136,6 +141,7 @@ python merge.py -f json
 | `scrape_kulturfabrik_concerts.py` | Scrape les concerts de la Kulturfabrik (pages HTML) | [README](python/README_scrape_kulturfabrik_concerts.md) |
 | `scrape_philharmonie_concerts.py` | Scrape les concerts de la Philharmonie Luxembourg (pages HTML) | [README](python/README_scrape_philharmonie_concerts.md) |
 | `scrape_echo_lu_concerts.py` | Scrape 9 centres culturels via echo.lu (API Firestore) | [README](python/README_scrape_echo_lu_concerts.md) |
+| `scrape_entrepot_concerts.py` | Scrape les concerts de L'Entrepôt Arlon (pages HTML) | [README](python/README_scrape_entrepot_concerts.md) |
 | `merge.py` | Fusionne les sorties des scrapers et enrichit avec Deezer | [README](python/README_merge.md) |
 | `purgelog.py` | Nettoie les fichiers de log anciens | — |
 
@@ -236,6 +242,9 @@ $PYTHON "$SCRIPTS_PATH/scrape_philharmonie_concerts.py"
 
 # echo.lu — 9 centres culturels via Firestore
 $PYTHON "$SCRIPTS_PATH/scrape_echo_lu_concerts.py"
+
+# L'Entrepôt Arlon (Belgique)
+$PYTHON "$SCRIPTS_PATH/scrape_entrepot_concerts.py"
 
 # Fusion de toutes les sources
 $PYTHON "$SCRIPTS_PATH/merge.py" -f json
