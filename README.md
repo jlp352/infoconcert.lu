@@ -18,6 +18,7 @@ infoconcert.lu/
 │   ├── scrape_casino2000_concerts.py        # Scraper Casino 2000
 │   ├── scrape_kulturfabrik_concerts.py      # Scraper Kulturfabrik
 │   ├── scrape_philharmonie_concerts.py      # Scraper Philharmonie Luxembourg
+│   ├── scrape_echo_lu_concerts.py           # 9 centres culturels
 │   ├── merge.py                             # Fusion + enrichissement Deezer
 │   ├── purgelog.py                          # Nettoyage des fichiers de log
 │   ├── requirements.txt                     # Dépendances Python
@@ -91,6 +92,18 @@ python scrape_kulturfabrik_concerts.py
 
 # Philharmonie Luxembourg
 python scrape_philharmonie_concerts.py
+
+#9 centres culturels via Portail echo.lu
+#     Aalt Stadhaus     Differdange 
+#     Cube 521          Marnach
+#     CAPE              Ettelbruck
+#     Kinneksbond       Mamer
+#     Mierscher Theater Mersch
+#     opderschmelz      Dudelange
+#     Artikuss          Soleuvre
+#     Prabbeli          Wiltz
+#     Maacher           Grevenmacher
+python scrape_echo_lu_concerts.py
 ```
 
 ### Fusionner les données
@@ -109,6 +122,7 @@ python scrape_rockhal_concerts.py -f json
 python scrape_casino2000_concerts.py -f json
 python scrape_kulturfabrik_concerts.py -f json
 python scrape_philharmonie_concerts.py -f json
+python scrape_echo_lu_concerts.py -f json
 python merge.py -f json
 ```
 
@@ -121,6 +135,7 @@ python merge.py -f json
 | `scrape_casino2000_concerts.py` | Scrape les concerts de Casino 2000 (pages HTML) | [README](python/README_scrape_casino2000_concerts.md) |
 | `scrape_kulturfabrik_concerts.py` | Scrape les concerts de la Kulturfabrik (pages HTML) | [README](python/README_scrape_kulturfabrik_concerts.md) |
 | `scrape_philharmonie_concerts.py` | Scrape les concerts de la Philharmonie Luxembourg (pages HTML) | [README](python/README_scrape_philharmonie_concerts.md) |
+| `scrape_echo_lu_concerts.py` | Scrape 9 centres culturels via echo.lu (API Firestore) | [README](python/README_scrape_echo_lu_concerts.md) |
 | `merge.py` | Fusionne les sorties des scrapers et enrichit avec Deezer | [README](python/README_merge.md) |
 | `purgelog.py` | Nettoie les fichiers de log anciens | — |
 
@@ -218,6 +233,9 @@ $PYTHON "$SCRIPTS_PATH/scrape_kulturfabrik_concerts.py"
 
 # Philharmonie Luxembourg — exclure les concerts complets si souhaité
 $PYTHON "$SCRIPTS_PATH/scrape_philharmonie_concerts.py"
+
+# echo.lu — 9 centres culturels via Firestore
+$PYTHON "$SCRIPTS_PATH/scrape_echo_lu_concerts.py"
 
 # Fusion de toutes les sources
 $PYTHON "$SCRIPTS_PATH/merge.py" -f json
