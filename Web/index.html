@@ -2539,7 +2539,7 @@
                 : '';
 
             const imageHtml = concert.image
-                ? `<img src="${concert.image}" alt="${concert.artist}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.background='${gradient}'">`
+                ? `<img src="${concert.image}" alt="${concert.artist}" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.background='${gradient}'">`
                 : '';
 
             const buyLink    = concert.buy_link || concert.url || '#';
