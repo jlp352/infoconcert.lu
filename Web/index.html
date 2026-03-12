@@ -2254,9 +2254,11 @@
                 error_load:           'Erreur de chargement :',
                 status_sold_out:      'Complet',
                 status_buy_now:       'Billets disponibles',
+                status_soon:          'Mise en vente prochaine',
                 status_cancelled:     'Annulé',
                 btn_cancelled:        'Annulé',
                 btn_sold_out:         'Complet',
+                btn_details:          'Détails du concert',
                 btn_reserve:          'Réserver →',
                 preview_extract:      'Extrait',
                 footer_copy:          '© 2026 infoConcert.lu',
@@ -2326,9 +2328,11 @@
                 error_load:           'Loading error:',
                 status_sold_out:      'Sold out',
                 status_buy_now:       'Tickets available',
+                status_soon:          'On sale soon',
                 status_cancelled:     'Cancelled',
                 btn_cancelled:        'Cancelled',
                 btn_sold_out:         'Sold out',
+                btn_details:          'Concert details',
                 btn_reserve:          'Book →',
                 preview_extract:      'Preview',
                 footer_copy:          '© 2026 infoConcert.lu',
@@ -2398,9 +2402,11 @@
                 error_load:           'Ladefehler:',
                 status_sold_out:      'Ausverkauft',
                 status_buy_now:       'Tickets verfügbar',
+                status_soon:          'Bald im Verkauf',
                 status_cancelled:     'Abgesagt',
                 btn_cancelled:        'Abgesagt',
                 btn_sold_out:         'Ausverkauft',
+                btn_details:          'Konzertdetails',
                 btn_reserve:          'Buchen →',
                 preview_extract:      'Vorschau',
                 footer_copy:          '© 2026 infoConcert.lu',
@@ -2585,9 +2591,9 @@
 
         function statusLabel(status) {
             switch (status) {
-                case 'available': return 'Billets Disponibles';
-                case 'soon':      return 'Mise en vente prochaine';
-                case 'full':      return 'Complet';
+                case 'available': return t('status_buy_now');
+                case 'soon':      return t('status_soon');
+                case 'full':      return t('status_sold_out');
                 default:          return '';
             }
         }
@@ -2627,7 +2633,7 @@
 
             const isSoon = status === 'soon';
             const btnReserverHtml = (!isFull && !isSoon)
-                ? `<a href="${buyLink}" class="btn-small" target="_blank" rel="noopener">🎟 Réserver</a>`
+                ? `<a href="${buyLink}" class="btn-small" target="_blank" rel="noopener">🎟 ${t('btn_reserve')}</a>`
                 : '';
             const btnTicketswapHtml = (!isSoon)
                 ? `<a href="${ticketswapUrl}" class="btn-small btn-small-ts" target="_blank" rel="noopener">🔄 TicketSwap</a>`
@@ -2694,7 +2700,7 @@
                             ${priceActionsHtml}
                         </div>
                         <div class="concert-footer-bottom">
-                            <a href="${concertUrl}" class="btn-details" target="_blank" rel="noopener">Détails du concert</a>
+                            <a href="${concertUrl}" class="btn-details" target="_blank" rel="noopener">${t('btn_details')}</a>
                         </div>
                     </div>
                 </div>
@@ -3904,6 +3910,10 @@
             document.getElementById('wishlist-nav-label').textContent = t('wishlist_nav_label');
             if (document.getElementById('wishlist-popup').classList.contains('open')) {
                 renderWishlistPopup();
+            }
+            // Re-rendre les cartes concert pour mettre à jour les labels traduits
+            if (typeof allConcerts !== 'undefined' && allConcerts.length > 0) {
+                applyFilter();
             }
         };
 
