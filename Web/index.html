@@ -1710,6 +1710,71 @@
             margin: 0.3rem 0;
         }
 
+        /* Cultural centres group toggle */
+        .adv-panel-group-row {
+            display: flex;
+            align-items: center;
+            padding-right: 0.3rem;
+        }
+
+        .adv-panel-group-row .adv-panel-item {
+            flex: 1;
+            font-weight: 700;
+        }
+
+        .adv-panel-group-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 800;
+            min-width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            padding: 0 4px;
+            margin-right: 0.3rem;
+            flex-shrink: 0;
+        }
+
+        .adv-panel-group-chevron-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.4rem 0.5rem;
+            color: rgba(245,245,245,0.4);
+            font-size: 0.5rem;
+            line-height: 1;
+            transition: transform 0.2s, color 0.15s;
+            flex-shrink: 0;
+        }
+
+        .adv-panel-group-chevron-btn:hover {
+            color: rgba(245,245,245,0.8);
+        }
+
+        .adv-panel-group-chevron-btn.expanded {
+            transform: rotate(90deg);
+        }
+
+        .adv-panel-group-items {
+            display: none;
+        }
+
+        .adv-panel-group-items.expanded {
+            display: block;
+        }
+
+        .adv-panel-item-sub {
+            padding-left: 2.2rem;
+            font-size: 0.84rem;
+        }
+
+        .adv-panel-select-all {
+            font-weight: 700;
+        }
+
         /* Reset button */
         .adv-reset-btn {
             margin-left: auto;
@@ -2222,10 +2287,14 @@
                 filter_label:         'Filtres :',
                 filter_this_month:    'Ce mois',
                 filter_next_month:    'Mois prochain',
-                filter_month_label:   'Mois',
-                filter_genre_label:   'Genre',
+                filter_month_label:      'Mois',
+                filter_month_select_all: 'Tout afficher',
+                filter_genre_label:      'Genre',
+                filter_genre_select_all: 'Tout afficher',
                 filter_venue_label:   'Salle',
                 filter_venue_other:   'Autres',
+                filter_echo_group_label: 'Centres Culturels',
+                filter_venue_select_all: 'Tout afficher',
                 filter_reset:         'Réinitialiser',
                 filter_month_year_placeholder: 'Mois / Année',
                 filter_no_date:       'Toutes dates',
@@ -2290,10 +2359,14 @@
                 filter_label:         'Filters:',
                 filter_this_month:    'This month',
                 filter_next_month:    'Next month',
-                filter_month_label:   'Month',
-                filter_genre_label:   'Genre',
+                filter_month_label:      'Month',
+                filter_month_select_all: 'Show all',
+                filter_genre_label:      'Genre',
+                filter_genre_select_all: 'Show all',
                 filter_venue_label:   'Venue',
                 filter_venue_other:   'Others',
+                filter_echo_group_label: 'Cultural Centres',
+                filter_venue_select_all: 'Show all',
                 filter_reset:         'Reset',
                 filter_month_year_placeholder: 'Month / Year',
                 filter_no_date:       'All dates',
@@ -2358,10 +2431,14 @@
                 filter_label:         'Filter:',
                 filter_this_month:    'Diesen Monat',
                 filter_next_month:    'Nächsten Monat',
-                filter_month_label:   'Monat',
-                filter_genre_label:   'Genre',
+                filter_month_label:      'Monat',
+                filter_month_select_all: 'Alle anzeigen',
+                filter_genre_label:      'Genre',
+                filter_genre_select_all: 'Alle anzeigen',
                 filter_venue_label:   'Veranstaltungsort',
                 filter_venue_other:   'Andere',
+                filter_echo_group_label: 'Kulturzentren',
+                filter_venue_select_all: 'Alle anzeigen',
                 filter_reset:         'Zurücksetzen',
                 filter_month_year_placeholder: 'Monat / Jahr',
                 filter_no_date:       'Alle Daten',
@@ -2628,6 +2705,9 @@
         let venueCounts  = {}; // populated in buildFilters, used in applyAdvFilters
         let activeFilter = 'all'; // kept for compatibility with toast/cookie logic
 
+        // Cultural centres (echo.lu) — grouped in venue filter
+        const ECHO_VENUES = ['Artikuss','Prabbeli','CAPE','Kinneksbond','Aalt Stadhaus','Cube 521','Maacher','opderschmelz'];
+
         // ── Genre mapping ─────────────────────────────────────────────────────
         const GENRE_GROUPS = [
             { key: 'rock',    rawGenres: ['Rock','Alternative','Alternative Rock','Hard Rock','Metal','Punk','Blues Rock','New Wave'] },
@@ -2725,10 +2805,10 @@
                     if (!(cY === nextYear && cM === nextMonth)) return false;
                 }
 
-                // Multi-month filter
-                if (advFilter.months.size > 0 && !advFilter.months.has(cKey)) return false;
+                // Multi-month exclusion (months in set are hidden)
+                if (advFilter.months.size > 0 && advFilter.months.has(cKey)) return false;
 
-                // Genre groups (OR within genres, each genre may be multi-raw split by ";")
+                // Genre exclusion (genres in set are hidden)
                 if (advFilter.genres.size > 0) {
                     const concertGroupKeys = new Set(
                         (c.genres || [])
@@ -2736,14 +2816,14 @@
                             .map(getGenreGroupKey)
                     );
                     const match = [...advFilter.genres].some(gk => concertGroupKeys.has(gk));
-                    if (!match) return false;
+                    if (match) return false;
                 }
 
-                // Venues (OR) — '__other__' matches all minor venues (< 2 concerts)
+                // Venues exclusion — '__other__' excludes all minor venues (< 2 concerts) except cultural centres
                 if (advFilter.venues.size > 0) {
                     const directMatch = advFilter.venues.has(c.location);
-                    const otherMatch  = advFilter.venues.has('__other__') && (venueCounts[c.location] || 0) < 2;
-                    if (!directMatch && !otherMatch) return false;
+                    const otherMatch  = advFilter.venues.has('__other__') && (venueCounts[c.location] || 0) < 2 && !ECHO_VENUES.includes(c.location);
+                    if (directMatch || otherMatch) return false;
                 }
 
                 return true;
@@ -2795,18 +2875,42 @@
 
             function buildMonthPanel() {
                 const panel = document.getElementById('dd-month-panel');
-                panel.innerHTML = monthKeys.map(key => {
+                const totalExcluded = advFilter.months.size;
+                let html = `<label class="adv-panel-item adv-panel-select-all">
+                    <input type="checkbox" id="month-select-all">
+                    <span>${t('filter_month_select_all')}</span>
+                </label>
+                <div class="adv-panel-divider"></div>`;
+                html += monthKeys.map(key => {
                     const [y, m] = key.split('-');
                     const label  = t('months')[parseInt(m)-1] + ' ' + y;
-                    const chk    = advFilter.months.has(key) ? 'checked' : '';
+                    const chk    = advFilter.months.has(key) ? '' : 'checked';
                     return `<label class="adv-panel-item">
                         <input type="checkbox" value="${key}" ${chk}> ${label}
                     </label>`;
                 }).join('');
-                panel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                panel.innerHTML = html;
+                const selectAllEl = panel.querySelector('#month-select-all');
+                if (selectAllEl) {
+                    selectAllEl.checked       = totalExcluded === 0;
+                    selectAllEl.indeterminate = totalExcluded > 0;
+                    selectAllEl.addEventListener('change', () => {
+                        if (!selectAllEl.checked) monthKeys.forEach(k => advFilter.months.add(k));
+                        else advFilter.months.clear();
+                        buildMonthPanel();
+                        updateDropdownBadge('dd-month', advFilter.months.size);
+                        applyAdvFilters();
+                    });
+                }
+                panel.querySelectorAll('input[type="checkbox"]:not(#month-select-all)').forEach(cb => {
                     cb.addEventListener('change', () => {
-                        if (cb.checked) advFilter.months.add(cb.value);
+                        if (!cb.checked) advFilter.months.add(cb.value);
                         else advFilter.months.delete(cb.value);
+                        if (selectAllEl) {
+                            const n = advFilter.months.size;
+                            selectAllEl.checked       = n === 0;
+                            selectAllEl.indeterminate = n > 0;
+                        }
                         updateDropdownBadge('dd-month', advFilter.months.size);
                         applyAdvFilters();
                     });
@@ -2819,17 +2923,41 @@
 
             function buildGenrePanel() {
                 const panel = document.getElementById('dd-genre-panel');
-                panel.innerHTML = GENRE_GROUPS.map(grp => {
+                const totalExcluded = advFilter.genres.size;
+                let html = `<label class="adv-panel-item adv-panel-select-all">
+                    <input type="checkbox" id="genre-select-all">
+                    <span>${t('filter_genre_select_all')}</span>
+                </label>
+                <div class="adv-panel-divider"></div>`;
+                html += GENRE_GROUPS.map(grp => {
                     const labelKey = 'genre_group_' + grp.key;
-                    const chk      = advFilter.genres.has(grp.key) ? 'checked' : '';
+                    const chk      = advFilter.genres.has(grp.key) ? '' : 'checked';
                     return `<label class="adv-panel-item">
                         <input type="checkbox" value="${grp.key}" ${chk}> ${t(labelKey)}
                     </label>`;
                 }).join('');
-                panel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                panel.innerHTML = html;
+                const selectAllEl = panel.querySelector('#genre-select-all');
+                if (selectAllEl) {
+                    selectAllEl.checked       = totalExcluded === 0;
+                    selectAllEl.indeterminate = totalExcluded > 0;
+                    selectAllEl.addEventListener('change', () => {
+                        if (!selectAllEl.checked) GENRE_GROUPS.forEach(grp => advFilter.genres.add(grp.key));
+                        else advFilter.genres.clear();
+                        buildGenrePanel();
+                        updateDropdownBadge('dd-genre', advFilter.genres.size);
+                        applyAdvFilters();
+                    });
+                }
+                panel.querySelectorAll('input[type="checkbox"]:not(#genre-select-all)').forEach(cb => {
                     cb.addEventListener('change', () => {
-                        if (cb.checked) advFilter.genres.add(cb.value);
+                        if (!cb.checked) advFilter.genres.add(cb.value);
                         else advFilter.genres.delete(cb.value);
+                        if (selectAllEl) {
+                            const n = advFilter.genres.size;
+                            selectAllEl.checked       = n === 0;
+                            selectAllEl.indeterminate = n > 0;
+                        }
                         updateDropdownBadge('dd-genre', advFilter.genres.size);
                         applyAdvFilters();
                     });
@@ -2845,17 +2973,29 @@
             concerts.forEach(c => {
                 if (c.location) venueCounts[c.location] = (venueCounts[c.location] || 0) + 1;
             });
-            // Main venues (≥ 2 concerts), sorted alphabetically
-            const mainVenues  = Object.keys(venueCounts).filter(v => venueCounts[v] >= 2).sort();
-            // Minor venues (1 concert) — grouped under "Autres"
-            const otherVenues = Object.keys(venueCounts).filter(v => venueCounts[v] < 2).sort();
+            // All venues sorted alphabetically, split between main (≥ 2) and minor (1)
+            // Cultural centres are handled separately — excluded from regular lists
+            const allVenueKeys = Object.keys(venueCounts).sort();
+            const mainVenues  = allVenueKeys.filter(v => venueCounts[v] >= 2 && !ECHO_VENUES.includes(v));
+            const otherVenues = allVenueKeys.filter(v => venueCounts[v] <  2 && !ECHO_VENUES.includes(v));
+            const echoInData  = ECHO_VENUES.filter(v => venueCounts[v] > 0);
             // Special sentinel value for the "Autres" group
             const VENUE_OTHER_KEY = '__other__';
 
             function buildVenuePanel() {
                 const panel = document.getElementById('dd-venue-panel');
-                let html = mainVenues.map(loc => {
-                    const chk   = advFilter.venues.has(loc) ? 'checked' : '';
+
+                // "Select all" row — checked when nothing excluded, indeterminate when partial
+                const totalExcluded = advFilter.venues.size;
+                let html = `<label class="adv-panel-item adv-panel-select-all">
+                    <input type="checkbox" id="venue-select-all">
+                    <span>${t('filter_venue_select_all')}</span>
+                </label>
+                <div class="adv-panel-divider"></div>`;
+
+                // Regular venues (checked = shown, i.e. NOT in exclusion set)
+                html += mainVenues.map(loc => {
+                    const chk   = advFilter.venues.has(loc) ? '' : 'checked';
                     const count = venueCounts[loc];
                     return `<label class="adv-panel-item">
                         <input type="checkbox" value="${loc}" ${chk}>
@@ -2864,9 +3004,35 @@
                     </label>`;
                 }).join('');
 
-                if (otherVenues.length > 0) {
+                // Cultural centres collapsible group
+                if (echoInData.length > 0) {
                     if (mainVenues.length > 0) html += `<div class="adv-panel-divider"></div>`;
-                    const chk = advFilter.venues.has(VENUE_OTHER_KEY) ? 'checked' : '';
+                    const excludedCount = echoInData.filter(v => advFilter.venues.has(v)).length;
+                    const isExpanded    = excludedCount > 0;
+                    html += `<div class="adv-panel-group-row">
+                        <label class="adv-panel-item" style="flex:1;font-weight:700">
+                            <input type="checkbox" id="echo-group-all">
+                            <span>${t('filter_echo_group_label')}</span>
+                        </label>
+                        <span class="adv-panel-group-badge" id="echo-group-badge"${excludedCount > 0 ? '' : ' style="display:none"'}>${excludedCount}</span>
+                        <button class="adv-panel-group-chevron-btn${isExpanded ? ' expanded' : ''}" id="echo-group-chevron">▶</button>
+                    </div>
+                    <div class="adv-panel-group-items${isExpanded ? ' expanded' : ''}" id="echo-group-items">
+                        ${echoInData.map(loc => {
+                            const chk   = advFilter.venues.has(loc) ? '' : 'checked';
+                            const count = venueCounts[loc];
+                            return `<label class="adv-panel-item adv-panel-item-sub">
+                                <input type="checkbox" value="${loc}" ${chk}>
+                                <span>${loc}</span>
+                                <span style="margin-left:auto;font-size:0.72rem;opacity:0.4">${count}</span>
+                            </label>`;
+                        }).join('')}
+                    </div>`;
+                }
+
+                if (otherVenues.length > 0) {
+                    if (mainVenues.length > 0 || echoInData.length > 0) html += `<div class="adv-panel-divider"></div>`;
+                    const chk = advFilter.venues.has(VENUE_OTHER_KEY) ? '' : 'checked';
                     html += `<label class="adv-panel-item">
                         <input type="checkbox" value="${VENUE_OTHER_KEY}" ${chk}>
                         <span>${t('filter_venue_other')}</span>
@@ -2875,10 +3041,89 @@
                 }
 
                 panel.innerHTML = html;
-                panel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+
+                // ── Select all wiring ──────────────────────────────────────
+                const selectAllEl = panel.querySelector('#venue-select-all');
+                if (selectAllEl) {
+                    selectAllEl.checked       = totalExcluded === 0;
+                    selectAllEl.indeterminate = totalExcluded > 0;
+                    selectAllEl.addEventListener('change', () => {
+                        if (!selectAllEl.checked) {
+                            mainVenues.forEach(v => advFilter.venues.add(v));
+                            echoInData.forEach(v => advFilter.venues.add(v));
+                            if (otherVenues.length > 0) advFilter.venues.add(VENUE_OTHER_KEY);
+                        } else {
+                            advFilter.venues.clear();
+                        }
+                        buildVenuePanel();
+                        updateDropdownBadge('dd-venue', advFilter.venues.size);
+                        applyAdvFilters();
+                    });
+                }
+
+                // ── Echo group wiring ──────────────────────────────────────
+                const groupAllCb   = panel.querySelector('#echo-group-all');
+                const groupChevron = panel.querySelector('#echo-group-chevron');
+                const groupItems   = panel.querySelector('#echo-group-items');
+                const groupBadge   = panel.querySelector('#echo-group-badge');
+
+                // Sync group checkbox (checked = all shown, indeterminate = partial, unchecked = all hidden)
+                function syncEchoGroup() {
+                    const n = echoInData.filter(v => advFilter.venues.has(v)).length; // excluded count
+                    if (groupAllCb) {
+                        groupAllCb.checked       = n === 0;
+                        groupAllCb.indeterminate = n > 0 && n < echoInData.length;
+                    }
+                    if (groupBadge) {
+                        groupBadge.textContent   = n;
+                        groupBadge.style.display = n > 0 ? '' : 'none';
+                    }
+                    // Sync "select all" too
+                    if (selectAllEl) {
+                        const total = advFilter.venues.size;
+                        selectAllEl.checked       = total === 0;
+                        selectAllEl.indeterminate = total > 0;
+                    }
+                }
+                syncEchoGroup();
+                window._advSyncEchoGroup = syncEchoGroup;
+
+                // Chevron: expand/collapse only
+                if (groupChevron && groupItems) {
+                    groupChevron.addEventListener('click', e => {
+                        e.stopPropagation();
+                        groupChevron.classList.toggle('expanded');
+                        groupItems.classList.toggle('expanded');
+                    });
+                }
+
+                // Group checkbox: checked = show all echo, unchecked = hide all echo
+                if (groupAllCb) {
+                    groupAllCb.addEventListener('change', () => {
+                        echoInData.forEach(v => {
+                            if (!groupAllCb.checked) advFilter.venues.add(v);    // uncheck = exclude
+                            else advFilter.venues.delete(v);                      // check = include
+                        });
+                        panel.querySelectorAll('#echo-group-items input[type="checkbox"]').forEach(cb => {
+                            cb.checked = groupAllCb.checked;
+                        });
+                        syncEchoGroup();
+                        updateDropdownBadge('dd-venue', advFilter.venues.size);
+                        applyAdvFilters();
+                    });
+                }
+
+                // Individual checkboxes: checked = show (remove from exclusion), unchecked = hide (add to exclusion)
+                panel.querySelectorAll('input[type="checkbox"]:not(#echo-group-all):not(#venue-select-all)').forEach(cb => {
                     cb.addEventListener('change', () => {
-                        if (cb.checked) advFilter.venues.add(cb.value);
-                        else advFilter.venues.delete(cb.value);
+                        if (!cb.checked) advFilter.venues.add(cb.value);    // uncheck = exclude
+                        else advFilter.venues.delete(cb.value);             // check = include
+                        if (echoInData.includes(cb.value)) syncEchoGroup();
+                        else if (selectAllEl) {
+                            const total = advFilter.venues.size;
+                            selectAllEl.checked       = total === 0;
+                            selectAllEl.indeterminate = total > 0;
+                        }
                         updateDropdownBadge('dd-venue', advFilter.venues.size);
                         applyAdvFilters();
                     });
@@ -2906,6 +3151,8 @@
                         }
                     }
                 });
+                // Prevent clicks inside the panel from bubbling to document (which closes all dropdowns)
+                panel.addEventListener('click', e => e.stopPropagation());
             });
 
             document.addEventListener('click', closeAllDropdowns);
@@ -2961,9 +3208,11 @@
                 pills.push({ label: monthNames[parseInt(m)-1]+' '+y, clear: () => {
                     advFilter.months.delete(key);
                     updateDropdownBadge('dd-month', advFilter.months.size);
-                    // uncheck checkbox in panel
+                    // re-check checkbox (was unchecked = excluded, now back to shown)
                     const cb = document.querySelector(`#dd-month-panel input[value="${key}"]`);
-                    if (cb) cb.checked = false;
+                    if (cb) cb.checked = true;
+                    const sa = document.querySelector('#month-select-all');
+                    if (sa) { sa.checked = advFilter.months.size === 0; sa.indeterminate = advFilter.months.size > 0; }
                     applyAdvFilters();
                 }});
             });
@@ -2973,7 +3222,9 @@
                     advFilter.genres.delete(gk);
                     updateDropdownBadge('dd-genre', advFilter.genres.size);
                     const cb = document.querySelector(`#dd-genre-panel input[value="${gk}"]`);
-                    if (cb) cb.checked = false;
+                    if (cb) cb.checked = true;
+                    const sa = document.querySelector('#genre-select-all');
+                    if (sa) { sa.checked = advFilter.genres.size === 0; sa.indeterminate = advFilter.genres.size > 0; }
                     applyAdvFilters();
                 }});
             });
@@ -2985,6 +3236,7 @@
                     updateDropdownBadge('dd-venue', advFilter.venues.size);
                     const cb = document.querySelector(`#dd-venue-panel input[value="${CSS.escape(v)}"]`);
                     if (cb) cb.checked = false;
+                    if (window._advSyncEchoGroup) window._advSyncEchoGroup();
                     applyAdvFilters();
                 }});
             });
