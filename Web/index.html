@@ -1659,6 +1659,12 @@
             display: block;
         }
 
+        /* Fallback: right-aligned when panel would overflow right edge */
+        .adv-dropdown-panel.flip-right {
+            left: auto;
+            right: 0;
+        }
+
         /* Fallback: opens downward when not enough space above */
         .adv-dropdown-panel.down {
             bottom: auto;
@@ -1842,6 +1848,92 @@
 
         .adv-pill-remove:hover { opacity: 1; }
 
+        /* Date range picker */
+        .date-range-wrapper {
+            position: relative;
+        }
+
+        .date-range-panel {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            right: 0;
+            background: #1a1a2e;
+            border: 1.5px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 1rem 1.1rem;
+            z-index: 200;
+            min-width: 230px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        }
+
+        .date-range-panel.open { display: block; }
+
+        .date-range-panel.down {
+            bottom: auto;
+            top: calc(100% + 8px);
+        }
+
+        .date-range-row {
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .date-range-field {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .date-range-field label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: rgba(245,245,245,0.45);
+            width: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .date-range-field input[type="date"] {
+            flex: 1;
+            background: rgba(255,255,255,0.05);
+            border: 1.5px solid rgba(255,255,255,0.15);
+            border-radius: 7px;
+            color: var(--light);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.55rem;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.2s;
+            color-scheme: dark;
+        }
+
+        .date-range-field input[type="date"]:focus {
+            border-color: var(--accent);
+        }
+
+        .date-range-apply {
+            width: 100%;
+            padding: 0.38rem 0;
+            background: rgba(0,217,255,0.1);
+            border: 1.5px solid var(--accent);
+            border-radius: 7px;
+            color: var(--accent);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .date-range-apply:hover { background: rgba(0,217,255,0.2); }
+
         /* Mobile responsive */
         @media (max-width: 768px) {
             .adv-filters-quick {
@@ -1853,14 +1945,13 @@
                 flex-wrap: wrap;
             }
 
-            .adv-dropdown-panel {
-                min-width: 180px;
-                left: 0;
-                right: auto;
-            }
-
             .adv-reset-btn {
                 margin-left: 0;
+            }
+
+            .date-range-panel {
+                right: auto;
+                left: 0;
             }
         }
 
@@ -2172,6 +2263,22 @@
                 <span class="adv-quick-label" id="adv-quick-label">Filtre rapide :</span>
                 <button class="quick-btn" id="qbtn-this-month"></button>
                 <button class="quick-btn" id="qbtn-next-month"></button>
+                <div class="date-range-wrapper" id="date-range-wrapper">
+                    <button class="quick-btn" id="qbtn-advanced">📅 <span id="qbtn-advanced-label"></span></button>
+                    <div class="date-range-panel" id="date-range-panel">
+                        <div class="date-range-row">
+                            <div class="date-range-field">
+                                <label id="date-range-from-label"></label>
+                                <input type="date" id="date-from">
+                            </div>
+                            <div class="date-range-field">
+                                <label id="date-range-to-label"></label>
+                                <input type="date" id="date-to">
+                            </div>
+                        </div>
+                        <button class="date-range-apply" id="date-range-apply"></button>
+                    </div>
+                </div>
             </div>
             <!-- Row 3 : active pills -->
             <div class="adv-active-pills" id="adv-active-pills"></div>
@@ -2300,6 +2407,10 @@
                 filter_reset:         'Réinitialiser',
                 filter_month_year_placeholder: 'Mois / Année',
                 filter_no_date:       'Toutes dates',
+                filter_advanced:      'Avancé',
+                filter_date_from:     'Du',
+                filter_date_to:       'Au',
+                filter_apply:         'Appliquer',
                 genre_group_rock:     'Rock / Metal',
                 genre_group_electro:  'Électro / Dance',
                 genre_group_hiphop:   'Hip-Hop / R&B',
@@ -2374,6 +2485,10 @@
                 filter_reset:         'Reset',
                 filter_month_year_placeholder: 'Month / Year',
                 filter_no_date:       'All dates',
+                filter_advanced:      'Advanced',
+                filter_date_from:     'From',
+                filter_date_to:       'To',
+                filter_apply:         'Apply',
                 genre_group_rock:     'Rock / Metal',
                 genre_group_electro:  'Electro / Dance',
                 genre_group_hiphop:   'Hip-Hop / R&B',
@@ -2448,6 +2563,10 @@
                 filter_reset:         'Zurücksetzen',
                 filter_month_year_placeholder: 'Monat / Jahr',
                 filter_no_date:       'Alle Daten',
+                filter_advanced:      'Erweitert',
+                filter_date_from:     'Von',
+                filter_date_to:       'Bis',
+                filter_apply:         'Anwenden',
                 genre_group_rock:     'Rock / Metal',
                 genre_group_electro:  'Elektro / Dance',
                 genre_group_hiphop:   'Hip-Hop / R&B',
@@ -2509,6 +2628,14 @@
                 if (flbl)  flbl.textContent  = t('filter_label');
                 if (qThis) qThis.textContent = t('filter_this_month');
                 if (qNext) qNext.textContent = t('filter_next_month');
+                const qAdvL = document.getElementById('qbtn-advanced-label');
+                const drFrom = document.getElementById('date-range-from-label');
+                const drTo   = document.getElementById('date-range-to-label');
+                const drApply = document.getElementById('date-range-apply');
+                if (qAdvL)  qAdvL.textContent  = t('filter_advanced');
+                if (drFrom) drFrom.textContent = t('filter_date_from');
+                if (drTo)   drTo.textContent   = t('filter_date_to');
+                if (drApply) drApply.textContent = t('filter_apply');
                 const ddMl = document.getElementById('dd-month-label');
                 const ddGl = document.getElementById('dd-genre-label');
                 const ddVl = document.getElementById('dd-venue-label');
@@ -2740,13 +2867,17 @@
             months:    new Set(), // month keys 'YYYY-MM'
             genres:    new Set(), // genre group keys
             venues:    new Set(), // location strings
+            dateFrom:  null,      // 'YYYY-MM-DD' | null
+            dateTo:    null,      // 'YYYY-MM-DD' | null
         };
 
         function advIsEmpty() {
             return !advFilter.quickMode
                 && advFilter.months.size === 0
                 && advFilter.genres.size  === 0
-                && advFilter.venues.size  === 0;
+                && advFilter.venues.size  === 0
+                && !advFilter.dateFrom
+                && !advFilter.dateTo;
         }
 
         function renderConcerts(concerts) {
@@ -2811,6 +2942,12 @@
                     if (!(cY === nextYear && cM === nextMonth)) return false;
                 }
 
+                // Date range filter (inclusive on both ends)
+                if (advFilter.dateFrom || advFilter.dateTo) {
+                    if (advFilter.dateFrom && c.date_live < advFilter.dateFrom) return false;
+                    if (advFilter.dateTo   && c.date_live > advFilter.dateTo)   return false;
+                }
+
                 // Multi-month exclusion (months in set are hidden)
                 if (advFilter.months.size > 0 && advFilter.months.has(cKey)) return false;
 
@@ -2858,8 +2995,17 @@
             qThis.textContent = t('filter_this_month');
             qNext.textContent = t('filter_next_month');
 
+            function clearDateRange() {
+                advFilter.dateFrom = null;
+                advFilter.dateTo   = null;
+                document.getElementById('date-from').value = '';
+                document.getElementById('date-to').value   = '';
+                document.getElementById('qbtn-advanced').classList.remove('active');
+            }
+
             function setQuickMode(mode) {
                 advFilter.quickMode = (advFilter.quickMode === mode) ? null : mode;
+                if (advFilter.quickMode) clearDateRange();
                 qThis.classList.toggle('active', advFilter.quickMode === 'this-month');
                 qNext.classList.toggle('active', advFilter.quickMode === 'next-month');
                 applyAdvFilters();
@@ -2867,6 +3013,45 @@
 
             qThis.addEventListener('click', () => setQuickMode('this-month'));
             qNext.addEventListener('click', () => setQuickMode('next-month'));
+
+            // ── Advanced date range button ─────────────────────────────────
+            const qAdv     = document.getElementById('qbtn-advanced');
+            const advPanel = document.getElementById('date-range-panel');
+            const inFrom   = document.getElementById('date-from');
+            const inTo     = document.getElementById('date-to');
+            const btnApply = document.getElementById('date-range-apply');
+
+            document.getElementById('qbtn-advanced-label').textContent    = t('filter_advanced');
+            document.getElementById('date-range-from-label').textContent  = t('filter_date_from');
+            document.getElementById('date-range-to-label').textContent    = t('filter_date_to');
+            btnApply.textContent = t('filter_apply');
+
+            qAdv.addEventListener('click', e => {
+                e.stopPropagation();
+                const isOpen = advPanel.classList.contains('open');
+                closeAllDropdowns();
+                if (!isOpen) {
+                    const rect = qAdv.getBoundingClientRect();
+                    advPanel.classList.toggle('down', rect.top < 280);
+                    advPanel.classList.add('open');
+                    if (!advFilter.dateFrom && !advFilter.dateTo) qAdv.classList.add('active');
+                }
+            });
+
+            advPanel.addEventListener('click', e => e.stopPropagation());
+
+            btnApply.addEventListener('click', () => {
+                advFilter.dateFrom = inFrom.value || null;
+                advFilter.dateTo   = inTo.value   || null;
+                if (advFilter.dateFrom || advFilter.dateTo) {
+                    advFilter.quickMode = null;
+                    qThis.classList.remove('active');
+                    qNext.classList.remove('active');
+                }
+                advPanel.classList.remove('open');
+                qAdv.classList.toggle('active', !!(advFilter.dateFrom || advFilter.dateTo));
+                applyAdvFilters();
+            });
 
             // ── Month dropdown ─────────────────────────────────────────────
             document.getElementById('dd-month-label').textContent = t('filter_month_label');
@@ -3155,6 +3340,10 @@
                         if (rect.top < 0) {
                             panel.classList.add('down');
                         }
+                        // Fallback: flip left if panel overflows right edge of viewport.
+                        if (rect.right > window.innerWidth) {
+                            panel.classList.add('flip-right');
+                        }
                     }
                 });
                 // Prevent clicks inside the panel from bubbling to document (which closes all dropdowns)
@@ -3178,8 +3367,12 @@
         }
 
         function closeAllDropdowns() {
-            document.querySelectorAll('.adv-dropdown-panel').forEach(p => p.classList.remove('open','down'));
+            document.querySelectorAll('.adv-dropdown-panel').forEach(p => p.classList.remove('open','down','flip-right'));
             document.querySelectorAll('.adv-dropdown-btn').forEach(b => b.classList.remove('open'));
+            const dp = document.getElementById('date-range-panel');
+            if (dp) dp.classList.remove('open','down');
+            const qa = document.getElementById('qbtn-advanced');
+            if (qa && !advFilter.dateFrom && !advFilter.dateTo) qa.classList.remove('active');
         }
 
         function updateDropdownBadge(id, count) {
@@ -3208,6 +3401,19 @@
 
             if (advFilter.quickMode === 'this-month') pills.push({ label: t('filter_this_month'), clear: () => { advFilter.quickMode = null; document.getElementById('qbtn-this-month').classList.remove('active'); applyAdvFilters(); } });
             if (advFilter.quickMode === 'next-month') pills.push({ label: t('filter_next_month'),  clear: () => { advFilter.quickMode = null; document.getElementById('qbtn-next-month').classList.remove('active');  applyAdvFilters(); } });
+
+            if (advFilter.dateFrom || advFilter.dateTo) {
+                const fmtDate = s => s ? s.split('-').reverse().join('/') : '…';
+                const label = t('filter_date_from') + ' ' + fmtDate(advFilter.dateFrom) + ' – ' + t('filter_date_to') + ' ' + fmtDate(advFilter.dateTo);
+                pills.push({ label, clear: () => {
+                    advFilter.dateFrom = null;
+                    advFilter.dateTo   = null;
+                    document.getElementById('date-from').value = '';
+                    document.getElementById('date-to').value   = '';
+                    document.getElementById('qbtn-advanced').classList.remove('active');
+                    applyAdvFilters();
+                }});
+            }
 
             advFilter.months.forEach(key => {
                 const [y,m] = key.split('-');
@@ -3265,9 +3471,16 @@
             advFilter.months.clear();
             advFilter.genres.clear();
             advFilter.venues.clear();
+            advFilter.dateFrom  = null;
+            advFilter.dateTo    = null;
 
             document.getElementById('qbtn-this-month').classList.remove('active');
             document.getElementById('qbtn-next-month').classList.remove('active');
+            document.getElementById('qbtn-advanced').classList.remove('active');
+            const df = document.getElementById('date-from');
+            const dt = document.getElementById('date-to');
+            if (df) df.value = '';
+            if (dt) dt.value = '';
             updateDropdownBadge('dd-month', 0);
             updateDropdownBadge('dd-genre', 0);
             updateDropdownBadge('dd-venue', 0);
@@ -3280,7 +3493,7 @@
         }
 
         // ── Version (modifier ici pour changer le numéro de version) ─────────
-        const APP_VERSION = '1.0';
+        const APP_VERSION = '1.1';
 
         async function loadConcerts() {
             try {
@@ -3597,10 +3810,23 @@
             }).join('');
 
             searchDropdown.classList.add('open');
+            if (window.innerWidth <= 768) {
+                const rect = searchInput.getBoundingClientRect();
+                searchDropdown.style.position = 'fixed';
+                searchDropdown.style.top      = (rect.bottom + 6) + 'px';
+                searchDropdown.style.left     = '1rem';
+                searchDropdown.style.right    = '1rem';
+                searchDropdown.style.width    = 'auto';
+            }
         }
 
         function closeDropdown() {
             searchDropdown.classList.remove('open');
+            searchDropdown.style.position = '';
+            searchDropdown.style.top      = '';
+            searchDropdown.style.left     = '';
+            searchDropdown.style.right    = '';
+            searchDropdown.style.width    = '';
             focusedIdx = -1;
         }
 
