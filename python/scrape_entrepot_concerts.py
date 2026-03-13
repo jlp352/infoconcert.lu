@@ -467,7 +467,7 @@ def fetch_concerts(
             "artist": ev.get("artist") or "",
             "date_live": ev.get("date_str"),
             "doors_time": ev.get("doors_time"),
-            "location": "L'Entrepôt",
+            "location": "L'Entrepôt - Arlon",
             "address": ENTREPOT_ADDRESS,
             "genres": ev.get("deezer_genres") or ["Concerts"],
             "status": ev.get("status"),

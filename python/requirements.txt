@@ -1,12 +1,16 @@
 # Dépendances Python pour infoconcert.lu
 #
-# scrape_atelier_concerts.py      → stdlib uniquement (pas de dépendance externe)
-# scrape_rockhal_concerts.py      → stdlib uniquement (pas de dépendance externe)
-# scrape_casino2000_concerts.py   → stdlib uniquement (pas de dépendance externe)
-# scrape_kulturfabrik_concerts.py → stdlib uniquement (pas de dépendance externe)
-# scrape_philharmonie_concerts.py → stdlib uniquement (pas de dépendance externe)
-# scrape_echo_lu_concerts.py      → stdlib uniquement (pas de dépendance externe)
-# ftp_upload.py                   → stdlib uniquement (pas de dépendance externe)
-# merge.py                        → requiert requests
+# scrape_atelier_concerts.py               → stdlib uniquement (pas de dépendance externe)
+# scrape_rockhal_concerts.py               → stdlib uniquement (pas de dépendance externe)
+# scrape_casino2000_concerts.py            → stdlib uniquement (pas de dépendance externe)
+# scrape_kulturfabrik_concerts.py          → stdlib uniquement (pas de dépendance externe)
+# scrape_philharmonie_concerts.py          → stdlib uniquement (pas de dépendance externe)
+# scrape_echo_lu_concerts.py               → stdlib uniquement (pas de dépendance externe)
+# scrape_entrepot_concerts.py              → stdlib uniquement (pas de dépendance externe)
+# scrape_arche_villerupt_concerts.py       → stdlib uniquement (pas de dépendance externe)
+# scrape_citemusicale_metz_concerts.py     → stdlib uniquement (pas de dépendance externe)
+# scrape_galaxie_amneville_concerts.py     → stdlib uniquement (pas de dépendance externe)
+# ftp_upload.py                            → stdlib uniquement (pas de dépendance externe)
+# merge.py                                 → requiert requests
 
 requests>=2.28.0
