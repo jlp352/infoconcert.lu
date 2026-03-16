@@ -10,6 +10,9 @@
 # scrape_arche_villerupt_concerts.py       → stdlib uniquement (pas de dépendance externe)
 # scrape_citemusicale_metz_concerts.py     → stdlib uniquement (pas de dépendance externe)
 # scrape_galaxie_amneville_concerts.py     → stdlib uniquement (pas de dépendance externe)
+# scrape_mergener_hof_trier_concerts.py   → stdlib uniquement + curl (outil système)
+# scrape_forum_trier_concerts.py          → stdlib uniquement + curl (outil système)
+# scrape_gueulard_nilvange_concerts.py    → stdlib uniquement (pas de dépendance externe)
 # ftp_upload.py                            → stdlib uniquement (pas de dépendance externe)
 # merge.py                                 → requiert requests
 

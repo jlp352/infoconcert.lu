@@ -12,29 +12,36 @@ Le projet se compose de deux parties indépendantes :
 
 ```
 infoconcert.lu/
-├── python/                                  # Scripts de scraping et de traitement
-│   ├── scrape_atelier_concerts.py           # Scraper Atelier.lu
-│   ├── scrape_rockhal_concerts.py           # Scraper Rockhal.lu
-│   ├── scrape_casino2000_concerts.py        # Scraper Casino 2000
-│   ├── scrape_kulturfabrik_concerts.py      # Scraper Kulturfabrik
-│   ├── scrape_philharmonie_concerts.py      # Scraper Philharmonie Luxembourg
-│   ├── scrape_echo_lu_concerts.py           # 9 centres culturels
-│   ├── scrape_entrepot_concerts.py          # Scraper L'Entrepôt Arlon
-│   ├── merge.py                             # Fusion + enrichissement Deezer
-│   ├── purgelog.py                          # Nettoyage des fichiers de log
-│   ├── requirements.txt                     # Dépendances Python
-│   ├── install.sh                           # Script d'installation
-│   ├── JSON/                                # Sorties JSON des scrapers
-│   ├── CSV/                                 # Sorties CSV des scrapers
-│   ├── OUT/                                 # Fichiers fusionnés (json ou csv)
-│   └── Log/                                 # Fichiers de log
-└── Web/                                     # Interface web
+├── python/                                        # Scripts de scraping et de traitement
+│   ├── scrape_atelier_concerts.py                 # Scraper Atelier.lu
+│   ├── scrape_rockhal_concerts.py                 # Scraper Rockhal.lu
+│   ├── scrape_casino2000_concerts.py              # Scraper Casino 2000
+│   ├── scrape_kulturfabrik_concerts.py            # Scraper Kulturfabrik
+│   ├── scrape_philharmonie_concerts.py            # Scraper Philharmonie Luxembourg
+│   ├── scrape_echo_lu_concerts.py                 # 9 centres culturels (API Firestore)
+│   ├── scrape_entrepot_concerts.py                # Scraper L'Entrepôt Arlon (BE)
+│   ├── scrape_arche_villerupt_concerts.py         # Scraper L'Arche Villerupt (FR)
+│   ├── scrape_citemusicale_metz_concerts.py       # Scraper Cité Musicale Metz (FR)
+│   ├── scrape_galaxie_amneville_concerts.py       # Scraper Galaxie Amnéville (FR)
+│   ├── scrape_mergener_hof_trier_concerts.py      # Scraper Mergener Hof Trier (DE)
+│   ├── scrape_forum_trier_concerts.py             # Scraper Forum Trier (DE)
+│   ├── scrape_gueulard_nilvange_concerts.py       # Scraper Le Gueulard Nilvange (FR)
+│   ├── scrape_lenox_concerts.py                   # Scraper Lenox Club Luxembourg
+│   ├── merge.py                                   # Fusion + enrichissement Deezer
+│   ├── purgelog.py                                # Nettoyage des fichiers de log
+│   ├── requirements.txt                           # Dépendances Python
+│   ├── install.sh                                 # Script d'installation
+│   ├── JSON/                                      # Sorties JSON des scrapers
+│   ├── CSV/                                       # Sorties CSV des scrapers
+│   ├── OUT/                                       # Fichiers fusionnés (json ou csv)
+│   └── Log/                                       # Fichiers de log
+└── Web/                                           # Interface web
 │   ├── index.html                 # Page principale
 │   ├── contact.html               # Page Contact
 │   ├── legalnotice.html           # Page légale pour un site Web
-│   ├── venues.html                # Page des salels de concert au Luxembourg
+│   ├── venues.html                # Page des salles de concert au Luxembourg
 │   ├── image/                     # Images necessaires au site (Logo + Location)
-│   ├── IN/                        # Fichier fusionné utilisé (concerts.json)   
+│   ├── IN/                        # Fichier fusionné utilisé (concerts.json)
 ```
 
 ## Installation
@@ -94,8 +101,8 @@ python scrape_kulturfabrik_concerts.py
 # Philharmonie Luxembourg
 python scrape_philharmonie_concerts.py
 
-#9 centres culturels via Portail echo.lu
-#     Aalt Stadhaus     Differdange 
+# 9 centres culturels via Portail echo.lu
+#     Aalt Stadhaus     Differdange
 #     Cube 521          Marnach
 #     CAPE              Ettelbruck
 #     Kinneksbond       Mamer
@@ -108,6 +115,27 @@ python scrape_echo_lu_concerts.py
 
 # L'Entrepôt Arlon (Belgique)
 python scrape_entrepot_concerts.py
+
+# L'Arche Villerupt (France)
+python scrape_arche_villerupt_concerts.py
+
+# Cité Musicale Metz (France)
+python scrape_citemusicale_metz_concerts.py
+
+# Galaxie Amnéville (France)
+python scrape_galaxie_amneville_concerts.py
+
+# Mergener Hof Trier (Allemagne)
+python scrape_mergener_hof_trier_concerts.py
+
+# Forum Trier (Allemagne)
+python scrape_forum_trier_concerts.py
+
+# Le Gueulard Nilvange (France)
+python scrape_gueulard_nilvange_concerts.py
+
+# Lenox Club Luxembourg
+python scrape_lenox_concerts.py
 ```
 
 ### Fusionner les données
@@ -121,13 +149,20 @@ Le fichier `OUT/concerts.json` contiendra tous les concerts dédupliqués, enric
 ### Workflow complet recommandé
 
 ```bash
-python scrape_atelier_concerts.py -f json
-python scrape_rockhal_concerts.py -f json
-python scrape_casino2000_concerts.py -f json
-python scrape_kulturfabrik_concerts.py -f json
-python scrape_philharmonie_concerts.py -f json
-python scrape_echo_lu_concerts.py -f json
-python scrape_entrepot_concerts.py -f json
+python scrape_atelier_concerts.py
+python scrape_rockhal_concerts.py
+python scrape_casino2000_concerts.py
+python scrape_kulturfabrik_concerts.py
+python scrape_philharmonie_concerts.py
+python scrape_echo_lu_concerts.py
+python scrape_entrepot_concerts.py
+python scrape_arche_villerupt_concerts.py
+python scrape_citemusicale_metz_concerts.py
+python scrape_galaxie_amneville_concerts.py
+python scrape_mergener_hof_trier_concerts.py
+python scrape_forum_trier_concerts.py
+python scrape_gueulard_nilvange_concerts.py
+python scrape_lenox_concerts.py
 python merge.py -f json
 ```
 
@@ -141,9 +176,17 @@ python merge.py -f json
 | `scrape_kulturfabrik_concerts.py` | Scrape les concerts de la Kulturfabrik (pages HTML) | [README](python/README_scrape_kulturfabrik_concerts.md) |
 | `scrape_philharmonie_concerts.py` | Scrape les concerts de la Philharmonie Luxembourg (pages HTML) | [README](python/README_scrape_philharmonie_concerts.md) |
 | `scrape_echo_lu_concerts.py` | Scrape 9 centres culturels via echo.lu (API Firestore) | [README](python/README_scrape_echo_lu_concerts.md) |
-| `scrape_entrepot_concerts.py` | Scrape les concerts de L'Entrepôt Arlon (pages HTML) | [README](python/README_scrape_entrepot_concerts.md) |
+| `scrape_entrepot_concerts.py` | Scrape les concerts de L'Entrepôt Arlon — BE (pages HTML) | [README](python/README_scrape_entrepot_concerts.md) |
+| `scrape_arche_villerupt_concerts.py` | Scrape les concerts de L'Arche Villerupt — FR (pages HTML) | [README](python/README_scrape_arche_villerupt_concerts.md) |
+| `scrape_citemusicale_metz_concerts.py` | Scrape les concerts de la Cité Musicale Metz — FR (pages HTML) | [README](python/README_scrape_citemusicale_metz_concerts.md) |
+| `scrape_galaxie_amneville_concerts.py` | Scrape les concerts de Galaxie Amnéville — FR (pages HTML) | [README](python/README_scrape_galaxie_amneville_concerts.md) |
+| `scrape_mergener_hof_trier_concerts.py` | Scrape les concerts du Mergener Hof Trier — DE (pages HTML) | [README](python/README_scrape_mergener_hof_trier_concerts.md) |
+| `scrape_forum_trier_concerts.py` | Scrape les concerts du Forum Trier — DE (pages HTML) | [README](python/README_scrape_forum_trier_concerts.md) |
+| `scrape_gueulard_nilvange_concerts.py` | Scrape les concerts du Gueulard Nilvange — FR (API WordPress) | [README](python/README_scrape_gueulard_nilvange_concerts.md) |
+| `scrape_lenox_concerts.py` | Scrape les concerts du Lenox Club Luxembourg (RSC/xceed.me) | [README](python/README_scrape_lenox_concerts.md) |
 | `merge.py` | Fusionne les sorties des scrapers et enrichit avec Deezer | [README](python/README_merge.md) |
 | `purgelog.py` | Nettoie les fichiers de log anciens | — |
+| `check_logs.py` | Analyse les logs et envoie une alerte ntfy si nouvelles erreurs | [README](python/README_check_logs.md) |
 
 ## Site Web
 
@@ -237,7 +280,7 @@ $PYTHON "$SCRIPTS_PATH/scrape_casino2000_concerts.py"
 # Kulturfabrik
 $PYTHON "$SCRIPTS_PATH/scrape_kulturfabrik_concerts.py"
 
-# Philharmonie Luxembourg — exclure les concerts complets si souhaité
+# Philharmonie Luxembourg
 $PYTHON "$SCRIPTS_PATH/scrape_philharmonie_concerts.py"
 
 # echo.lu — 9 centres culturels via Firestore
@@ -246,11 +289,38 @@ $PYTHON "$SCRIPTS_PATH/scrape_echo_lu_concerts.py"
 # L'Entrepôt Arlon (Belgique)
 $PYTHON "$SCRIPTS_PATH/scrape_entrepot_concerts.py"
 
+# L'Arche Villerupt (France)
+$PYTHON "$SCRIPTS_PATH/scrape_arche_villerupt_concerts.py"
+
+# Cité Musicale Metz (France)
+$PYTHON "$SCRIPTS_PATH/scrape_citemusicale_metz_concerts.py"
+
+# Galaxie Amnéville (France)
+$PYTHON "$SCRIPTS_PATH/scrape_galaxie_amneville_concerts.py"
+
+# Mergener Hof Trier (Allemagne)
+$PYTHON "$SCRIPTS_PATH/scrape_mergener_hof_trier_concerts.py"
+
+# Forum Trier (Allemagne)
+$PYTHON "$SCRIPTS_PATH/scrape_forum_trier_concerts.py"
+
+# Le Gueulard Nilvange (France)
+$PYTHON "$SCRIPTS_PATH/scrape_gueulard_nilvange_concerts.py"
+
+# Lenox Club Luxembourg
+$PYTHON "$SCRIPTS_PATH/scrape_lenox_concerts.py"
+
 # Fusion de toutes les sources
 $PYTHON "$SCRIPTS_PATH/merge.py" -f json
 
 # Copie du fichier fusionné vers le dossier du site Web
 cp "$SCRIPTS_PATH/OUT/concerts.json" "$SCRIPTS_PATH_WEB/concerts.json"
+
+# Vérification des logs et synchronisation JSON — alerte ntfy si problème
+$PYTHON "$SCRIPTS_PATH/check_logs.py" \
+  --ntfy-url https://ntfy.exemple.com/infoconcert \
+  --ntfy-token tk_abc123xyz \
+  --web-json-url https://infoconcert.lu/IN/concerts.json
 ```
 
 ## Dépendances
