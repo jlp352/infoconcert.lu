@@ -2403,6 +2403,7 @@
                 filter_venue_label:   'Salle',
                 filter_venue_other:   'Autres',
                 filter_echo_group_label: 'Centres Culturels',
+                filter_grande_region_group_label: 'Grande Région',
                 filter_venue_select_all: 'Tout afficher',
                 filter_reset:         'Réinitialiser',
                 filter_month_year_placeholder: 'Mois / Année',
@@ -2481,6 +2482,7 @@
                 filter_venue_label:   'Venue',
                 filter_venue_other:   'Others',
                 filter_echo_group_label: 'Cultural Centres',
+                filter_grande_region_group_label: 'Greater Region',
                 filter_venue_select_all: 'Show all',
                 filter_reset:         'Reset',
                 filter_month_year_placeholder: 'Month / Year',
@@ -2559,6 +2561,7 @@
                 filter_venue_label:   'Veranstaltungsort',
                 filter_venue_other:   'Andere',
                 filter_echo_group_label: 'Kulturzentren',
+                filter_grande_region_group_label: 'Großregion',
                 filter_venue_select_all: 'Alle anzeigen',
                 filter_reset:         'Zurücksetzen',
                 filter_month_year_placeholder: 'Monat / Jahr',
@@ -2840,6 +2843,8 @@
 
         // Cultural centres (echo.lu) — grouped in venue filter
         const ECHO_VENUES = ['Artikuss','Prabbeli','CAPE','Kinneksbond','Aalt Stadhaus','Cube 521','Maacher','opderschmelz'];
+        // Grande Région venues — grouped in venue filter
+        const GRANDE_REGION_VENUES = ["L'Arche - Villerupt","BAM - Metz","Trinitaires - Metz","Forum Concert - Trier","Mergener Hof - Trier","Le Gueulard - Nilvange","L'Entrepôt - Arlon","Le Galaxie - Amnéville"];
 
         // ── Genre mapping ─────────────────────────────────────────────────────
         const GENRE_GROUPS = [
@@ -2962,11 +2967,9 @@
                     if (match) return false;
                 }
 
-                // Venues exclusion — '__other__' excludes all minor venues (< 2 concerts) except cultural centres
+                // Venues exclusion — each excluded venue is tracked individually
                 if (advFilter.venues.size > 0) {
-                    const directMatch = advFilter.venues.has(c.location);
-                    const otherMatch  = advFilter.venues.has('__other__') && (venueCounts[c.location] || 0) < 2 && !ECHO_VENUES.includes(c.location);
-                    if (directMatch || otherMatch) return false;
+                    if (advFilter.venues.has(c.location)) return false;
                 }
 
                 return true;
@@ -3167,11 +3170,10 @@
             // All venues sorted alphabetically, split between main (≥ 2) and minor (1)
             // Cultural centres are handled separately — excluded from regular lists
             const allVenueKeys = Object.keys(venueCounts).sort();
-            const mainVenues  = allVenueKeys.filter(v => venueCounts[v] >= 2 && !ECHO_VENUES.includes(v));
-            const otherVenues = allVenueKeys.filter(v => venueCounts[v] <  2 && !ECHO_VENUES.includes(v));
+            const mainVenues  = allVenueKeys.filter(v => venueCounts[v] >= 4 && !ECHO_VENUES.includes(v) && !GRANDE_REGION_VENUES.includes(v));
+            const otherVenues = allVenueKeys.filter(v => venueCounts[v] <  4 && !ECHO_VENUES.includes(v) && !GRANDE_REGION_VENUES.includes(v));
             const echoInData  = ECHO_VENUES.filter(v => venueCounts[v] > 0);
-            // Special sentinel value for the "Autres" group
-            const VENUE_OTHER_KEY = '__other__';
+            const grandeRegionInData = GRANDE_REGION_VENUES.filter(v => venueCounts[v] > 0);
 
             function buildVenuePanel() {
                 const panel = document.getElementById('dd-venue-panel');
@@ -3221,14 +3223,56 @@
                     </div>`;
                 }
 
-                if (otherVenues.length > 0) {
+                // Grande Région collapsible group
+                if (grandeRegionInData.length > 0) {
                     if (mainVenues.length > 0 || echoInData.length > 0) html += `<div class="adv-panel-divider"></div>`;
-                    const chk = advFilter.venues.has(VENUE_OTHER_KEY) ? '' : 'checked';
-                    html += `<label class="adv-panel-item">
-                        <input type="checkbox" value="${VENUE_OTHER_KEY}" ${chk}>
-                        <span>${t('filter_venue_other')}</span>
-                        <span style="margin-left:auto;font-size:0.72rem;opacity:0.4">${otherVenues.length}</span>
-                    </label>`;
+                    const grExcludedCount = grandeRegionInData.filter(v => advFilter.venues.has(v)).length;
+                    const grIsExpanded    = grExcludedCount > 0;
+                    html += `<div class="adv-panel-group-row">
+                        <label class="adv-panel-item" style="flex:1;font-weight:700">
+                            <input type="checkbox" id="gr-group-all">
+                            <span>${t('filter_grande_region_group_label')}</span>
+                        </label>
+                        <span class="adv-panel-group-badge" id="gr-group-badge"${grExcludedCount > 0 ? '' : ' style="display:none"'}>${grExcludedCount}</span>
+                        <button class="adv-panel-group-chevron-btn${grIsExpanded ? ' expanded' : ''}" id="gr-group-chevron">▶</button>
+                    </div>
+                    <div class="adv-panel-group-items${grIsExpanded ? ' expanded' : ''}" id="gr-group-items">
+                        ${grandeRegionInData.map(loc => {
+                            const chk   = advFilter.venues.has(loc) ? '' : 'checked';
+                            const count = venueCounts[loc];
+                            return `<label class="adv-panel-item adv-panel-item-sub">
+                                <input type="checkbox" value="${loc}" ${chk}>
+                                <span>${loc}</span>
+                                <span style="margin-left:auto;font-size:0.72rem;opacity:0.4">${count}</span>
+                            </label>`;
+                        }).join('')}
+                    </div>`;
+                }
+
+                // Autres (small venues) collapsible group
+                if (otherVenues.length > 0) {
+                    if (mainVenues.length > 0 || echoInData.length > 0 || grandeRegionInData.length > 0) html += `<div class="adv-panel-divider"></div>`;
+                    const otherExcludedCount = otherVenues.filter(v => advFilter.venues.has(v)).length;
+                    const otherIsExpanded    = otherExcludedCount > 0;
+                    html += `<div class="adv-panel-group-row">
+                        <label class="adv-panel-item" style="flex:1;font-weight:700">
+                            <input type="checkbox" id="other-group-all">
+                            <span>${t('filter_venue_other')}</span>
+                        </label>
+                        <span class="adv-panel-group-badge" id="other-group-badge"${otherExcludedCount > 0 ? '' : ' style="display:none"'}>${otherExcludedCount}</span>
+                        <button class="adv-panel-group-chevron-btn${otherIsExpanded ? ' expanded' : ''}" id="other-group-chevron">▶</button>
+                    </div>
+                    <div class="adv-panel-group-items${otherIsExpanded ? ' expanded' : ''}" id="other-group-items">
+                        ${otherVenues.map(loc => {
+                            const chk   = advFilter.venues.has(loc) ? '' : 'checked';
+                            const count = venueCounts[loc];
+                            return `<label class="adv-panel-item adv-panel-item-sub">
+                                <input type="checkbox" value="${loc}" ${chk}>
+                                <span>${loc}</span>
+                                <span style="margin-left:auto;font-size:0.72rem;opacity:0.4">${count}</span>
+                            </label>`;
+                        }).join('')}
+                    </div>`;
                 }
 
                 panel.innerHTML = html;
@@ -3242,7 +3286,8 @@
                         if (!selectAllEl.checked) {
                             mainVenues.forEach(v => advFilter.venues.add(v));
                             echoInData.forEach(v => advFilter.venues.add(v));
-                            if (otherVenues.length > 0) advFilter.venues.add(VENUE_OTHER_KEY);
+                            grandeRegionInData.forEach(v => advFilter.venues.add(v));
+                            otherVenues.forEach(v => advFilter.venues.add(v));
                         } else {
                             advFilter.venues.clear();
                         }
@@ -3304,12 +3349,110 @@
                     });
                 }
 
+                // ── Grande Région group wiring ─────────────────────────────
+                const grGroupAllCb   = panel.querySelector('#gr-group-all');
+                const grGroupChevron = panel.querySelector('#gr-group-chevron');
+                const grGroupItems   = panel.querySelector('#gr-group-items');
+                const grGroupBadge   = panel.querySelector('#gr-group-badge');
+
+                function syncGrGroup() {
+                    const n = grandeRegionInData.filter(v => advFilter.venues.has(v)).length;
+                    if (grGroupAllCb) {
+                        grGroupAllCb.checked       = n === 0;
+                        grGroupAllCb.indeterminate = n > 0 && n < grandeRegionInData.length;
+                    }
+                    if (grGroupBadge) {
+                        grGroupBadge.textContent   = n;
+                        grGroupBadge.style.display = n > 0 ? '' : 'none';
+                    }
+                    if (selectAllEl) {
+                        const total = advFilter.venues.size;
+                        selectAllEl.checked       = total === 0;
+                        selectAllEl.indeterminate = total > 0;
+                    }
+                }
+                syncGrGroup();
+                window._advSyncGrGroup = syncGrGroup;
+
+                if (grGroupChevron && grGroupItems) {
+                    grGroupChevron.addEventListener('click', e => {
+                        e.stopPropagation();
+                        grGroupChevron.classList.toggle('expanded');
+                        grGroupItems.classList.toggle('expanded');
+                    });
+                }
+
+                if (grGroupAllCb) {
+                    grGroupAllCb.addEventListener('change', () => {
+                        grandeRegionInData.forEach(v => {
+                            if (!grGroupAllCb.checked) advFilter.venues.add(v);
+                            else advFilter.venues.delete(v);
+                        });
+                        panel.querySelectorAll('#gr-group-items input[type="checkbox"]').forEach(cb => {
+                            cb.checked = grGroupAllCb.checked;
+                        });
+                        syncGrGroup();
+                        updateDropdownBadge('dd-venue', advFilter.venues.size);
+                        applyAdvFilters();
+                    });
+                }
+
+                // ── Autres group wiring ────────────────────────────────────
+                const otherGroupAllCb   = panel.querySelector('#other-group-all');
+                const otherGroupChevron = panel.querySelector('#other-group-chevron');
+                const otherGroupItems   = panel.querySelector('#other-group-items');
+                const otherGroupBadge   = panel.querySelector('#other-group-badge');
+
+                function syncOtherGroup() {
+                    const n = otherVenues.filter(v => advFilter.venues.has(v)).length;
+                    if (otherGroupAllCb) {
+                        otherGroupAllCb.checked       = n === 0;
+                        otherGroupAllCb.indeterminate = n > 0 && n < otherVenues.length;
+                    }
+                    if (otherGroupBadge) {
+                        otherGroupBadge.textContent   = n;
+                        otherGroupBadge.style.display = n > 0 ? '' : 'none';
+                    }
+                    if (selectAllEl) {
+                        const total = advFilter.venues.size;
+                        selectAllEl.checked       = total === 0;
+                        selectAllEl.indeterminate = total > 0;
+                    }
+                }
+                syncOtherGroup();
+                window._advSyncOtherGroup = syncOtherGroup;
+
+                if (otherGroupChevron && otherGroupItems) {
+                    otherGroupChevron.addEventListener('click', e => {
+                        e.stopPropagation();
+                        otherGroupChevron.classList.toggle('expanded');
+                        otherGroupItems.classList.toggle('expanded');
+                    });
+                }
+
+                if (otherGroupAllCb) {
+                    otherGroupAllCb.addEventListener('change', () => {
+                        otherVenues.forEach(v => {
+                            if (!otherGroupAllCb.checked) advFilter.venues.add(v);
+                            else advFilter.venues.delete(v);
+                        });
+                        panel.querySelectorAll('#other-group-items input[type="checkbox"]').forEach(cb => {
+                            cb.checked = otherGroupAllCb.checked;
+                        });
+                        syncOtherGroup();
+                        updateDropdownBadge('dd-venue', advFilter.venues.size);
+                        applyAdvFilters();
+                    });
+                }
+
                 // Individual checkboxes: checked = show (remove from exclusion), unchecked = hide (add to exclusion)
-                panel.querySelectorAll('input[type="checkbox"]:not(#echo-group-all):not(#venue-select-all)').forEach(cb => {
+                panel.querySelectorAll('input[type="checkbox"]:not(#echo-group-all):not(#gr-group-all):not(#other-group-all):not(#venue-select-all)').forEach(cb => {
                     cb.addEventListener('change', () => {
                         if (!cb.checked) advFilter.venues.add(cb.value);    // uncheck = exclude
                         else advFilter.venues.delete(cb.value);             // check = include
                         if (echoInData.includes(cb.value)) syncEchoGroup();
+                        else if (grandeRegionInData.includes(cb.value)) syncGrGroup();
+                        else if (otherVenues.includes(cb.value)) syncOtherGroup();
                         else if (selectAllEl) {
                             const total = advFilter.venues.size;
                             selectAllEl.checked       = total === 0;
@@ -3442,13 +3585,14 @@
             });
 
             advFilter.venues.forEach(v => {
-                const label = v === '__other__' ? t('filter_venue_other') : v;
-                pills.push({ label, clear: () => {
+                pills.push({ label: v, clear: () => {
                     advFilter.venues.delete(v);
                     updateDropdownBadge('dd-venue', advFilter.venues.size);
                     const cb = document.querySelector(`#dd-venue-panel input[value="${CSS.escape(v)}"]`);
-                    if (cb) cb.checked = false;
-                    if (window._advSyncEchoGroup) window._advSyncEchoGroup();
+                    if (cb) cb.checked = true;
+                    if (window._advSyncEchoGroup)  window._advSyncEchoGroup();
+                    if (window._advSyncGrGroup)    window._advSyncGrGroup();
+                    if (window._advSyncOtherGroup) window._advSyncOtherGroup();
                     applyAdvFilters();
                 }});
             });
@@ -3493,7 +3637,7 @@
         }
 
         // ── Version (modifier ici pour changer le numéro de version) ─────────
-        const APP_VERSION = '1.1';
+        const APP_VERSION = '1.2';
 
         async function loadConcerts() {
             try {
