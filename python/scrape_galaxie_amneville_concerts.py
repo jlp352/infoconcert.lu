@@ -507,12 +507,25 @@ def fetch_concerts(
         _enrich_from_detail(ev)
         time.sleep(POLITE_DELAY)
 
-    # ── 3b. Prix depuis la billetterie ────────────────────────────────────
+    # ── 3b. Filtre anticipé : événements passés (avant les appels réseau coûteux)
+    today = datetime.now(timezone.utc).date()
+    before_date = len(all_events)
+    all_events = [
+        ev for ev in all_events
+        if ev.get("date_live") and datetime.strptime(ev["date_live"], "%Y-%m-%d").date() >= today
+    ]
+    if len(all_events) < before_date:
+        logger.info(
+            "Filtre dates passées (avant prix/Deezer) : %d → %d (supprimés : %d)",
+            before_date, len(all_events), before_date - len(all_events),
+        )
+
+    # ── 3c. Prix depuis la billetterie ────────────────────────────────────
     logger.info("Récupération des prix depuis la billetterie…")
     for i, ev in enumerate(all_events, 1):
         buy_link = ev.get("buy_link")
         if buy_link and "billetterie.le-galaxie.com" in buy_link and "/fr/" in buy_link:
-            logger.debug("[%d/%d] Prix : %s", i, total_found, buy_link)
+            logger.debug("[%d/%d] Prix : %s", i, len(all_events), buy_link)
             ev["price"] = _fetch_billetterie_price(buy_link)
             time.sleep(POLITE_DELAY)
         else:
@@ -520,7 +533,7 @@ def fetch_concerts(
     logger.info("Prix récupérés.")
 
     # ── 4. Genres Deezer ──────────────────────────────────────────────────
-    logger.info("Enrichissement des genres via Deezer pour %d artistes…", total_found)
+    logger.info("Enrichissement des genres via Deezer pour %d artistes…", len(all_events))
     for ev in all_events:
         ev["genres"] = _fetch_deezer_genres(ev.get("artist") or "")
     logger.info("Genres Deezer récupérés.")
@@ -545,8 +558,7 @@ def fetch_concerts(
         })
 
     # ── 6. Filtres ────────────────────────────────────────────────────────
-    # Exclure les événements passés (date_live < aujourd'hui)
-    today = datetime.now(timezone.utc).date()
+    # Exclure les événements passés (filet de sécurité pour les entrées sans date_live)
     before_date = len(concerts)
     concerts = [
         c for c in concerts
