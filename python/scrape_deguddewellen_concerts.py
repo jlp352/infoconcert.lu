@@ -590,9 +590,6 @@ def fetch_concerts(
             "price":      det.get("price", "Price Unavailable"),
             "date_created": run_ts,
         }
-        # Ajouter show_time au date_live si disponible
-        if show_time and concert["date_live"]:
-            concert["date_live"] = f"{concert['date_live']} {show_time}"
 
         concerts.append(concert)
 
