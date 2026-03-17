@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
-check_logs.py — Analyse les fichiers de log et envoie une alerte ntfy si
+check_logs.py — Analyse les fichiers de log et envoie une alerte email si
 de nouvelles lignes [ERROR] sont détectées depuis la dernière exécution.
 Vérifie également que le fichier concerts.json du site web est identique
 au fichier local OUT/concerts.json.
 
 Usage :
     python check_logs.py \
-        --ntfy-url http://localhost:2586/infoconcert \
-        --ntfy-token tk_abc123xyz \
+        --email-from alertes@example.com \
+        --email-to admin@example.com \
+        --smtp-host smtp.example.com \
+        --smtp-user alertes@example.com \
+        --smtp-password secret \
         --web-json-url https://infoconcert.lu/IN/concerts.json
 
 Fichier d'état : Log/.alert_state.json
@@ -21,10 +24,12 @@ import glob
 import hashlib
 import json
 import os
+import smtplib
 import sys
 import urllib.request
 import urllib.error
 from datetime import datetime
+from email.mime.text import MIMEText
 
 LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Log")
 STATE_FILE = os.path.join(LOG_DIR, ".alert_state.json")
@@ -172,7 +177,7 @@ def check_json_sync(web_url: str) -> str | None:
 
 
 # ---------------------------------------------------------------------------
-# Notification ntfy
+# Notification email
 # ---------------------------------------------------------------------------
 
 def build_message(errors_by_file: dict) -> str:
@@ -186,25 +191,31 @@ def build_message(errors_by_file: dict) -> str:
     return "\n".join(lines)
 
 
-def send_ntfy(url: str, token: str, title: str, message: str, priority: str = "high") -> bool:
-    data = message.encode("utf-8")
-    req = urllib.request.Request(url, data=data, method="POST")
-    req.add_header("Title", title)
-    req.add_header("Priority", priority)
-    req.add_header("Tags", "warning")
-    req.add_header("Content-Type", "text/plain; charset=utf-8")
-    if token:
-        req.add_header("Authorization", f"Bearer {token}")
+def send_email(smtp_host: str, smtp_port: int, smtp_user: str, smtp_password: str,
+               from_addr: str, to_addrs: list[str], subject: str, body: str,
+               use_ssl: bool = False) -> bool:
+    msg = MIMEText(body, "plain", "utf-8")
+    msg["Subject"] = subject
+    msg["From"] = from_addr
+    msg["To"] = ", ".join(to_addrs)
 
     try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return resp.status == 200
-    except urllib.error.HTTPError as e:
-        print(f"[check_logs] Erreur HTTP ntfy : {e.code} {e.reason}", file=sys.stderr)
-    except urllib.error.URLError as e:
-        print(f"[check_logs] Impossible de joindre ntfy : {e.reason}", file=sys.stderr)
-    except Exception as e:
-        print(f"[check_logs] Erreur inattendue ntfy : {e}", file=sys.stderr)
+        if use_ssl:
+            smtp = smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=10)
+        else:
+            smtp = smtplib.SMTP(smtp_host, smtp_port, timeout=10)
+            smtp.starttls()
+
+        if smtp_user:
+            smtp.login(smtp_user, smtp_password)
+
+        smtp.sendmail(from_addr, to_addrs, msg.as_string())
+        smtp.quit()
+        return True
+    except smtplib.SMTPException as e:
+        print(f"[check_logs] Erreur SMTP : {e}", file=sys.stderr)
+    except OSError as e:
+        print(f"[check_logs] Impossible de joindre le serveur SMTP : {e}", file=sys.stderr)
     return False
 
 
@@ -213,19 +224,53 @@ def send_ntfy(url: str, token: str, title: str, message: str, priority: str = "h
 # ---------------------------------------------------------------------------
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Analyse les logs et alerte via ntfy si erreurs.")
-    parser.add_argument("--ntfy-url", required=True,
-                        help="URL ntfy complète, ex: http://localhost:2586/infoconcert")
-    parser.add_argument("--ntfy-token", default="",
-                        help="Token d'authentification ntfy (optionnel)")
+    parser = argparse.ArgumentParser(description="Analyse les logs et alerte par email si erreurs.")
+    parser.add_argument("--email-from", required=True,
+                        help="Adresse expéditeur, ex: alertes@example.com")
+    parser.add_argument("--email-to", required=True, action="append", dest="email_to",
+                        help="Adresse destinataire (répétable pour plusieurs)")
+    parser.add_argument("--smtp-host", required=True,
+                        help="Serveur SMTP, ex: smtp.example.com")
+    parser.add_argument("--smtp-port", type=int, default=587,
+                        help="Port SMTP (défaut : 587)")
+    parser.add_argument("--smtp-user", default="",
+                        help="Login SMTP (optionnel)")
+    parser.add_argument("--smtp-password", default="",
+                        help="Mot de passe SMTP (optionnel)")
+    parser.add_argument("--smtp-ssl", action="store_true",
+                        help="Utiliser SSL direct (port 465) au lieu de STARTTLS")
     parser.add_argument("--web-json-url", default="",
                         help="URL du concerts.json servi par le site, ex: https://infoconcert.lu/IN/concerts.json")
+    parser.add_argument("--test", action="store_true",
+                        help="Envoie un email de test et quitte (vérifie que les paramètres SMTP sont corrects)")
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
     exit_code = 0
+
+    if args.test:
+        now = datetime.now().strftime("%Y-%m-%d %H:%M")
+        subject = f"[TEST] infoconcert.lu — check_logs — {now}"
+        body = (
+            f"Ceci est un email de test envoyé par check_logs.py.\n\n"
+            f"Paramètres utilisés :\n"
+            f"  SMTP host    : {args.smtp_host}\n"
+            f"  SMTP port    : {args.smtp_port}\n"
+            f"  SMTP user    : {args.smtp_user or '(aucun)'}\n"
+            f"  SSL          : {'oui' if args.smtp_ssl else 'non (STARTTLS)'}\n"
+            f"  Expéditeur   : {args.email_from}\n"
+            f"  Destinataire : {', '.join(args.email_to)}\n"
+        )
+        print("[check_logs] Envoi email de test…")
+        if send_email(args.smtp_host, args.smtp_port, args.smtp_user, args.smtp_password,
+                      args.email_from, args.email_to, subject, body, args.smtp_ssl):
+            print("[check_logs] Email de test envoyé avec succès.")
+            sys.exit(0)
+        else:
+            print("[check_logs] Échec de l'envoi de l'email de test.", file=sys.stderr)
+            sys.exit(1)
 
     if not os.path.isdir(LOG_DIR):
         print(f"[check_logs] Dossier Log/ introuvable : {LOG_DIR}", file=sys.stderr)
@@ -240,10 +285,11 @@ def main():
 
     if errors_by_file:
         total = sum(len(v) for v in errors_by_file.values())
-        title = f"⚠️ infoconcert.lu — {total} erreur(s) — {now}"
+        subject = f"⚠️ infoconcert.lu — {total} erreur(s) — {now}"
         message = build_message(errors_by_file)
-        print(f"[check_logs] {total} nouvelle(s) erreur(s) détectée(s), envoi alerte ntfy…")
-        if not send_ntfy(args.ntfy_url, args.ntfy_token, title, message):
+        print(f"[check_logs] {total} nouvelle(s) erreur(s) détectée(s), envoi alerte email…")
+        if not send_email(args.smtp_host, args.smtp_port, args.smtp_user, args.smtp_password,
+                          args.email_from, args.email_to, subject, message, args.smtp_ssl):
             exit_code = 1
         else:
             print("[check_logs] Alerte erreurs envoyée.")
@@ -254,9 +300,10 @@ def main():
     if args.web_json_url:
         sync_error = check_json_sync(args.web_json_url)
         if sync_error:
-            title = f"🔴 infoconcert.lu — JSON différent entre Serveur et Web — {now}"
-            print(f"[check_logs] JSON différent entre Serveur et Web, envoi alerte ntfy…")
-            if not send_ntfy(args.ntfy_url, args.ntfy_token, title, sync_error, priority="urgent"):
+            subject = f"🔴 infoconcert.lu — JSON différent entre Serveur et Web — {now}"
+            print(f"[check_logs] JSON différent entre Serveur et Web, envoi alerte email…")
+            if not send_email(args.smtp_host, args.smtp_port, args.smtp_user, args.smtp_password,
+                              args.email_from, args.email_to, subject, sync_error, args.smtp_ssl):
                 exit_code = 1
             else:
                 print("[check_logs] Alerte JSON envoyée.")

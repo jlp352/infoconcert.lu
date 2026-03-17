@@ -25,5 +25,14 @@ def purge_logs():
         except Exception as e:
             print(f"Erreur lors de la suppression de {file_path} : {e}")
 
+    # Supprime le fichier d'état de check_logs pour repartir de zéro
+    state_file = os.path.join(log_dir, ".alert_state.json")
+    if os.path.exists(state_file):
+        try:
+            os.remove(state_file)
+            print(f"Supprimé : {state_file}")
+        except Exception as e:
+            print(f"Erreur lors de la suppression de {state_file} : {e}")
+
 if __name__ == "__main__":
     purge_logs()

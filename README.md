@@ -186,7 +186,7 @@ python merge.py -f json
 | `scrape_lenox_concerts.py` | Scrape les concerts du Lenox Club Luxembourg (RSC/xceed.me) | [README](python/README_scrape_lenox_concerts.md) |
 | `merge.py` | Fusionne les sorties des scrapers et enrichit avec Deezer | [README](python/README_merge.md) |
 | `purgelog.py` | Nettoie les fichiers de log anciens | — |
-| `check_logs.py` | Analyse les logs et envoie une alerte ntfy si nouvelles erreurs | [README](python/README_check_logs.md) |
+| `check_logs.py` | Analyse les logs et envoie une alerte email si nouvelles erreurs | [README](python/README_check_logs.md) |
 
 ## Site Web
 
@@ -316,10 +316,13 @@ $PYTHON "$SCRIPTS_PATH/merge.py" -f json
 # Copie du fichier fusionné vers le dossier du site Web
 cp "$SCRIPTS_PATH/OUT/concerts.json" "$SCRIPTS_PATH_WEB/concerts.json"
 
-# Vérification des logs et synchronisation JSON — alerte ntfy si problème
+# Vérification des logs et synchronisation JSON — alerte email si problème
 $PYTHON "$SCRIPTS_PATH/check_logs.py" \
-  --ntfy-url https://ntfy.exemple.com/infoconcert \
-  --ntfy-token tk_abc123xyz \
+  --email-from alertes@example.com \
+  --email-to admin@example.com \
+  --smtp-host smtp.example.com \
+  --smtp-user alertes@example.com \
+  --smtp-password secret \
   --web-json-url https://infoconcert.lu/IN/concerts.json
 ```
 
