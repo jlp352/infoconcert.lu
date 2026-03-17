@@ -2704,7 +2704,7 @@
             if (!status) return '';
             const s = status.toLowerCase().replace(/[\s_-]/g, '');
             // Billets Disponibles
-            if (['buynow', 'lasttickets', 'newdate'].includes(s)) return 'available';
+            if (['buynow', 'lasttickets', 'newdate', 'free'].includes(s)) return 'available';
             // Complet
             if (['soldout', 'waitinglist'].includes(s)) return 'full';
             // Mise en vente prochaine (termes connus + fallback pour tout inconnu non vide)
