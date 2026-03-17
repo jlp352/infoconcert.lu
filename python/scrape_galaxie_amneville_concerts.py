@@ -545,6 +545,19 @@ def fetch_concerts(
         })
 
     # ── 6. Filtres ────────────────────────────────────────────────────────
+    # Exclure les événements passés (date_live < aujourd'hui)
+    today = datetime.now(timezone.utc).date()
+    before_date = len(concerts)
+    concerts = [
+        c for c in concerts
+        if c.get("date_live") and datetime.strptime(c["date_live"], "%Y-%m-%d").date() >= today
+    ]
+    if len(concerts) < before_date:
+        logger.info(
+            "Filtre dates passées : %d → %d (supprimés : %d)",
+            before_date, len(concerts), before_date - len(concerts),
+        )
+
     excluded_genres = _parse_exclusion_list(exclude_genres)
     if excluded_genres:
         before   = len(concerts)

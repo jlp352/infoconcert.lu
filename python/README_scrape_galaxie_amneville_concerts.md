@@ -6,12 +6,13 @@ Scraper des concerts et spectacles disponibles sur [le-galaxie.com](https://www.
 
 ## Fonctionnement
 
-Le script opère en quatre étapes :
+Le script opère en cinq étapes :
 
 1. **Collecte des pages de liste** — les événements sont listés sur `/evenements/page/{n}/`. La pagination est détectée dynamiquement à partir du HTML de la première page. Chaque carte `.card-event` fournit le titre, la catégorie, le statut billetterie (CSS) et l'URL de la page détail.
 2. **Enrichissement depuis les pages détail** — chaque page détail contient un bloc JSON-LD `schema.org/Event` qui fournit la date et l'heure de début, le lien de réservation (`offers.url`) et l'image haute résolution.
 3. **Récupération des prix depuis la billetterie** — le lien de réservation pointe vers `billetterie.le-galaxie.com`. Le script récupère le prix plancher (minimum) en parsant le HTML statique de cette page (site Drupal/Hubber). Deux formats d'URL sont gérés.
 4. **Enrichissement des genres via l'API Deezer** — chaîne de 3 appels pour chaque artiste : `search/artist` → `artist/{id}/top` → `album/{id}` → genres. Résultats mis en cache. Fallback : `["Concerts"]`.
+5. **Filtres** — les événements passés (date antérieure à aujourd'hui) sont systématiquement exclus. Des filtres optionnels par genre et par statut peuvent s'y ajouter.
 
 ### Pagination
 
@@ -75,6 +76,10 @@ Le script extrait tous les prix disponibles et retourne le **minimum** (prix pla
 | Aucun `buy_link` disponible | `Price Unavailable` | `buy_now` |
 | Événement passé (403 Forbidden) | `Price Unavailable` | `buy_now` |
 | Classe CSS `status-sold_out` ou JSON-LD `SoldOut` | `Price Unavailable` | `sold_out` |
+
+### Filtrage des événements passés
+
+Après l'assemblage, les événements dont `date_live` est strictement antérieure à la date du jour (UTC) sont automatiquement exclus. Les événements sans `date_live` (JSON-LD absent ou date non parsée) sont également exclus. Le nombre d'événements supprimés est tracé dans le log.
 
 ### Fichier de sortie
 
