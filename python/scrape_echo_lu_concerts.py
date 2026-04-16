@@ -13,6 +13,7 @@ Salles couvertes :
   - Artikuss (Soleuvre)
   - Prabbeli (Wiltz)
   - Maacher (Grevenmacher)
+  - Trifolion (Echternach)
 
 Les fichiers sont générés automatiquement dans des sous-dossiers
 relatifs à l'emplacement du script :
@@ -130,6 +131,10 @@ VENUES = {
     "machera-centre-culturel-grevenmacher-63RrPS": (
         "Maacher",
         "https://www.echo.lu/en/venues/machera-centre-culturel-grevenmacher-63RrPS",
+    ),
+    "trifolion-echternach-8rGXZ7": (
+        "Trifolion",
+        "https://www.echo.lu/en/venues/trifolion-echternach-8rGXZ7",
     ),
 }
 
