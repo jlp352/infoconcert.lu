@@ -25,6 +25,7 @@ Il opère en trois étapes, les deux premières étant parallélisées sur 6 thr
 | Artikuss          | Soleuvre     | `artikuss-aRnbum`                                 |
 | Prabbeli          | Wiltz        | `centre-socioculturel-regional-prabbeli-7hTND4`   |
 | Maacher           | Grevenmacher | `machera-centre-culturel-grevenmacher-63RrPS`     |
+| Trifolion         | Echternach   | `trifolion-echternach-8rGXZ7`                     |
 
 ### API Firestore utilisée
 
