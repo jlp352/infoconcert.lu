@@ -147,17 +147,24 @@ class _PracticalInfoParser(HTMLParser):
 
 
 def _parse_practical_info(html: str) -> dict:
-    """Renvoie {address, doors_time} depuis le HTML d'une page de show."""
+    """Renvoie {address, doors_time, page_date} depuis le HTML d'une page de show."""
     parser = _PracticalInfoParser()
     parser.feed(html)
 
-    result = {"address": None, "doors_time": None}
+    result = {"address": None, "doors_time": None, "page_date": None}
     for item in parser.items:
         item_clean = re.sub(r"\s+", " ", item).strip()
         if item_clean.lower().startswith("where:"):
             result["address"] = item_clean.split(":", 1)[1].strip()
         elif item_clean.lower().startswith("doors:"):
             result["doors_time"] = item_clean.split(":", 1)[1].strip()
+
+    # Extraire la date depuis <p class="date"> quand l'API ne la fournit pas
+    # (ex: concerts dont la date n'est pas encore confirmée dans l'API)
+    date_p = re.search(r'<p[^>]+class=["\']date["\'][^>]*>\s*(.*?)\s*</p>', html, re.IGNORECASE)
+    if date_p:
+        result["page_date"] = _parse_date(date_p.group(1).strip())
+
     return result
 
 
@@ -239,9 +246,10 @@ def _normalize_location(raw: str | None) -> str | None:
 # ---------------------------------------------------------------------------
 
 def _parse_date(raw: str) -> str | None:
-    """Convertit 'Wed 11 february 2026' → '2026-02-11'."""
+    """Convertit 'Wed 11 february 2026' ou 'October 29, 2026' → '2026-02-11'."""
     raw = raw.strip()
-    for fmt in ("%a %d %B %Y", "%a %d %b %Y", "%d %B %Y", "%d %b %Y"):
+    for fmt in ("%a %d %B %Y", "%a %d %b %Y", "%d %B %Y", "%d %b %Y",
+                "%B %d, %Y", "%b %d, %Y"):
         try:
             return datetime.strptime(raw, fmt).strftime("%Y-%m-%d")
         except ValueError:
@@ -361,7 +369,11 @@ def fetch_concerts(
 
         date_live = _parse_date(raw_date)
         if date_live is None:
-            logger.debug("Date non parsable pour '%s' : '%s'", show.get("title"), raw_date)
+            date_live = details.get("page_date")
+            if date_live:
+                logger.debug("Date extraite depuis la page HTML pour '%s' : %s", show.get("title"), date_live)
+            else:
+                logger.debug("Date non parsable pour '%s' : '%s'", show.get("title"), raw_date)
 
         concert = {
             "id": show.get("id"),
